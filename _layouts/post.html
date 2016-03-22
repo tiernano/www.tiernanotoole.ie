@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+<p class="meta"><span class="author"><a href="http://blog.lotas-smartman.net">TiernanO</a></span> <span class="date">{{ {{page.git.last_commit.commit_date}} }}</span>&nbsp;<span class="links"><a href="#" title="">Comments</a></span></p>
+<p></p>
+<!-- post_lead_in -->
+<script type='text/javascript'>
+GA_googleFillSlot("post_lead_in");
+</script>
+<p></p>
+<div class="entry">
+	 {{ content }}
+</div>
+
+ <!-- POST NAVIGATION -->
+  <div class="postNav clearfix">
+    {% if page.previous.url %}
+      <a class="prev{% if page.previous.image %} image{% endif %}" href="{{ page.previous.url | prepend: site.baseurl }}"><span>&laquo;&nbsp;{{ page.previous.title }}</span>
+      {% if page.previous.image %}
+        <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.previous.image }}" alt="">
+      {% endif %}
+    </a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next{% if page.next.image %} image{% endif %}" href="{{ page.next.url | prepend: site.baseurl }}"><span>{{ page.next.title }}&nbsp;&raquo;</span>
+      {% if page.next.image %}
+        <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.next.image }}" alt="">
+      {% endif %}
+      </a>
+    {% endif %}
+  </div>
+
+<div class="comments">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'tiernanotooleie'; 
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
