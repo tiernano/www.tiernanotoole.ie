@@ -14,6 +14,14 @@ GA_googleFillSlot("post_lead_in");
 	 {{ content }}
 </div>
 
+<div class="tags">
+{% for tag in page.tags %}
+| <a href="/tag/{{ tag  | slugize }}/">
+        {{ tag }}
+</a>
+{% endfor %}	
+</div>
+
  <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
     {% if page.previous.url %}
