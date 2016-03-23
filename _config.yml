@@ -1,0 +1,5 @@
+paginate_path: "/page:num/"
+paginate: 5
+
+gems: 
+  -  jekyll-paginate
