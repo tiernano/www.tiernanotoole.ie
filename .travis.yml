@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - 2.1.0
-install: gem install jekyll html-proofer
+install: gem install jekyll github-pages html-proofer
 script: jekyll build && htmlproofer ./_site --only-4xx  --check-html
 env:
   global:
