@@ -1,4 +1,7 @@
 language: ruby
+before_install:
+  - rvm install 2.0.0
+  - rvm use 2.0.0 --fuzzy
 rvm:
   - 2.1.1
 script:
