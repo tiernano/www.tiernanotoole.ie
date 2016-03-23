@@ -1,7 +1,7 @@
 ---
 layout: post
 tags:
-- Netoworking
+- Networking
 - PFSense
 - Hardware
 - HomeLab
