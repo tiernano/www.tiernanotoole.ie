@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - rbx-2.1.1
+	- 2.1.0
 script:
   - bundle exec jekyll build
   - bundle exec htmlproof ./_site --only-4xx  --check-html
