@@ -1,0 +1,251 @@
+﻿
+body {
+	background: rgb(1, 0, 0); margin: 0px; padding: 0px; color: rgb(60, 61, 63); font-family: 'Istok Web', sans-serif; font-size: 12px;
+}
+h1 {
+	margin: 0px; padding: 0px; color: rgb(255, 48, 0); font-weight: normal;
+}
+h2 {
+	margin: 0px; padding: 0px; color: rgb(255, 48, 0); font-weight: normal;
+}
+h3 {
+	margin: 0px; padding: 0px; color: rgb(255, 48, 0); font-weight: normal;
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.4em;
+}
+p {
+	line-height: 180%; margin-top: 0px;
+}
+ul {
+	line-height: 180%; margin-top: 0px;
+}
+ol {
+	line-height: 180%; margin-top: 0px;
+}
+ul {
+	
+}
+ol {
+	
+}
+
+
+
+a[href^="//"]:after, 
+a[href^="http://"]:after, 
+a[href^="https://"]:after {
+  content: url(https://www.tiernanotoole.ie/images/Icon_External_Link.png);
+  margin: 0 0 0 5px;
+}
+
+a[href^="http://www.amazon.com"]:after, 
+a[href^="http://www.amazon.co.uk"]:after {
+  content: url(https://www.tiernanotoole.ie/images/amazon-icon.png);
+  margin: 0 0 0 5px;
+}
+
+
+a[href^="http://www.twitter.com"]:after, 
+a[href^="http://twitter.com"]:after {
+  content: url(https://www.tiernanotoole.ie/images/twitter.png);
+  margin: 0 0 0 5px;
+}
+
+a[href^="skype:"]:after{
+  content: url(https://www.tiernanotoole.ie/images/skype-16x16.png);
+  margin: 0 0 0 5px;
+}
+
+a[href^="//tiernanotoole.ie/"]:after, 
+a[href^="http://www.tiernanotoole.ie/"]:after {
+  content: '';
+  margin: 0;
+}
+
+a {
+	color: rgb(46, 69, 138); text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+#wrapper {
+	margin: 0px auto; padding: 0px;
+}
+#header-wrapper {
+	height: 115px;
+}
+#header {
+	margin: 0px auto; padding: 30px 0px 0px; width: 900px; overflow: hidden;
+}
+#logo {
+	margin: 0px; padding: 0px; width: 350px; color: rgb(0, 0, 0); float: left;
+}
+#logo h1 {
+	
+}
+#logo p {
+	
+}
+#logo h1 {
+	padding: 20px 0px 0px; color: grey; letter-spacing: -1px; font-size: xx-large; margin-left: 30px;
+}
+#logo h1 a {
+	color: rgb(255, 255, 255);
+}
+#logo h1 span {
+	
+}
+#logo p {
+	font: italic 12px/normal Georgia, "Times New Roman", Times, serif; margin: -5px 0px 0px; padding: 0px 0px 0px 32px; color: grey; text-transform: lowercase; font-size-adjust: none; font-stretch: normal;
+}
+#logo a {
+	border: currentColor; color: rgb(69, 48, 44); text-decoration: none;
+}
+#search {
+	padding: 0px; width: 280px; height: 40px; float: right;
+}
+#search form {
+	margin: 0px; padding: 10px 0px 0px 20px;
+}
+#search fieldset {
+	margin: 0px; padding: 0px; border: currentColor;
+}
+#search-text {
+	font: 12px/normal Arial, Helvetica, sans-serif; padding: 4px 5px 1px; border: currentColor; width: 170px; height: 19px; color: rgb(185, 173, 170); text-transform: lowercase; margin-right: 10px; font-size-adjust: none; font-stretch: normal;
+}
+#search-submit {
+	border: currentColor; width: 45px; height: 26px; color: rgb(255, 255, 255); text-indent: -9999px;
+}
+#menu {
+	margin: 0px auto; padding: 0px; height: 125px; float: right;
+}
+#menu ul {
+	list-style: none; margin: 0px; padding: 40px 0px 0px; line-height: normal;
+}
+#menu li {
+	float: left;
+}
+#menu a {
+	padding: 6px 15px 0px; border: currentColor; height: 24px; text-align: center; color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; text-decoration: none; margin-right: 2px; display: block;
+}
+#menu a:hover {
+	text-decoration: none; text-shadow: #720F12 -1px 1px 1px;
+}
+#menu .current_page_item a {
+	text-decoration: none; text-shadow: #720F12 -1px 1px 1px;
+}
+#menu .current_page_item a {
+	text-shadow: #720F12 -1px 1px 1px;
+}
+#page {
+	margin: 0px auto; padding: 0px; width: 900px;
+}
+#page-bgtop {
+	
+}
+#content {
+	background: rgb(255, 255, 255); padding: 40px 0px 0px; width: 600px; float: left;
+}
+.post {
+	padding: 0px 30px; margin-bottom: 30px;
+}
+.post .title {
+	padding: 0px; height: 41px;
+}
+.post .title a {
+	border: currentColor; color: rgb(191, 59, 65); text-transform: lowercase; letter-spacing: 2px; text-decoration: none;
+}
+.post .entry {
+	padding: 10px 0px 20px; text-align: justify; border-bottom-color: rgb(209, 217, 240); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.post .meta {
+	overflow: hidden; padding-top: 10px;
+}
+.post .links {
+	
+}
+.links a {
+	background: rgb(135, 160, 229); padding: 4px 10px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 11px; text-decoration: none;
+}
+.author {
+	background: rgb(223, 128, 136); padding: 4px 10px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 11px;
+}
+.author a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+.date {
+	background: rgb(145, 217, 170); padding: 4px 10px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 11px;
+}
+#sidebar {
+	background: rgb(35, 25, 23); margin: 0px; padding: 0px; width: 300px; border-bottom-color: rgb(200, 24, 30); border-bottom-width: 4px; border-bottom-style: solid; float: right;
+}
+#sidebar ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+#sidebar li {
+	margin: 0px 0px 0px 20px; padding: 0px;
+}
+#sidebar li ul {
+	margin: 0px; padding-bottom: 30px;
+}
+#sidebar li li {
+	text-align: left; line-height: 35px; border-bottom-color: rgb(52, 39, 37); border-left-color: currentColor; border-bottom-width: 1px; border-left-width: medium; border-bottom-style: solid; border-left-style: none;
+}
+#sidebar li li span {
+	padding: 0px; font-size: 11px; font-style: italic; margin-top: -20px; display: block;
+}
+#sidebar li li a {
+	padding: 0px 0px 0px 20px;
+}
+#sidebar h2 {
+	margin: 0px 0px 20px; padding: 4px 0px 0px 10px; height: 15px; text-align: left; color: rgb(255, 255, 255); text-transform: uppercase; letter-spacing: -0.5px; font-size: 1em; text-shadow: #720F12 -1px 1px 1px;
+}
+#sidebar p {
+	margin: 0px; padding: 0px 20px 10px; text-align: justify; color: rgb(185, 173, 170);
+}
+#sidebar a {
+	border: currentColor; color: rgb(185, 173, 170); text-decoration: none;
+}
+#sidebar a:hover {
+	color: rgb(185, 173, 170); text-decoration: underline;
+}
+#calendar {
+	
+}
+#calendar_wrap {
+	padding: 20px;
+}
+#calendar table {
+	width: 100%;
+}
+#calendar tbody td {
+	text-align: center;
+}
+#calendar #next {
+	text-align: right;
+}
+#footer {
+	margin: 0px auto; padding: 0px 0px 15px; width: 900px; height: 25px; font-family: Arial, Helvetica, sans-serif;
+}
+#footer p {
+	margin: 0px; padding: 20px 0px 0px 30px; text-align: left; color: rgb(69, 48, 44); text-transform: uppercase; line-height: normal; font-size: 10px;
+}
+#footer a {
+	color: rgb(107, 74, 69);
+}
+#about {
+	background: rgb(35, 25, 23); padding: 30px; width: 540px; color: rgb(253, 175, 133); border-bottom-color: rgb(200, 24, 30); border-bottom-width: 4px; border-bottom-style: solid;
+}
+#about h2 {
+	color: rgb(255, 255, 255); padding-bottom: 10px;
+}
+#about a {
+	color: rgb(185, 173, 170);
+}
