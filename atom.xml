@@ -4,10 +4,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>TiernanOToole</title>
-	<link href="http://tiernanotoole.ie/atom.xml" rel="self"/>
-	<link href="http://tiernanotoole.ie/"/>
+	<link href="https://www.tiernanotoole.ie/atom.xml" rel="self"/>
+	<link href="https://www.tiernanotoole.ie/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://tiernanotoole.ie/</id>
+	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
 		<email>tiernan@tiernanotoole.ie</email>
@@ -15,9 +15,9 @@
 	{% for post in site.posts %}
 	<entry>
 		<title>{{ post.title }}</title>
-		<link href="http://tiernanotoole.ie{{ post.url }}"/>
+		<link href="https://www.tiernanotoole.ie{{ post.url }}"/>
 		<updated>{{ post.date | date_to_xmlschema }}</updated>
-		<id>http://tiernanotoole.ie{ post.id }}</id>
+		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">{{ post.content | xml_escape }}</content>
 	</entry>
 	{% endfor %}
