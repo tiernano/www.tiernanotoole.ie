@@ -2,20 +2,7 @@
 layout: page
 title: Tags
 ---
-<!-- defaultinline -->
-<script type='text/javascript'>
-GA_googleFillSlot("defaultinline");
-</script>
-
-<div class="tags">
 {% for tag in site.tags %}
-| <a href="/tag/{{ tag  | slugize }}/">
-        {{ tag }}
-</a>
-{% endfor %}	
+<p><a href="/tag/{{ tag  | slugize }}/"> {{ tag }}</p>
+{% endfor %}
 </div>
-
-<!-- defaultinline -->
-<script type='text/javascript'>
-GA_googleFillSlot("defaultinline");
-</script>
