@@ -13,17 +13,17 @@ there is a tool called [cli53][3] which will allow you to manage route53 objects
 
 I tweaked their block of ruby code (first time playing with ruby, be gentel with me) and got the following:
 
-<script src="https://gist.github.com/tiernano/f11fbec2075b8bf19d57.js"></script>
+{% gist f11fbec2075b8bf19d57 %}
 
-essentially, it runs cli53 (you may need to change your path) and then creates .bind files for each zone. 
+essentially, it runs cli53 (you may need to change your path) and then creates .bind files for each zone.
 
 then, using their code below, you can re-import them to Route53:
 
-<script src="https://gist.github.com/madsheep/7249547.js"></script>
+{% gist 7249547 %}
 
-i have exported all mine, added them to git and done some testing... All seems to be in order... once i do some tweaks, i can get that CI piece working and it should be all magic... 
+i have exported all mine, added them to git and done some testing... All seems to be in order... once i do some tweaks, i can get that CI piece working and it should be all magic...
 
 [1]:http://tiernanotoole.ie/2015/05/07/git-push-dns.html
 [3]:https://github.com/barnybug/cli53
-[2]:http://aws.amazonc.com/route53 
+[2]:http://aws.amazonc.com/route53
 [4]:https://netguru.co/blog/ci-your-dns-setup

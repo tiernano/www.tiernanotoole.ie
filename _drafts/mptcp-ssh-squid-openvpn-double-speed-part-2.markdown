@@ -1,14 +1,15 @@
 ---
 layout: post
 tags:
-- Networking
-- Projects
-- IPv6
-title: MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2
-date: 2016-03-25 18:00:00
+  - Networking
+  - Projects
+  - IPv6
+title: 'MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2'
+date: 2016-03-25T18:00:00.000Z
 ---
-In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on reciently, and performance results...
 
+In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on reciently, and performance results...
+So, first, what have i tried...
 
 
 [1]:https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html
