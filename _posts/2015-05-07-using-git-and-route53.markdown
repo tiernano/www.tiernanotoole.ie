@@ -2,7 +2,8 @@
 layout: post
 tags:
 - DNS
-- Netoworking
+- Networking
+- Git
 - Development
 title: Using git and Route53 together
 date: 2015-05-07 20:00:00
