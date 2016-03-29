@@ -20,9 +20,9 @@ siteImagesDir: "post_images/"
 
 # URLs to tags/posts/categories JSON files
 # https://github.com/zhuochun/md-writer/wiki/Settings-for-Front-Matters
-urlForPosts: ""
-urlForTags: ""
-urlForCategories: ""
+urlForPosts: "https://www.tiernanotoole.ie/posts.json"
+urlForTags: "https://www.tiernanotoole.ie/tags.json"
+urlForCategories: "https://www.tiernanotoole.ie/categories.json"
 
 # The front matter key name
 frontMatterNameTags: "tags"

@@ -3,13 +3,14 @@ layout: post
 tags:
 - Storage
 - Backup
+- Code
 title: Hubic and Duplicity
 date: 2015-04-01 07:00:00
 ---
 
 I mentioned [HubiC][1] in my [last post][3], and in it i said that you could use [Duplicity][4] for backups. Well, this is how you get it to work...
 
-First, i am using Ubuntu 14.04 (i think...). I use [Ubuntu][9] in house for a few things: 
+First, i am using Ubuntu 14.04 (i think...). I use [Ubuntu][9] in house for a few things:
 
 * its running [Tiernan's Comms Closet][5], [GeekPhotographer][6] and [Tiernan's Podcast][7] all in house, aswell as being used to [build this site][8]. The Web Server and MySQL Server are seperated, MySQL running on Windows, web on Ubuntu... but thats a different story...
 * I have a couple of proxy servers running Ubuntu also
@@ -27,7 +28,7 @@ So, how do we get it working? Well, givin that i am on Ubuntu, these are the ste
 
 * first, we need some credentials and API keys... If you havent signed up for [HubiC][1] Do so now... That url gets you an extra 5Gb if you sign up for free (usually 25Gb) or if you pay 1EUR a month, you get 110Gb (usually 100Gb) and 5EUR a month gets you a staggering 10TB (yup! Terabytes!).
 * Login to Hubic, and in the menu go to 'My Account', 'Developers'. in here, create a new application (name and URL to redirect to... http://localhost seems to work correctly). Get the Client ID and Secret ID that was given to you.
-* take the contents of [the following gist][10] and replace your own details... I know, i am not a fan of sticking my password in a txt file... but it should be your local machine... 
+* take the contents of [the following gist][10] and replace your own details... I know, i am not a fan of sticking my password in a txt file... but it should be your local machine...
 * that file should be in your home directory and should be called .hubic_credentials.
 * add the duplicity PPA project ([https://launchpad.net/~duplicity-team/+archive/ubuntu/ppa][2]) to ubuntu using the add-apt-repository command (details on the link above, under the link 'read about installing'). for me, i just called 'sudo add-apt-repository ppa:duplicity-team/ppa'
 * install duplicity by doing 'sudo apt-get install duplicity'. Dont forget (its in the tutorial above!) to do an 'sudo apt-get update' first!
@@ -39,7 +40,7 @@ So, how do we get it working? Well, givin that i am on Ubuntu, these are the ste
 * cf+hubic is the backend to use, ~/ is the url to backup (my home directory in this case) and location is where on Hubic we want it stored. If this doesent exist, not a problem... it will create it.
 * after we run this we... ahhh... i get an error:
 <pre>BackendException: This backend requires the pyrax library available from Rackspace.</pre>
-* right... [pyrax library][11] is from Rackspace and is available to download though pip... 
+* right... [pyrax library][11] is from Rackspace and is available to download though pip...
 * I seem to have python and a few other bits installed on this machine, so running 'sudo pip install pyrax' works... Your millage may vary... [eg, this is out of scope for this tutorial! your on your own!]
 * Other problem... I got a load of weird and wondering errors like this:
 

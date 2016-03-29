@@ -1,7 +1,7 @@
 ---
 layout: post
 tags:
-- GIT
+- Git
 - Tips
 title: GIT tips and tricks
 date: 2012-12-05 15:48:44
