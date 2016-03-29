@@ -7,6 +7,8 @@ sitemap:
     lastmod: 2015-03-27T13:30:00
 ---
 
+# GodBox V2
+
 Dell [Precision T7600 Workstation][9]:
 
 * Dual 8 Core Xeons ([E5-4620][2] @ 2.2Gz each)
@@ -17,6 +19,8 @@ Dell [Precision T7600 Workstation][9]:
 * NVidia [Geforce GTX 970][4] graphics
 * 2 Dell 2007WFP Monitors and a [Dell P2815Q][5] (4k) Monitor
 * Currently running [Sabayon Linux][7] and [VMWare Workstation 11][8] with Windows, Linux and other VMs
+
+![godboxv2-cpu details](/post_images/20160329-godboxv2-cpu.png)
 
 
 [1]: http://www.amazon.co.uk/gp/product/B008S02S54/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B008S02S54&linkCode=as2&tag=tiescomclo-21&linkId=S3TRJOV2MB4ZOGJK

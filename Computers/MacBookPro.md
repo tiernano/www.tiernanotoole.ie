@@ -7,7 +7,7 @@ sitemap:
     lastmod: 2015-06-14T16:10:00
 ---
 
-** Late 2008 MacBook Pro, 15" **
+# Late 2008 MacBook Pro, 15"
 
 Specs:
 

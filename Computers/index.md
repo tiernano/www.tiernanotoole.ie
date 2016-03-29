@@ -7,7 +7,7 @@ sitemap:
     lastmod: 2015-09-15T16:30:00
 ---
 
-** My Home Lab **
+# My Home Lab
 
 This page is a link of some of the machines and network devices I have in house.
 
@@ -20,6 +20,7 @@ This page is a link of some of the machines and network devices I have in house.
 * [IBM server 2][9]
 * [NAS][10]
 * [Router][13]
+* [Mac Mini][14]
 
 [1]:/Computers/godbox.html
 [2]:/Computers/macpro.html
@@ -34,3 +35,4 @@ This page is a link of some of the machines and network devices I have in house.
 [11]:/Computers/godboxv2.html
 [12]:/Computers/PE2950.html
 [13]:/Computers/router.html
+[14]:/Computers/macmini.html
