@@ -13,6 +13,7 @@ published: true
 ---
 
 
+
 In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on reciently, and performance results...
 So, first, what have i tried... There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.
 
@@ -63,7 +64,7 @@ Well, at the moment, all i can conclude is that there is more testing required. 
 [5]:http://www.multipath-tcp.org
 [6]:https://youtu.be/VWN0ctPi5cw
 [7]:https://www.youtube.com/watch?v=VMdPI9Cfi9k
-[8]:/Computers/proliantml110.html
+[8]:https://www.tiernanotoole.ie/Computers/proliantml110.html
 [9]:https://m.do.co/c/d4d345b83b55
 [10]:http://www.scaleway.com
 [11]:http://www.squid-cache.org
