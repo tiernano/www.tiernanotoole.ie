@@ -1,5 +1,7 @@
 ---
 layout: post
+title: MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2
+date: 2016-03-30 21:00:00
 tags: 
   - Networking
   - Projects
@@ -7,12 +9,7 @@ tags:
   - Guide
   - HowTo
   - HomeLab
-title: "MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2"
-date: 2016-03-30 21:00:00
 ---
-
-
-
 In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on reciently, and performance results...
 So, first, what have i tried... There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.
 
