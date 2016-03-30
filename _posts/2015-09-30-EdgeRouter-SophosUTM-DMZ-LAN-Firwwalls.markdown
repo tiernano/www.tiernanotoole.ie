@@ -4,7 +4,7 @@ tags:
 - Networking
 - Sophos UTM
 - Hardware
-- Homelab
+- HomeLab
 - Ubiquiti
 title: Edge Router, Sophos UTM, DMZ and LAN Networks
 date: 2015-09-30 20:00:00
@@ -20,14 +20,13 @@ next, on the EdgeRouter, i added a static route to point at the new network:
 
 ![static route](/post_images/20150930-static-route.png)
 
-And finally, under firewall rules, i allowed what i wanted to allow (in this case, SSH from any DMZ client (not adviced) to my Mac Mini). 
+And finally, under firewall rules, i allowed what i wanted to allow (in this case, SSH from any DMZ client (not adviced) to my Mac Mini).
 
 ![firewall rules](/post_images/20150930-firewall-rules.png)
 
-And that, as they say, is that! So far, so good! 
+And that, as they say, is that! So far, so good!
 
 [1]: http://www.pfsense.org
 [2]: https://www.ubnt.com/edgemax/edgerouter-poe/
 [3]: https://www.sophos.com/en-us/products/unified-threat-management.aspx
 [4]: http://www.plex.tv
-

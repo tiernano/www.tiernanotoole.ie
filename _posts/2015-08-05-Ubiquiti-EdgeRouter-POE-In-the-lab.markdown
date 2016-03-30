@@ -4,7 +4,7 @@ tags:
 - Networking
 - Ubiquiti
 - Hardware
-- Homelab
+- HomeLab
 title: Ubiquiti EdgeRouter PoE in the lab
 date: 2015-08-05 21:00:00
 ---

@@ -4,7 +4,7 @@ tags:
 - Networking
 - PFSense
 - Hardware
-- Homelab
+- HomeLab
 - Ubiquiti
 title: Network and HomeLab V.Next (Part 4)
 date: 2015-09-16 14:15:00
@@ -29,7 +29,7 @@ I also need to work out the VLAN side of things. I have currently though of the 
 * IOT (stuff for running the house, like [Nest][6], the MPower devices or the like)
 * Media Network (Plex, Roku, Apple TV, Chrome Cast, etc. Not sure if i need to seperate this, but it might be done...)
 
-The current [Cisco 3560G switch][7] should do all that, without problems, so no new switch needed... lets see what i can break over the next while... 
+The current [Cisco 3560G switch][7] should do all that, without problems, so no new switch needed... lets see what i can break over the next while...
 
 [1]: https://www.tiernanotoole.ie/2015/08/05/Ubiquiti-EdgeRouter-POE-In-the-lab.html
 [2]: https://www.ubnt.com/mfi/mpower/
