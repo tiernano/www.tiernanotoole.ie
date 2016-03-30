@@ -8,8 +8,7 @@ tags:
   - HowTo
   - HomeLab
 title: "MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2"
-date: {}
-published: true
+date: 2016-03-30 21:00:00
 ---
 
 
