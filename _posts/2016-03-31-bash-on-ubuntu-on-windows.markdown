@@ -1,5 +1,11 @@
 ---
-published: false
+layout: post
+title: Bash on Ubuntu on Windows
+date: 2016-03-31 07:00:00
+tags: 
+  - Linux
+  - Windows
+  - Development
 ---
 
 
