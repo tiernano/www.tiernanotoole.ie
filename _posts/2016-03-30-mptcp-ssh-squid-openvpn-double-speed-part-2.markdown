@@ -10,7 +10,7 @@ tags:
   - HowTo
   - HomeLab
 ---
-In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on reciently, and performance results...
+In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on recently, and performance results...
 So, first, what have i tried... There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.
 
 ## Hardware and servers used
@@ -18,15 +18,15 @@ To test this, i am using my [HP Proliant ML110 G5][8] running either Ubuntu or D
 
 Digital Ocean has the advantage of allowing different Kernels, so i have been using them for testing MPTCP. As for ScaleWay, well, their BareMetal C2S/M/L boxes have between 4 and 8 cores (4 for the S, 8 for the M and L) and between 8 and 32Gb RAM (S=8, M=16, L=32GB). The L model also comes with 256GB SSD (plus the boot disk, which seems to be a network disk of some sort) and they all come with lots of bandwidth (i use the L because its got about 800MBit/s to the internet).
 
-Ping wise, Digital Ocean is about 20-30ms away from the house (I picked London to host the servers) and Scaleway is a little futher at about 50ms (They are based in France).
+Ping wise, Digital Ocean is about 20-30ms away from the house (I picked London to host the servers) and Scaleway is a little further at about 50ms (They are based in France).
 
 ## MPTCP ([MultiPath TCP][5])
-MPTCP (their site is a bit wonkey as of writing, so bare with me...) is a Linux Kernel patch that allows TCP connections to use multiple paths... Esseitnally, if you have Wifi and 4G in a phone, and MPTCP is enabled, it should allow you to use both connections for TCP traffic, as long as the server upstream supports it. It also allows for easy fail over if, say, you lose your wifi connection. There is an example [video of it on YouTube][6] which should show the fail over parts and [this video][7] shows how they managed to get 50Gbit/s out of a 6 10Gb ethernet connections.
+MPTCP (their site is a bit wonky as of writing, so bare with me...) is a Linux Kernel patch that allows TCP connections to use multiple paths... Essentially, if you have Wifi and 4G in a phone, and MPTCP is enabled, it should allow you to use both connections for TCP traffic, as long as the server upstream supports it. It also allows for easy fail over if, say, you lose your wifi connection. There is an example [video of it on YouTube][6] which should show the fail over parts and [this video][7] shows how they managed to get 50Gbit/s out of a 6 10Gb Ethernet connections.
 
-When i was using MPTCP, I had a copy of [Squid][11] on both boxes, and told Squid locally to use Squid on the upstream box (over a SSH tunnel, which was over the MPTCP link) as a parent cache. Using this method, i could see (using [iftop][12]) that both connections were being used. When trying proper performace testing, I setup a RAM disk on both machines and copied a Linux ISO to the Digtial Ocean Box. Then, using wget and [Axel][13] I downloaded the files using [Nginx][14] on the server, and checked the results. I can max out 1 single connection, plus use about 60-80mbit/s from the second. about 420-440mbit/s total. Disk was not the bottlekneck, since i was writing to RAM, so more tests are required.
+When i was using MPTCP, I had a copy of [Squid][11] on both boxes, and told Squid locally to use Squid on the upstream box (over a SSH tunnel, which was over the MPTCP link) as a parent cache. Using this method, i could see (using [iftop][12]) that both connections were being used. When trying proper performace testing, I setup a RAM disk on both machines and copied a Linux ISO to the Digtial Ocean Box. Then, using wget and [Axel][13] I downloaded the files using [Nginx][14] on the server, and checked the results. I can max out 1 single connection, plus use about 60-80mbit/s from the second. about 420-440mbit/s total. Disk was not the bottleneck, since i was writing to RAM, so more tests are required.
 
 ## MLVPN
-[MLVPN] is a pretty interesting project that caught my eye. The idea is quite simple: you configure the local box and server, as mentioend in [their example guide][17] and run the mlvpn program on the server, then the client. It creates 2 VPN tunnels between the 2 boxes, and bonds them... In my case, i was given an IP of 10.42.42.1 on my box in house and 10.42.42.2 on the server. Any traffic over that tunnel is bonded... Problem is, it seems to be quite processor intensive: my Digital Ocean box was showing one cpu core (out of 2) maxing out at around 80% and my Proliant in house maxing around the 70% mark... all while transfering data at around 100mbit/s. I tried iperf and got the following:
+[MLVPN] is a pretty interesting project that caught my eye. The idea is quite simple: you configure the local box and server, as mentioend in [their example guide][17] and run the mlvpn program on the server, then the client. It creates 2 VPN tunnels between the 2 boxes, and bonds them... In my case, i was given an IP of 10.42.42.1 on my box in house and 10.42.42.2 on the server. Any traffic over that tunnel is bonded... Problem is, it seems to be quite processor intensive: my Digital Ocean box was showing one cpu core (out of 2) maxing out at around 80% and my Proliant in house maxing around the 70% mark... all while transferring data at around 100mbit/s. I tried iperf and got the following:
 
 ![mlvpn speed test][mlvpnspeedtest]
 
@@ -40,7 +40,7 @@ Download Only (from server to local machine)
 
 ![mlvpn download only test][mlvpndownloadonly]
 
-As you can see, the download speed has increesed a little, to 176Mbit/s, but the upload speed is now at over 60MBit/s! 
+As you can see, the download speed has increased a little, to 176Mbit/s, but the upload speed is now at over 60MBit/s! 
 
 Still.. download is as important as upload, and given i havent managed to get it to max out one connection, never mind 2, even more testing is required...
 
@@ -48,9 +48,9 @@ Still.. download is as important as upload, and given i havent managed to get it
 
 This is one i need to come back to... Used the guide from [John Lewis][15] but was only managing to get about 100Mbit/s... I was originally using a VM (so disk may have been the issue) and also had the connection behind my EdgeRouter, so it might have been firewall rules causing a slow down. But I do need to come back to this soon... Watch this space.
 
-## Conslusions?
+## Conclusions?
 
-Well, at the moment, all i can conclude is that there is more testing required. Upload wise, i can somewhat use most of my bandwidth with MLVPN, and i did see promising results with MPTCP. I gave up a bit too early with MLPPP, so more testing is required with that. Also, all tests are using just iperf between boxes. I did use squid with the MPTCP box for a while, but not for proper performance testing. So, even once this is all sorted out, i will need to turn this into a proper "router" too... So, conslusion? this was orignally meant to be a 2 parter... now it looks like i will require a lot more parts... Watch this space...
+Well, at the moment, all i can conclude is that there is more testing required. Upload wise, i can somewhat use most of my bandwidth with MLVPN, and i did see promising results with MPTCP. I gave up a bit too early with MLPPP, so more testing is required with that. Also, all tests are using just iperf between boxes. I did use squid with the MPTCP box for a while, but not for proper performance testing. So, even once this is all sorted out, i will need to turn this into a proper "router" too... So, conclusion? this was originally meant to be a 2 parter... now it looks like i will require a lot more parts... Watch this space...
 
 
 [1]:https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html

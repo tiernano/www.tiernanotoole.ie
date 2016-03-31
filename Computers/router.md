@@ -16,7 +16,7 @@ both connections are load balanced and some sites are sent over particular links
 
 ![speed test result](/post_images/20160329-speedtest.png)
 
-As you can see, i can manage to get all my upload speed using speedtest, but not all my download speed... tweaks need to be made...
+As you can see, I can manage to get all my upload speed using speedtest, but not all my download speed... tweaks need to be made...
 
 [1]: http://www.ubnt.com
 [2]: https://www.ubnt.com/edgemax/edgerouter-poe/

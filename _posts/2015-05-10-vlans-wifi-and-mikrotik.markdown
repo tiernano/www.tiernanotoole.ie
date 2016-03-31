@@ -12,7 +12,7 @@ About a month ago, while i was recovering from surgery, i attended a Webinar on
 
 Thing is, the wifi in the house was grand previously. I have a [Routerboard RB951G][3] which does the job and has no issues. And because i am mostly offsite in the office i work, and because i need to remotely manage the network, the MR18 is going into the office from tomorrow morning. I may talk about the MR18 and the rest of the Maraki gear later on, but this is not that post. This post is about something the MR18 did, and i wanted to do on the RB951.
 
-So, the MR18 allows you to create mutliple Wifi SSIDs, each with different encryption and security and can use different VLANs. Now, the Mikrotik does the same, but the VLANs stuff is not that easy to figure out. but essentially, what i needed to do was as follows:
+So, the MR18 allows you to create multiple Wifi SSIDs, each with different encryption and security and can use different VLANs. Now, the Mikrotik does the same, but the VLANs stuff is not that easy to figure out. but essentially, what i needed to do was as follows:
 
 create your new wifi SSIDs:
 

@@ -7,4 +7,4 @@ sitemap:
     changefreq: 'weekly'
     lastmod: 2015-06-14T16:10:00
 ---
-[in the process of being decomissioned]
+[in the process of being decommissioned]

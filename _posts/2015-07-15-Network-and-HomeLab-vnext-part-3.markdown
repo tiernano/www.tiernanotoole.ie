@@ -20,7 +20,7 @@ I have been playing with some networking in the house and have managed to build 
 and to a dedicated switch port for a given VLAN. The plan for the upgrade, which i hope to complete sooner than the rest of the network is as
 follows:
 
-* get the ML110 running [ESXi][3] and virtualize [PFSense][2]. Give it 2gb of RAM and some processor.
+* get the ML110 running [ESXi][3] and visualize [PFSense][2]. Give it 2gb of RAM and some processor.
 * take some of the network cards out of the box. It does not need 12 ports, but maybe leave the 2 quad ports in there. They should be connected
 to the main switch trunked. 8 may be overkill, but i never do things by half.
 * the PFSEnse VM should be connected to all 3 WAN VlANs (900, 901 and 902) and should also have at least one port to the LAN. There may also be

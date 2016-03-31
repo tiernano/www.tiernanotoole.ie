@@ -17,6 +17,6 @@ I also think i moved off the idea of 10Gb. I like the idea of it, but given a sm
 
 Also, changed from last time round is machine count. Originally i was saying 3-4 machines... now i am thinking 6-7... 5-6 of them should be Hyper-V boxes and the last one would be a Media Box.
 
-I also think the Synology or SAN requirement is out... Hyper-V can be setup to do replication between hosts, and with a 4Gb link to the LAN, i think i should be ok. Also, if i have the media box separate, i should be ok there too. I will detail the media centre in a later post.
+I also think the Synology or SAN requirement is out... Hyper-V can be setup to do replication between hosts, and with a 4Gb link to the LAN, i think i should be OK. Also, if i have the media box separate, i should be ok there too. I will detail the media center in a later post.
 
 So, any suggestions or thoughts on what should and shouldn't be looked at?

@@ -6,4 +6,4 @@ sitemap:
     changefreq: 'weekly'
     lastmod: 2015-06-14T16:10:00
 ---
-[currently being decommisioned]
+[currently being decommissioned]

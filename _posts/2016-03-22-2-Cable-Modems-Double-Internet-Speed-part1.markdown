@@ -13,7 +13,7 @@ For the last 15 or so years, I have had at least 2 internet connections in to th
 
 It started with a [Linksys RV042 router][2] which allowed me to load balance my connections... At the time, and i cant even remember when this was, my total bandwidth would not exceed the router. The RV042 has 2 10/100mbit WAN links and 4 100mb/s LAN links...So, when the connection bandwidth increesed, I moved to a new router... 
 
-The next router vendor i tried was [Mikrotik][3]. I tried a few different options, including an [RB1100][10] and running their [RouterOS][11] on x86 hardware... Both worked, well, ok, and the [Load balancing with nth][9] stuff did do what i needed, along with other stuff, like routing traffic destined for some sites (like BBC iPlayer) to go over a VPN. But in the end, hardware issues and performace problems with the x86 machine (mikrotik at the time was limited to 2GB of RAM on x86 hardware) I ended up at [PFSense][4].
+The next router vendor i tried was [Mikrotik][3]. I tried a few different options, including an [RB1100][10] and running their [RouterOS][11] on x86 hardware... Both worked, well, ok, and the [Load balancing with nth][9] stuff did do what i needed, along with other stuff, like routing traffic destined for some sites (like BBC iPlayer) to go over a VPN. But in the end, hardware issues and performance problems with the x86 machine (mikrotik at the time was limited to 2GB of RAM on x86 hardware) I ended up at [PFSense][4].
 
 PFSense was installed on the same hardware, a HP Proliant ML110 G5 with 8GB RAM, a Core2Quad processor and 12 GigE Network cards... And, on PFSense, things were good... Performace was stable, load balancing worked as expected, i could set some traffic to go over certain links, etc. all was good... But i lacked IPv6... Plus, the HP used a LOT of power... 
 
@@ -25,7 +25,7 @@ The current instalment of my network uses a [Ubiquiti Networks][5] [Edge Router 
 
 Plus, the EdgeRouter does not produce as much heat, and its a LOT smaller that the PowerEdge! It does all the same things i could get PFSense to do, in a lot smaller package (I could, in theory, get a smaller box for PFSense). 
 
-So, where does that leave us? Well, I now have 720Mbit/s down and 72Mbit/s up, if i can do multiple threads for uploading... But what if i dont? Whats next? Well, in the second post, i will explain what i have been trying to do in recient weeks, and what i can do now...
+So, where does that leave us? Well, I now have 720Mbit/s down and 72Mbit/s up, if i can do multiple threads for uploading... But what if i don't? Whats next? Well, in the second post, i will explain what i have been trying to do in resent weeks, and what i can do now...
 
 [1]:http://www.virginmedia.ie
 [2]:http://www.cisco.com/c/en/us/products/routers/rv042-dual-wan-vpn-router/index.html

@@ -8,11 +8,9 @@ tags:
 title: Ubiquiti EdgeRouter PoE in the lab
 date: 2015-08-05 21:00:00
 ---
-Today, my [Ubiquiti EdgeRouter POE][1] arrived in the house. I got it hooked up to both UPC connections (as secondary
-connections) and all seems to be working grand.
-Some notes i wanted to put up here:
+Today, my [Ubiquiti EdgeRouter POE][1] arrived in the house. I got it hooked up to both UPC connections (as secondary connections) and all seems to be working grand. Some notes i wanted to put up here:
 
-* out of the box, the install was quite simple. set my ethernet connection to a static ip in the 192.168.1.x/24 range,
+* out of the box, the install was quite simple. set my Ethernet connection to a static ip in the 192.168.1.x/24 range,
 using 192.168.1.1 as gateway and dns, and then point at http://192.168.1.1 for admin. login (ubit for both username and
 password) and heay presto. I was asked did i agree to the license, and then im in.
 * by default, NAT is off... i turned it on, and enabled DNS and was able to surf.

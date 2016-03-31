@@ -15,16 +15,16 @@ errors about my password being wrong... So, i tried a few more times,
 got pissed off and rebooted the box (had to do a hard reboot, since i
 couldent even get in over KVM). I though this was a hardware issue, or a
 config issue, and left it... yesterday, i had the console open most of
-the day, and when looking at somthing i noticed this:
+the day, and when looking at something i noticed this:
 
 
-![](http://tiernanotoole.ie/post_images/rsz_20150520-esxi-login-errors.jpg)
+![](https://www.tiernanotoole.ie/post_images/rsz_20150520-esxi-login-errors.jpg)
 
-Well, thats why i couldent login! So, tip: create a second user account,
+Well, thats why i couldest login! So, tip: create a second user account,
 name it something other than root, give it a secure password and use
 that to login to your ESXi box. Ideally, your ESXi box should be behind
 a firewall, but in the case of a dedicated server, that may not be
-financially feisable... Hope this helps someone!
+financially feasible... Hope this helps someone!
 
 [1]:http://www.vmware.com/products/vsphere-hypervisor
 [2]:http://www.hetzner.de/en

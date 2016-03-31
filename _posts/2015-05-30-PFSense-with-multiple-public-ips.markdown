@@ -7,7 +7,7 @@ tags:
 title: PFSense with Multiple Public IPs
 date: 2015-05-30 18:50:00
 ---
-So, a few weeks back, i got my hands on a [Hetzner][1] Dedicated box. It has a quad core Xeon, 32Gb ram, 3x3Tb hdds, RAID controller and KVMoIP. one of the first thing i did was get myself a /29 IP pool (8 total, 6 usuable IPs). There where already 3 IPs given to me: 1 for the KVM, one for the box itself, and 1 as the router for the IP block.
+So, a few weeks back, i got my hands on a [Hetzner][1] Dedicated box. It has a quad core Xeon, 32Gb ram, 3x3Tb hdds, RAID controller and KVMoIP. one of the first thing i did was get myself a /29 IP pool (8 total, 6 usable IPs). There where already 3 IPs given to me: 1 for the KVM, one for the box itself, and 1 as the router for the IP block.
 
 So, i need to setup my own router, so i picked [PFSense][2] since its what i run in house. I gave it 2 network connections: 1 connected to the main network adapter on the VMWare ESXi box (public) and one to a virtual switch, which is only used by VMs. The public is the WAN link and it gets a static IP from Hetzner, and the virtual switch is then my "LAN" link. This allows me to have standard NATed network connections to any VM i have, but then, what do i do with those IPs?
 
