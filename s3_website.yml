@@ -5,3 +5,17 @@ s3_bucket: <%= ENV['S3_BUCKET'] %>
 
 
 s3_endpoint: eu-west-1
+
+gzip: 
+- .html 
+- .css 
+- .js
+
+max_age:
+ "*.css": 86400
+ "*.js": 86400
+ "*.html": 1800
+ "*.jpg": 86400
+ "*.png": 86400
+ "*.PNG": 86400
+ "*.gif": 86400
