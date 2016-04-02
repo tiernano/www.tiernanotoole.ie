@@ -11,8 +11,8 @@ So, this site is brought to you by [GIT][1], [Jekyll][3] and Magic... here is ho
 
 * I have a Linux VM running the site. Its an [Ubuntu 12.04][4] server. On that i installed Jekyll.
 * I also have [gitolite][6] installed for personal git repos.
-* In the Git Repo for this site, under the hooks directory, i added a post-receive file which i got from [here][2] orignally.
-* Apache is set to serve the directory that Jelkyll produces... thats what you are reading here.
+* In the Git Repo for this site, under the hooks directory, I added a post-receive file which I got from [here][2] originally.
+* Apache is set to serve the directory that Jekyll produces... That's what you are reading here.
 * If you are interested, you can find the code and config for this site on my [github repo][5]
 
 

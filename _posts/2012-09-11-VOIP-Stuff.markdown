@@ -4,17 +4,17 @@ title: VOIP Stuff
 tags:
 - VoIP
 ---
-I have been very interested in VOIP stuff for the last while now, and finally started looking at implimenting it in the house. Here are some links which may be useful. I will do a full post soon.
+I have been very interested in VOIP stuff for the last while now, and finally started looking at implementing it in the house. Here are some links which may be useful. I will do a full post soon.
 
 * [Asterisk 1.8 with chan_mobile on Centos 6][1]: chan_mobile allows you to use a Bluetooth phone to make calls with Asterisk
-* [Use an old Mobile Phone as a GMS Gateway in asterisk][2]: again, simular to above, but with Ubuntu.
+* [Use an old Mobile Phone as a GMS Gateway in asterisk][2]: again, similar to above, but with Ubuntu.
 * [3CX][3]: my current choice in VOIP software.
 
-The main VOIP hardware i use is: 
+The main VOIP hardware I use is:
 * [Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon UK)][4]
-* [Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon US)][4] 
+* [Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon US)][4]
 
-I also use the 3CX software on both my iPhone and Android. 
+I also use the 3CX software on both my iPhone and Android.
 
 * [3CX phone for Android][6]
 * [3CX phone for iPhone][7]
