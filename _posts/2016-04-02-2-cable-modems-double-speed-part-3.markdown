@@ -28,9 +28,11 @@ on the Digital Ocean box and
 on the local box. And, well, the results where not as expected. Pretty poor actually:
 
 First, using Squid installed on the DO box, i tried using WGET to download a file using it. If I did this on the DO box itself, i was getting 100MBytes/s... When I ran it over the MLPPP box, well, under 7 was achieved.
+
 ![WGET over Squid over MLPPP](/post_images/20160402-downloading-over-mlppp.PNG)
 
 Then i though it might have been Squid. So, since the file had been downloaded to DO, i SFTPed into the box over the MLPPP link, and tried again... Again, pretty poor result. I think i seen it hit about 7MB a sec at one stage.
+
 ![SFTP over MLPPP](/post_images/20160402-sftp2-over-mlppp.PNG)
 
 Here is what is showing on the DO box when running the SFTP download. You can see 2 connections from the 2 WAN links at home hitting the box, and they are balanced. Its just nowhere near the speed they are capable of.
