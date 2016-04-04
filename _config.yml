@@ -3,7 +3,6 @@ paginate: 5
 
 gems: 
   -  jekyll-paginate
-  -  jekyll-git_metadata
   
 prose:
   rooturl: '_posts'
