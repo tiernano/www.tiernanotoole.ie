@@ -37,7 +37,7 @@ Then i though it might have been Squid. So, since the file had been downloaded t
 
 Here is what is showing on the DO box when running the SFTP download. You can see 2 connections from the 2 WAN links at home hitting the box, and they are balanced. Its just nowhere near the speed they are capable of.
 
-[![iftop running on server](/post_images/20160402-sftp-over-mlppp.PNG)](/post_images/20160402-sftp-over-mlppp.PNG)
+[![iftop running on server](/post_images/20160402-sftp-over-mlppp.PNG)](/post_images/20160402-sftp-over-mlppp-orig.PNG)
 
 I did not get a screen shot of this, but when I tried with iperf, thinking it might have been overhead of SFTP or Squid, I was getting results matching what I was seeing with SFTP. Downloads in the 55-60mbit/s range for download and 40ish for upload. 40 is still faster than 1 link, mind you...
 
@@ -55,7 +55,7 @@ Nothing else on his config files have changed. I did not do any of the masquerad
 
 in both cases, CPU usage is sub 6% for VTUN and SSH seems to be using less than 10%. So, now, I'm baffled as to why this is not performing as expected... More testing required!
 
-[update 4/4/2016] - fixing images so they are clickable... 
+[update 4/4/2016] - fixing images so they are clickable...
 
 
 [1]:https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html
