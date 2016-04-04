@@ -29,15 +29,15 @@ on the local box. And, well, the results where not as expected. Pretty poor actu
 
 First, using Squid installed on the DO box, i tried using WGET to download a file using it. If I did this on the DO box itself, i was getting 100MBytes/s... When I ran it over the MLPPP box, well, under 7 was achieved.
 
-![WGET over Squid over MLPPP](/post_images/20160402-downloading-over-mlppp.PNG)
+[![WGET over Squid over MLPPP](/post_images/20160402-downloading-over-mlppp.PNG)](/post_images/20160402-downloading-over-mlppp-orig.PNG)
 
 Then i though it might have been Squid. So, since the file had been downloaded to DO, i SFTPed into the box over the MLPPP link, and tried again... Again, pretty poor result. I think i seen it hit about 7MB a sec at one stage.
 
-![SFTP over MLPPP](/post_images/20160402-sftp2-over-mlppp.PNG)
+[![SFTP over MLPPP](/post_images/20160402-sftp2-over-mlppp.PNG)](/post_images/20160402-sftp2-over-mlppp-orig.PNG)
 
 Here is what is showing on the DO box when running the SFTP download. You can see 2 connections from the 2 WAN links at home hitting the box, and they are balanced. Its just nowhere near the speed they are capable of.
 
-![iftop running on server](/post_images/20160402-sftp-over-mlppp.PNG)
+[![iftop running on server](/post_images/20160402-sftp-over-mlppp.PNG)](/post_images/20160402-sftp-over-mlppp.PNG)
 
 I did not get a screen shot of this, but when I tried with iperf, thinking it might have been overhead of SFTP or Squid, I was getting results matching what I was seeing with SFTP. Downloads in the 55-60mbit/s range for download and 40ish for upload. 40 is still faster than 1 link, mind you...
 
@@ -49,11 +49,13 @@ I have changed the names from adsl1 and 2 to WAN1 and 2, and the IPs are changed
 
 Nothing else on his config files have changed. I did not do any of the masquerading stuff, mainly cause this was testing. I just want a tunnel to start with. When reading the vtund.conf file, you can see that encryption and compression are both turned off, and and the same in the ppp configuration. I also don't think the issue is to do with the CPU performance, since these are the screenshots of top running on both boxes:
 
-![Top on Server](/post_images/20160402-top-view-server.PNG)
+[![Top on Server](/post_images/20160402-top-view-server.PNG)](/post_images/20160402-top-view-server-orig.PNG)
 
-![Top on Client](/post_images/20160402-top-view-client.PNG)
+[![Top on Client](/post_images/20160402-top-view-client.PNG)](/post_images/20160402-top-view-client-orig.PNG)
 
 in both cases, CPU usage is sub 6% for VTUN and SSH seems to be using less than 10%. So, now, I'm baffled as to why this is not performing as expected... More testing required!
+
+[update 4/4/2016] - fixing images so they are clickable... 
 
 
 [1]:https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html
