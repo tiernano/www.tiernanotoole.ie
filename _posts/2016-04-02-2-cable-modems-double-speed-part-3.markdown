@@ -13,6 +13,7 @@ tags:
 In [Part 1 of this series][1] I explained the why and what I wanted to do for this "project". In [Part 2][2] I did some basic testing of both [MPTCP][3] and [MLVPN][4]. I also mentioned trying [MMPPP][5] using [vtund][6] but it has been a while since I did that testing, and it had not been on bare metal. So, this post is a follow up, where I am using bare metal.
 
 So, first, the setup:
+
 * ProLiant box is running Debian 8.3 x64, and has both vtund and ppp installed
 * [Digtial Ocean][7] box also has Debian 8.3, vtund and ppp installed
 * walked though the guide from [John Lewis][8] and made some changes to the configs. the main ones are mentioned below
