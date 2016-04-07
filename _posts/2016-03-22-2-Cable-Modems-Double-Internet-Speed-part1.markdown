@@ -9,7 +9,7 @@ tags:
 ---
 First, a bit of background, and then I will explain what I am currently running in Part 2...
 
-For the last 15 or so years, I have had at least 2 internet connections in to the house... 2 of them have always been Cable Modems from NTL, which became UPC, and now is [Virgin Media][1]. When I started, i think the modems where 150/50kbit/s and 600/150kb/s, and have stedally increased in speed, currently at 360/36Mbit/s each... But they have always been somewhat separate, and single thread downloads have always been limited to 1 of the connections... I have been looking for ways around this for years...
+For the last 15 or so years, I have had at least 2 internet connections in to the house... 2 of them have always been Cable Modems from NTL, which became UPC, and now is [Virgin Media][1]. When I started, i think the modems where 150/50kbit/s and 600/150kb/s, and have steadily increased in speed, currently at 360/36Mbit/s each... But they have always been somewhat separate, and single thread downloads have always been limited to 1 of the connections... I have been looking for ways around this for years...
 
 It started with a [Linksys RV042 router][2] which allowed me to load balance my connections... At the time, and i cant even remember when this was, my total bandwidth would not exceed the router. The RV042 has 2 10/100mbit WAN links and 4 100mb/s LAN links...So, when the connection bandwidth increased, I moved to a new router...
 
@@ -19,9 +19,9 @@ PfSense was installed on the same hardware, a HP ProLiant ML110 G5 with 8GB RAM,
 
 The current instalment of my network uses a [Ubiquiti Networks][5] [Edge Router POE][12]. To show the difference in power, check out the graphs from my [Ubnt MPower][13] device. ProLiant first, EdgeRouter second:
 
-![Proliant Power Usage](post_images/20150916-proliant-power-usage.PNG)
+![Proliant Power Usage](/post_images/2015/09/16/20150916-proliant-power-usage.PNG)
 
-![EdgeRouter POE Power Usage](post_images/20150916-edgerouter-power-usage.PNG)
+![EdgeRouter POE Power Usage](/post_images/2015/09/16/20150916-edgerouter-power-usage.PNG)
 
 Plus, the EdgeRouter does not produce as much heat, and its a LOT smaller that the PowerEdge! It does all the same things I could get PfSense to do, in a lot smaller package (I could, in theory, get a smaller box for PfSense).
 

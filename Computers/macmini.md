@@ -9,7 +9,7 @@ sitemap:
 
 # Late 2012 Mac Mini
 
-![Mac Mini Details](/post_images/20160329-macmini-system-detail.png)
+![Mac Mini Details](/post_images/2016/03/29/20160329-macmini-system-detail.png)
 
 Specs:
 

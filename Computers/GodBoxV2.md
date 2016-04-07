@@ -20,7 +20,6 @@ Dell [Precision T7600 Workstation][9]:
 * 1 Dell 2007WFP Monitors and 2 [Dell P2815Q][5] (4k) Monitors
 * Currently running Windows Server 2012 R2 with Hyper-V
 
-![godboxv2-CPU details](/post_images/20160329-godboxv2-cpu.png)
 
 
 [1]: http://www.amazon.co.uk/gp/product/B008S02S54/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B008S02S54&linkCode=as2&tag=tiescomclo-21&linkId=S3TRJOV2MB4ZOGJK

@@ -20,7 +20,7 @@ you can manually download the tar and upload it, which i did.
 
 Finally, speed test result below:
 
-![Speed Test Result](https://www.tiernanotoole.ie/post_images/20150805.ubiquiti.speedtest.compressed-resized.jpg)
+![Speed Test Result](/post_images/2015/08/05/20150805.ubiquiti.speedtest.compressed-resized.jpg)
 
 More [Ubiquiti][2] stuff arriving tomorrow... will post more stuff then.
 

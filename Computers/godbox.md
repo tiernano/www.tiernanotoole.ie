@@ -20,10 +20,10 @@ The Godbox is my main Hyper-V server and backup workstation. Its specs are as fo
 
 Some old photos of the machine are seen here:
 
-<a href="/post_images/20121009-1539-godbox-taskmanager.png">/<img src="/post_images/20121009-1539-godbox-taskmanager.png" alt="Godbox Task Manager" width="400"/></a>
+<a href="/post_images/2012/10/09/20121009-1539-godbox-taskmanager.png"><img src="/post_images/2012/10/09/20121009-1539-godbox-taskmanager.png" alt="Godbox Task Manager" width="400"/></a>
 
-<a href="/post_images/20121009-1549-godbox-systeminfo.png"><img src="/post_images/20121009-1549-godbox-systeminfo.png" alt="Godbox System Info" width="400"/></a>
+<a href="/post_images/2012/10/09/20121009-1539-godbox-taskmanager.png"><img src="/post_images/2012/10/09/20121009-1549-godbox-systeminfo.png" alt="Godbox System Info" width="400"/></a>
 
-<a href="/post_images/tumblr_n15uoaNSnY1s6snd0o1_1280.jpg"><img src="/post_images/tumblr_n15uoaNSnY1s6snd0o1_1280.jpg" alt="GodBox Monitors" width="400"/></a>
+<a href="/post_images/2012/10/09/tumblr_n15uoaNSnY1s6snd0o1_1280.jpg"><img src="/post_images/2012/10/09/tumblr_n15uoaNSnY1s6snd0o1_1280.jpg" alt="GodBox Monitors" width="400"/></a>
 
 [1]: http://ark.intel.com/products/40200/Intel-Xeon-Processor-E5520-8M-Cache-2_26-GHz-5_86-GTs-Intel-QPI
