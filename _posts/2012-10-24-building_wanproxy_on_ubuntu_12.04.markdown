@@ -19,7 +19,9 @@ I have been looking into [WANProxy][1] for a while now, but never successfully g
     
     cd wanproxy/programs/wanproxy
     
-    make 
+    make
+
+
 *  Note -: git-core is needed to checkout code, build-essentails gives you your essential build utils, and the -dev files are needed for the build
 *- NOTE -: I have tried it on a couple VMs and they take about  5 min to build... If you are building on Physical hardware, it may be faster. Also, as a general note, if you are building with multiple processors, try add the -jX option, where x is your CPU count +1. for example, make -j5 if you have CPUs or Cores. or make -j17 if you have 16 cores... 
 
