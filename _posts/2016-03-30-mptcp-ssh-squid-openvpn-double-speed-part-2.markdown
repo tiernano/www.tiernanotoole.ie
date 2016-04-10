@@ -11,7 +11,7 @@ tags:
   - HomeLab
   - Double Internet
 ---
-[NOTE] This part 2 in a series of posts. The rest can be found [here](/tag/Double Internet.html).
+[NOTE] This part 2 in a series of posts. The rest can be found [here](/tag/Double Internet/).
 
 
 In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on recently, and performance results...
