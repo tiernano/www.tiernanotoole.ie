@@ -8,7 +8,9 @@ tags:
 - IPv6
 - Double Internet
 ---
-First, a bit of background, and then I will explain what I am currently running in Part 2...
+[NOTE] This part 1 in a series of posts. The rest can be found [here](/tag/Double Internet.html).
+
+First, a bit of background, and then I will explain what I am currently running in [Part 2][14]...
 
 For the last 15 or so years, I have had at least 2 internet connections in to the house... 2 of them have always been Cable Modems from NTL, which became UPC, and now is [Virgin Media][1]. When I started, i think the modems where 150/50kbit/s and 600/150kb/s, and have steadily increased in speed, currently at 360/36Mbit/s each... But they have always been somewhat separate, and single thread downloads have always been limited to 1 of the connections... I have been looking for ways around this for years...
 
@@ -41,3 +43,4 @@ So, where does that leave us? Well, I now have 720Mbit/s down and 72Mbit/s up, i
 [11]:http://www.mikrotik.com/software
 [12]:https://www.ubnt.com/edgemax/edgerouter-poe/
 [13]:https://www.ubnt.com/mfi/mpower/
+[14]:https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html

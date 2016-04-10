@@ -11,6 +11,9 @@ tags:
   - HomeLab
   - Double Internet
 ---
+[NOTE] This part 2 in a series of posts. The rest can be found [here](/tag/Double Internet.html).
+
+
 In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on recently, and performance results...
 So, first, what have i tried... There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.
 
