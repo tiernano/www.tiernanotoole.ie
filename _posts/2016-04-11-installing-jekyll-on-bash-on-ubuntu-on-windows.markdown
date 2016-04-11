@@ -28,11 +28,15 @@ you will still see ruby 1.9.x installed... and the github-pages gem, which inclu
     update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.0 1
     update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.0 1
 
-Now, when I run ruby -v, I am told I am on version 2.0! Happy days! Now, I have a [Gemfile][6] for the site, with a list of required gems, so running
+Now, when I run ruby -v, I am told I am on version 2.0! Happy days! Next, i installed bundler using
+
+    gem install bundler
+
+which uses a [Gemfile][6] to install the required gems, so running
 
     bundle install
 
-*should* install all required gems in my case, no luck... I tried adding ruby2.0 dev to the mix
+*should* install all required gems but no luck... I tried adding ruby2.0 dev to the mix
 
     apt-get install ruby2.0-dev
 
