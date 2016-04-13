@@ -8,7 +8,7 @@ tags:
 - IPv6
 - Double Internet
 ---
-[NOTE] This part 1 in a series of posts. The rest can be found [here](/tag/Double Internet/).
+[NOTE] This part 1 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
 
 First, a bit of background, and then I will explain what I am currently running in [Part 2][14]...
 
@@ -22,9 +22,9 @@ PfSense was installed on the same hardware, a HP ProLiant ML110 G5 with 8GB RAM,
 
 The current instalment of my network uses a [Ubiquiti Networks][5] [Edge Router POE][12]. To show the difference in power, check out the graphs from my [Ubnt MPower][13] device. ProLiant first, EdgeRouter second:
 
-![Proliant Power Usage](/post_images/2015/09/16/20150916-proliant-power-usage.PNG)
+![Proliant Power Usage](https://www.tiernanotoole.ie/post_images/2015/09/16/20150916-proliant-power-usage.PNG)
 
-![EdgeRouter POE Power Usage](/post_images/2015/09/16/20150916-edgerouter-power-usage.PNG)
+![EdgeRouter POE Power Usage](https://www.tiernanotoole.ie/post_images/2015/09/16/20150916-edgerouter-power-usage.PNG)
 
 Plus, the EdgeRouter does not produce as much heat, and its a LOT smaller that the PowerEdge! It does all the same things I could get PfSense to do, in a lot smaller package (I could, in theory, get a smaller box for PfSense).
 

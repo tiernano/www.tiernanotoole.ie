@@ -11,7 +11,7 @@ tags:
   - HomeLab
   - Double Internet
 ---
-[NOTE] This part 2 in a series of posts. The rest can be found [here](/tag/Double Internet/).
+[NOTE] This part 2 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
 
 
 In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on recently, and performance results...
@@ -74,6 +74,6 @@ Well, at the moment, all I can conclude is that there is more testing required. 
 [15]:https://johnlewis.ie/bonding-teaming-internet-connections/
 [16]:http://zehome.github.io/MLVPN/
 [17]:http://mlvpn.readthedocs.org/en/latest/linux_example.html
-[mlvpnspeedtest]:/post_images/2016/03/30/20160330-mlvpn-speed-test.PNG
-[mlvpndownloadonly]:/post_images/2016/03/30/20160330-mlvpn-speed-test-download-only.PNG
-[mlvpnuploadonly]:/post_images/2016/03/30/20160330-mlvpn-speed-test-upload-only.PNG
+[mlvpnspeedtest]:https://www.tiernanotoole.ie/post_images/2016/03/30/20160330-mlvpn-speed-test.PNG
+[mlvpndownloadonly]:https://www.tiernanotoole.ie/post_images/2016/03/30/20160330-mlvpn-speed-test-download-only.PNG
+[mlvpnuploadonly]:https://www.tiernanotoole.ie/post_images/2016/03/30/20160330-mlvpn-speed-test-upload-only.PNG

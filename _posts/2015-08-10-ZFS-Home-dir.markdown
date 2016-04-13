@@ -14,11 +14,11 @@ and then the SSD is set for caching.
 
 To create the pool i ran
 
-`zpool create home raidz sda sde sdf sdg`
+	zpool create home raidz sda sde sdf sdg
 
 then, to add the cache drive
 
-`zpool add home cache sdd`
+	zpool add home cache sdd
 
 the pool (in my case) got mounted to /home, and then i restored my backup to it. to do some tests, i can the
 following...

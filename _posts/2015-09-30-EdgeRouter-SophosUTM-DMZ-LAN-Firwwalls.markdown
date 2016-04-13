@@ -14,15 +14,15 @@ I have been using an [EdgeRouer POE][2] as my main router for most of the networ
 
 What i wanted to do was setup a proper firewall between both networks, without the use of NAT... Do do this, i first had to disable th masquerading rules in Sophos:
 
-![Masquerading Off](/post_images/2015/09/30/20150930-masquerading-off.png)
+![Masquerading Off](https://www.tiernanotoole.ie/post_images/2015/09/30/20150930-masquerading-off.png)
 
 next, on the EdgeRouter, i added a static route to point at the new network:
 
-![static route](/post_images/2015/09/30/20150930-static-route.png)
+![static route](https://www.tiernanotoole.ie/post_images/2015/09/30/20150930-static-route.png)
 
 And finally, under firewall rules, i allowed what i wanted to allow (in this case, SSH from any DMZ client (not advised) to my Mac Mini).
 
-![firewall rules](/post_images/2015/09/30/20150930-firewall-rules.png)
+![firewall rules](https://www.tiernanotoole.ie/post_images/2015/09/30/20150930-firewall-rules.png)
 
 And that, as they say, is that! So far, so good!
 
