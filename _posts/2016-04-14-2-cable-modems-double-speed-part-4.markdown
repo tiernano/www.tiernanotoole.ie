@@ -8,7 +8,7 @@ tags:
   - HowTo
   - HomeLab
   - Double Internet
-title: 2 Cable Models = Double Speed? Part 4
+title: 2 Cable Modems = Double Speed? Part 4
 date: '2016-04-14 08:55'
 ---
 
