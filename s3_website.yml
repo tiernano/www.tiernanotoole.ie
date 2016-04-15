@@ -10,12 +10,17 @@ gzip:
 - .html 
 - .css 
 - .js
+- .xml
+- .json
+- .txt
 
 max_age:
  "*.css": 86400
  "*.js": 86400
- "*.html": 1800
+ "*.html": 3600
  "*.jpg": 86400
  "*.png": 86400
  "*.PNG": 86400
  "*.gif": 86400
+ "*.xml": 1800
+ "*.txt": 7200

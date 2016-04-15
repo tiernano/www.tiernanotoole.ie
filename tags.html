@@ -2,7 +2,8 @@
 layout: default
 title: Tags
 ---
-{% for tag in site.tags %}
-<p><a href="/tag/{{ tag  | slugize }}/"> {{ tag }}</p>
+ {% for tag in site.tags %}        
+        <p><a href="/tag/{{ tag | first | slugize }}/">{{ tag | first }}</p>
+        {% unless forloop.last %}<br>{% endunless %}
 {% endfor %}
 </div>
