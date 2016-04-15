@@ -1,211 +1,41 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-    <meta content="tiernano, Tiernan OToole, technical, gadgetking, geek stuff"
-    name="keywords" />
-    <meta content=
-    "TiernanOToole.ie is the home page of Tiernan OToole, a Programmer, Geek and Photographer from Dublin, Ireland"
-    name="description" />
-    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>{{ page.title }} - Tiernan's git push blog</title><!-- Prefetch -->
-    <link href="http://partner.googleadservices.com/" rel="dns-prefetch" />
-    <link href="http://fonts.googleapis.com/" rel="dns-prefetch" />
-    <link href="http://feeds.feedburner.com/" rel="dns-prefetch" />
-    <link href="http://api.viglink.com/" rel="dns-prefetch" />
-    <link href="http://cdn.viglink.com/" rel="dns-prefetch" />
-    <base href="https://www.tiernanotoole.ie/" />
-    <link href=
-    "https://www.tiernanotoole.ie{{ page.url | replace:'index.html','' }}" rel=
-    "canonical" />
-    <link href="/style.css" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Istok+Web:400,700' rel=
-    'stylesheet' type='text/css' /><!-- verifications -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.data.theme.name }} - {{ page.title }}</title>
+  <meta name="author" content="{{ site.data.theme.name }}" />
+  <meta name="description" content="The blog of {{ site.data.theme.name }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+    <!-- verifications -->
     <!-- TradeDoubler site verification 2179170 -->
     <meta content="1955CF7038386AB823BB2A22F26C7F2F" name="msvalidate.01" />
     <!-- end verifications -->
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.data.theme.name }}" href="{{site.url}}/atom.xml" />
 
-    <script type="text/javascript">
-    //<![CDATA[
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-220614-15']);
-    _gaq.push(['_trackPageview']);
-    setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])", 15000);
-
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    //]]>
-    </script><!-- start Mixpanel -->
-    <script type="text/javascript">
-    //<![CDATA[
-    (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-    typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-    b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("89d6ea113ff9c8bb3e52308e0e2056cf");
-    //]]>
-    </script><!-- end Mixpanel -->
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header-wrapper">
-            <div id="header">
-                <div id="logo">
-                    <h1><a href="/">TiernanOToole.ie</a></h1>
-                    <p>Yup... another blog...</p>
-                </div>
-                <div id="menu">
-                    <ul>
-                        <li><a href="/">Blog Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href=
-                        "http://feeds.feedburner.com/tiernanotoole">Feed</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div><!-- end #header -->
-        <div id="page">
-            <div id="content">
-                <div class="post">
-                    {{ content }}
-                </div>
-                <div id="about">
-                    <h2>About</h2>
-                    <p>Geek, From Dublin, Ireland. What more can i say?</p>
-                    <h2>Contact Details</h2>
-                    <p>Tiernan OToole<br />
-                    Twitter: <a href=
-                    "http://twitter.com/tiernano">@tiernano</a><br />
-                    Irish Ph: +353-1-555-1245<br />
-                    UK Ph: +44-845-869-2488<br />
-                    US Ph/SMS: +1-404-806-9387<br />
-                    Skype: <a href=
-                    "skype:tiernanotoole">tiernanotoole</a><br />
-                    <a href=
-                    "http://www.tiernanotoole.ie">tiernanotoole.ie</a><br />
-                    <a href=
-                    "http://www.geekphotographer.com">geekphotographer.com</a><br />
-
-                    <a href=
-                    "http://blog.lotas-smartman.net">blog.lotas-smartman.net</a><br />
-                    </p>
-                </div>
-            </div><!-- end #content -->
-            <div id="sidebar">
-                <h2>Search</h2>
-                <ul>
-                    <li>
-                        <form action="https://www.tiernanotoole.ie/search.html"
-                        id="cse-search-box">
-                            <input name="cx" type="hidden" value=
-                            "partner-pub-6435972961836580:6113752906" />
-                            <input name="cof" type="hidden" value="FORID:10" />
-                            <input name="ie" type="hidden" value="UTF-8" />
-                            <input name="q" size="35" type="text" />
-                            <input name="sa" type="submit" value="Search" />
-                        </form>
-                        <script src=
-                        "https://www.google.ie/coop/cse/brand?form=cse-search-box&amp;lang=en"
-                        type="text/javascript">
-                        </script>
-                    </li>
-                </ul>
-                <h2>Other Links</h2>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/archive.html">Archive</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/DailyCarry/">Daily Carry</a></li>
-                    <li><a href=
-                    "https://github.com/tiernano/www.tiernanotoole.ie/">Fork
-                    this site on GitHub</a></li>
-                    <li><a href=
-                    "https://secure.backblaze.com/r/01px2w">Backblaze: Get 1
-                    Month Free!</a> (promo code)</li>
-                    <li><a href="https://m.do.co/c/d4d345b83b55">Digital Ocean:
-                    Get $10 free credit!</a> (promo code)</li>
-                    <li><a href=
-                    "http://photos.geekphotographer.com">Photos</a></li>
-                    <li><a href="http://blog.lotas-smartman.net">Other
-                    Blog</a></li>
-                    <li><a href="http://miniblog.tiernanotoole.ie">Micro
-                    Blog</a></li>
-                    <li><a href="http://twitter.com/tiernano">Follow me on
-                    Twitter</a></li>
-                    <li><a href="https://github.com/tiernano/">My GitHub
-                    Page</a></li>
-                </ul>
-                <h2>Paying the bills...</h2>
-                <ul>
-                    <li>
-                        <!-- sidebar -->
-                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <!-- tiernanotoole_ie_sidebar -->
-                        <ins class="adsbygoogle"
-                             style="display:block"
-                             data-ad-client="ca-pub-6435972961836580"
-                             data-ad-slot="2480192807"
-                             data-ad-format="auto"></ins>
-                        <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                    </li>
-                </ul>
-                <h2>Interesting tags</h2>
-                <ul>
-                    <li><a href="/tag/VoIP/">VoIP stuff</a></li>
-                    <li><a href="/tag/Projects/">Projects</a></li>
-                    <li><a href="/tag/Programming/">Programming</a></li>
-                    <li><a href="/tag/Media%20Center/">Media Center</a></li>
-                    <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi
-                    Stuff</a></li>
-                    <li><a href="/tag/Networking/">Networking</a></li>
-                    <li><a href="/tag/IPv6/">IPv6</a></li>
-                    <li><a href="/tag/Announcement/">Announcements</a></li>
-                    <li><a href="/tag/Development">Development</a></li>
-                </ul>
-                <h2>My Home network</h2>
-                <ul>
-                    <li><a href="/Computers/godbox.html">Godbox</a></li>
-                    <li><a href="/Computers/GodBoxV2.html">GodBoxV2</a></li>
-                    <li><a href="/Computers/router.html">Router</a></li>
-                    <li><a href="/Computers/proliantml110.html">ProLiant
-                    ML110G5</a></li>
-                </ul>
-            </div><!-- end #sidebar -->
-            <div style="clear: both;">
-                &nbsp;
-            </div>
-        </div><!-- end #page -->
+  <div class="container">
+    <div class="four columns sidebar">
+      {% include sidebar.html %}
     </div>
-    <div id="footer">
-        <p>Copyright (c) 2016 <a href="http://www.tiernanotoole.ie">Tiernan
-        OToole</a>. {% render_time Page generated at: %}. Page Edited on
-        {{page.git.last_commit.commit_date}} by
-        {{page.git.last_commit.commit_name}} with hash
-        {{page.git.last_commit.short_sha}}</p>
-    </div><!-- end #footer -->
-    <script type="text/javascript">
-    //<![CDATA[
-    var vglnk = { api_url: '//api.viglink.com/api',
-                key: 'aecb90add8b6f7192e42ddfa3e65b611' };
 
-    (function(d, t) {
-    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
-    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
-             '//cdn.viglink.com/api') + '/vglnk.js';
-    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
-    }(document, 'script'));
-    //]]>
-    </script>
-    <script type="text/javascript">
-    //<![CDATA[
-    mixpanel.track("Page View");
-    //]]>
-    </script>
-    <script async="async" id="dsq-count-scr" src=
-    "//tiernanotooleie.disqus.com/count.js">
-    </script>
+    <div class="eleven columns content">
+      {{ content }}
+
+      <div class="footer">
+        {% include footer.html %}
+      </div>
+    </div>
+  </div>
+
+{% include analytics.html %}
 </body>
 </html>

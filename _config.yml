@@ -1,3 +1,7 @@
+highlighter: pygments
+url: http://example.com
+lsi: false
+
 paginate_path: "/page:num/"
 paginate: 5
 

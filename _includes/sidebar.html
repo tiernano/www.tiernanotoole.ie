@@ -1,0 +1,72 @@
+<nav>
+  <h1>Hi.</h1>
+  <a href="/">
+    {% if site.data.theme.social.gravatar %}
+    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    {% else %}
+    <img src="/logo.png" id="logo" alt="Blog logo"/>
+    {% endif %}
+  </a>
+  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <div id="bio">
+    <p>A brief bio or something witty.</p>
+    <p>
+      <li><a href="/">Home</a></li>
+      <li><a href="/archive.html">Archive</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/DailyCarry/">Daily Carry</a></li>
+      <li><a href=
+      "https://github.com/tiernano/www.tiernanotoole.ie/">Fork
+      this site on GitHub</a></li>
+      <li><a href=
+      "https://secure.backblaze.com/r/01px2w">Backblaze: Get 1
+      Month Free!</a> (promo code)</li>
+      <li><a href="https://m.do.co/c/d4d345b83b55">Digital Ocean:
+      Get $10 free credit!</a> (promo code)</li>
+      <li><a href=
+      "http://photos.geekphotographer.com">Photos</a></li>
+      <li><a href="http://blog.lotas-smartman.net">Other
+      Blog</a></li>
+      <li><a href="http://miniblog.tiernanotoole.ie">Micro
+      Blog</a></li>
+      
+      <!-- sidebar -->
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- tiernanotoole_ie_sidebar -->
+      <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6435972961836580"
+            data-ad-slot="2480192807"
+            data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+        <h2>Interesting tags</h2>
+      <ul>
+          <li><a href="/tag/VoIP/">VoIP stuff</a></li>
+          <li><a href="/tag/Projects/">Projects</a></li>
+          <li><a href="/tag/Programming/">Programming</a></li>
+          <li><a href="/tag/Media%20Center/">Media Center</a></li>
+          <li><a href="/tag/Raspberry%20Pi/">Raspberry Pi
+          Stuff</a></li>
+          <li><a href="/tag/Networking/">Networking</a></li>
+          <li><a href="/tag/IPv6/">IPv6</a></li>
+          <li><a href="/tag/Announcement/">Announcements</a></li>
+          <li><a href="/tag/Development">Development</a></li>
+      </ul>
+      <h2>My Home network</h2>
+      <ul>
+          <li><a href="/Computers/godbox.html">Godbox</a></li>
+          <li><a href="/Computers/GodBoxV2.html">GodBoxV2</a></li>
+          <li><a href="/Computers/router.html">Router</a></li>
+          <li><a href="/Computers/proliantml110.html">ProLiant
+          ML110G5</a></li>
+      </ul>      
+                        
+    </p>
+    
+  </div>
+  <div id="social">
+    {% include social.html %}
+  </div>
+</nav>
