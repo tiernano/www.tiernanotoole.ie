@@ -1,28 +1,29 @@
 ---
 layout: page
 title: Daily Carry
-sitemap: 
+sitemap:
   priority: 0.7
   changefreq: monthly
-  lastmod: 2015-05-20 09:25:00
+  lastmod: 2016-04-20 21:25:00
 published: true
 ---
 
-A couple of years back, i did a post about my [Daily Carry for college][1]... Well, I have finished (ish) college, but i still cary a lot of weird and wonderful stuff... So, this is the update... 
+A couple of years back, I did a post about my [Daily Carry for college][1]... Well, I have finished (ish) college, but i still cary a lot of weird and wonderful stuff... So, this is the update...
 
-So, the contents are as folows:
+So, the contents are as follows:
 
 <a href="https://www.flickr.com/photos/lsmartman/16317125424/"><img src="/DailyCarry/16317125424_a03f9ec346_m.jpg" /></a>
 
+* Microsoft [SurfaceBook][14] with an i7 processor, 16GB RAM and 512GB Storage, along with the dGPU. Going to replace the M3800 in the next few weeks, but got stuff i need the M3800 for, so need to keep it a while longer... Man, the SurfaceBook rocks!
 * Dell [Precision M3800 Workstation][2] Laptop with Quad Core i7, 16GB RAM, 500GB MSATA SSD and 500Gb spinning rust hard drive. Also has 1920x1080 display, NVidia Quadro K1100M graphics and touch screen
-* [Samsung Galaxy Note 3][3] 
+* [Samsung Galaxy Note 3][3]
 * [Beats by Dr. Dre Wireless on ear headphones][4]. Bluetooth and wired
 * [TP-Link TL-WR703N][5] modified with extra RAM and ROM. I will explain this later...
 * [TP-Link MR3040][6] currently used with the modem (see below) but to be replaced with the WR703N eventually...
 * [Huawei E3272 LTE Modem][7] for broadband. Connected into either of the routers (above) or directly to the laptop.
-* [Anker 3 Port USB 3.0 HUB with 10/100/1000mb Ethernet][8] Probably the coolest thing i have ever found! a 3 port USB 3 hub with a Gigabit ethernet port included! There is one that came with the M3800, but its USB2 only (so, not fully gigabit) and takes up a USB port and gives nothing back...
-* [Anker 3nd Gen Astro E4 13000mAh 2 Port External Battery][9]. Handy little charger, since most of my devices run off USB. And it gives out a fair wack of power too!
-* [Linx 8 Inch Windows 8.1 Tablet][12] with Intel Quad core Atom (Z3735G) 1Gb RAM, 32Gb storage, Wifi, Bluetooth and a 32Gb MicroSD card. Great little device, and handy when the M3800 is too big to use...
+* [Anker 3 Port USB 3.0 HUB with 10/100/1000mb Ethernet][8] Probably the coolest thing i have ever found! a 3 port USB 3 hub with a Gigabit Ethernet port included! There is one that came with the M3800, but its USB2 only (so, not fully gigabit) and takes up a USB port and gives nothing back...
+* [Anker 3nd Gen Astro E4 13000mAh 2 Port External Battery][9]. Handy little charger, since most of my devices run off USB. And it gives out a fair whack of power too!
+* [Linx 8 Inch Windows 8.1 Tablet][12] with Intel Quad core Atom (Z3735G) 1Gb RAM, 32Gb storage, Wi-Fi, Bluetooth and a 32Gb MicroSD card. Great little device, and handy when the M3800 is too big to use...
 * [Microsoft Wedge Keyboard][10] and [Microsoft Bluetooth Notebook Mouse 5000][11] both connected to the Linx Tablet to have a full setup when required.
 * [Apple iPhone 6 Plus][13] (Not pictured). This was used to take this photo.
 
@@ -44,3 +45,4 @@ Some more photos below:
 [11]: http://www.amazon.co.uk/gp/product/B000TSIAQO/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B000TSIAQO&linkCode=as2&tag=tiescomclo-21&linkId=R22PEM7OOE5DY3XI
 [12]: http://www.amazon.co.uk/gp/product/B00O636WGI/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00O636WGI&linkCode=as2&tag=tiescomclo-21&linkId=SFIGWBHIXISO6B53
 [13]: http://store.apple.com/us/buy-iphone/iphone6
+[14]:https://www.microsoft.com/surface/en-gb/devices/surface-book
