@@ -1,0 +1,12 @@
+---
+layout: post
+title: Useful Web and Desktop Apps 2016 edition
+---
+<ul>
+{% for tool in site.data.toolslist %}
+  <li>
+    <a href="{{ tool.link }}">{{ tool.toolname }}</a>: {{ tool.description }}<br>
+    Platform: {{ tool.platforms }}
+  </li>
+{% endfor %}
+</ul>

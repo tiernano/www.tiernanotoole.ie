@@ -1,0 +1,28 @@
+- toolname: Term Bin
+  link: http://termbin.com/
+  description: Pastebin for your termianl. Handy when you cant copy or paste
+  platforms: Windows, Linux, Mac
+- toolname: Station 307
+  link: https://www.station307.com/
+  description: Send and receive files directly, with ease, including from the command line
+  platforms: Windows, Linux, Mac, Web
+- toolname: Atom
+  link: https://atom.io/
+  description: A hackable text editor for the 21st Century. My new "Go To" editor
+  platforms: Windows, Linux, Mac
+- toolname: Visual Studio
+  link: https://www.visualstudio.com/
+  description: Its Visual Studio, what more can i say? Mind you, Code, is now a cut down edtion for other platforms too
+  platforms: Windows (Full Visual Studio, and code), Mac and Linux (Code only)
+- toolname: CaastMe
+  link: http://caast.me/
+  description: ever surfing a page on your android phone and want to view it on a bigger screen? with CaastMe installed, just to the site on your desktop, and share the link using cast me on your phone. Scan the QR code, and all is done. Wish it was available for iOS!
+  platforms: Web, android
+- toolname: GitHub Desktop
+  link: https://desktop.github.com/
+  description: a very nice GUI for managing git projects, not just limited to GitHub.
+  platforms: Windows, OSX
+- toolname: BitTorrent Sync
+  link: https://www.getsync.com/
+  description: BitTorrent Sync, from the creators of BitTorrent, is a very handy (and fast) way of syncing data between machines, phones, tablets, and pretty much anything else!
+  platforms: Windows (phone and desktop), Linux, OSX, Android, iOS, and a load of NAS devices too
