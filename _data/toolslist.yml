@@ -26,3 +26,6 @@
   link: https://www.getsync.com/
   description: BitTorrent Sync, from the creators of BitTorrent, is a very handy (and fast) way of syncing data between machines, phones, tablets, and pretty much anything else!
   platforms: Windows (phone and desktop), Linux, OSX, Android, iOS, and a load of NAS devices too
+- toolname: Base on Ubuntu on Windows
+  link: https://blogs.msdn.microsoft.com/commandline/2016/04/06/bash-on-ubuntu-on-windows-download-now-3/
+  description: yes, its a mouthful of a name, but Bash on Ubuntu on Windows allows you to run a lot of Linux command line tools on Windows. It uses the [Windows Subsystem for Linux](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux), and makes Windows even handier for Development. It also allows you to run [Jekyll on Windows](https://www.tiernanotoole.ie/2016/04/11/installing-jekyll-on-bash-on-ubuntu-on-windows.html) which is how i test this blog.
