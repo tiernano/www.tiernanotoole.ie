@@ -17,64 +17,64 @@
   sidebar: false
   inuse: false
   decommissioned: false
-  url: /Comptuers/ibmsrv2.html
+  url: /Computers/ibmsrv2.html
 - name: Mac Book Pro
   sidebar: false
   inuse: false
   decommissioned: false
-  url: /Comptuers/MacBookPro.html
+  url: /Computers/MacBookPro.html
 - name: Mac Mini
   sidebar: true
   inuse: true
   decommissioned: false
-  url: /Comptuers/macmini.html
+  url: /Computers/macmini.html
 - name: Mac Pro
   sidebar: false
   inuse: true
   decommissioned: false
-  url: /Comptuers/macpro.html
+  url: /Computers/macpro.html
 - name: Thecus NAS
   sidebar: false
   inuse: false
   decommissioned: false
-  url: /Comptuers/nas.html
+  url: /Computers/nas.html
 - name: Opteron
   sidebar: false
   inuse: false
   decommissioned: true
-  url: /Comptuers/opteron.html
+  url: /Computers/opteron.html
 - name: Dell Poweredge 1600SC
   sidebar: false
   inuse: false
   decommissioned: true
-  url: /Comptuers/PE1600SC.html
+  url: /Computers/PE1600SC.html
 - name: Dell Poweredge 2900
   sidebar: false
   inuse: false
   decommissioned: true
-  url: /Comptuers/PE2900.html
+  url: /Computers/PE2900.html
 - name: Dell Poweredge 2950
   sidebar: false
   inuse: false
   decommissioned: true
-  url: /Comptuers/PE2950.html
+  url: /Computers/PE2950.html
 - name: HP Proliant ML110 G5
   sidebar: true
   inuse: true
   decommissioned: false
-  url: /Comptuers/proliantml110.html
+  url: /Computers/proliantml110.html
 - name: Router
   sidebar: true
   inuse: true
   decommissioned: false
-  url: /Comptuers/router.html
+  url: /Computers/router.html
 - name: Sun Fire x4200
   sidebar: false
   inuse: false
   decommissioned: false
-  url: /Comptuers/sun.html
+  url: /Computers/sun.html
 - name: TV Server
   sidebar: false
   inuse: false
   decommissioned: false
-  url: /Comptuers/tvserver.html
+  url: /Computers/tvserver.html
