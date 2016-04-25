@@ -29,3 +29,12 @@
 - toolname: Base on Ubuntu on Windows
   link: https://blogs.msdn.microsoft.com/commandline/2016/04/06/bash-on-ubuntu-on-windows-download-now-3/
   description: yes, its a mouthful of a name, but Bash on Ubuntu on Windows allows you to run a lot of Linux command line tools on Windows. It uses the [Windows Subsystem for Linux](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux), and makes Windows even handier for Development. It also allows you to run [Jekyll on Windows](https://www.tiernanotoole.ie/2016/04/11/installing-jekyll-on-bash-on-ubuntu-on-windows.html) which is how i test this blog.
+  platforms: Windows 10 (as of April 2016, only in Windows Insider versions)
+- toolname: GitHub
+  link: https://www.github.com
+  description: GitHub is how people build software. With a community of more than 14 million people, developers can discover, use, and contribute to over 35 million projects using a powerful collaborative development workflow.
+  platforms: Windows, Linux, OSX, Web, anything that has GIT
+- toolname: GitLab
+  link: https://about.gitlab.com/
+  description: another git web service. Can be hosted in house
+  platforms: Windows, Linux, OSX, Web, anything that has GIT
