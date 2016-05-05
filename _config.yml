@@ -5,8 +5,10 @@ lsi: false
 paginate_path: "/page:num/"
 paginate: 5
 
-gems: 
+gems:
   -  jekyll-paginate
-  
+
 prose:
   rooturl: '_posts'
+
+description: "homepage of Tiernan OToole, Geek, photographer, GeekPhotographer, and lazy git."
