@@ -1,6 +1,6 @@
 ---
 layout: post
-tags:
+tags: 
   - Guide
   - Networking
   - IPv6
@@ -8,8 +8,9 @@ tags:
   - HowTo
   - HomeLab
   - Double Internet
-title: 2 Cable Modems = Double Speed? Part 4
-date: '2016-04-14 08:55'
+title: "2 Cable Modems = Double Speed? Part 4"
+date: "2016-04-14 08:55"
+published: true
 ---
 
 [NOTE] This part 4 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
@@ -21,8 +22,8 @@ So, the basic theory is as follows:
 
 * I am still using MPTCP kernels on both upstream and local machine
 * now have 2 P2P UDP [OpenVPN][2] tunnels between house and cloud. Example config is [here][1]
-* all TCP traffic (bar port 80) that hits the router in house is redirected to [redsocks][3]
-* redsocks uses a socks server, [Dante][4], as an upstream server on the cloud box
+* all TCP traffic (bar port 80) that hits the router in house is redirected to [RedSocks][3]
+* RedSocks uses a socks server, [Dante][4], as an upstream server on the cloud box
 * since the socks traffic is over TCP (inside the UDP OpenVPN tunnel) it uses MPTCP
 * having socks running, gives me quite the download speed, turning it off does not, hence the following tweet
 
@@ -35,7 +36,8 @@ So, the basic theory is as follows:
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/AsXKS8Nyu8Q" frameborder="0" allowfullscreen></iframe>
 
-The cunning plan? Well, if I am reading the internet correctly, and I would like to think I am, I *think* [ECMP][5], or Equal Cost Multi-Path Routing, could help... Again, its a fledgling idea currently, and I am still reading the documentation, but if it works... Well... I not sure... lets see...
+The cunning plan? Well, if I am reading the internet correctly, and I would like to think I am, I *think* [ECMP][5], or Equal Cost Multi-Path Routing, could help... Again, it’s a fledgling idea currently, and I am still reading the documentation, but if it works... Well... I not sure... let’s see...
+
 
 [1]:https://gist.github.com/tiernano/09c6928d1d8f6752ea84fd895451bbe5
 [2]:http://www.openvpn.net
