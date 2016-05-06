@@ -38,3 +38,7 @@
   link: https://about.gitlab.com/
   description: another git web service. Can be hosted in house
   platforms: Windows, Linux, OSX, Web, anything that has GIT
+- toolname: C9
+  link: http://www.c9.io
+  description: C9 is a cloud based IDE. Very handy for updating code when you have no full environment, or are using a remote machine.
+  platforms: Web 
