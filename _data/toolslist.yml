@@ -42,3 +42,7 @@
   link: http://www.c9.io
   description: C9 is a cloud based IDE. Very handy for updating code when you have no full environment, or are using a remote machine.
   platforms: Web 
+- toolname: Diskovery
+  link: https://diskovery.io/beta
+  description: Diskovery collects and displays the details of data storage facilities of the computer, including its physical drives, disk arrays, partitions, volumes and mount points. 
+  platforms: Windows
