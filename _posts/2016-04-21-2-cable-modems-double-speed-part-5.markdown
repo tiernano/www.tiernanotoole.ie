@@ -13,7 +13,7 @@ date: "2016-04-21 21:33"
 published: true
 ---
 
-[NOTE] This part 4 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
+[NOTE] This part 5 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
 
 This post is going to be an update and theoretical post. probably very little "new" stuff going on here, mostly updates, and what I am planning on doing later on.
 
