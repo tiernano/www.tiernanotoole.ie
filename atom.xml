@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
 	<title>TiernanOToole</title>
-	<link href="https://www.tiernanotoole.ie/atom.xml" rel="self"/>
+	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>https://www.tiernanotoole.ie/</id>
