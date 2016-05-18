@@ -22,7 +22,30 @@
 
 <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
 <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
+<!-- twitter card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@tiernano">
+<meta name="twitter:creator" content="@tiernano">
+{% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+{% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.image %}
+  <meta name="twitter:image:src" content="{{ site.url }}/path/to/image/{{ page.image }}">
+{% else %}
+  <meta name="twitter:image:src" content="https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg">
+{% endif %}
 
+<!-- end twitter card -->
 </head>
 <body>
   <div class="container">
