@@ -4,7 +4,7 @@ title: ProLiant ML110
 sitemap:
     priority: 0.7
     changefreq: 'weekly'
-    lastmod: 2016-03-24T14:43:00
+    lastmod: 2016-05-18T14:43:00
 ---
 HP ProLiant ML110G5 running Ubuntu of some sort.... This machine has a [Core2Quad Q6600][1], 8Gb RAM and some storage...
 It also has 12 Gigabit network ports:
