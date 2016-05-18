@@ -46,6 +46,30 @@
 {% endif %}
 
 <!-- end twitter card -->
+
+<!-- facebook graph https://developers.facebook.com/docs/sharing/webmasters#markup-->
+
+{% if page.url %}
+  <meta name="og:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+<meta property="og:type" content="article" />
+{% if page.title %}
+  <meta name="og:title" content="{{ page.title }}">
+{% else %}
+  <meta name="og:title" content="{{ site.title }}">
+{% endif %}
+{% if page.description %}
+  <meta name="og:description" content="{{ page.description }}">
+{% else %}
+  <meta name="og:description" content="{{ site.description }}">
+{% endif %}
+{% if page.image %}
+  <meta name="og:image" content="{{ site.url }}/images/{{ page.image }}">
+{% else %}
+  <meta name="og:image" content="https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg">
+{% endif %}
+
+<!-- end facebook graph -->
 </head>
 <body>
   <div class="container">
