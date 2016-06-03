@@ -7,8 +7,27 @@ paginate: 5
 
 gems:
   -  jekyll-paginate
+  -  jekyll-seo-tag
 
 prose:
   rooturl: '_posts'
 
 description: "homepage of Tiernan OToole, Geek, photographer, GeekPhotographer, and lazy git."
+
+twitter:
+  username: tiernano
+
+social:
+  name: Tiernan OToole
+  links:
+    https://twitter.com/tiernano
+    
+
+logo: https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg
+
+seo:
+  name: Tiernan OToole's Blog
+  type: BlogPosting
+
+author:
+  twitter: tiernano
