@@ -23,6 +23,8 @@ At the end of my [last post][1] I asked the question about routing traffic to di
 
 So, there you have it. Everything currently seems to be working, mostly, and tweaks can be made easily... I have a couple posts i have in my head, including something to do with automating bringing up new machines (probably with [Ansible][13] or something like it), more monitoring, and some other stuff too... Any questions, leave a comment, and i will get back.
 
+[UPDATE] I wrote a quick and dirty app called [WhoIsToZebraConfig][14] which takes an AS Number, looks up the info in the [Merit RADb][16] (with the help of some code from [Coder Buddy][15]) and outputs what you need to put into your Zebra Config... should save me some time, and it might save you time too...  shout if you have questions!
+
 [1]:https://www.tiernanotoole.ie/2016/05/31/double-speed-internet-part-7-ecmp-kind-of.html
 [2]:https://www.hetzner.de/en/hosting/produktmatrix/storagebox-produktmatrix
 [3]:https://labs.spotify.com/2016/01/26/sdn-internet-router-part-1/
@@ -36,3 +38,6 @@ So, there you have it. Everything currently seems to be working, mostly, and twe
 [11]:http://www.spotify.com
 [12]:http://www.nongnu.org/quagga/
 [13]:https://www.ansible.com/
+[14]:https://github.com/tiernano/whoistozebraconfig
+[15]:https://coderbuddy.wordpress.com/2010/10/12/a-simple-c-class-to-get-whois-information/
+[16]:http://www.radb.net/
