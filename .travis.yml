@@ -7,4 +7,7 @@ script:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-after_success: bundle exec s3_website push
+after_success: 
+  - bundle exec s3_website push
+  - bundle exec curl -X DELETE "https://api.cloudflare.com/client/v4/zones/<%= ENV['CF_ZONE'] %>/purge_cache"  -H "X-Auth-Email: <%= ENV['CF_EMAIL'] %>"  -H "X-Auth-Key: <%= ENV['CF_AUTH'] %>"  -H "Content-Type: application/json"  --data '{"files":["https://www.tiernanotoole.ie/", "https://www.tiernanotoole.ie/atom.xml","https://www.tiernanotoole.ie/sitemap.xml", "https://www.tiernanotoole.ie/ToolsList/"]}'
+
