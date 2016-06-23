@@ -26,5 +26,5 @@ i have exported all mine, added them to git and done some testing... All seems t
 
 [1]:http://tiernanotoole.ie/2015/05/07/git-push-dns.html
 [3]:https://github.com/barnybug/cli53
-[2]:http://aws.amazonc.com/route53
+[2]:http://aws.amazon.com/route53
 [4]:https://netguru.co/blog/ci-your-dns-setup

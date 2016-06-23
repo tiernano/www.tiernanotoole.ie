@@ -21,4 +21,4 @@ to do this at the command prompt:
 this will block any traffic, other than the IPs in the expressVPN address list, for the machine 192.168.0.123.
 
 [1]:http://tiernanotoole.ie/2012/10/11/routeros_blocking_machine_access.html
-[2]:http://doofer.me/R2TR0V
+[2]:www.expressvpn.com/?referrer_email=tiernan@tiernanotoole.ie/
