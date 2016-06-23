@@ -56,7 +56,7 @@ And thats all folks! Any questions, leave them in the comments!
 
 [1]: https://hubic.com/home/new/?referral=GMSQVQ
 [2]: https://launchpad.net/~duplicity-team/+archive/ubuntu/ppa
-[3]: http://tiernanotoole.ie/2015/04/01/HubiC_SWIFT_CURL.html
+[3]: https://www.tiernanotoole.ie/2015/03/31/HubiC_SWIFT_CURL.html
 [4]: http://duplicity.nongnu.org/
 [5]: http://blog.lotas-smartman.net
 [6]: http://www.geekphotographer.com

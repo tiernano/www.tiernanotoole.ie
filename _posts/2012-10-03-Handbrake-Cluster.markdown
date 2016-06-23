@@ -19,11 +19,11 @@ I have run this at home on a couple of different machines, and so far so good...
 
 The next thing i managed to do was tweak my import process for iTunes. I am using a program called [iHomeServer for iTunes][6] which is running on the [GodBox][7]. It monitors a folder, which is where [HandBrake Cluster][2] is writing to, and adds them to iTunes. I can then tweak the metadata using the tool, so i can add art work, tell it which shows are related, and it sets up Art work, title info, etc. It is very handy, and something i am very happy with. 
 
-[1]:http://tiernanotoole.ie/2012/09/28/Powershell-HandBrake-AppleTV-iTunes.html
+[1]:https://www.tiernanotoole.ie/2012/09/28/Powershell-HandBrake-AppleTV-iTunes.html
 [2]:https://github.com/tiernano/HandbrakeCluster
 [3]:http://www.microsoft.com/en-us/download/details.aspx?id=30653
 [4]:http://msdn.microsoft.com/en-us/library/aa967729.aspx
 [5]:http://handbrake.fr/
 [6]:http://www.bizmodeller.com/iHomeServer_for_iTunes.aspx
-[7]:http://tiernanotoole.ie/godbox.html
+[7]:https://www.tiernanotoole.ie/Computers/godbox.html
 [8]:http://handbrakecluster.codeplex.com

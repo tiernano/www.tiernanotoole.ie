@@ -30,5 +30,5 @@ with the spare processor, i can then add other (small) VMs to this machine.
 
 
 [1]:http://ark.intel.com/products/29765/Intel-Core2-Quad-Processor-Q6600-8M-Cache-2_40-GHz-1066-MHz-FSB?q=Q6600
-[2]:http://www.pfsensr.org
+[2]:http://www.pfsense.org
 [3]:https://www.vmware.com/products/vsphere-hypervisor

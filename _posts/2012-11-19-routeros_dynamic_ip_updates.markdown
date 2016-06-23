@@ -18,6 +18,6 @@ And while we are on the topic of Scripting RouterOS, checkout the [Mikrotik Scri
 [3]:http://routerboard.com/RB1100
 [4]:http://www.dyndns.org
 [5]:http://no-ip.com
-[6]:http://aws.amazon.com/router53
+[6]:http://aws.amazon.com/route53
 [7]:http://wiki.mikrotik.com/wiki/Dynamic_DNS_Update_Script_for_No-IP_DNS
 [8]:http://wiki.mikrotik.com/wiki/Scripts

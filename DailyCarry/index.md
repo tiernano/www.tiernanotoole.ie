@@ -12,7 +12,7 @@ A couple of years back, I did a post about my [Daily Carry for college][1]... We
 
 So, the contents are as follows:
 
-<a href="https://www.flickr.com/photos/lsmartman/16317125424/"><img src="/DailyCarry/16317125424_a03f9ec346_m.jpg" /></a>
+<a href="https://www.flickr.com/photos/lsmartman/16317125424/"><img src="/DailyCarry/16317125424_a03f9ec346_m.jpg" alt="laptop and other gadgets"/></a>
 
 * Microsoft [SurfaceBook][14] with an i7 processor, 16GB RAM and 512GB Storage, along with the dGPU. Going to replace the M3800 in the next few weeks, but got stuff i need the M3800 for, so need to keep it a while longer... Man, the SurfaceBook rocks!
 * Dell [Precision M3800 Workstation][2] Laptop with Quad Core i7, 16GB RAM, 500GB MSATA SSD and 500Gb spinning rust hard drive. Also has 1920x1080 display, NVidia Quadro K1100M graphics and touch screen
@@ -29,8 +29,8 @@ So, the contents are as follows:
 
 Some more photos below:
 
-<a href="https://www.flickr.com/photos/lsmartman/16938202692/in/photostream/"><img src="/DailyCarry/16752079580_ddd568fd5e_m.jpg" /></a>
-<a href="https://www.flickr.com/photos/lsmartman/16752079580/in/photostream/"><img src="/DailyCarry/16938202692_3eeeab8e05_m.jpg" /></a>
+<a href="https://www.flickr.com/photos/lsmartman/16938202692/in/photostream/"><img src="/DailyCarry/16752079580_ddd568fd5e_m.jpg" alt="windows tablet and note 3"/></a>
+<a href="https://www.flickr.com/photos/lsmartman/16752079580/in/photostream/"><img src="/DailyCarry/16938202692_3eeeab8e05_m.jpg" alt="laptop and more gadgets"/></a>
 
 [1]: http://tiernanotoole.ie/2013/01/27/college_bag_contents.html
 [2]: http://www.dell.com/ie/business/p/precision-m3800-workstation/pd

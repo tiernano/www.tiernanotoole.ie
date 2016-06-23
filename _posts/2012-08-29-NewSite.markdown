@@ -20,5 +20,5 @@ So, this site is brought to you by [GIT][1], [Jekyll][3] and Magic... here is ho
 [2]:http://blog.zerosum.org/2010/11/01/pure-git-deploy-workflow.html
 [3]:https://github.com/mojombo/jekyll
 [4]:http://ubuntu.com
-[5]:https://github.com/tiernano/tiernanotoole.ie
+[5]:https://github.com/tiernano/www.tiernanotoole.ie
 [6]:http://sitaramc.github.com/gitolite/master-toc.html

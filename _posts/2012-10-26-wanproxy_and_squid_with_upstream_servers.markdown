@@ -20,5 +20,5 @@ So far, so good... I am also thinking this could be an interesting thing to get 
 
 [1]:http://tiernanotoole.ie/2012/10/24/building_wanproxy_on_ubuntu_12.04.html
 [2]:http://www.wanproxy.org
-[3]:http://www.squod-cache.org
+[3]:http://www.squid-cache.org
 [4]:http://www.raspberrypi.org
