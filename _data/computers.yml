@@ -1,4 +1,4 @@
-- name: GodBox
+- name: GodBox V1
   sidebar: true
   decommissioned: false
   inuse: true
@@ -78,3 +78,8 @@
   inuse: false
   decommissioned: false
   url: /Computers/tvserver.html
+- name: Surface Book
+  sidebar: true
+  inuse: true
+  decommissioned: false
+  url: /Computers/surfacebook.html
