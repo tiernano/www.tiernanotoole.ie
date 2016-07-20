@@ -13,11 +13,11 @@ date: "2016-06-08 08:00"
 published: true
 ---
 
-[NOTE] This part 8 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
+[NOTE] This part 8 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double%20Internet/).
 
 At the end of my [last post][1] I asked the question about routing traffic to different servers based on thier distances, etc... Well, after a bit of messing, i can say it kind of works! here is a quick over view:
 
-* server in the house has now got multiple OpenVPN connections (2 to [Hetzner][5], 1 to [OVH][6] (with a plan to double), 1 to [Digital Ocean][7] (again, to be doubled) and i am planning 2 to [Azure][8] as well). 
+* server in the house has now got multiple OpenVPN connections (2 to [Hetzner][5], 1 to [OVH][6] (with a plan to double), 1 to [Digital Ocean][7] (again, to be doubled) and i am planning 2 to [Azure][8] as well).
 * [Quagga/Zebra][12] has static routes (currently static, planing on dynamic soon... more eventually) to different servers depending on where they are. for example, all traffic to the hetzner network (including their [Storage Boxes][2]) go though the hetzner link. [Hubic][9] traffic goes though OVH, Azure (currently) and AWS traffic, aswell as some CDNs go direct over either WAN1 or WAN2 in the house, and some other stuff ([CrashPlan][10] currently) goes though Digital Ocean. Everything that has no static route goes though Hetzner...
 * Ideally, the static side of things should be removed, and a more dynamic setup done. How that works, i have no idea... [Spotify][11] have 2 posts about their SDN Internet Router ([part 1][3] and [part 2][4]) which is an interesting idea... More digging and research is required.
 

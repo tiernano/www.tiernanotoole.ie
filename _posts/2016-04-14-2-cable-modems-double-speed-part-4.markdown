@@ -13,7 +13,7 @@ date: "2016-04-14 08:55"
 published: true
 ---
 
-[NOTE] This part 4 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
+[NOTE] This part 4 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double%Internet/).
 
 So, this week I went in a completely different direction that I have been thinking recently...
 
@@ -30,11 +30,11 @@ So, the basic theory is as follows:
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hmmmm... If I have socks on, the Internet is fast 400mb/s+). But without socks, it&#39;s down to 60... Feck...</p>&mdash; Tiernan (@tiernano) <a href="https://twitter.com/tiernano/status/720186883905626112">April 13, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-* I am also noticing that I am starting to hit the limits of my upstream VM. If downloading or uploading at speed, the processor cores (2 in the case of the box I am currently running) is pegged at pretty much 100% full... Well, 80ish, but that because the other 20% is being used by Dante. I am noticing I can hit a full 72Mbit/s up, but the max currently downloading is about 400, maybe 450... Need a faster box now...
+* I am also noticing that I am starting to hit the limits of my upstream VM. If downloading or uploading at speed, the processor cores (2 in the case of the box I am currently running) are pegged at pretty much 100% full... Well, 80ish, but that because the other 20% is being used by Dante. I am noticing I can hit a full 72Mbit/s up, but the max currently downloading is about 400, maybe 450... Need a faster box now...
 * I mentioned port 80 not being set over socks. That's because its redirected to Squid. Squid (in house) then uses Squid (in cloud) as a parent. There are 2 round-robin parents for squid, one on each OpenVPN connection IP address.
 * all other traffic (UDP, ICMP, etc.) are sent over the OpenVPN connection... currently only one is picked, but I have a cunning plan...
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/AsXKS8Nyu8Q" frameborder="0" allowfullscreen></iframe>
+{% youtube AsXKS8Nyu8Q %}
 
 The cunning plan? Well, if I am reading the internet correctly, and I would like to think I am, I *think* [ECMP][5], or Equal Cost Multi-Path Routing, could help... Again, it’s a fledgling idea currently, and I am still reading the documentation, but if it works... Well... I not sure... let’s see...
 

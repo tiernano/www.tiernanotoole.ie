@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 gem 'github-pages'
-gem 'html-proofer'
 gem 's3_website'
 gem 'jekyll-seo-tag'
+gem 'jekyll-twitter-plugin'
