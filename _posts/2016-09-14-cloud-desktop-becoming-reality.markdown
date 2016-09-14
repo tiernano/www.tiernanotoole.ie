@@ -5,7 +5,7 @@ tags:
   - Cloud Desktop
   - workstation
   - hardware
-date: "2016-09-14 18:00"
+date: "2016-09-14 16:00"
 published: true
 ---
 
