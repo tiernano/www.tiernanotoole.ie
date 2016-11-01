@@ -32,4 +32,4 @@ With all the increased bandwidth for mobile devices (4 and 5G, expanding wifi, e
 [9]:http://www.neowin.net/news/vmware-releases-horizon-beta-client-for-windows-10-mobile-continuum-compatible
 [10]:http://nexdock.com/
 [11]:https://www.microsoft.com/en-ie/mobile/accessory/hd-500/
-[12]:
+[12]:https://www.microsoft.com/accessories/en-us/products/adapters/wireless-display-adapter-2/p3q-00001
