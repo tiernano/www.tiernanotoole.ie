@@ -8,6 +8,8 @@ paginate: 5
 gems:
   -  jekyll-paginate
   -  jekyll-seo-tag
+  -  jekyll-admin
+  
 
 prose:
   rooturl: '_posts'
