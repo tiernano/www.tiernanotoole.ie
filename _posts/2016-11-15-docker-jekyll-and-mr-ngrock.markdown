@@ -18,7 +18,7 @@ First, build your site in jekyll. for me, the command is
   
 next, run an nginx server with that output folder:
 
-    docker run --name tiernanotoolenginx -v $(pwd)/www.tiernanotoole.ie/_site/:/usr/share/nginx/html:ro -d -p 8881:80 nginx
+    docker run --name tiernanotoolenginx -v "$(pwd)/www.tiernanotoole.ie/_site/:/usr/share/nginx/html:ro" -d -p 8881:80 nginx
     
 the docker container is called tiernanotoolenginx, since i could have multiple ones, and port 8881 is being redirected to port 80 on that container, but technically, it might not be needed due to the next command:
 

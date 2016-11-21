@@ -33,6 +33,11 @@
   inuse: true
   decommissioned: false
   url: /Computers/macpro.html
+- name: Surface Book
+  sidebar: true
+  inuse: true
+  decommissioned: false
+  url: /Computers/surfacebook.html
 - name: Thecus NAS
   sidebar: false
   inuse: false
@@ -78,8 +83,13 @@
   inuse: false
   decommissioned: false
   url: /Computers/tvserver.html
-- name: Surface Book
+- name: Dell C6100
   sidebar: true
   inuse: true
   decommissioned: false
-  url: /Computers/surfacebook.html
+  url: /Computers/C6100.html
+- name: HP Storageworks boxes
+  sidebar: true
+  inuse: true
+  decommissioned: false
+  url: /Computers/hpstorageworks.html
