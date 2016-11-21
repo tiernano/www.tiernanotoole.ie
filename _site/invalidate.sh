@@ -1,0 +1,1 @@
+curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache"  -H "X-Auth-Email: $CF_EMAIL"  -H "X-Auth-Key: $CF_AUTH"  -H "Content-Type: application/json"  --data '{"files":["https://www.tiernanotoole.ie/", "https://www.tiernanotoole.ie/atom.xml","https://www.tiernanotoole.ie/sitemap.xml", "https://www.tiernanotoole.ie/ToolsList/"]}'
