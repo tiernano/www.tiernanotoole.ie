@@ -15,7 +15,7 @@ The Godbox is my main Hyper-V server and backup workstation. Its specs are as fo
 * 2 300GB Western Digital VelociRaptors in RAID 0 for boot.
 * 4 hard drives in a storage pool. cant remember the sizes. these are connected to a Dell Perc H200, but no raid is used on the card.
 * Connected to a DVI KVM switch and used on a 28 Inch Dell 4K Monitor
-* Runs Windows Server 2016 TP5 Datacenter, Hyper-V and has a few VMs running all the time...
+* Runs Windows Server 2016 Datacenter, Hyper-V and has a few VMs running all the time...
 
 Some old photos of the machine are seen here:
 
