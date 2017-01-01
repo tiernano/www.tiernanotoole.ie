@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Hubic, OpenStack Swift and Curl</title>
 <meta property="og:title" content="Hubic, OpenStack Swift and Curl" />
-<meta name="description" content="HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup… TERABYTES!) for EUR5 a month… Thats a crazy amount of storage for a not crazy amount of money!So, while playing around with different things, I found they have an API, so other than the usual apps to play with (like the Hubic Apps for iPhone, Android, Windows Phone, Windows Desktop and OSX, Duplicity for backing up *nix boxes, and a few others) you can build your own…But first, i needed to figure out how… So, after a lot of arsing around in Linux shells with curl i finally got some stuff working!First, i used the Hubic sandbox to get the keys… its quite simple to walk though… this gets you your Access Token (see step 3). next, we need to get the Endpoint from Hubic: This GIST shows more:Quick walkthough:the first CURL request is to the HubiC API to get the credentials… this gives you a JSON response with a token and a endpoint URL aswell with an expire time…The next request gets you a list of all files (or at least a load of files in my case) of whats in your folder. the &lt;pre&gt;default&lt;/pre&gt; name here is my folder… I think its what everyone starts out with in HubiC… if you remove it, you will see all your top level folders.next request i tried was to upload a file… the &lt;pre&gt;filename&lt;/pre&gt; part is where you want it to be stored. this must exist on your local machine.finally, downloading of a file… pass in the location of the file on the server (listing files will give you the location) and then &lt;pre&gt;-o&lt;/pre&gt; in curl shows the output location…Simples! now to get this working in c#… Full OpenStack Swift API is available to show how to do more… hopefully it will help in my C# coding…" />
-<meta property="og:description" content="HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup… TERABYTES!) for EUR5 a month… Thats a crazy amount of storage for a not crazy amount of money!So, while playing around with different things, I found they have an API, so other than the usual apps to play with (like the Hubic Apps for iPhone, Android, Windows Phone, Windows Desktop and OSX, Duplicity for backing up *nix boxes, and a few others) you can build your own…But first, i needed to figure out how… So, after a lot of arsing around in Linux shells with curl i finally got some stuff working!First, i used the Hubic sandbox to get the keys… its quite simple to walk though… this gets you your Access Token (see step 3). next, we need to get the Endpoint from Hubic: This GIST shows more:Quick walkthough:the first CURL request is to the HubiC API to get the credentials… this gives you a JSON response with a token and a endpoint URL aswell with an expire time…The next request gets you a list of all files (or at least a load of files in my case) of whats in your folder. the &lt;pre&gt;default&lt;/pre&gt; name here is my folder… I think its what everyone starts out with in HubiC… if you remove it, you will see all your top level folders.next request i tried was to upload a file… the &lt;pre&gt;filename&lt;/pre&gt; part is where you want it to be stored. this must exist on your local machine.finally, downloading of a file… pass in the location of the file on the server (listing files will give you the location) and then &lt;pre&gt;-o&lt;/pre&gt; in curl shows the output location…Simples! now to get this working in c#… Full OpenStack Swift API is available to show how to do more… hopefully it will help in my C# coding…" />
+<meta name="description" content="HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup… TERABYTES!) for EUR5 a month… Thats a crazy amount of storage for a not crazy amount of money!" />
+<meta property="og:description" content="HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup… TERABYTES!) for EUR5 a month… Thats a crazy amount of storage for a not crazy amount of money!" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2015/03/31/HubiC_SWIFT_CURL.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2015/03/31/HubiC_SWIFT_CURL.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Hubic, OpenStack Swift and Curl",
-    "datePublished": "2015-03-31T22:40:00+00:00",
-    "description": "HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup… TERABYTES!) for EUR5 a month… Thats a crazy amount of storage for a not crazy amount of money!So, while playing around with different things, I found they have an API, so other than the usual apps to play with (like the Hubic Apps for iPhone, Android, Windows Phone, Windows Desktop and OSX, Duplicity for backing up *nix boxes, and a few others) you can build your own…But first, i needed to figure out how… So, after a lot of arsing around in Linux shells with curl i finally got some stuff working!First, i used the Hubic sandbox to get the keys… its quite simple to walk though… this gets you your Access Token (see step 3). next, we need to get the Endpoint from Hubic: This GIST shows more:Quick walkthough:the first CURL request is to the HubiC API to get the credentials… this gives you a JSON response with a token and a endpoint URL aswell with an expire time…The next request gets you a list of all files (or at least a load of files in my case) of whats in your folder. the &lt;pre&gt;default&lt;/pre&gt; name here is my folder… I think its what everyone starts out with in HubiC… if you remove it, you will see all your top level folders.next request i tried was to upload a file… the &lt;pre&gt;filename&lt;/pre&gt; part is where you want it to be stored. this must exist on your local machine.finally, downloading of a file… pass in the location of the file on the server (listing files will give you the location) and then &lt;pre&gt;-o&lt;/pre&gt; in curl shows the output location…Simples! now to get this working in c#… Full OpenStack Swift API is available to show how to do more… hopefully it will help in my C# coding…",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2015/03/31/HubiC_SWIFT_CURL.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Hubic, OpenStack Swift and Curl",
+"datePublished": "2015-03-31T22:40:00+00:00",
+"description": "HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup… TERABYTES!) for EUR5 a month… Thats a crazy amount of storage for a not crazy amount of money!",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2015/03/31/HubiC_SWIFT_CURL.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -427,7 +427,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:28 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:55 +0000
   </p>
 </div>
       </div>

@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Using git and Route53 together</title>
 <meta property="og:title" content="Using git and Route53 together" />
-<meta name="description" content="so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon’s Route53. So, moving ALL of them seems, well at the moment, excessive… So, i went digging…there is a tool called cli53 which will allow you to manage route53 objects from the command line. It can also export your zones to BIND format and then re-import them if you have made changes… This all came out of a blog post by the guys and gals at netguru who showed how they integrate their DNS records with their Continuous Integration… Now, i have not gotten to that stage, just yet, but its only 1 step more down the road… but I don’t have my zones in bind format… So, how do i do that?I tweaked their block of ruby code (first time playing with ruby, be gentle with me) and got the following:essentially, it runs cli53 (you may need to change your path) and then creates .bind files for each zone.then, using their code below, you can re-import them to Route53:i have exported all mine, added them to git and done some testing… All seems to be in order… once i do some tweaks, i can get that CI piece working and it should be all magic…" />
-<meta property="og:description" content="so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon’s Route53. So, moving ALL of them seems, well at the moment, excessive… So, i went digging…there is a tool called cli53 which will allow you to manage route53 objects from the command line. It can also export your zones to BIND format and then re-import them if you have made changes… This all came out of a blog post by the guys and gals at netguru who showed how they integrate their DNS records with their Continuous Integration… Now, i have not gotten to that stage, just yet, but its only 1 step more down the road… but I don’t have my zones in bind format… So, how do i do that?I tweaked their block of ruby code (first time playing with ruby, be gentle with me) and got the following:essentially, it runs cli53 (you may need to change your path) and then creates .bind files for each zone.then, using their code below, you can re-import them to Route53:i have exported all mine, added them to git and done some testing… All seems to be in order… once i do some tweaks, i can get that CI piece working and it should be all magic…" />
+<meta name="description" content="so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon’s Route53. So, moving ALL of them seems, well at the moment, excessive… So, i went digging…" />
+<meta property="og:description" content="so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon’s Route53. So, moving ALL of them seems, well at the moment, excessive… So, i went digging…" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2015/05/07/using-git-and-route53.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2015/05/07/using-git-and-route53.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Using git and Route53 together",
-    "datePublished": "2015-05-07T20:00:00+00:00",
-    "description": "so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon’s Route53. So, moving ALL of them seems, well at the moment, excessive… So, i went digging…there is a tool called cli53 which will allow you to manage route53 objects from the command line. It can also export your zones to BIND format and then re-import them if you have made changes… This all came out of a blog post by the guys and gals at netguru who showed how they integrate their DNS records with their Continuous Integration… Now, i have not gotten to that stage, just yet, but its only 1 step more down the road… but I don’t have my zones in bind format… So, how do i do that?I tweaked their block of ruby code (first time playing with ruby, be gentle with me) and got the following:essentially, it runs cli53 (you may need to change your path) and then creates .bind files for each zone.then, using their code below, you can re-import them to Route53:i have exported all mine, added them to git and done some testing… All seems to be in order… once i do some tweaks, i can get that CI piece working and it should be all magic…",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2015/05/07/using-git-and-route53.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Using git and Route53 together",
+"datePublished": "2015-05-07T20:00:00+00:00",
+"description": "so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon’s Route53. So, moving ALL of them seems, well at the moment, excessive… So, i went digging…",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2015/05/07/using-git-and-route53.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -423,7 +423,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:28 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:56 +0000
   </p>
 </div>
       </div>

@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Moving sites to NearlyFreeSpeech</title>
 <meta property="og:title" content="Moving sites to NearlyFreeSpeech" />
-<meta name="description" content="I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot… For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan’s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends… All in all, not a lot of power…Its not a fortune to run the server, the box i have has a Quad Core, Hyper threaded Intel i7, 32Gb RAM, 2 3TB Hdds (not raid…) and runs a copy of VMWare ESXi, and it costs about EUR60 a month, including a couple of IP addresses… But, i dont use it all that often… So, i am in the process of getting rid of it…So, the 2 other blogs (GeekPhotographer and Tiernan’s Comms Closet) have already moved. They where easy enough… Export the Wordpress DB, copy the file up, tweak the config, import the DB, DNS updates, etc… All done… but this site… that is more “Complicated”…Since it is generated on a ‘git push’, Jekyll and Ruby needs to be installed on the box… I am using static sites on NearlyFreeSpeech which only charge me per meg (about 0.1c, but that reduces as you transfer more) transfered and per 5 meg stored (1c). Thats for STATIC sites… if you are running a dynamic site, its about 1c per 1mb stored, plus 1c per day, plus another 2c for MySQL instances. Check out their pricing calculator to see the magic at work!Anyway, my GIT repo is on a machine in the house. It has Jekyll and all required bits installed. In the ‘post-receive’ hook (check the original zerosum post), i generate the site, and then do an rsync copy to NFSN servers. That is it!Any question, leave a comment.[update] forgot to add the gist which shows how i do the rsync call…[update2] you in my case, the folder that Jekyll is being built in needed to be chmoded and chowned… I chowned the the folder to the gitolite user and i chmodded the folder to 777… before i did this, some files where unreadable on NFSN… with this, all works grand…" />
-<meta property="og:description" content="I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot… For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan’s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends… All in all, not a lot of power…Its not a fortune to run the server, the box i have has a Quad Core, Hyper threaded Intel i7, 32Gb RAM, 2 3TB Hdds (not raid…) and runs a copy of VMWare ESXi, and it costs about EUR60 a month, including a couple of IP addresses… But, i dont use it all that often… So, i am in the process of getting rid of it…So, the 2 other blogs (GeekPhotographer and Tiernan’s Comms Closet) have already moved. They where easy enough… Export the Wordpress DB, copy the file up, tweak the config, import the DB, DNS updates, etc… All done… but this site… that is more “Complicated”…Since it is generated on a ‘git push’, Jekyll and Ruby needs to be installed on the box… I am using static sites on NearlyFreeSpeech which only charge me per meg (about 0.1c, but that reduces as you transfer more) transfered and per 5 meg stored (1c). Thats for STATIC sites… if you are running a dynamic site, its about 1c per 1mb stored, plus 1c per day, plus another 2c for MySQL instances. Check out their pricing calculator to see the magic at work!Anyway, my GIT repo is on a machine in the house. It has Jekyll and all required bits installed. In the ‘post-receive’ hook (check the original zerosum post), i generate the site, and then do an rsync copy to NFSN servers. That is it!Any question, leave a comment.[update] forgot to add the gist which shows how i do the rsync call…[update2] you in my case, the folder that Jekyll is being built in needed to be chmoded and chowned… I chowned the the folder to the gitolite user and i chmodded the folder to 777… before i did this, some files where unreadable on NFSN… with this, all works grand…" />
+<meta name="description" content="I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot… For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan’s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends… All in all, not a lot of power…" />
+<meta property="og:description" content="I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot… For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan’s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends… All in all, not a lot of power…" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2013/01/15/moving_sites_to_nearlyfreespeech.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2013/01/15/moving_sites_to_nearlyfreespeech.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Moving sites to NearlyFreeSpeech",
-    "datePublished": "2013-01-15T19:23:02+00:00",
-    "description": "I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot… For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan’s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends… All in all, not a lot of power…Its not a fortune to run the server, the box i have has a Quad Core, Hyper threaded Intel i7, 32Gb RAM, 2 3TB Hdds (not raid…) and runs a copy of VMWare ESXi, and it costs about EUR60 a month, including a couple of IP addresses… But, i dont use it all that often… So, i am in the process of getting rid of it…So, the 2 other blogs (GeekPhotographer and Tiernan’s Comms Closet) have already moved. They where easy enough… Export the Wordpress DB, copy the file up, tweak the config, import the DB, DNS updates, etc… All done… but this site… that is more “Complicated”…Since it is generated on a ‘git push’, Jekyll and Ruby needs to be installed on the box… I am using static sites on NearlyFreeSpeech which only charge me per meg (about 0.1c, but that reduces as you transfer more) transfered and per 5 meg stored (1c). Thats for STATIC sites… if you are running a dynamic site, its about 1c per 1mb stored, plus 1c per day, plus another 2c for MySQL instances. Check out their pricing calculator to see the magic at work!Anyway, my GIT repo is on a machine in the house. It has Jekyll and all required bits installed. In the ‘post-receive’ hook (check the original zerosum post), i generate the site, and then do an rsync copy to NFSN servers. That is it!Any question, leave a comment.[update] forgot to add the gist which shows how i do the rsync call…[update2] you in my case, the folder that Jekyll is being built in needed to be chmoded and chowned… I chowned the the folder to the gitolite user and i chmodded the folder to 777… before i did this, some files where unreadable on NFSN… with this, all works grand…",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2013/01/15/moving_sites_to_nearlyfreespeech.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Moving sites to NearlyFreeSpeech",
+"datePublished": "2013-01-15T19:23:02+00:00",
+"description": "I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot… For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan’s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends… All in all, not a lot of power…",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2013/01/15/moving_sites_to_nearlyfreespeech.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -424,7 +424,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:27 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:54 +0000
   </p>
 </div>
       </div>

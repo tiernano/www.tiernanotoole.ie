@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Network and HomeLab V.Next (Part 2)</title>
 <meta property="og:title" content="Network and HomeLab V.Next (Part 2)" />
-<meta name="description" content="So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.First, the processors: in the first post, i talked about Xeon D or Xeon E3… Well, i missed one… The Xeon E5. I have 2 of these in GodBox 2, and you can get them into a microATX board. There does seem to be some limits with the microatx boards, but hopefully enough searching will find me what i am looking for. Ideally, i want it to take “normal” DDR3/4 memory (not SODIMMs like the ASRock one above) and also take enough of them to run 64 or 128Gb of ram (thinking 8 would do the job!). Also, i would like to have 4 GigE ports onboard and 1 management port. 4 onboard is not a hard requirement: If i can get one with 2 ports, i can always get a 4 port card for the PCI-Express slot… Finally, i would like it to have at least 6 SATA ports and possibly an MSATA port. Thinking Boot off MSATA (Windows Server 2016 Nano Server would be used), 2 SSDs and 4 HDDs. Using Storage Spaces, use the 2 SSDs as “Fast” storage for the pool.I also think i moved off the idea of 10Gb. I like the idea of it, but given a small 10Gb switch costs upwards of a grand, and the plan is to build a machine for that price, i would prefer a fifth machine and using my existing Cisco 48 port switch and leave 10Gb as a future upgrade.Also, changed from last time round is machine count. Originally i was saying 3-4 machines… now i am thinking 6-7… 5-6 of them should be Hyper-V boxes and the last one would be a Media Box.I also think the Synology or SAN requirement is out… Hyper-V can be setup to do replication between hosts, and with a 4Gb link to the LAN, i think i should be OK. Also, if i have the media box separate, i should be ok there too. I will detail the media center in a later post.So, any suggestions or thoughts on what should and shouldn’t be looked at?" />
-<meta property="og:description" content="So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.First, the processors: in the first post, i talked about Xeon D or Xeon E3… Well, i missed one… The Xeon E5. I have 2 of these in GodBox 2, and you can get them into a microATX board. There does seem to be some limits with the microatx boards, but hopefully enough searching will find me what i am looking for. Ideally, i want it to take “normal” DDR3/4 memory (not SODIMMs like the ASRock one above) and also take enough of them to run 64 or 128Gb of ram (thinking 8 would do the job!). Also, i would like to have 4 GigE ports onboard and 1 management port. 4 onboard is not a hard requirement: If i can get one with 2 ports, i can always get a 4 port card for the PCI-Express slot… Finally, i would like it to have at least 6 SATA ports and possibly an MSATA port. Thinking Boot off MSATA (Windows Server 2016 Nano Server would be used), 2 SSDs and 4 HDDs. Using Storage Spaces, use the 2 SSDs as “Fast” storage for the pool.I also think i moved off the idea of 10Gb. I like the idea of it, but given a small 10Gb switch costs upwards of a grand, and the plan is to build a machine for that price, i would prefer a fifth machine and using my existing Cisco 48 port switch and leave 10Gb as a future upgrade.Also, changed from last time round is machine count. Originally i was saying 3-4 machines… now i am thinking 6-7… 5-6 of them should be Hyper-V boxes and the last one would be a Media Box.I also think the Synology or SAN requirement is out… Hyper-V can be setup to do replication between hosts, and with a 4Gb link to the LAN, i think i should be OK. Also, if i have the media box separate, i should be ok there too. I will detail the media center in a later post.So, any suggestions or thoughts on what should and shouldn’t be looked at?" />
+<meta name="description" content="So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks." />
+<meta property="og:description" content="So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks." />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2015/06/23/Network-and-HomeLab-vnext-part2.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2015/06/23/Network-and-HomeLab-vnext-part2.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Network and HomeLab V.Next (Part 2)",
-    "datePublished": "2015-06-23T10:30:00+00:00",
-    "description": "So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.First, the processors: in the first post, i talked about Xeon D or Xeon E3… Well, i missed one… The Xeon E5. I have 2 of these in GodBox 2, and you can get them into a microATX board. There does seem to be some limits with the microatx boards, but hopefully enough searching will find me what i am looking for. Ideally, i want it to take “normal” DDR3/4 memory (not SODIMMs like the ASRock one above) and also take enough of them to run 64 or 128Gb of ram (thinking 8 would do the job!). Also, i would like to have 4 GigE ports onboard and 1 management port. 4 onboard is not a hard requirement: If i can get one with 2 ports, i can always get a 4 port card for the PCI-Express slot… Finally, i would like it to have at least 6 SATA ports and possibly an MSATA port. Thinking Boot off MSATA (Windows Server 2016 Nano Server would be used), 2 SSDs and 4 HDDs. Using Storage Spaces, use the 2 SSDs as “Fast” storage for the pool.I also think i moved off the idea of 10Gb. I like the idea of it, but given a small 10Gb switch costs upwards of a grand, and the plan is to build a machine for that price, i would prefer a fifth machine and using my existing Cisco 48 port switch and leave 10Gb as a future upgrade.Also, changed from last time round is machine count. Originally i was saying 3-4 machines… now i am thinking 6-7… 5-6 of them should be Hyper-V boxes and the last one would be a Media Box.I also think the Synology or SAN requirement is out… Hyper-V can be setup to do replication between hosts, and with a 4Gb link to the LAN, i think i should be OK. Also, if i have the media box separate, i should be ok there too. I will detail the media center in a later post.So, any suggestions or thoughts on what should and shouldn’t be looked at?",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2015/06/23/Network-and-HomeLab-vnext-part2.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Network and HomeLab V.Next (Part 2)",
+"datePublished": "2015-06-23T10:30:00+00:00",
+"description": "So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2015/06/23/Network-and-HomeLab-vnext-part2.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -416,7 +416,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:28 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:56 +0000
   </p>
 </div>
       </div>

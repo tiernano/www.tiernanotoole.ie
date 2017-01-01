@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Bulk compressing images for the Web</title>
 <meta property="og:title" content="Bulk compressing images for the Web" />
-<meta name="description" content="Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meantlooking at all the stuff that takes time to download… There are more tweaks (and possibly posts) coming downthe road, but to start, I needed to look at images.First things first. I’m running this on a Sabayon Linux box, so some of the install commands will be different… (Also, i do need to explain why I moved from Windows to Linux on the GodboxV2, but that’s a different post…)First, install OptiPNG (they have a Windows build too…) and JPEGOptimsudo equo install optipngsudo equo install jpegoptim[UPDATE] I tried this on an Ubutnu Box, and to install both of these, the package names are the same. so, to install both:sudo apt-get install optipng jpegoptimNext, using the Linux find command (this should work also on OSX…) run OptiPNG and JPEGOptim on all pngs andjpgs in your given directory:find . -iname &quot;*.png&quot; -exec optipng {} \;find . -iname &quot;*.jpe?g&quot; -exec jpegoptim {} \;depending on how many images (and how fast your machine is) it should take a min or two…That’s it! I did a git status, which showed me all the changed images, and then deployed the Jekyll sites… Allgood! That’s it!" />
-<meta property="og:description" content="Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meantlooking at all the stuff that takes time to download… There are more tweaks (and possibly posts) coming downthe road, but to start, I needed to look at images.First things first. I’m running this on a Sabayon Linux box, so some of the install commands will be different… (Also, i do need to explain why I moved from Windows to Linux on the GodboxV2, but that’s a different post…)First, install OptiPNG (they have a Windows build too…) and JPEGOptimsudo equo install optipngsudo equo install jpegoptim[UPDATE] I tried this on an Ubutnu Box, and to install both of these, the package names are the same. so, to install both:sudo apt-get install optipng jpegoptimNext, using the Linux find command (this should work also on OSX…) run OptiPNG and JPEGOptim on all pngs andjpgs in your given directory:find . -iname &quot;*.png&quot; -exec optipng {} \;find . -iname &quot;*.jpe?g&quot; -exec jpegoptim {} \;depending on how many images (and how fast your machine is) it should take a min or two…That’s it! I did a git status, which showed me all the changed images, and then deployed the Jekyll sites… Allgood! That’s it!" />
+<meta name="description" content="Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meant looking at all the stuff that takes time to download… There are more tweaks (and possibly posts) coming down the road, but to start, I needed to look at images." />
+<meta property="og:description" content="Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meant looking at all the stuff that takes time to download… There are more tweaks (and possibly posts) coming down the road, but to start, I needed to look at images." />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2015/04/29/bulk-compressing-images-for-the-web.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2015/04/29/bulk-compressing-images-for-the-web.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Bulk compressing images for the Web",
-    "datePublished": "2015-04-29T17:00:00+00:00",
-    "description": "Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meantlooking at all the stuff that takes time to download… There are more tweaks (and possibly posts) coming downthe road, but to start, I needed to look at images.First things first. I’m running this on a Sabayon Linux box, so some of the install commands will be different… (Also, i do need to explain why I moved from Windows to Linux on the GodboxV2, but that’s a different post…)First, install OptiPNG (they have a Windows build too…) and JPEGOptimsudo equo install optipngsudo equo install jpegoptim[UPDATE] I tried this on an Ubutnu Box, and to install both of these, the package names are the same. so, to install both:sudo apt-get install optipng jpegoptimNext, using the Linux find command (this should work also on OSX…) run OptiPNG and JPEGOptim on all pngs andjpgs in your given directory:find . -iname &quot;*.png&quot; -exec optipng {} \\;find . -iname &quot;*.jpe?g&quot; -exec jpegoptim {} \\;depending on how many images (and how fast your machine is) it should take a min or two…That’s it! I did a git status, which showed me all the changed images, and then deployed the Jekyll sites… Allgood! That’s it!",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2015/04/29/bulk-compressing-images-for-the-web.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Bulk compressing images for the Web",
+"datePublished": "2015-04-29T17:00:00+00:00",
+"description": "Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meant looking at all the stuff that takes time to download… There are more tweaks (and possibly posts) coming down the road, but to start, I needed to look at images.",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2015/04/29/bulk-compressing-images-for-the-web.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -434,7 +434,7 @@ good! That’s it!</p>
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:28 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:55 +0000
   </p>
 </div>
       </div>

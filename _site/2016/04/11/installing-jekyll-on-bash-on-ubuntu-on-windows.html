@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Installing Jekyll on Bash On Ubuntu on Windows</title>
 <meta property="og:title" content="Installing Jekyll on Bash On Ubuntu on Windows" />
-<meta name="description" content="At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book.So, first, I needed to install version 2.0 of Ruby. There is a bit of messing involved for this, but firstapt-get updateapt-get install ruby2.0Now, when you runruby -vyou will still see ruby 1.9.x installed… and the github-pages gem, which includes Jekyll 3, requires ruby 2.0… ugh. after reading this very long bug report I got this:# Rename original out of the way, so updates / reinstalls don&#39;t squash our hack fixdpkg-divert --add --rename --divert /usr/bin/ruby.divert /usr/bin/rubydpkg-divert --add --rename --divert /usr/bin/gem.divert /usr/bin/gem# Create an alternatives entry pointing ruby -&gt; ruby2.0update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.0 1update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.0 1Now, when I run ruby -v, I am told I am on version 2.0! Happy days! Next, i installed bundler usinggem install bundlerwhich uses a Gemfile to install the required gems, so runningbundle installshould install all required gems but no luck… I tried adding ruby2.0 dev to the mixapt-get install ruby2.0-devbut running jekyll from bash said it did not exist, and runningbundle exec jekyll buildfailed with a memory issue… ugh…Anyway, next, I triedgem install github-pages -V-v makes it verbose, so you can see what’s going on… after a bit of time, and lots of output to the screen…jekyll buildbash: /usr/bin/jekyll: No such file or directoryFECK! So, after a bit more digging, i find that jekyll is actually in /usr/local/bin/jekyllln /usr/local/bin/jekyll /usr/bin/jekyllsolves that problem!now runningjekyll buildworks perfectly, as doesjekyll serveHAPPY DAYS! Mind you, I am only using this as a testing and writing system. I have not tried s3_website just yet, but that is being sorted elsewhere anyway. Maybe my next post will explain that…" />
-<meta property="og:description" content="At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book.So, first, I needed to install version 2.0 of Ruby. There is a bit of messing involved for this, but firstapt-get updateapt-get install ruby2.0Now, when you runruby -vyou will still see ruby 1.9.x installed… and the github-pages gem, which includes Jekyll 3, requires ruby 2.0… ugh. after reading this very long bug report I got this:# Rename original out of the way, so updates / reinstalls don&#39;t squash our hack fixdpkg-divert --add --rename --divert /usr/bin/ruby.divert /usr/bin/rubydpkg-divert --add --rename --divert /usr/bin/gem.divert /usr/bin/gem# Create an alternatives entry pointing ruby -&gt; ruby2.0update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.0 1update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.0 1Now, when I run ruby -v, I am told I am on version 2.0! Happy days! Next, i installed bundler usinggem install bundlerwhich uses a Gemfile to install the required gems, so runningbundle installshould install all required gems but no luck… I tried adding ruby2.0 dev to the mixapt-get install ruby2.0-devbut running jekyll from bash said it did not exist, and runningbundle exec jekyll buildfailed with a memory issue… ugh…Anyway, next, I triedgem install github-pages -V-v makes it verbose, so you can see what’s going on… after a bit of time, and lots of output to the screen…jekyll buildbash: /usr/bin/jekyll: No such file or directoryFECK! So, after a bit more digging, i find that jekyll is actually in /usr/local/bin/jekyllln /usr/local/bin/jekyll /usr/bin/jekyllsolves that problem!now runningjekyll buildworks perfectly, as doesjekyll serveHAPPY DAYS! Mind you, I am only using this as a testing and writing system. I have not tried s3_website just yet, but that is being sorted elsewhere anyway. Maybe my next post will explain that…" />
+<meta name="description" content="At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book." />
+<meta property="og:description" content="At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book." />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2016/04/11/installing-jekyll-on-bash-on-ubuntu-on-windows.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2016/04/11/installing-jekyll-on-bash-on-ubuntu-on-windows.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Installing Jekyll on Bash On Ubuntu on Windows",
-    "datePublished": "2016-04-11T10:09:00+00:00",
-    "description": "At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book.So, first, I needed to install version 2.0 of Ruby. There is a bit of messing involved for this, but firstapt-get updateapt-get install ruby2.0Now, when you runruby -vyou will still see ruby 1.9.x installed… and the github-pages gem, which includes Jekyll 3, requires ruby 2.0… ugh. after reading this very long bug report I got this:# Rename original out of the way, so updates / reinstalls don&#39;t squash our hack fixdpkg-divert --add --rename --divert /usr/bin/ruby.divert /usr/bin/rubydpkg-divert --add --rename --divert /usr/bin/gem.divert /usr/bin/gem# Create an alternatives entry pointing ruby -&gt; ruby2.0update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby2.0 1update-alternatives --install /usr/bin/gem gem /usr/bin/gem2.0 1Now, when I run ruby -v, I am told I am on version 2.0! Happy days! Next, i installed bundler usinggem install bundlerwhich uses a Gemfile to install the required gems, so runningbundle installshould install all required gems but no luck… I tried adding ruby2.0 dev to the mixapt-get install ruby2.0-devbut running jekyll from bash said it did not exist, and runningbundle exec jekyll buildfailed with a memory issue… ugh…Anyway, next, I triedgem install github-pages -V-v makes it verbose, so you can see what’s going on… after a bit of time, and lots of output to the screen…jekyll buildbash: /usr/bin/jekyll: No such file or directoryFECK! So, after a bit more digging, i find that jekyll is actually in /usr/local/bin/jekyllln /usr/local/bin/jekyll /usr/bin/jekyllsolves that problem!now runningjekyll buildworks perfectly, as doesjekyll serveHAPPY DAYS! Mind you, I am only using this as a testing and writing system. I have not tried s3_website just yet, but that is being sorted elsewhere anyway. Maybe my next post will explain that…",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2016/04/11/installing-jekyll-on-bash-on-ubuntu-on-windows.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Installing Jekyll on Bash On Ubuntu on Windows",
+"datePublished": "2016-04-11T10:09:00+00:00",
+"description": "At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book.",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2016/04/11/installing-jekyll-on-bash-on-ubuntu-on-windows.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -480,7 +480,7 @@ bash: /usr/bin/jekyll: No such file or directory
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:29 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:57 +0000
   </p>
 </div>
       </div>

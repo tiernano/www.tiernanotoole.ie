@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>WANProxy and Squid with Upstream Servers</title>
 <meta property="og:title" content="WANProxy and Squid with Upstream Servers" />
-<meta name="description" content="In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good… In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks.  i have a Squid box running in the house. It is connected to 2 Cable Modems, giving me 250Mbits/s down and 20Mbits/s upload connection. It is caching data locally also.  on my laptop i have Squid running also. It connects to a WANProxy server at home and proxies the Squid server. The local squid box is using the home Squid box as an upstream connection.  for upstream connections i used the following lines in the squid.conf:I have set it to never use a direct connection, which is probably silly, since if i loose the WANProxy connection, i loose connectivity… Also, port 3300 is the WANProxy port its listening on.So far, so good… I am also thinking this could be an interesting thing to get working on a Raspberry Pi…. Just a though… :)" />
-<meta property="og:description" content="In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good… In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks.  i have a Squid box running in the house. It is connected to 2 Cable Modems, giving me 250Mbits/s down and 20Mbits/s upload connection. It is caching data locally also.  on my laptop i have Squid running also. It connects to a WANProxy server at home and proxies the Squid server. The local squid box is using the home Squid box as an upstream connection.  for upstream connections i used the following lines in the squid.conf:I have set it to never use a direct connection, which is probably silly, since if i loose the WANProxy connection, i loose connectivity… Also, port 3300 is the WANProxy port its listening on.So far, so good… I am also thinking this could be an interesting thing to get working on a Raspberry Pi…. Just a though… :)" />
+<meta name="description" content="In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good… In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks." />
+<meta property="og:description" content="In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good… In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks." />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2012/10/26/wanproxy_and_squid_with_upstream_servers.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2012/10/26/wanproxy_and_squid_with_upstream_servers.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "WANProxy and Squid with Upstream Servers",
-    "datePublished": "2012-10-26T13:14:00+00:00",
-    "description": "In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good… In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks.  i have a Squid box running in the house. It is connected to 2 Cable Modems, giving me 250Mbits/s down and 20Mbits/s upload connection. It is caching data locally also.  on my laptop i have Squid running also. It connects to a WANProxy server at home and proxies the Squid server. The local squid box is using the home Squid box as an upstream connection.  for upstream connections i used the following lines in the squid.conf:I have set it to never use a direct connection, which is probably silly, since if i loose the WANProxy connection, i loose connectivity… Also, port 3300 is the WANProxy port its listening on.So far, so good… I am also thinking this could be an interesting thing to get working on a Raspberry Pi…. Just a though… :)",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2012/10/26/wanproxy_and_squid_with_upstream_servers.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "WANProxy and Squid with Upstream Servers",
+"datePublished": "2012-10-26T13:14:00+00:00",
+"description": "In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good… In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks.",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2012/10/26/wanproxy_and_squid_with_upstream_servers.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -420,7 +420,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:27 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:53 +0000
   </p>
 </div>
       </div>

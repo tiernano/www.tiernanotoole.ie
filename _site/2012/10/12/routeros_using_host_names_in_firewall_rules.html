@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>RouterOS Using Host names in Firewall Rules</title>
 <meta property="og:title" content="RouterOS Using Host names in Firewall Rules" />
-<meta name="description" content="As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.  First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs.  Create an “Address List” in RouterOS. This can be done on the Web Interface by going to IP / Firewall / Address List and clicking Add. I had none previously, so i created a new rule, naming it ExpressVPN (the lads i use for VPN access) and added the first address.  this is where things get interesting. for extra IP (for ExpressVPN, i have 4) you create a new address with the SAME name, but different IP.  in your firewall rule, you should have either a src address or dst address. in my case, i had both, but this was a change for the dst address. I removed the address from the rule, i added it as a dst address list entry. If you have multiple address lists, you will see them here.to do this at the command prompt:this will block any traffic, other than the IPs in the expressVPN address list, for the machine 192.168.0.123." />
-<meta property="og:description" content="As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.  First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs.  Create an “Address List” in RouterOS. This can be done on the Web Interface by going to IP / Firewall / Address List and clicking Add. I had none previously, so i created a new rule, naming it ExpressVPN (the lads i use for VPN access) and added the first address.  this is where things get interesting. for extra IP (for ExpressVPN, i have 4) you create a new address with the SAME name, but different IP.  in your firewall rule, you should have either a src address or dst address. in my case, i had both, but this was a change for the dst address. I removed the address from the rule, i added it as a dst address list entry. If you have multiple address lists, you will see them here.to do this at the command prompt:this will block any traffic, other than the IPs in the expressVPN address list, for the machine 192.168.0.123." />
+<meta name="description" content="As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters." />
+<meta property="og:description" content="As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters." />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "RouterOS Using Host names in Firewall Rules",
-    "datePublished": "2012-10-12T07:43:17+00:00",
-    "description": "As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.  First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs.  Create an “Address List” in RouterOS. This can be done on the Web Interface by going to IP / Firewall / Address List and clicking Add. I had none previously, so i created a new rule, naming it ExpressVPN (the lads i use for VPN access) and added the first address.  this is where things get interesting. for extra IP (for ExpressVPN, i have 4) you create a new address with the SAME name, but different IP.  in your firewall rule, you should have either a src address or dst address. in my case, i had both, but this was a change for the dst address. I removed the address from the rule, i added it as a dst address list entry. If you have multiple address lists, you will see them here.to do this at the command prompt:this will block any traffic, other than the IPs in the expressVPN address list, for the machine 192.168.0.123.",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "RouterOS Using Host names in Firewall Rules",
+"datePublished": "2012-10-12T07:43:17+00:00",
+"description": "As a follow up to yesterday’s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2012/10/12/routeros_using_host_names_in_firewall_rules.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -421,7 +421,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:27 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:52 +0000
   </p>
 </div>
       </div>

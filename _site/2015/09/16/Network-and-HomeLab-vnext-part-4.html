@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Network and HomeLab V.Next (Part 4)</title>
 <meta property="og:title" content="Network and HomeLab V.Next (Part 4)" />
-<meta name="description" content="So, after some messing, tweaking, and thinking, I have made some progress with the home lab… or at least broken some stuff… I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router… Given the power usage of the current PfSense Box (I have 2 MPower Pro’s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing…  below is the usage of the ProLiant for the last 12 hours or so:for the same period, here is the usage for the Edge Router:I am also setting up a DMZ for front facing services, and then a LAN for inside facing machines. There will be a firewall (currently thinking Sophos UTM or similar) between the DMZ and the network. Some machines will be able to access the DMZ, and there may be machines allowed into the LAN, but only some things… not even sure if that would be done…I also need to work out the VLAN side of things. I have currently though of the following VLAN setup:  WAN 1 (connected directly to the Cable modem)  WAN 2 (again, direct to cable modem)  LAN Network  DMZ Network  VoIP Network  IOT (stuff for running the house, like Nest, the MPower devices or the like)  Media Network (Plex, Roku, Apple TV, Chrome Cast, etc. Not sure if i need to separate this, but it might be done…)The current Cisco 3560G switch should do all that, without problems, so no new switch needed… lets see what i can break over the next while…" />
-<meta property="og:description" content="So, after some messing, tweaking, and thinking, I have made some progress with the home lab… or at least broken some stuff… I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router… Given the power usage of the current PfSense Box (I have 2 MPower Pro’s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing…  below is the usage of the ProLiant for the last 12 hours or so:for the same period, here is the usage for the Edge Router:I am also setting up a DMZ for front facing services, and then a LAN for inside facing machines. There will be a firewall (currently thinking Sophos UTM or similar) between the DMZ and the network. Some machines will be able to access the DMZ, and there may be machines allowed into the LAN, but only some things… not even sure if that would be done…I also need to work out the VLAN side of things. I have currently though of the following VLAN setup:  WAN 1 (connected directly to the Cable modem)  WAN 2 (again, direct to cable modem)  LAN Network  DMZ Network  VoIP Network  IOT (stuff for running the house, like Nest, the MPower devices or the like)  Media Network (Plex, Roku, Apple TV, Chrome Cast, etc. Not sure if i need to separate this, but it might be done…)The current Cisco 3560G switch should do all that, without problems, so no new switch needed… lets see what i can break over the next while…" />
+<meta name="description" content="So, after some messing, tweaking, and thinking, I have made some progress with the home lab… or at least broken some stuff… I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router… Given the power usage of the current PfSense Box (I have 2 MPower Pro’s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing… below is the usage of the ProLiant for the last 12 hours or so:" />
+<meta property="og:description" content="So, after some messing, tweaking, and thinking, I have made some progress with the home lab… or at least broken some stuff… I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router… Given the power usage of the current PfSense Box (I have 2 MPower Pro’s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing… below is the usage of the ProLiant for the last 12 hours or so:" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2015/09/16/Network-and-HomeLab-vnext-part-4.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2015/09/16/Network-and-HomeLab-vnext-part-4.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Network and HomeLab V.Next (Part 4)",
-    "datePublished": "2015-09-16T14:15:00+00:00",
-    "description": "So, after some messing, tweaking, and thinking, I have made some progress with the home lab… or at least broken some stuff… I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router… Given the power usage of the current PfSense Box (I have 2 MPower Pro’s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing…  below is the usage of the ProLiant for the last 12 hours or so:for the same period, here is the usage for the Edge Router:I am also setting up a DMZ for front facing services, and then a LAN for inside facing machines. There will be a firewall (currently thinking Sophos UTM or similar) between the DMZ and the network. Some machines will be able to access the DMZ, and there may be machines allowed into the LAN, but only some things… not even sure if that would be done…I also need to work out the VLAN side of things. I have currently though of the following VLAN setup:  WAN 1 (connected directly to the Cable modem)  WAN 2 (again, direct to cable modem)  LAN Network  DMZ Network  VoIP Network  IOT (stuff for running the house, like Nest, the MPower devices or the like)  Media Network (Plex, Roku, Apple TV, Chrome Cast, etc. Not sure if i need to separate this, but it might be done…)The current Cisco 3560G switch should do all that, without problems, so no new switch needed… lets see what i can break over the next while…",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2015/09/16/Network-and-HomeLab-vnext-part-4.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Network and HomeLab V.Next (Part 4)",
+"datePublished": "2015-09-16T14:15:00+00:00",
+"description": "So, after some messing, tweaking, and thinking, I have made some progress with the home lab… or at least broken some stuff… I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router… Given the power usage of the current PfSense Box (I have 2 MPower Pro’s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing… below is the usage of the ProLiant for the last 12 hours or so:",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2015/09/16/Network-and-HomeLab-vnext-part-4.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -429,7 +429,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:28 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:57 +0000
   </p>
 </div>
       </div>

@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Network and HomeLab V.Next (Part 3)</title>
 <meta property="og:title" content="Network and HomeLab V.Next (Part 3)" />
-<meta name="description" content="So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:  Old HP Proliant ML110 G5  Intel Core2Quad Q6600  8 Gb RAM  total of 12 Gigabit network cards (of which 4 are currently used…)  500Gb HDDI have been playing with some networking in the house and have managed to build some VLANs. The modems are connected both directly to the Routerand to a dedicated switch port for a given VLAN. The plan for the upgrade, which i hope to complete sooner than the rest of the network is asfollows:  get the ML110 running ESXi and visualize PFSense. Give it 2gb of RAM and some processor.  take some of the network cards out of the box. It does not need 12 ports, but maybe leave the 2 quad ports in there. They should be connectedto the main switch trunked. 8 may be overkill, but i never do things by half.  the PFSEnse VM should be connected to all 3 WAN VlANs (900, 901 and 902) and should also have at least one port to the LAN. There may also beother ports for other internal VLANs.with the spare processor, i can then add other (small) VMs to this machine." />
-<meta property="og:description" content="So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:  Old HP Proliant ML110 G5  Intel Core2Quad Q6600  8 Gb RAM  total of 12 Gigabit network cards (of which 4 are currently used…)  500Gb HDDI have been playing with some networking in the house and have managed to build some VLANs. The modems are connected both directly to the Routerand to a dedicated switch port for a given VLAN. The plan for the upgrade, which i hope to complete sooner than the rest of the network is asfollows:  get the ML110 running ESXi and visualize PFSense. Give it 2gb of RAM and some processor.  take some of the network cards out of the box. It does not need 12 ports, but maybe leave the 2 quad ports in there. They should be connectedto the main switch trunked. 8 may be overkill, but i never do things by half.  the PFSEnse VM should be connected to all 3 WAN VlANs (900, 901 and 902) and should also have at least one port to the LAN. There may also beother ports for other internal VLANs.with the spare processor, i can then add other (small) VMs to this machine." />
+<meta name="description" content="So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:" />
+<meta property="og:description" content="So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2015/07/16/Network-and-HomeLab-vnext-part-3.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2015/07/16/Network-and-HomeLab-vnext-part-3.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Network and HomeLab V.Next (Part 3)",
-    "datePublished": "2015-07-16T13:15:00+00:00",
-    "description": "So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:  Old HP Proliant ML110 G5  Intel Core2Quad Q6600  8 Gb RAM  total of 12 Gigabit network cards (of which 4 are currently used…)  500Gb HDDI have been playing with some networking in the house and have managed to build some VLANs. The modems are connected both directly to the Routerand to a dedicated switch port for a given VLAN. The plan for the upgrade, which i hope to complete sooner than the rest of the network is asfollows:  get the ML110 running ESXi and visualize PFSense. Give it 2gb of RAM and some processor.  take some of the network cards out of the box. It does not need 12 ports, but maybe leave the 2 quad ports in there. They should be connectedto the main switch trunked. 8 may be overkill, but i never do things by half.  the PFSEnse VM should be connected to all 3 WAN VlANs (900, 901 and 902) and should also have at least one port to the LAN. There may also beother ports for other internal VLANs.with the spare processor, i can then add other (small) VMs to this machine.",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2015/07/16/Network-and-HomeLab-vnext-part-3.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Network and HomeLab V.Next (Part 3)",
+"datePublished": "2015-07-16T13:15:00+00:00",
+"description": "So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2015/07/16/Network-and-HomeLab-vnext-part-3.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -429,7 +429,7 @@ other ports for other internal VLANs.</li>
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:28 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:56 +0000
   </p>
 </div>
       </div>

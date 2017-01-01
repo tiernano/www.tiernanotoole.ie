@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>RouterOS Dynamic IP Updates</title>
 <meta property="og:title" content="RouterOS Dynamic IP Updates" />
-<meta name="description" content="I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb…). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet…Anyway, part of getting the RB1100 online and taking over from my existing router was getting Dynamic DNS updating. I use both Dyndns and NoIP for DNS, but I also like the look of Amazon Route 53. For updating NoIP, I am using the Alternitive script from The Mikrotik Wiki. To get this to work with DynDNS, it would just be a matter of chaning the URL you point to… I am going to write a web script which will sit internally on the network, use that instead of the No-IP url. When that script gets called, i can log the info, update DynDNS, NoIP and Router53 all in one go. I will be posting more about that soon…And while we are on the topic of Scripting RouterOS, checkout the Mikrotik Script Example Page. Lots of good stuff up there!" />
-<meta property="og:description" content="I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb…). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet…Anyway, part of getting the RB1100 online and taking over from my existing router was getting Dynamic DNS updating. I use both Dyndns and NoIP for DNS, but I also like the look of Amazon Route 53. For updating NoIP, I am using the Alternitive script from The Mikrotik Wiki. To get this to work with DynDNS, it would just be a matter of chaning the URL you point to… I am going to write a web script which will sit internally on the network, use that instead of the No-IP url. When that script gets called, i can log the info, update DynDNS, NoIP and Router53 all in one go. I will be posting more about that soon…And while we are on the topic of Scripting RouterOS, checkout the Mikrotik Script Example Page. Lots of good stuff up there!" />
+<meta name="description" content="I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb…). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet…" />
+<meta property="og:description" content="I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb…). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet…" />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2012/11/19/routeros_dynamic_ip_updates.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2012/11/19/routeros_dynamic_ip_updates.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "RouterOS Dynamic IP Updates",
-    "datePublished": "2012-11-19T10:19:26+00:00",
-    "description": "I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb…). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet…Anyway, part of getting the RB1100 online and taking over from my existing router was getting Dynamic DNS updating. I use both Dyndns and NoIP for DNS, but I also like the look of Amazon Route 53. For updating NoIP, I am using the Alternitive script from The Mikrotik Wiki. To get this to work with DynDNS, it would just be a matter of chaning the URL you point to… I am going to write a web script which will sit internally on the network, use that instead of the No-IP url. When that script gets called, i can log the info, update DynDNS, NoIP and Router53 all in one go. I will be posting more about that soon…And while we are on the topic of Scripting RouterOS, checkout the Mikrotik Script Example Page. Lots of good stuff up there!",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2012/11/19/routeros_dynamic_ip_updates.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "RouterOS Dynamic IP Updates",
+"datePublished": "2012-11-19T10:19:26+00:00",
+"description": "I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb…). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet…",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2012/11/19/routeros_dynamic_ip_updates.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -411,7 +411,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:27 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:53 +0000
   </p>
 </div>
       </div>

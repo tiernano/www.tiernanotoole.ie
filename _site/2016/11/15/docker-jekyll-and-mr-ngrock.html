@@ -26,11 +26,11 @@
   <link rel="pingback" href="https://webmention.io/tiernanotoole.ie/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/tiernanotoole.ie/webmention" />
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v2.1.0 -->
 <title>Docker Jekyll and Mr ngrok</title>
 <meta property="og:title" content="Docker Jekyll and Mr ngrok" />
-<meta name="description" content="See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok.So, first, you should know what Nginx is at this stage… If not, check out their site. Next ngrok is basically a way of tunneling your localhost to the web. So, how do we build the whole lot together and serve your site to the internet? Well, this is what i have so far:First, build your site in jekyll. for me, the command isdocker run --rm -v &quot;$(pwd):/src&quot; -w /src ruby sh -c &#39;bundle install --path vendor/bundle &amp;&amp; exec jekyll build -s www.tiernanotoole.ie/ -d www.tiernanotoole.ie/_site/&#39;next, run an nginx server with that output folder:docker run --name tiernanotoolenginx -v &quot;$(pwd)/www.tiernanotoole.ie/_site/:/usr/share/nginx/html:ro&quot; -d -p 8881:80 nginxthe docker container is called tiernanotoolenginx, since i could have multiple ones, and port 8881 is being redirected to port 80 on that container, but technically, it might not be needed due to the next command:docker run --rm -it --link tiernanotoolenginx wernight/ngrok ngrok http tiernanotoolenginx:80essentially, what we are doing here is running ngrok and pointing it at post 80 on the nginx container… you see i did not point at 8881, since we are using the continer directly… it might be different if you were not…when that command runs, you get a screen telling you the URL of your site with some basic stats. your site is now hosted publically, via an ngrok tunnel! you could run that container as a daemon, and leave it running, but for me, i wanted to do some minor testing, so i can kill it when i want…So, all is good with the world!" />
-<meta property="og:description" content="See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok.So, first, you should know what Nginx is at this stage… If not, check out their site. Next ngrok is basically a way of tunneling your localhost to the web. So, how do we build the whole lot together and serve your site to the internet? Well, this is what i have so far:First, build your site in jekyll. for me, the command isdocker run --rm -v &quot;$(pwd):/src&quot; -w /src ruby sh -c &#39;bundle install --path vendor/bundle &amp;&amp; exec jekyll build -s www.tiernanotoole.ie/ -d www.tiernanotoole.ie/_site/&#39;next, run an nginx server with that output folder:docker run --name tiernanotoolenginx -v &quot;$(pwd)/www.tiernanotoole.ie/_site/:/usr/share/nginx/html:ro&quot; -d -p 8881:80 nginxthe docker container is called tiernanotoolenginx, since i could have multiple ones, and port 8881 is being redirected to port 80 on that container, but technically, it might not be needed due to the next command:docker run --rm -it --link tiernanotoolenginx wernight/ngrok ngrok http tiernanotoolenginx:80essentially, what we are doing here is running ngrok and pointing it at post 80 on the nginx container… you see i did not point at 8881, since we are using the continer directly… it might be different if you were not…when that command runs, you get a screen telling you the URL of your site with some basic stats. your site is now hosted publically, via an ngrok tunnel! you could run that container as a daemon, and leave it running, but for me, i wanted to do some minor testing, so i can kill it when i want…So, all is good with the world!" />
+<meta name="description" content="See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok." />
+<meta property="og:description" content="See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok." />
 <link rel="canonical" href="https://www.tiernanotoole.ie/2016/11/15/docker-jekyll-and-mr-ngrock.html" />
 <meta property="og:url" content="https://www.tiernanotoole.ie/2016/11/15/docker-jekyll-and-mr-ngrock.html" />
 <meta property="og:type" content="article" />
@@ -39,17 +39,17 @@
 <meta name="twitter:site" content="@tiernano" />
 <meta name="twitter:creator" content="@tiernano" />
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Docker Jekyll and Mr ngrok",
-    "datePublished": "2016-11-15T12:00:00+00:00",
-    "description": "See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok.So, first, you should know what Nginx is at this stage… If not, check out their site. Next ngrok is basically a way of tunneling your localhost to the web. So, how do we build the whole lot together and serve your site to the internet? Well, this is what i have so far:First, build your site in jekyll. for me, the command isdocker run --rm -v &quot;$(pwd):/src&quot; -w /src ruby sh -c &#39;bundle install --path vendor/bundle &amp;&amp; exec jekyll build -s www.tiernanotoole.ie/ -d www.tiernanotoole.ie/_site/&#39;next, run an nginx server with that output folder:docker run --name tiernanotoolenginx -v &quot;$(pwd)/www.tiernanotoole.ie/_site/:/usr/share/nginx/html:ro&quot; -d -p 8881:80 nginxthe docker container is called tiernanotoolenginx, since i could have multiple ones, and port 8881 is being redirected to port 80 on that container, but technically, it might not be needed due to the next command:docker run --rm -it --link tiernanotoolenginx wernight/ngrok ngrok http tiernanotoolenginx:80essentially, what we are doing here is running ngrok and pointing it at post 80 on the nginx container… you see i did not point at 8881, since we are using the continer directly… it might be different if you were not…when that command runs, you get a screen telling you the URL of your site with some basic stats. your site is now hosted publically, via an ngrok tunnel! you could run that container as a daemon, and leave it running, but for me, i wanted to do some minor testing, so i can kill it when i want…So, all is good with the world!",
-    "logo": "https://www.tiernanotoole.ieimages/f13a7d94b648a3a15655f0ec1dc3284e.jpeg",
-    "url": "https://www.tiernanotoole.ie/2016/11/15/docker-jekyll-and-mr-ngrock.html"
-  }
-</script>
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Docker Jekyll and Mr ngrok",
+"datePublished": "2016-11-15T12:00:00+00:00",
+"description": "See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok.",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "https://www.tiernanotoole.ie/images/f13a7d94b648a3a15655f0ec1dc3284e.jpeg"}},
+"url": "https://www.tiernanotoole.ie/2016/11/15/docker-jekyll-and-mr-ngrock.html"}</script>
 <!-- End Jekyll SEO tag -->
+
 
 </head>
 <body>
@@ -430,7 +430,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2016-11-22 16:34:29 +0000
+    © Tiernan OToole, 2016 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-01 15:01:57 +0000
   </p>
 </div>
       </div>
