@@ -1,5 +1,6 @@
 highlighter: pygments
 url: https://www.tiernanotoole.ie
+title: "Tiernan's Comms Closet"
 lsi: false
 
 paginate_path: "/page:num/"
