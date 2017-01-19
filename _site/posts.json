@@ -2,6 +2,12 @@
     "posts": [
         
         {
+            "title": "Distributed S3 data storage using Minio (and Zerotier)",
+            "url": "https://www.tiernanotoole.ie/2017/01/19/distributed-s3-storage-minio-zerotier.html",
+            "date": "2017-01-19T18:00:00+00:00"
+        },
+        
+        {
             "title": "Docker Jekyll and Mr ngrok",
             "url": "https://www.tiernanotoole.ie/2016/11/15/docker-jekyll-and-mr-ngrock.html",
             "date": "2016-11-15T12:00:00+00:00"

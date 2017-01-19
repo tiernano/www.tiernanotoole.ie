@@ -4,12 +4,35 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2017-01-12T15:17:40+00:00</updated>
+	<updated>2017-01-19T18:19:24+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
 		<email>tiernan@tiernanotoole.ie</email>
 	</author>
+	
+	<entry>
+		<title>Distributed S3 data storage using Minio (and Zerotier)</title>
+		<link href="https://www.tiernanotoole.ie/2017/01/19/distributed-s3-storage-minio-zerotier.html"/>
+		<updated>2017-01-19T18:00:00+00:00</updated>
+		<id>https://www.tiernanotoole.ie{ post.id }}</id>
+		<content type="html">&lt;p&gt;So, something i have been looking into in recient times has been &lt;a href=&quot;https://en.wikipedia.org/wiki/Distributed_data_store&quot;&gt;Distributed Storage&lt;/a&gt;, and, more specifically, how to use the storage in my &lt;a href=&quot;https://www.tiernanotoole.ie/Computers/&quot;&gt;many, many machines&lt;/a&gt; to protect data, and also increese my usable space… There are a few projects on the market that do this (&lt;a href=&quot;https://ceph.com/&quot;&gt;Ceph&lt;/a&gt;, &lt;a href=&quot;http://www.noobaa.com/&quot;&gt;NooBaa&lt;/a&gt; and &lt;a href=&quot;https://www.gluster.org/&quot;&gt;Gluster&lt;/a&gt; all spring to mind) but some are more painful to setup than others… which brings me nicely to &lt;a href=&quot;https://minio.io/&quot;&gt;Minio&lt;/a&gt;. Minio is a 20ish MB executable you download from their site, mark it as executable (on Linux or Mac Boxes) and run… and you have yourself a S3 compatable storage server… Simples!&lt;/p&gt;
+
+&lt;p&gt;“But Wait!” i here you screem! “thats not distributed!”. Well, yes… but, It can be! Their &lt;a href=&quot;http://docs.minio.io/docs/distributed-minio-quickstart-guide&quot;&gt;Distributed Quick Start Guide&lt;/a&gt;, which is where i started with this, allows you to run a distributed copy of your data. I will let their documentation explain more, but this is what i did:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;download the minio server (single executable file) on a minimum of 4 machines.&lt;/li&gt;
+  &lt;li&gt;on each machine, run a command like the following:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://gist.github.com/tiernano/a6617921976eef0c1c79b3175bd76bf7.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;replacing accesskey and secretkey with keys (check minio documentation to get these) and foldertoexport with, well, the folder you want to export!&lt;/p&gt;
+
+&lt;p&gt;For me, i have 4 servers currently clustered. 2 are in &lt;a href=&quot;http://www.online.net&quot;&gt;online.net&lt;/a&gt; (one in Paris, one in Amsterdam), 1 in &lt;a href=&quot;http://www.ovh.net&quot;&gt;OVH.NET&lt;/a&gt; (France, somewhere) and one in Dublin (&lt;a href=&quot;https://www.tiernanotoole.ie/Computers/GodBoxV2.html&quot;&gt;GodBoxV2&lt;/a&gt; currently). They are all interconnected using &lt;a href=&quot;https://www.zerotier.com/&quot;&gt;ZeroTier&lt;/a&gt; (I will explain that later) and so far, so good… only ran some basic tests, but with it, i could loose 2 machines and still have data… Not bad for free! I will run some speed tests soon.&lt;/p&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>Docker Jekyll and Mr ngrok</title>
