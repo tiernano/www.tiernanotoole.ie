@@ -4,7 +4,7 @@ title: Mac Pro
 sitemap:
     priority: 0.7
     changefreq: 'weekly'
-    lastmod: lastmod: 2017-03-09T21:00:00
+    lastmod: 2017-03-09T21:00:00
 ---
 # Mac Pro, Late 2006 model 1.1
 

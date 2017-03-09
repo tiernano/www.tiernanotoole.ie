@@ -2,9 +2,16 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.tiernanotoole.ie/</loc>
-		<lastmod>2017-03-09T20:12:32+00:00</lastmod>
+		<lastmod>2017-03-09T21:23:51+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
+	</url>
+	
+	<url>
+		<loc>https://www.tiernanotoole.ie/2017/03/09/business-class-broadband.html</loc>
+		<lastmod>2017-03-09T21:00:00+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
 	</url>
 	
 	<url>
@@ -557,7 +564,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/GodBoxV2.html</loc>
-			<lastmod>2017-01-01T12:00:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -566,7 +573,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/MacBookPro.html</loc>
-			<lastmod>2015-06-14T16:10:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -575,7 +582,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/PE1600SC.html</loc>
-			<lastmod>2015-06-14T16:10:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -584,7 +591,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/PE2900.html</loc>
-			<lastmod>2015-06-14T16:10:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -593,7 +600,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/PE2950.html</loc>
-			<lastmod>2015-06-14T16:10:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -617,7 +624,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/c6100.html</loc>
-			<lastmod>2017-01-01T12:00:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -628,7 +635,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/godbox.html</loc>
-			<lastmod>2017-01-01T12:00:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -637,7 +644,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/hpstorageworks.html</loc>
-			<lastmod>2016-11-16T09:00:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -668,7 +675,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/</loc>
-			<lastmod>2015-09-15T16:30:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -686,7 +693,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/macmini.html</loc>
-			<lastmod>2016-03-29T13:10:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -695,7 +702,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/macpro.html</loc>
-			<lastmod>2015-07-16T13:30:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -724,7 +731,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/proliantml110.html</loc>
-			<lastmod>2016-05-18T14:43:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>
@@ -733,7 +740,7 @@
 		
 		  <url>
 			<loc>https://www.tiernanotoole.ie/Computers/router.html</loc>
-			<lastmod>2016-03-24T14:43:00+00:00</lastmod>
+			<lastmod>2017-03-09T21:00:00+00:00</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.7</priority>
 		   </url>

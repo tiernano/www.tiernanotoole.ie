@@ -252,19 +252,16 @@
 <!-- content -->
 <div><a href="/Computers/">Back to Computers Homepage</a></div>
  <div class="entry">
-        <p>The main Internet Router in the lab is a <a href="http://www.ubnt.com">Ubiquiti Networks</a> <a href="https://www.ubnt.com/edgemax/edgerouter-poe/">EdgeRouter POE</a></p>
+        <h1 id="router">Router</h1>
 
-<p>Internet wise, there are 2 WAN links on connected to the machine:</p>
+<p>The main Internet Router in the lab is VM running <a href="https://vyos.io/">VyOS</a>
+Internet wise, I have moded to business class brodband from Virgin Media:</p>
 
 <ul>
-  <li>2 <a href="http://www.virginmedia.ie">Virgin Media</a> Unlimited 360Mb/s Cable modems each with 36Mb/s upload speed. The modems are in bridge mode.</li>
+  <li><a href="http://www.virginmedia.ie">Virgin Media</a> Unlimited 400mb/s Cable modem with 40Mb/s upload speed. The modem is in bridge mode.</li>
 </ul>
 
-<p>both connections are load balanced and some sites are sent over particular links (for example, all Apple traffic goes over WAN2, so Apple’s caching server, running on the <a href="/Computers/macmini.html">mac mini</a> does its thing…</p>
-
-<p><img src="/post_images/2016/03/29/20160329-speedtest.png" alt="speed test result" /></p>
-
-<p>As you can see, I can manage to get all my upload speed using speed test, but not all my download speed… tweaks need to be made…</p>
+<p>as part of the business package, a /29 static IP range is included.</p>
 
 
  </div>
@@ -289,7 +286,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-03-09 20:12:45 +0000
+    © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-03-09 21:23:57 +0000
   </p>
 </div>
       </div>

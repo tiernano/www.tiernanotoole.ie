@@ -4,12 +4,35 @@
 	<title>TiernanOToole</title>
 	<link href="https://feeds.feedburner.com/tiernanotoole" rel="self"/>
 	<link href="https://www.tiernanotoole.ie/"/>
-	<updated>2017-03-09T20:12:32+00:00</updated>
+	<updated>2017-03-09T21:23:51+00:00</updated>
 	<id>https://www.tiernanotoole.ie/</id>
 	<author>
 		<name>Tiernan OToole</name>
 		<email>tiernan@tiernanotoole.ie</email>
 	</author>
+	
+	<entry>
+		<title>Business Class Broadband... finally here....</title>
+		<link href="https://www.tiernanotoole.ie/2017/03/09/business-class-broadband.html"/>
+		<updated>2017-03-09T21:00:00+00:00</updated>
+		<id>https://www.tiernanotoole.ie{ post.id }}</id>
+		<content type="html">&lt;p&gt;So, after many (MANY) years messing with dual cable modems, struggling to get them working together, to get websites to even allow me in, having to use hacks and kluges to get it to work at all… I have given up. It has been a struggle getting two modems working properly. Load blanching &lt;em&gt;kind&lt;/em&gt; of works… but it’s messy at best. Some sites kick you out every now and again because your IP changes. Some sites wont let you login at all… Mind you, some sites work grand and don’t ask questions…&lt;/p&gt;
+
+&lt;p&gt;And the whole idea of multiple modems, to allow you to download things faster, doesn’t work for everything… Anything you download in the browser is single threaded, so its limited to one modem… you can use use download accelerators, and they do work, but its an extra step, and some sites don’t work for that either (MSDN for example).&lt;/p&gt;
+
+&lt;p&gt;So, i have given up, bit the bullet, and moved to business class broadband from &lt;a href=&quot;https://www.virginmedia.ie/business/&quot;&gt;Virgin Media&lt;/a&gt;. It’s actually cheaper than the two residential lines i had, but it is also slower than the two combined: previously, it was two x 360/36mb/s. Now i am am on a single 400/40mb/s modem. That being said, there are definite advantages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Static IPs pretty much as standard, and option of either one or five (no unbeaten!) Guess which one i went with? Its &lt;em&gt;technically&lt;/em&gt; a /29 range, but the first usable IP is given to the modem, which acts as a gateway, so i end up with five usable.&lt;/li&gt;
+  &lt;li&gt;Proper business class SLA. Any issues, someone who knows what they are talking about can help&lt;/li&gt;
+  &lt;li&gt;Phone lines on a separate modem. So, i got phone lines with them, and they give a separate modem for those lines, so as not to interfere with the internet. that modem has no internet connection and is just for calls. They are also working on a VoIP/SIP offering, which is something i am interested in.&lt;/li&gt;
+  &lt;li&gt;Guaranteed speed! They guarantee a minimum speed to the modem at all time. Business customers have a priority on the network, which is nice. And, during testing, so far, i am getting the advertised speed most of the time. I needed to download a Windows 10 ISO yesterday from the MSDN, and it came in at between 45 and 48MBytes/s!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, only had it installed a week, and so far, so good. I have one IP given to my &lt;a href=&quot;http://www.pfsense.org&quot;&gt;PFSesne&lt;/a&gt; box, and the rest given to a &lt;a href=&quot;http://www.vyos.io&quot;&gt;VyOS&lt;/a&gt; VM. The plan is to use the VyOS box for all network traffic, but first i need to do some testing and learning… Expect some posts on this soon!&lt;/p&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>Distributed S3 data storage using Minio (and Zerotier)</title>
@@ -18,7 +41,7 @@
 		<id>https://www.tiernanotoole.ie{ post.id }}</id>
 		<content type="html">&lt;p&gt;So, something i have been looking into in recient times has been &lt;a href=&quot;https://en.wikipedia.org/wiki/Distributed_data_store&quot;&gt;Distributed Storage&lt;/a&gt;, and, more specifically, how to use the storage in my &lt;a href=&quot;https://www.tiernanotoole.ie/Computers/&quot;&gt;many, many machines&lt;/a&gt; to protect data, and also increese my usable space… There are a few projects on the market that do this (&lt;a href=&quot;https://ceph.com/&quot;&gt;Ceph&lt;/a&gt;, &lt;a href=&quot;http://www.noobaa.com/&quot;&gt;NooBaa&lt;/a&gt; and &lt;a href=&quot;https://www.gluster.org/&quot;&gt;Gluster&lt;/a&gt; all spring to mind) but some are more painful to setup than others… which brings me nicely to &lt;a href=&quot;https://minio.io/&quot;&gt;Minio&lt;/a&gt;. Minio is a 20ish MB executable you download from their site, mark it as executable (on Linux or Mac Boxes) and run… and you have yourself a S3 compatable storage server… Simples!&lt;/p&gt;
 
-&lt;p&gt;“But Wait!” i here you screem! “thats not distributed!”. Well, yes… but, It can be! Their &lt;a href=&quot;http://docs.minio.io/docs/distributed-minio-quickstart-guide&quot;&gt;Distributed Quick Start Guide&lt;/a&gt;, which is where i started with this, allows you to run a distributed copy of your data. I will let their documentation explain more, but this is what i did:&lt;/p&gt;
+&lt;p&gt;“But Wait!” i here you screem! “thats not distributed!”. Well, yes… but, it can be! Their &lt;a href=&quot;http://docs.minio.io/docs/distributed-minio-quickstart-guide&quot;&gt;Distributed Quick Start Guide&lt;/a&gt;, which is where i started with this, allows you to run a distributed copy of your data. I will let their documentation explain more, but this is what i did:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;download the minio server (single executable file) on a minimum of 4 machines.&lt;/li&gt;
@@ -1847,9 +1870,12 @@ make
   &lt;li&gt;&lt;a href=&quot;http://www.3cx.com/&quot;&gt;3CX&lt;/a&gt;: my current choice in VOIP software.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The main VOIP hardware I use is:
-* &lt;a href=&quot;http://www.amazon.co.uk/gp/product/B000TSJ5JK/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1634&amp;amp;creative=19450&amp;amp;creativeASIN=B000TSJ5JK&amp;amp;linkCode=as2&amp;amp;tag=tiescomclo-21&quot;&gt;Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon UK)&lt;/a&gt;
-* &lt;a href=&quot;http://www.amazon.co.uk/gp/product/B000TSJ5JK/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1634&amp;amp;creative=19450&amp;amp;creativeASIN=B000TSJ5JK&amp;amp;linkCode=as2&amp;amp;tag=tiescomclo-21&quot;&gt;Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon US)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The main VOIP hardware I use is:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.amazon.co.uk/gp/product/B000TSJ5JK/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1634&amp;amp;creative=19450&amp;amp;creativeASIN=B000TSJ5JK&amp;amp;linkCode=as2&amp;amp;tag=tiescomclo-21&quot;&gt;Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon UK)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.amazon.com/gp/product/B000FKP55U/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=390957&amp;amp;creativeASIN=B000FKP55U&amp;amp;linkCode=as2&amp;amp;tag=lotassmartmann00&quot;&gt;Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon US)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;I also use the 3CX software on both my iPhone and Android.&lt;/p&gt;
 
@@ -1869,12 +1895,12 @@ make
 		<content type="html">&lt;p&gt;A couple months back, I got my hands on a &lt;a href=&quot;http://www.raspberrypi.org/&quot;&gt;Raspberry Pi&lt;/a&gt;, a tiny development board that can run a full copy of Linux, has a HDMI port, a couple USB ports, Ethernet and a few other little bits and pieces. The full specs, from the &lt;a href=&quot;http://en.wikipedia.org/wiki/Raspberry_Pi&quot;&gt;Wikipedia Article&lt;/a&gt; are as follows:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Operating system:	Linux (Debian GNU/Linux, Fedora, and Arch Linux ARM)&lt;/li&gt;
-  &lt;li&gt;Power:	2.5 W (model A), 3.5 W (model B)&lt;/li&gt;
-  &lt;li&gt;CPU:	ARM1176JZF-S (armv6k) 700 MHz&lt;/li&gt;
-  &lt;li&gt;Storage capacity:	SD card slot (SD or SDHC card)&lt;/li&gt;
-  &lt;li&gt;Memory:	256 MByte&lt;/li&gt;
-  &lt;li&gt;Graphics:	Broadcom VideoCore IV&lt;/li&gt;
+  &lt;li&gt;Operating system: Linux (Debian GNU/Linux, Fedora, and Arch Linux ARM)&lt;/li&gt;
+  &lt;li&gt;Power: 2.5 W (model A), 3.5 W (model B)&lt;/li&gt;
+  &lt;li&gt;CPU: ARM1176JZF-S (armv6k) 700 MHz&lt;/li&gt;
+  &lt;li&gt;Storage capacity: SD card slot (SD or SDHC card)&lt;/li&gt;
+  &lt;li&gt;Memory: 256 MByte&lt;/li&gt;
+  &lt;li&gt;Graphics: Broadcom VideoCore IV&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;There have been a few things i have wanted to play with it for, but have not implemented all them yet… still learning… but some interesting projects have come to my attention… here they are, in no particular order:&lt;/p&gt;
