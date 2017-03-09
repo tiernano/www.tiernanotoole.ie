@@ -11,14 +11,14 @@ I have been very interested in VOIP stuff for the last while now, and finally st
 * [3CX][3]: my current choice in VOIP software.
 
 The main VOIP hardware I use is:
+
 * [Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon UK)][4]
-* [Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon US)][4]
+* [Cisco Small Business Pro SPA3102 Voice Gateway with Router (Amazon US)][5]
 
 I also use the 3CX software on both my iPhone and Android.
 
 * [3CX phone for Android][6]
 * [3CX phone for iPhone][7]
-
 
 [1]:http://wiki.stocksy.co.uk/wiki/Asterisk_1.8_with_chan_mobile_on_CentOS_6
 [2]:http://www.stocksy.co.uk/articles/Networks/use_an_old_mobile_phone_as_a_gsm_gateway_in_asterisk/

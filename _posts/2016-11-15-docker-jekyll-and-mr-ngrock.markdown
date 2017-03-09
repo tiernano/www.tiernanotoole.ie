@@ -7,7 +7,6 @@ tags:
 date: "2016-11-15 12:00"
 published: true
 ---
-
 See what i did with the title?! Anyway, in [my last post][1], i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using [Nginx][2] and [ngrok][3].
 
 So, first, you should know what Nginx is at this stage... If not, check out [their site][2]. Next [ngrok][3] is basically a way of tunneling your localhost to the web. So, how do we build the whole lot together and serve your site to the internet? Well, this is what i have so far:

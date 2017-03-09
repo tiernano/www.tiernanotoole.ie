@@ -15,6 +15,5 @@ I added this to my Microsoft.PowerShell_profile.ps1 file in Documents\WindowsPow
 
 Happy days!
 
-
 [1]:http://www.sublimetext.com/2
 [2]:http://www.computerperformance.co.uk/powershell/powershell_profile_ps1.htm

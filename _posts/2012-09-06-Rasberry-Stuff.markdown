@@ -7,13 +7,12 @@ tags:
 ---
 A couple months back, I got my hands on a [Raspberry Pi][1], a tiny development board that can run a full copy of Linux, has a HDMI port, a couple USB ports, Ethernet and a few other little bits and pieces. The full specs, from the [Wikipedia Article][2] are as follows:
 
-
-* Operating system:	Linux (Debian GNU/Linux, Fedora, and Arch Linux ARM)
-* Power:	2.5 W (model A), 3.5 W (model B)
-* CPU:	ARM1176JZF-S (armv6k) 700 MHz
-* Storage capacity:	SD card slot (SD or SDHC card)
-* Memory:	256 MByte
-* Graphics:	Broadcom VideoCore IV
+* Operating system: Linux (Debian GNU/Linux, Fedora, and Arch Linux ARM)
+* Power: 2.5 W (model A), 3.5 W (model B)
+* CPU: ARM1176JZF-S (armv6k) 700 MHz
+* Storage capacity: SD card slot (SD or SDHC card)
+* Memory: 256 MByte
+* Graphics: Broadcom VideoCore IV
 
 There have been a few things i have wanted to play with it for, but have not implemented all them yet... still learning... but some interesting projects have come to my attention... here they are, in no particular order:
 
@@ -26,8 +25,6 @@ In all fairness, the Pi makes a lot of ideas possible. with such a small size, a
 there are also a few interesting things that may make the Pi work more portable...
 
 * [LiPo Rider Pro][3]: takes input from Batteries and Solar Panels and outputs as USB 5V. should run the Pi off solar and batteries for a while... :)
-
-
 
 [1]:http://www.raspberrypi.org/
 [2]:http://en.wikipedia.org/wiki/Raspberry_Pi
