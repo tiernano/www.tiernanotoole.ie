@@ -252,9 +252,21 @@
 <!-- content -->
 <div><a href="/Computers/">Back to Computers Homepage</a></div>
  <div class="entry">
-        <p>Bought a <a href="http://www.dell.com/ie/business/p/poweredge-c6100/pd">Dell C6100</a> a while back. 4 nodes, each with Dual <a href="http://ark.intel.com/products/37096/Intel-Xeon-Processor-E5506-4M-Cache-2_13-GHz-4_80-GTs-Intel-QPI">Xeon E5506</a> processors, 36Gb RAM. They share 12 drives bays (3 dedicated to each machine) and each machine has 2 GigE ports and an <a href="https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface">IPMI port</a>.</p>
+        <h1 id="dell-c6100-servers">Dell C6100 servers</h1>
 
-<p>These machines are runnign <a href="https://www.microsoft.com/en-us/cloud-platform/windows-server">Windows Server 2016</a>, and have a mix of drives, mostly spare. I think 3 have a 250Gb Drive, one boots from a 750Gb disk, and 2 have 64Gb SSDs for extra space, one has a 500Gb for extra space. They all have Hyper-V enabled, managed by <a href="https://technet.microsoft.com/en-us/library/gg610610%28v=sc.12%29.aspx?f=255&amp;MSPPError=-2147217396">SCVMM</a> and have both NICs connected to my main switch in teamed mode.</p>
+<p>I bought a <a href="http://www.dell.com/ie/business/p/poweredge-c6100/pd">Dell C6100</a> a while back. 4 nodes, each with Dual <a href="http://ark.intel.com/products/37096/Intel-Xeon-Processor-E5506-4M-Cache-2_13-GHz-4_80-GTs-Intel-QPI">Xeon E5506</a> processors, 36Gb RAM. They share 12 drives bays (3 dedicated to each machine) and each machine has 2 GigE ports and an <a href="https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface">IPMI port</a>.</p>
+
+<p>These machines are running <a href="https://www.microsoft.com/en-us/cloud-platform/windows-server">Windows Server 2016</a>, and have a mix of drives, mostly spare. I think 3 have a 250Gb Drive, one boots from a 750Gb disk, and 2 have 64Gb SSDs for extra space, one has a 500Gb for extra space. They all have Hyper-V enabled, managed by <a href="https://technet.microsoft.com/en-us/library/gg610610%28v=sc.12%29.aspx?f=255&amp;MSPPError=-2147217396">SCVMM</a> and have both NICs connected to my main switch in teamed mode.</p>
+
+<p>VMs hosted on them include:</p>
+
+<ul>
+  <li>DHCP Server running on Windows Server 2016 Core</li>
+  <li>2 Active Directory boxes, currently running Windows Server 2012 R2, but soon to get upgraded to 2016 Core</li>
+  <li>Linux VM running docker (with multiple containers)</li>
+  <li>Linux VM for monitoring network</li>
+  <li>Linux VM for <a href="http://www.ubnt.com">Ubiquiti Networks</a> controller</li>
+</ul>
 
 
  </div>
@@ -279,7 +291,7 @@
   </p>
   
   <p>
-    © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-01-19 18:19:29 +0000
+    © Tiernan OToole, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.net</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>. Page generated at:  2017-03-09 21:23:57 +0000
   </p>
 </div>
       </div>

@@ -6,7 +6,6 @@ sitemap:
     changefreq: 'weekly'
     lastmod: 2016-06-27T20:10:00
 ---
-
 # 2015 [Microsoft Surface Book][2]
 
 Specs:

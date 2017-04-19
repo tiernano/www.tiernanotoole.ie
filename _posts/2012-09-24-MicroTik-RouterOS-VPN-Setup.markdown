@@ -10,7 +10,6 @@ I have been running a [MikroTik RouterBoard][1] in the house for a couple of mon
 
 ## Client Setup
 
-
 to setup a client, you need to do the following:
 
 {% gist 8581643 %}
@@ -23,7 +22,6 @@ there are more advanced things you can set above... some examples I can think of
 * There should be no good reason to limit the amount of VPN connections you have... in theory, you could have multiple...
 * for the mangle rule, set the src-address to a single machine in your network. that way, it gets VPN only connections. Also, you could set the dst-address to a single address or network to send only traffic going to a given server though the VPN... Example would be Netflix US traffic to a US VPN server, BBC iPlayer traffic to a UK VPN, etc.
 * the example above uses L2TP, but PPTP, SSTP and OpenVPN are also available.
-
 
 ## Server Setup
 

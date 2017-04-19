@@ -4,9 +4,8 @@ title: Computers
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2015-09-15T16:30:00
+    lastmod: 2017-03-09T21:00:00
 ---
-
 # My Home Lab
 
 This page is a link of some of the machines and network devices I have in house.

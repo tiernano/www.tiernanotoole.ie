@@ -4,9 +4,8 @@ title: Mac Mini
 sitemap:
     priority: 0.7
     changefreq: 'weekly'
-    lastmod: 2016-03-29T13:10:00
+    lastmod: 2017-03-09T21:00:00
 ---
-
 # Late 2012 Mac Mini
 
 ![Mac Mini Details](/post_images/2016/03/29/20160329-macmini-system-detail.png)

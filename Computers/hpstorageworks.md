@@ -4,8 +4,9 @@ title: HP Storageworks P4300 (i think) G2
 sitemap:
     priority: 0.7
     changefreq: 'weekly'
-    lastmod: 2016-11-16T09:00:00
+    lastmod: 2017-03-09T21:00:00
 ---
+# HP StorageWorks P4300 G2 servers
 
 I bought 2 [HP StorageWorks P4300 G2][1] servers a while back. They each have Dual Xeon [E5520][2] Quad core processors, 12Gb RAM, 8 1TB SAS Disks (i think they are 7200RPM) and each include 2 GigE net ports and an [IPMI][3] management port. Planning on doing something with these soon...
 

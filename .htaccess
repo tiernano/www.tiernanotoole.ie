@@ -13,14 +13,24 @@
 <IfModule mod_headers.c>
   <filesMatch "\.(ico|jpe?g|png|gif|swf)$">
   Header set Cache-Control "public"
+  FileETag -INode MTime Size
+  Header unset Last-Modified
   </filesMatch>
   <filesMatch "\.(css)$">
   Header set Cache-Control "public"
+  FileETag -INode MTime Size
+  Header unset Last-Modified
+
   </filesMatch>
   <filesMatch "\.(js)$">
   Header set Cache-Control "public"
+  FileETag -INode MTime Size
+  Header unset Last-Modified
+
   </filesMatch>
   <filesMatch "\.(x?html?|php)$">
   Header set Cache-Control "public"
+  FileETag -INode MTime Size
+  Header unset Last-Modified
   </filesMatch>
 </IfModule>

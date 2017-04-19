@@ -11,7 +11,6 @@ I have been running [CrashPlan][1] for a while now, and, other than some minor i
 
 Anyway, here are some tips i have figured out over the last while for making Crashplan work a little better...
 
-
 * [Speeding up your backup][4]
 * [Installing CrashPlan on a headless (no monitor or GUI) Ubuntu Server][2]
 * [How to get terabytes of data into the cloud using Crashplan Seed Drive][3]
