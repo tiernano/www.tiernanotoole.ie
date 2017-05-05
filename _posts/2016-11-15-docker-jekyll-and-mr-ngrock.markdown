@@ -14,20 +14,20 @@ So, first, you should know what Nginx is at this stage... If not, check out [the
 First, build your site in jekyll. for me, the command is
 
     docker run --rm -v "$(pwd):/src" -w /src ruby sh -c 'bundle install --path vendor/bundle && exec jekyll build -s www.tiernanotoole.ie/ -d www.tiernanotoole.ie/_site/'
-  
+
 next, run an nginx server with that output folder:
 
     docker run --name tiernanotoolenginx -v "$(pwd)/www.tiernanotoole.ie/_site/:/usr/share/nginx/html:ro" -d -p 8881:80 nginx
-    
+
 the docker container is called tiernanotoolenginx, since i could have multiple ones, and port 8881 is being redirected to port 80 on that container, but technically, it might not be needed due to the next command:
 
     docker run --rm -it --link tiernanotoolenginx wernight/ngrok ngrok http tiernanotoolenginx:80
-    
+
 essentially, what we are doing here is running ngrok and pointing it at post 80 on the nginx container... you see i did not point at 8881, since we are using the continer directly... it might be different if you were not...
 
 when that command runs, you get a screen telling you the URL of your site with some basic stats. your site is now hosted publically, via an ngrok tunnel! you could run that container as a daemon, and leave it running, but for me, i wanted to do some minor testing, so i can kill it when i want...
 
-So, all is good with the world! 
+So, all is good with the world!
 
 [1]:https://www.tiernanotoole.ie/2016/11/02/building-jekyll-sites-with-docker-on-windows.html
 [2]:https://www.nginx.com/
