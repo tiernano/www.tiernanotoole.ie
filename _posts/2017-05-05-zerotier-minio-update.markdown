@@ -21,17 +21,17 @@ Now, what about ZeroTier? Given they posted it to their twitter? Well, it worked
 
 So, the question is, how fast? Well, on my [Surface Book][8] on a WiFi connection in the house, behind a [Meraki][2] [MX64][3] firewall, connecting to [the GodBoxV2][5] over FTP though ZeroTier, i get the following result:
 
-![FTP over ZeroTier](https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-zerotier-rs.png)
+[![FTP over ZeroTier](https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-zerotier-rs.png)](https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-zerotier.png)
 
 the same download over FTP direct (no ZeroTier) does the following:
 
-![FTP direct](https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-direct-rs.png)
+[![FTP direct](https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-direct-rs.png)](https://www.tiernanotoole.ie/post_images/2017/05/05/ftpdownload-direct.png)
 
 So, direct over FTP is faster... in this instance by about 70%, but, over the download, it did get slower (seen it hit 12 at one stage) and because its over WiFi, those are a bit wonky... 
 
 I did get one last screen shot:
 
-![network speed](https://www.tiernanotoole.ie/post_images/2017/05/05/networkseed-rs.png)
+[![network speed](https://www.tiernanotoole.ie/post_images/2017/05/05/networkseed-rs.png)](https://www.tiernanotoole.ie/post_images/2017/05/05/networkspeed.png)
 
 as you can see, the Zerotier network adapter is showing 77.3Mbps, but the main network adapter is showing 80.8Mbps. There would be other traffic there, but if we assume there is nothing but ZeroTier traffic being sent, there is about 5% of an overhead. 
 

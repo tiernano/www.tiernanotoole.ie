@@ -5,7 +5,7 @@ date: 2012-08-30 09:00:13
 tags:
 - Powershell
 ---
-Ny new Favorite cross platform text editor is [Sublime Text 2][1]. It works on Windows, Mac OS and Linux, and i am very happy with it. My only problem is the path to start it is not exactly easy to type... So, with the help of PowerShell, my new favorite command line tool on Windows, i added an alias:
+My new Favorite cross platform text editor is [Sublime Text 2][1]. It works on Windows, Mac OS and Linux, and i am very happy with it. My only problem is the path to start it is not exactly easy to type... So, with the help of PowerShell, my new favorite command line tool on Windows, i added an alias:
 
     Set-Alias subl 'c:\program files\sublime text 2\sublime_text.exe'
 
