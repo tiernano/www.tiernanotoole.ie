@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Zerotier and Mini Followup"
+title: "Zerotier and Minio Followup"
 tags:
   - Networking
   - IPv6
