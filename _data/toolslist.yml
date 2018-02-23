@@ -1,3 +1,8 @@
+---
+- toolname: Forestry
+  link: https://forestry.io
+  description: CMS for managing Static sites
+  platforms: Web Based
 - toolname: Term Bin
   link: http://termbin.com/
   description: Pastebin for your termianl. Handy when you cant copy or paste
