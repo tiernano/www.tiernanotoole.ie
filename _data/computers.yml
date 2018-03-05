@@ -11,12 +11,12 @@
 - name: IBM Server 1
   sidebar: false
   inuse: false
-  decommissioned: false
+  decommissioned: true
   url: /Computers/ibmsrv1.html
 - name: IBM Server 2
   sidebar: false
   inuse: false
-  decommissioned: false
+  decommissioned: true
   url: /Computers/ibmsrv2.html
 - name: Mac Book Pro
   sidebar: false
