@@ -10,6 +10,9 @@ gems:
   -  jekyll-paginate
   -  jekyll-seo-tag
   
+lgolia:
+    vars: ["title", "excerpt", "date", "url", "categories", "tags"]
+
 
 prose:
   rooturl: '_posts'
@@ -33,3 +36,4 @@ seo:
 
 author:
   twitter: tiernano
+
