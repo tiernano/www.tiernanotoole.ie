@@ -35,11 +35,11 @@ So, what did i not do on the iPad, and ended up doing on the PC? Well, so far, n
 
 [1]:http://www.apple.com/ipad-pro
 [2]:https://www.apple.com/shop/product/MPTL2LL/A/smart-keyboard-for-105‑inch-ipad-pro-us-english?fnode=37
-[3]: https://panic.com/prompt/
+[6]:https://itunes.apple.com/us/app/coda/id500906297?mt=8&at=11l4BV
 [4]:https://itunes.apple.com/ai/app/microsoft-remote-desktop/id714464092?mt=8
 [5]:http://www.zerotier.com
-[6]:https://panic.com/coda-ios/
-[7]:https://workingcopyapp.com
+[3]:https://itunes.apple.com/us/app/prompt-2/id917437289?mt=8&uo=4&at=11l4BV
+[7]:https://itunes.apple.com/us/app/working-copy/id896694807?mt=8&uo=6&at=1000lHq&ct=workingcopyapp
 [8]:https://workingcopyapp.com/manual/webdav-server
 [9]:https://itunes.apple.com/ai/app/adobe-lightroom-cc-for-ipad/id804177739?mt=8
 [10]:https://www.apple.com/ie/shop/product/MJYT2ZM/A/lightning-to-sd-card-camera-reader
