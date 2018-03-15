@@ -2,7 +2,7 @@
 layout: post
 tags:
 - VoIP
-- Raspberry Pi
+- Raspberry_Pi
 title: Raspberry Pi as an Asterisk Box
 date: 2013-05-29 08:16
 ---

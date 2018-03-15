@@ -3,7 +3,7 @@ layout: post
 title: My new Git Powered Site
 date: 2012-08-29 12:54:40
 tags:
-- Announcement
+- Announcements
 - Git
 - Blogging
 ---

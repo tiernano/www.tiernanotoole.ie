@@ -1,7 +1,7 @@
 ---
 layout: post
 tags:
-  - Raspberry Pi
+  - Raspberry_Pi
   - Networking
   - Projects
 title: Raspberry Pi as a Mobile WiFi HotSpot (part 1)

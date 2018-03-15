@@ -3,7 +3,8 @@ layout: post
 title: Understanding Storage Spaces in Windows 8 and Windows Server 2012
 date: 2012-08-30 09:04:14
 tags:
-- Windows Server 2012
+- Server_2012
+- Windows
 - Storage
 ---
 

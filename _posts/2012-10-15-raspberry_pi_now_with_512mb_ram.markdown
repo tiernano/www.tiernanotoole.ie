@@ -1,7 +1,7 @@
 ---
 layout: post
 tags:
-- Raspberry Pi
+- Raspberry_Pi
 - Hardware
 title: Raspberry Pi now with 512MB RAM, other random links...
 date: 2012-10-15 12:37:20

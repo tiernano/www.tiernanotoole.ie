@@ -6,9 +6,9 @@ tags:
 - Networking
 - Projects
 - IPv6
-- Double Internet
+- Double_Internet
 ---
-[NOTE] This part 1 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
+[NOTE] This part 1 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double_Internet/).
 
 First, a bit of background, and then I will explain what I am currently running in [Part 2][14]...
 

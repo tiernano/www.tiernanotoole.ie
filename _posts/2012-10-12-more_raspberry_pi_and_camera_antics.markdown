@@ -4,7 +4,7 @@ tags:
 - Camera
 - Photography
 - Hardware
-- Raspberry Pi
+- Raspberry_Pi
 title: more raspberry pi and camera antics
 date: 2012-10-12 15:13:53
 ---

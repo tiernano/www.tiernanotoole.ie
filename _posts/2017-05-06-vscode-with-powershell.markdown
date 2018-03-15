@@ -2,7 +2,7 @@
 layout: post
 title: "VSCode and Markdown Monster with Powershell"
 tags:
-  - Powershell
+  - PowerShell
   - Blogging
 date: "2017-05-06 13:00"
 published: true

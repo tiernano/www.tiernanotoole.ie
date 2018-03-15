@@ -6,13 +6,23 @@ lsi: false
 paginate_path: "/page:num/"
 paginate: 5
 
-gems:
+plugins:
   -  jekyll-paginate
   -  jekyll-seo-tag
+  -  jekyll-archives
   
-lgolia:
+algolia:
     vars: ["title", "excerpt", "date", "url", "categories", "tags"]
 
+jekyll-archives:
+  enabled: []
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 prose:
   rooturl: '_posts'
@@ -37,3 +47,10 @@ seo:
 author:
   twitter: tiernano
 
+exclude: ["vendor",
+        "_assets",
+        "Gemfile",
+        "Gemfile.lock",
+        "gulpfile.js",
+        "node_modules",
+        "package.json"]

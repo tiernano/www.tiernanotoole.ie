@@ -7,7 +7,7 @@ tags:
   - Projects
   - HowTo
   - HomeLab
-  - Double Internet
+  - Double_Internet
 title: "2 Cable Modems = Double Speed? Part 4"
 date: "2016-04-14 08:55"
 published: true

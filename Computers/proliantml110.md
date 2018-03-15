@@ -19,4 +19,4 @@ It also has 12 Gigabit network ports:
 This machine was doing lots of testing for the [Double speed Internet][2] series but is currently sitting idle...
 
 [1]: http://ark.intel.com/products/29765/Intel-Core2-Quad-Processor-Q6600-8M-Cache-2_40-GHz-1066-MHz-FSB?q=Q6600
-[2]:https://www.tiernanotoole.ie/tag/Double%20Internet/
+[2]:https://www.tiernanotoole.ie/tag/Double_Internet/

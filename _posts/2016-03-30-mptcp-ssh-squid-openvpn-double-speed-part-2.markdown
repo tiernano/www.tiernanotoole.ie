@@ -9,9 +9,9 @@ tags:
   - Guide
   - HowTo
   - HomeLab
-  - Double Internet
+  - Double_Internet
 ---
-[NOTE] This part 2 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double Internet/).
+[NOTE] This part 2 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double_Internet/).
 
 
 In [my previous post][1] I explained what i was trying to do... This post explains what i have been working on recently, and performance results...

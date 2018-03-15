@@ -2,9 +2,9 @@
 publishdate: 2017-08-16 06:00:00 +0000
 published: true
 tags:
-- jekyll
-- website
-- tools
+- Jekyll
+- Website
+- Tools
 title: Testing Forestry
 layout: post
 date: 2017-08-16 00:00:00 +0000

@@ -1,7 +1,7 @@
 ---
 layout: post
 tags:
-- Office 365
+- Office_365
 - Email
 title: Send Emails as a Distribution Group in Office365
 date: 2012-12-20 13:13:21

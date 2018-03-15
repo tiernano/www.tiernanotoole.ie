@@ -2,7 +2,7 @@
 layout: post
 title: AutoScaling with Amazon
 tags:
-  - Amazon AWS
+  - AWS
   - Cloud
 ---
 

@@ -2,9 +2,9 @@
 layout: post
 title: "Cloud Desktop becoming a reality"
 tags: 
-  - Cloud Desktop
-  - workstation
-  - hardware
+  - Cloud_Desktop
+  - Workstation
+  - Hardware
 date: "2016-09-14 16:00"
 published: true
 ---

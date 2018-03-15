@@ -8,12 +8,12 @@ tags:
   - Projects
   - HowTo
   - HomeLab
-  - Double Internet
+  - Double_Internet
 date: "2016-07-20 12:00"
 published: true
 ---
 
-[NOTE] This part 9 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double%20Internet/)
+[NOTE] This part 9 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double_Internet/)
 
 Well, the double internet experiment is about ready to be finished... After 9 posts, 4 months, lots of sweating, many painful nights trying to figure out why something stopped using, shouting when [Netflix][1] did not work, wondering why my internet connection was so slow, and many, many other problems, i have decided to wind down the project. in the last 9 posts, i have learned a lot, and i hope i have helped someone figure out some stuff on their end. Even though this is a wind up of the project, there are still new things i have to share.
 

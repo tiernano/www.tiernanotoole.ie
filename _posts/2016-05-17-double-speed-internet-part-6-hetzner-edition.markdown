@@ -8,12 +8,12 @@ tags:
   - Projects
   - HowTo
   - HomeLab
-  - Double Internet
+  - Double_Internet
 date: "2016-05-17 13:00"
 published: true
 ---
 
-[NOTE] This part 6 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double%20Internet/).
+[NOTE] This part 6 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double_Internet/).
 
 Its been a while, since I posted, and there are some, well, pretty major changes since the last time... Lets start are the beginning.
 

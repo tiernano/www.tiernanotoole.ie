@@ -3,7 +3,7 @@ layout: post
 title: Announcing B2 Uploader and Hubic Testing 2.0
 date: 2016-01-15 23:55:00
 tags:
-- Announcement
+- Announcements
 - Code
 - Hubic
 - B2

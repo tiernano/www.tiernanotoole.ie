@@ -2,7 +2,7 @@
 layout: post
 tags:
 - Networking
-- Sophos UTM
+- Sophos_UTM
 - Hardware
 - HomeLab
 - Ubiquiti

@@ -8,12 +8,12 @@ tags:
   - Projects
   - HowTo
   - HomeLab
-  - Double Internet
+  - Double_Internet
 date: "2016-06-08 08:00"
 published: true
 ---
 
-[NOTE] This part 8 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double%20Internet/).
+[NOTE] This part 8 in a series of posts. The rest can be found [here](https://www.tiernanotoole.ie/tag/Double_Internet/).
 
 At the end of my [last post][1] I asked the question about routing traffic to different servers based on thier distances, etc... Well, after a bit of messing, i can say it kind of works! here is a quick over view:
 

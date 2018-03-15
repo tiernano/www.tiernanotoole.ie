@@ -22,7 +22,7 @@ In [part 6][1] of my [Double Internet Series][2] I mentioned i was running a [Me
 So, thats the network currently. any questions, please leave a comment.
 
 [1]:https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html
-[2]:https://www.tiernanotoole.ie/tag/Double%20Internet/
+[2]:https://www.tiernanotoole.ie/tag/Double_Internet/
 [3]:https://meraki.cisco.com/
 [4]:https://meraki.cisco.com/products/appliances/mx64
 [5]:https://www.ubnt.com/edgemax/edgerouter-poe/
