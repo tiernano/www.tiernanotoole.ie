@@ -5,7 +5,7 @@ publishdate: 2018-04-02 00:00:00 +0100
 tags:
 - Networking
 - IPv6
-layout: page
+layout: post
 published: false
 ---
 So, if you are reading this page, it is being delivered with the magic of Anycast... Well, technically, it was before, since i used [Cloudflare](http://cloudflare.com), and it still is because of Cloudflare, but also because of my own ASN ([As204994](http://as204994.net)), some servers in different locations, and some magic, which i will explain a bit of in this post.
