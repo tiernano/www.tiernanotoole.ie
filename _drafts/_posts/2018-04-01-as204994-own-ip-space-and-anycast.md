@@ -1,5 +1,5 @@
 ---
-title: AS204994, Own IP Space and Anycast,
+title: AS204994, Own IP Space and Anycast
 date: 2018-04-01 22:55:06 +0000
 publishdate: 2018-04-02 00:00:00 +0100
 tags:
