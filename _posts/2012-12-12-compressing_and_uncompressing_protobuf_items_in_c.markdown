@@ -6,6 +6,8 @@ tags:
 - HowTo
 title: Compressing and UnCompressing Protobuf items in C#
 date: 2012-12-12 11:29:32
+redirect_from:
+- /2012/12/12/compressing_and_uncompressing_protobuf_items_in_c#.html
 ---
 Part of a project i am working on required sending large amounts of data between different instances. To get this to work efficially, we started using the [ProtoBuf][1] using [ProtoBuf-net][2] in .NET. but the files where still quite large (17mb, give or take). So, we looked into compression...
 

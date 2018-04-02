@@ -10,7 +10,7 @@ plugins:
   -  jekyll-paginate
   -  jekyll-seo-tag
   -  jekyll-archives
-  
+  -  jekyll-redirect-from  
 algolia:
     vars: ["title", "excerpt", "date", "url", "categories", "tags"]
 
