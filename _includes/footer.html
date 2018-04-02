@@ -5,7 +5,23 @@
     </p>
     {% endif %}
     <p>
-        © {{ site.data.theme.name }}, 2017 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://www.azure.com">Azure</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
+        © {{ site.data.theme.name }}, 2018 &mdash; built with <a href="http://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/swanson/lagom">Lagom theme</a> hosted on <a href="http://as204994.net">as204994</a> and protected by <a href="http://www.cloudflare.com">CloudFlare</a>.
         {% render_time Page generated at: %}
+	<div id="server"></div>
     </p>
 </div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("server").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "/server.txt", true);
+  xhttp.send();
+}
+
+loadDoc();
+</script>
