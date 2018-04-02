@@ -1,19 +1,36 @@
-{% if site.data.theme.google_analytics_key %}
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '{{ site.data.theme.google_analytics_key }}']);
-    _gaq.push(['_trackPageview']);
+<script>
+var servername = "unknown";
 
-    (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("server").innerHTML = this.responseText;
+     servername = this.responseText;
+    }
+  };
+  xhttp.open("GET", "/server.txt", true);
+  xhttp.send();
+}
+
+loadDoc();
 </script>
-{% endif %}
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-220614-15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-220614-15', {
+  'custom_map': {'dimension1': 'responding-server'}
+  });
+
+  gtag('event', 'responding-server', {'age': servername});
+
+</script>
+
 <script type="text/javascript">
     var vglnk = {
         key: 'aecb90add8b6f7192e42ddfa3e65b611'
