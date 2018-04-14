@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office_365 on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/office_365/</link>
+    <description>Recent content in Office_365 on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Dec 2012 13:13:21 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/office_365/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Send Emails as a Distribution Group in Office365</title>
+      <link>http://localhost:1313/2012/12/20/Send-Emails-as-a-Distribution-Group-in-Office365/</link>
+      <pubDate>Thu, 20 Dec 2012 13:13:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/12/20/Send-Emails-as-a-Distribution-Group-in-Office365/</guid>
+      <description>I am in the process of moving my Email domains from one Office365 plan (a Professional) to an Enterprise Plan. During the move, i set up some Email Aliases for older email addresses, which are still being used, but i dont send a lot of email from. But if i do need to send emails from these addresses, with the help of Powershell, I managed to set it up. The full details are listed on &amp;ldquo;how to send as an alias in Office 365&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

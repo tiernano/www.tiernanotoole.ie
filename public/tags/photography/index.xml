@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photography on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/photography/</link>
+    <description>Recent content in Photography on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Oct 2012 15:13:53 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>more raspberry pi and camera antics</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-12-more_raspberry_pi_and_camera_antics/</link>
+      <pubDate>Fri, 12 Oct 2012 15:13:53 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-12-more_raspberry_pi_and_camera_antics/</guid>
+      <description>A while back I posted about the Raspberry Pi, and in the post was a link to a Photographer who was embeding a Raspberry Pi into a Canon 5D MKII battery grip. Well, its been a while, and i have been thinking about the Pi and Cameras, so I went looking around&amp;hellip; Here is what i found.
+ HDR Photography with a Raspberry Pi and GPhoto2: It was linked at the end of David&amp;rsquo;s post, and i missed it completely.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/</link>
+    <description>Recent content on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Apr 2018 22:55:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AS204994, Own IP Space and Anycast</title>
+      <link>https://www.tiernanotoole.ie/post/2018-04-01-as204994-own-ip-space-and-anycast/</link>
+      <pubDate>Sun, 01 Apr 2018 22:55:06 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2018-04-01-as204994-own-ip-space-and-anycast/</guid>
+      <description>So, if you are reading this page, it is being delivered with the magic of Anycast&amp;hellip; Well, technically, it was before, since i used Cloudflare, and it still is because of Cloudflare, but also because of my own ASN (As204994), some servers in different locations, and some magic, which i will explain a bit of in this post.
+This all started late last year when i got my hands on an ASN and a /48 block of IPv6 addresses.</description>
+    </item>
+    
+    <item>
+      <title>Blogging on an iPad Pro</title>
+      <link>https://www.tiernanotoole.ie/post/2018-03-06-blogging-on-ipad/</link>
+      <pubDate>Tue, 06 Mar 2018 08:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2018-03-06-blogging-on-ipad/</guid>
+      <description>So, a few months back I bought myself an iPad Pro. I got a 10.5&amp;rdquo; with 64GB Storage and the Smart Keyboard. Since then, i have been mostly using it for playing around: watching YouTube, Netflix, surfing on the couch, etc. but i started to wonder how &amp;ldquo;Pro&amp;rdquo; this was&amp;hellip;so i went and did some testing, and in the end nearly all of this post is being written on it&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>New Backup Plans</title>
+      <link>https://www.tiernanotoole.ie/post/2017-09-25-new-backup-plans/</link>
+      <pubDate>Mon, 25 Sep 2017 07:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-09-25-new-backup-plans/</guid>
+      <description>So, a few weeks back, CrashPlan, one of my chosen backup services, decided to kill their consumer backup plans. Which made me have to rethink my backup plan for the house&amp;hellip;
+Note: This is how I am backing up files, and may or may not work for you. Some of this is already in &amp;ldquo;production&amp;rdquo; as of today, but others are planned&amp;hellip; Any questions, comments, etc, leave them in the comments.</description>
+    </item>
+    
+    <item>
+      <title>Testing Forestry</title>
+      <link>https://www.tiernanotoole.ie/post/2017-08-16-testing-forestry/</link>
+      <pubDate>Wed, 16 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-08-16-testing-forestry/</guid>
+      <description>So, as you probably know, this site is built with Jekyll. Jekyll is a Static Site Generator, basically taking an input of a load of text files (see the source repo for this site on Github here) and generating a load more HTML (the static HTML is hosted on Github here, which auto publishes to Azure App Service).
+In previous posts, i have talked about using the likes of Visual Studio Code and Mark Down Monster to build the site.</description>
+    </item>
+    
+    <item>
+      <title>VSCode and Markdown Monster with Powershell</title>
+      <link>https://www.tiernanotoole.ie/post/2017-05-06-vscode-with-powershell/</link>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-05-06-vscode-with-powershell/</guid>
+      <description>A few years back, i created a post showing you how to add an Alias to PowerShell to easily start Sublime Text from a PowerShell command line . This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to Visual Studio Code for most of my daily work. It works well 95% of the time. I still use Visual Studio Pro for C# Development, but for quick fixes and work on, say Go or smaller edits, Code is great.</description>
+    </item>
+    
+    <item>
+      <title>Zerotier and Minio Followup</title>
+      <link>https://www.tiernanotoole.ie/post/2017-05-05-zerotier-minio-update/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-05-05-zerotier-minio-update/</guid>
+      <description>in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this.
+Distributed S3 data storage using @minio and #ZeroTier &amp;ndash; https://t.co/MAXTjo3muh
+&amp;mdash; ZeroTier, Inc. (@ZeroTier) May 2, 2017 
+A few people then started asking questions, and looking for a follow up, so here it is&amp;hellip;
+First, a quick recap. I had 4 machines, all running Linux.</description>
+    </item>
+    
+    <item>
+      <title>Business Class Broadband... finally here....</title>
+      <link>https://www.tiernanotoole.ie/post/2017-03-09-business-class-broadband/</link>
+      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-03-09-business-class-broadband/</guid>
+      <description>So, after many (MANY) years messing with dual cable modems, struggling to get them working together, to get websites to even allow me in, having to use hacks and kluges to get it to work at all&amp;hellip; I have given up. It has been a struggle getting two modems working properly. Load blanching kind of works&amp;hellip; but it&amp;rsquo;s messy at best. Some sites kick you out every now and again because your IP changes.</description>
+    </item>
+    
+    <item>
+      <title>Distributed S3 data storage using Minio (and Zerotier)</title>
+      <link>https://www.tiernanotoole.ie/post/2017-01-19-distributed-s3-storage-minio-zerotier/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-01-19-distributed-s3-storage-minio-zerotier/</guid>
+      <description>So, something i have been looking into in recient times has been Distributed Storage, and, more specifically, how to use the storage in my many, many machines to protect data, and also increese my usable space&amp;hellip; There are a few projects on the market that do this (Ceph, NooBaa and Gluster all spring to mind) but some are more painful to setup than others&amp;hellip; which brings me nicely to Minio. Minio is a 20ish MB executable you download from their site, mark it as executable (on Linux or Mac Boxes) and run&amp;hellip; and you have yourself a S3 compatable storage server&amp;hellip; Simples!</description>
+    </item>
+    
+    <item>
+      <title>Docker Jekyll and Mr ngrok</title>
+      <link>https://www.tiernanotoole.ie/post/2016-11-15-docker-jekyll-and-mr-ngrock/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-11-15-docker-jekyll-and-mr-ngrock/</guid>
+      <description>See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok.
+So, first, you should know what Nginx is at this stage&amp;hellip; If not, check out their site. Next ngrok is basically a way of tunneling your localhost to the web.</description>
+    </item>
+    
+    <item>
+      <title>Building Jekyll sites with Docker on Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2016-11-02-building-jekyll-sites-with-docker-on-windows/</link>
+      <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-11-02-building-jekyll-sites-with-docker-on-windows/</guid>
+      <description>As some of you probably know (or based on the footer of the site) this site is built with Jekyll. Jekyll is a static web site builder, written in Ruby, and is a bit of a pain to build on Windows. Earlier on this year, I wrote up a post explaining how to use Jekyll on Windows using Bash on Ubuntu on Windows&amp;hellip; It was a bit complicated, and, well, worked a few times, but was not too successfull&amp;hellip; So, were do we go next?</description>
+    </item>
+    
+    <item>
+      <title>Cloud Desktop becoming a reality</title>
+      <link>https://www.tiernanotoole.ie/post/2016-09-14-cloud-desktop-becoming-reality/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-09-14-cloud-desktop-becoming-reality/</guid>
+      <description>I have talked about the theory of the &amp;ldquo;Cloud desktop&amp;rdquo; twice on my older blog (Rackspace&amp;rsquo;s Hosted Virtual Desktop and More on the desktop in the cloud) way back since 2011. Since then, a few things have changed:
+ Amazon have released AWS Workspaces, which is a cloud based desktop using Teradici&amp;rsquo;s PCoIP technology Both EC2 and Azure now have GPU enabled VMs to spin up and use NVidia have released NVidia Grid cards, specifically for the &amp;ldquo;cloud&amp;rdquo; or &amp;ldquo;remote&amp;rdquo; desktop services.</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 9 - Going Back</title>
+      <link>https://www.tiernanotoole.ie/post/2016-07-20-double-speed-internet-part-9-going-back/</link>
+      <pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-07-20-double-speed-internet-part-9-going-back/</guid>
+      <description>[NOTE] This part 9 in a series of posts. The rest can be found here
+Well, the double internet experiment is about ready to be finished&amp;hellip; After 9 posts, 4 months, lots of sweating, many painful nights trying to figure out why something stopped using, shouting when Netflix did not work, wondering why my internet connection was so slow, and many, many other problems, i have decided to wind down the project.</description>
+    </item>
+    
+    <item>
+      <title>Meraki and Ubiquiti networks gear Update</title>
+      <link>https://www.tiernanotoole.ie/post/2016-06-20-meraki-gear-update/</link>
+      <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-06-20-meraki-gear-update/</guid>
+      <description>In part 6 of my Double Internet Series I mentioned i was running a Meraki MX64 in the network, and said i would write up about it. I am taking this oppertunity to also write up about the Ubiquiti networks gear in the house also.
+ First on the list is my older Ubiquiti Edgerouter POE. It currently in the process of being decommissioned, or used for something else. It was the main edge router for the network: it had both internet connections connected, and did routing, firewalls, etc, but with the Proliant taking over as a router, it is not requried as much any more&amp;hellip; Its still on, mainly because its still a DHCP server, but not much else.</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 8 - Routing Around</title>
+      <link>https://www.tiernanotoole.ie/post/2016-06-08-double-speed-internet-part-8-routing-around/</link>
+      <pubDate>Wed, 08 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-06-08-double-speed-internet-part-8-routing-around/</guid>
+      <description>[NOTE] This part 8 in a series of posts. The rest can be found here.
+At the end of my last post I asked the question about routing traffic to different servers based on thier distances, etc&amp;hellip; Well, after a bit of messing, i can say it kind of works! here is a quick over view:
+ server in the house has now got multiple OpenVPN connections (2 to Hetzner, 1 to OVH (with a plan to double), 1 to Digital Ocean (again, to be doubled) and i am planning 2 to Azure as well).</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 7 - ECMP (kind of)</title>
+      <link>https://www.tiernanotoole.ie/post/2016-05-31-double-speed-internet-part-7-ecmp-kind-of/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-05-31-double-speed-internet-part-7-ecmp-kind-of/</guid>
+      <description>[NOTE] This part 7 in a series of posts. The rest can be found here.
+In the last post I mentioned I am now using Hetzner for hosting a dedicated box. Thats still live, and going well. I have a /29 IP range (6 usable) and also 2 other IPs. So far, so good&amp;hellip; But because i was using a Socks Server, I was not fully able to use the /29 ips&amp;hellip; I use something like as follows:</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 6 - Hetzner Edition</title>
+      <link>https://www.tiernanotoole.ie/post/2016-05-17-double-speed-internet-part-6-hetzner-edition/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-05-17-double-speed-internet-part-6-hetzner-edition/</guid>
+      <description>[NOTE] This part 6 in a series of posts. The rest can be found here.
+Its been a while, since I posted, and there are some, well, pretty major changes since the last time&amp;hellip; Lets start are the beginning.
+Last time I was using Digital Ocean for my hosting provider. I was using their $20 a month server (2 cores, 2GB RAM, 40GB SSD, 3TB transfer), and it was all good&amp;hellip; But I noticed that every now and again I would need to reboot the box.</description>
+    </item>
+    
+    <item>
+      <title>Useful Web and Desktop Apps 2016 edition</title>
+      <link>https://www.tiernanotoole.ie/post/2016-04-23-useful-web-and-desktop-apps-2016-edition/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-04-23-useful-web-and-desktop-apps-2016-edition/</guid>
+      <description>I have decided to do a post on some of my favourite tools to use for development, administration, etc. It’s kind of like Hanselman&amp;rsquo;s Ultimate Tools list, but not as popular and about 2 years newer&amp;hellip; Anyway, the list is available here, and will be updated over time, much like my Daily Carry and Computers pages. If you are interested, you add links though GitHub by editing the toolslist.yml data file.</description>
+    </item>
+    
+    <item>
+      <title>(Mad) Max Speed - The Road Warrior (Internet connection) (double speed internet Part 5)</title>
+      <link>https://www.tiernanotoole.ie/post/2016-04-21-2-cable-modems-double-speed-part-5/</link>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-04-21-2-cable-modems-double-speed-part-5/</guid>
+      <description>[NOTE] This part 5 in a series of posts. The rest can be found here.
+This post is going to be an update and theoretical post. probably very little &amp;ldquo;new&amp;rdquo; stuff going on here, mostly updates, and what I am planning on doing later on.
+This week, I have been OOF sick, so I have not done much work, but I have been surfing the web, watching videos, downloading stuff, etc.</description>
+    </item>
+    
+    <item>
+      <title>2 Cable Modems = Double Speed? Part 4</title>
+      <link>https://www.tiernanotoole.ie/post/2016-04-14-2-cable-modems-double-speed-part-4/</link>
+      <pubDate>Thu, 14 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-04-14-2-cable-modems-double-speed-part-4/</guid>
+      <description>[NOTE] This part 4 in a series of posts. The rest can be found here.
+So, this week I went in a completely different direction that I have been thinking recently&amp;hellip;
+So, the basic theory is as follows:
+ I am still using MPTCP kernels on both upstream and local machine now have 2 P2P UDP OpenVPN tunnels between house and cloud. Example config is here all TCP traffic (bar port 80) that hits the router in house is redirected to RedSocks RedSocks uses a socks server, Dante, as an upstream server on the cloud box since the socks traffic is over TCP (inside the UDP OpenVPN tunnel) it uses MPTCP having socks running, gives me quite the download speed, turning it off does not, hence the following tweet  Hmmmm&amp;hellip; If I have socks on, the Internet is fast 400mb/s+).</description>
+    </item>
+    
+    <item>
+      <title>Installing Jekyll on Bash On Ubuntu on Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2016-04-11-installing-jekyll-on-bash-on-ubuntu-on-windows/</link>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-04-11-installing-jekyll-on-bash-on-ubuntu-on-windows/</guid>
+      <description>At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book.
+So, first, I needed to install version 2.0 of Ruby. There is a bit of messing involved for this, but first</description>
+    </item>
+    
+    <item>
+      <title>2 Cable modems = Double speed? Part 3</title>
+      <link>https://www.tiernanotoole.ie/post/2016-04-02-2-cable-modems-double-speed-part-3/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-04-02-2-cable-modems-double-speed-part-3/</guid>
+      <description>[NOTE] This part 3 in a series of posts. The rest can be found here.
+In Part 1 of this series I explained the why and what I wanted to do for this &amp;ldquo;project&amp;rdquo;. In Part 2 I did some basic testing of both MPTCP and MLVPN. I also mentioned trying MMPPP using vtund but it has been a while since I did that testing, and it had not been on bare metal.</description>
+    </item>
+    
+    <item>
+      <title>Bash on Ubuntu on Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2016-03-31-bash-on-ubuntu-on-windows/</link>
+      <pubDate>Thu, 31 Mar 2016 07:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-03-31-bash-on-ubuntu-on-windows/</guid>
+      <description>Microsoft Build 2016 is on this week, and there were a lot of interesting developments yesterday, but the one that interested me the most is Bash on Ubuntu on Windows. Dustin from Ubuntu has a more details, and Scott Hanselman has posted a technical video about this. This is very interesting, and I CANT WAIT TO GET MY HANDS ON IT! But, I do have some questions, which I thought I would put down in blog format:</description>
+    </item>
+    
+    <item>
+      <title>MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2</title>
+      <link>https://www.tiernanotoole.ie/post/2016-03-30-mptcp-ssh-squid-openvpn-double-speed-part-2/</link>
+      <pubDate>Wed, 30 Mar 2016 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-03-30-mptcp-ssh-squid-openvpn-double-speed-part-2/</guid>
+      <description>[NOTE] This part 2 in a series of posts. The rest can be found here.
+In my previous post I explained what i was trying to do&amp;hellip; This post explains what i have been working on recently, and performance results&amp;hellip; So, first, what have i tried&amp;hellip; There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.</description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration and Blogging</title>
+      <link>https://www.tiernanotoole.ie/post/2016-03-24-Continuous-Integration-And-Blogging/</link>
+      <pubDate>Thu, 24 Mar 2016 08:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-03-24-Continuous-Integration-And-Blogging/</guid>
+      <description>Back in August of 2012, I started this site using Git and Jekyll. I hosted most of it at home, pushing to a server in house. Then, a few years back, I moved to pushing the files to Amazon S3 and had Cloud Front doing distribution. The last moved had me hosting the files in NearlyFreeSpeech.NET and Cloud Flare doing the content distribution&amp;hellip; Well, that changed over the last few days&amp;hellip; again&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>2 Cable modems = Double Internet Speed? Well... not really... Part 1</title>
+      <link>https://www.tiernanotoole.ie/post/2016-03-22-2-Cable-Modems-Double-Internet-Speed-part1/</link>
+      <pubDate>Tue, 22 Mar 2016 18:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-03-22-2-Cable-Modems-Double-Internet-Speed-part1/</guid>
+      <description>[NOTE] This part 1 in a series of posts. The rest can be found here.
+First, a bit of background, and then I will explain what I am currently running in Part 2&amp;hellip;
+For the last 15 or so years, I have had at least 2 internet connections in to the house&amp;hellip; 2 of them have always been Cable Modems from NTL, which became UPC, and now is Virgin Media. When I started, i think the modems where 150/50kbit/s and 600/150kb/s, and have steadily increased in speed, currently at 360/36Mbit/s each&amp;hellip; But they have always been somewhat separate, and single thread downloads have always been limited to 1 of the connections&amp;hellip; I have been looking for ways around this for years&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Announcing B2 Uploader and Hubic Testing 2.0</title>
+      <link>https://www.tiernanotoole.ie/post/2016-01-15-Announcing-B2Uploader-HubicTesting20/</link>
+      <pubDate>Fri, 15 Jan 2016 23:55:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-01-15-Announcing-B2Uploader-HubicTesting20/</guid>
+      <description>I have 2 new side projects to announce on the site today. First has been running for a while (first check-in was December 28th) and it’s called B2Uploader. Its a fairly simple Windows application to upload files to BackBlaze B2. If you are not familiar with BackBlaze, they provide unlimited backup storage for the low price of a fiver a month. They are the guys who design the BackBlaze storage pods (I want one, by the way!</description>
+    </item>
+    
+    <item>
+      <title>Edge Router, Sophos UTM, DMZ and LAN Networks</title>
+      <link>https://www.tiernanotoole.ie/post/2015-09-30-EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls/</link>
+      <pubDate>Wed, 30 Sep 2015 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-09-30-EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls/</guid>
+      <description>I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more &amp;ldquo;LANs&amp;rdquo; over there soon).</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 4)</title>
+      <link>https://www.tiernanotoole.ie/post/2015-09-16-Network-and-HomeLab-vnext-part-4/</link>
+      <pubDate>Wed, 16 Sep 2015 14:15:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-09-16-Network-and-HomeLab-vnext-part-4/</guid>
+      <description>So, after some messing, tweaking, and thinking, I have made some progress with the home lab&amp;hellip; or at least broken some stuff&amp;hellip; I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router&amp;hellip; Given the power usage of the current PfSense Box (I have 2 MPower Pro&amp;rsquo;s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing&amp;hellip; below is the usage of the ProLiant for the last 12 hours or so:</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2012 R2 returning to The GodBoxV2</title>
+      <link>https://www.tiernanotoole.ie/post/2015-08-23-WindwsServer2012r2-Returing-To-The-GodBoxV2/</link>
+      <pubDate>Sun, 23 Aug 2015 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-08-23-WindwsServer2012r2-Returing-To-The-GodBoxV2/</guid>
+      <description>After a few months of running Sabayon Linux on the GodboxV2, i am going back to Windows Server. Back around October of last year, i installed Windows 10 Preview on the GodBoxV2, and, well, there where issues with graphics drivers, etc. Then, some time after, i cant remember off hand when, i moved to Sabayon Linux. Its based on Gentoo but has a lot of the components pre-built. Gentoo is a &amp;ldquo;Build from scratch&amp;rdquo; sort of OS.</description>
+    </item>
+    
+    <item>
+      <title>ZFS Home storage pool</title>
+      <link>https://www.tiernanotoole.ie/post/2015-08-10-ZFS-Home-dir/</link>
+      <pubDate>Mon, 10 Aug 2015 11:40:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-08-10-ZFS-Home-dir/</guid>
+      <description>Over the weekend, my BTRFS pool for my /home directory on Linux failed&amp;hellip; Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir.
+First things first, the pool consists of 4 2Tb hard drives and 1 128Gb SSD. Its setup in RAIDZ1 (equivilent of RAID 5) and then the SSD is set for caching.
+To create the pool i ran</description>
+    </item>
+    
+    <item>
+      <title>Ubiquiti EdgeRouter PoE in the lab</title>
+      <link>https://www.tiernanotoole.ie/post/2015-08-05-Ubiquiti-EdgeRouter-POE-In-the-lab/</link>
+      <pubDate>Wed, 05 Aug 2015 21:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-08-05-Ubiquiti-EdgeRouter-POE-In-the-lab/</guid>
+      <description>Today, my Ubiquiti EdgeRouter POE arrived in the house. I got it hooked up to both UPC connections (as secondary connections) and all seems to be working grand. Some notes i wanted to put up here:
+ out of the box, the install was quite simple. set my Ethernet connection to a static ip in the 192.168.1.x/24 range, using 192.168.1.1 as gateway and dns, and then point at http://192.168.1.1 for admin.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 3)</title>
+      <link>https://www.tiernanotoole.ie/post/2015-07-15-Network-and-HomeLab-vnext-part-3/</link>
+      <pubDate>Wed, 15 Jul 2015 13:15:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-07-15-Network-and-HomeLab-vnext-part-3/</guid>
+      <description>So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:
+ Old HP Proliant ML110 G5 Intel Core2Quad Q6600 8 Gb RAM total of 12 Gigabit network cards (of which 4 are currently used&amp;hellip;) 500Gb HDD  I have been playing with some networking in the house and have managed to build some VLANs. The modems are connected both directly to the Router and to a dedicated switch port for a given VLAN.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 2)</title>
+      <link>https://www.tiernanotoole.ie/post/2015-06-23-Network-and-HomeLab-vnext-part2/</link>
+      <pubDate>Tue, 23 Jun 2015 10:30:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-06-23-Network-and-HomeLab-vnext-part2/</guid>
+      <description>So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.
+First, the processors: in the first post, i talked about Xeon D or Xeon E3&amp;hellip; Well, i missed one&amp;hellip; The Xeon E5. I have 2 of these in GodBox 2, and you can get them into a microATX board.</description>
+    </item>
+    
+    <item>
+      <title>Network and Homelab V.Next (Part 1)</title>
+      <link>https://www.tiernanotoole.ie/post/2015-06-14-Network-and-homelab-vnext-part-1/</link>
+      <pubDate>Sun, 14 Jun 2015 16:05:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-06-14-Network-and-homelab-vnext-part-1/</guid>
+      <description>So, its that time again&amp;hellip; HomeLab upgrade time&amp;hellip; Or at least the planning for it. I am in the process of rebuilding my home lab, which involves pull all old servers out of the rack and replacing them with new ones&amp;hellip; It also means rewriting the network, possibly upgrading some existing gear and hopefully getting the whole lot done on a budget of some sort&amp;hellip;
+So, why? Well, biggest reason for all this is currently heat and power usage.</description>
+    </item>
+    
+    <item>
+      <title>PFSense with Multiple Public IPs</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-30-PFSense-with-multiple-public-ips/</link>
+      <pubDate>Sat, 30 May 2015 18:50:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-30-PFSense-with-multiple-public-ips/</guid>
+      <description>So, a few weeks back, i got my hands on a Hetzner Dedicated box. It has a quad core Xeon, 32Gb ram, 3x3Tb hdds, RAID controller and KVMoIP. one of the first thing i did was get myself a /29 IP pool (8 total, 6 usable IPs). There where already 3 IPs given to me: 1 for the KVM, one for the box itself, and 1 as the router for the IP block.</description>
+    </item>
+    
+    <item>
+      <title>Quick tip for internet facing ESXi servers</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-20-quick-tip-for-internet-facing-esxi/</link>
+      <pubDate>Wed, 20 May 2015 08:12:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-20-quick-tip-for-internet-facing-esxi/</guid>
+      <description>Quick tip for all you with internet facing VMWare ESXi Hosts. I have just got my hands on a box on the Hetzner network (more on that later) and using their LARA system i installed ESXi on it. All was good, then I tried login in a couple hours later and i kept getting errors about my password being wrong&amp;hellip; So, i tried a few more times, got pissed off and rebooted the box (had to do a hard reboot, since i couldn&amp;rsquo;t even get in over KVM).</description>
+    </item>
+    
+    <item>
+      <title>VLANs, Wifi and Mikrotik</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-10-vlans-wifi-and-mikrotik/</link>
+      <pubDate>Sun, 10 May 2015 18:40:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-10-vlans-wifi-and-mikrotik/</guid>
+      <description>About a month ago, while i was recovering from surgery, i attended a Webinar on Cisco Meraki devices. After the webinar, i was contacted by Maraki and given a MR18 with a 3 year license, to play with and evaluate. So, i set it up in the house and all was good.
+Thing is, the wifi in the house was grand previously. I have a Routerboard RB951G which does the job and has no issues.</description>
+    </item>
+    
+    <item>
+      <title>Using git and Route53 together</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-07-using-git-and-route53/</link>
+      <pubDate>Thu, 07 May 2015 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-07-using-git-and-route53/</guid>
+      <description>so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon&amp;rsquo;s Route53. So, moving ALL of them seems, well at the moment, excessive&amp;hellip; So, i went digging&amp;hellip;
+there is a tool called cli53 which will allow you to manage route53 objects from the command line.</description>
+    </item>
+    
+    <item>
+      <title>Git Push DNS</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-07-git-push-dns/</link>
+      <pubDate>Thu, 07 May 2015 15:30:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-07-git-push-dns/</guid>
+      <description>There are now a lot of services that have &amp;ldquo;git push&amp;rdquo; options available&amp;hellip; you can build websites with Azure and Github, books using ShareLaTeX and now, DNS using LuaDNS. I have one zone running at the moment (tiernanotoole.net) and you can see the DNS records on github here. I am tempted at moving other records over soon&amp;hellip; but i am currently on Amazon Route53 and 1: its works, so dont break it, and 2, not sure how to bulk export records from Route53 to Bind or Lua format.</description>
+    </item>
+    
+    <item>
+      <title>Bulk compressing images for the Web</title>
+      <link>https://www.tiernanotoole.ie/post/2015-04-29-bulk-compressing-images-for-the-web/</link>
+      <pubDate>Wed, 29 Apr 2015 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-04-29-bulk-compressing-images-for-the-web/</guid>
+      <description>Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meant looking at all the stuff that takes time to download&amp;hellip; There are more tweaks (and possibly posts) coming down the road, but to start, I needed to look at images.
+First things first. I&amp;rsquo;m running this on a Sabayon Linux box, so some of the install commands will be different&amp;hellip; (Also, i do need to explain why I moved from Windows to Linux on the GodboxV2, but that&amp;rsquo;s a different post&amp;hellip;)</description>
+    </item>
+    
+    <item>
+      <title>All blogs moved to Jekyll</title>
+      <link>https://www.tiernanotoole.ie/post/2015-04-28-all-blogs-moved-to-jekyll/</link>
+      <pubDate>Tue, 28 Apr 2015 12:49:53 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-04-28-all-blogs-moved-to-jekyll/</guid>
+      <description>Well, its finally happened. All my blogs, Tiernan&amp;rsquo;s Comms Closet, GeekPhotographer and the Podcast have been moved to Jekyll. I wrote up a long and complicated post explaining how I did it&amp;hellip; Now, i dont have to worry about Wordpress security issues on my home sites! Happy Days!</description>
+    </item>
+    
+    <item>
+      <title>Hubic and Duplicity</title>
+      <link>https://www.tiernanotoole.ie/post/2015-04-01-Duplicity_Hubic/</link>
+      <pubDate>Wed, 01 Apr 2015 07:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-04-01-Duplicity_Hubic/</guid>
+      <description>I mentioned HubiC in my last post, and in it i said that you could use Duplicity for backups. Well, this is how you get it to work&amp;hellip;
+First, i am using Ubuntu 14.04 (i think&amp;hellip;). I use Ubuntu in house for a few things:
+ its running Tiernan&amp;rsquo;s Comms Closet, GeekPhotographer and Tiernan&amp;rsquo;s Podcast all in house, aswell as being used to build this site. The Web Server and MySQL Server are seperated, MySQL running on Windows, web on Ubuntu&amp;hellip; but thats a different story&amp;hellip; I have a couple of proxy servers running Ubuntu also Other general servers running Ubuntu&amp;hellip; dont ask, cause i cant remember what they do half the time&amp;hellip;  So, Duplicity is a backup application.</description>
+    </item>
+    
+    <item>
+      <title>Hubic, OpenStack Swift and Curl</title>
+      <link>https://www.tiernanotoole.ie/post/2015-03-31-HubiC_SWIFT_CURL/</link>
+      <pubDate>Tue, 31 Mar 2015 22:40:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-03-31-HubiC_SWIFT_CURL/</guid>
+      <description>HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup&amp;hellip; TERABYTES!) for EUR5 a month&amp;hellip; Thats a crazy amount of storage for a not crazy amount of money!
+So, while playing around with different things, I found they have an API, so other than the usual apps to play with (like the Hubic Apps for iPhone, Android, Windows Phone, Windows Desktop and OSX, Duplicity for backing up *nix boxes, and a few others) you can build your own&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Daily Carry, March 2015 Edition</title>
+      <link>https://www.tiernanotoole.ie/post/2015-03-26-Daily_Carry/</link>
+      <pubDate>Thu, 26 Mar 2015 21:41:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-03-26-Daily_Carry/</guid>
+      <description>A couple of years back, i did a post about my Daily Carry for college&amp;hellip; Well, I have finished (ish) college, but i still cary a lot of weird and wonderful stuff&amp;hellip; So, this is the update&amp;hellip;
+The details are on my Daily Carry page, and, in theory, should always be up to date&amp;hellip; Thats the theory anyway&amp;hellip; :)</description>
+    </item>
+    
+    <item>
+      <title>Mobile Phone as a Service</title>
+      <link>https://www.tiernanotoole.ie/post/2015-02-15-mobile_phone_as_a_service/</link>
+      <pubDate>Sun, 15 Feb 2015 21:47:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-02-15-mobile_phone_as_a_service/</guid>
+      <description>After my post about the Raspberry Pi acting as a VoIP server, and being able to add a 3G Dongle and allowing it to act as a Mobile Phone gateway, it got me thinking&amp;hellip; Why not have something that allows you to rent a mobile phone number in a country, send and recieve text messages, phone calls, etc, all from anywhere in the world? Thats where Mobile Phone as a Service comes in&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>CDN Hosted Blog</title>
+      <link>https://www.tiernanotoole.ie/post/2014-01-23-CDNHostedBlog/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2014-01-23-CDNHostedBlog/</guid>
+      <description>Well, if you can read this, this site is now hosted fully on AWS with both S3 and CloudFront. More details eventually&amp;hellip;
+[UPDATE] How did i host this on S3 and CloudFront? Check out this article by Paul Stamatiou for details&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi as an Asterisk Box</title>
+      <link>https://www.tiernanotoole.ie/post/2013-05-29-RaspberryPi_Astrisk_Box/</link>
+      <pubDate>Wed, 29 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2013-05-29-RaspberryPi_Astrisk_Box/</guid>
+      <description>The Raspberry Pi is a pretty amazing peice of kit for its price and size. And now, you can make it even more amazing by using it as a VoIP server for your house!
+Check out Raspberry Asterisk for downloads, documentation, etc, on how to setup a Raspberry Pi and Asterisk. I have a couple Pi&amp;rsquo;s in the house, and plan on setting this up in the next few days. Keep your eyes on the site&amp;hellip; more posts coming!</description>
+    </item>
+    
+    <item>
+      <title>College Bag Contents</title>
+      <link>https://www.tiernanotoole.ie/post/2013-01-27-college_bag_contents/</link>
+      <pubDate>Sun, 27 Jan 2013 22:28:58 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2013-01-27-college_bag_contents/</guid>
+      <description>Tomorrow, Monday the 28th January, 2013, will be the start of my final real Semester in College. I have been studying part time for the last 3 and a bit years, and tomorrow marks the begining of the end&amp;hellip; Its the final REAL semester, meaning at the end of this i will have exams, but i wont be &amp;ldquo;finished&amp;rdquo; as such&amp;hellip; I have a final semester from September to December where i hand up my final year project, which i plan on documenting here soon.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi as a Mobile WiFi HotSpot (part 1)</title>
+      <link>https://www.tiernanotoole.ie/post/2013-01-18-raspberry_pi_as_a_mobile_wifi_hotspot_-_part_1/</link>
+      <pubDate>Fri, 18 Jan 2013 07:57:16 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2013-01-18-raspberry_pi_as_a_mobile_wifi_hotspot_-_part_1/</guid>
+      <description>I have been using an iPhone 4 as a wifi hotspot for a while now. It does not have a &amp;ldquo;phone&amp;rdquo; SIM in it, with calls and texts enabled, instead it has a 3G Data SIM from a dongle&amp;hellip; It works OK, but there are a few issues i have with it&amp;hellip;
+ No easy way to see how much data is being used, unless you Jail Break, and then battery life goes away&amp;hellip; not very hackable&amp;hellip; other than Jail Break, and thats not hackable enough&amp;hellip; not a lot of storage: 16Gb, and most of that is takin up by Music and Apps no background network daemons&amp;hellip; more on that in a second&amp;hellip;  The Network Daemons i am thinking would be useful for a WiFi Hotspot would be Squid, WANProxy, SSH, PPTP or OpenVPN Client and possibly a downloader of some sort.</description>
+    </item>
+    
+    <item>
+      <title>Moving sites to NearlyFreeSpeech</title>
+      <link>https://www.tiernanotoole.ie/post/2013-01-15-moving_sites_to_nearlyfreespeech/</link>
+      <pubDate>Tue, 15 Jan 2013 19:23:02 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2013-01-15-moving_sites_to_nearlyfreespeech/</guid>
+      <description>I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot&amp;hellip; For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan&amp;rsquo;s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends&amp;hellip; All in all, not a lot of power&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Send Emails as a Distribution Group in Office365</title>
+      <link>https://www.tiernanotoole.ie/post/2012-12-20-send_emails_as_a_distribution_group_in_office365/</link>
+      <pubDate>Thu, 20 Dec 2012 13:13:21 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-12-20-send_emails_as_a_distribution_group_in_office365/</guid>
+      <description>I am in the process of moving my Email domains from one Office365 plan (a Professional) to an Enterprise Plan. During the move, i set up some Email Aliases for older email addresses, which are still being used, but i dont send a lot of email from. But if i do need to send emails from these addresses, with the help of Powershell, I managed to set it up. The full details are listed on &amp;ldquo;how to send as an alias in Office 365&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>IPv6 Firewall rules for MikroTik RouterOS</title>
+      <link>https://www.tiernanotoole.ie/post/2012-12-20-ipv6_firewall_rules_for_mikrotik_routeros/</link>
+      <pubDate>Thu, 20 Dec 2012 11:09:06 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-12-20-ipv6_firewall_rules_for_mikrotik_routeros/</guid>
+      <description>After yesterday&amp;rsquo;s post on IPv6 Networking in the house, I realized that all machines internally had publically facing IPv6 addresses! I started to panic, then went looking online, and found the following script:
+ This script, when run on your RouterOS board, will allow Established and Related connections, allow outgoing connections, and drop anything incoming that has not been requested&amp;hellip; so, now everything inside the network should be more secured&amp;hellip; I am new to this IPv6 stuff, so I am still learning&amp;hellip; but, i am getting there&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>IPv6 &#43; MikroTik &#43; Linux &#43; Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2012-12-19-ipv6_&#43;_mikrotik_&#43;_linux_&#43;_windows/</link>
+      <pubDate>Wed, 19 Dec 2012 16:24:07 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-12-19-ipv6_&#43;_mikrotik_&#43;_linux_&#43;_windows/</guid>
+      <description>I have been wanting to setup an IPv6 network for a while now, but never had the hardware or network to support it. My broadband Modem, a Cisco EPC3925, was pretty useless&amp;hellip; But with the advent of Bridging on the Cisco EPC3925 it now works!
+The first thing i needed to do was setup a Tunnel Broker Account with Hurricane Electric. I got a /64 block of IPv6 addresses, which should do me for a while&amp;hellip; :)</description>
+    </item>
+    
+    <item>
+      <title>Compressing and UnCompressing Protobuf items in C#</title>
+      <link>https://www.tiernanotoole.ie/post/2012-12-12-compressing_and_uncompressing_protobuf_items_in_c/</link>
+      <pubDate>Wed, 12 Dec 2012 11:29:32 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-12-12-compressing_and_uncompressing_protobuf_items_in_c/</guid>
+      <description>Part of a project i am working on required sending large amounts of data between different instances. To get this to work efficially, we started using the ProtoBuf using ProtoBuf-net in .NET. but the files where still quite large (17mb, give or take). So, we looked into compression&amp;hellip;
+here is some examples of how we managed to compress the protobuf files. We got some decient compression: 3mb files, down from 17mb.</description>
+    </item>
+    
+    <item>
+      <title>GIT tips and tricks</title>
+      <link>https://www.tiernanotoole.ie/post/2012-12-05-git_tips_and_tricks/</link>
+      <pubDate>Wed, 05 Dec 2012 15:48:44 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-12-05-git_tips_and_tricks/</guid>
+      <description>I use GIT a lot for different things, including this blog. so, here are a few tips and tricks i have found useful over the while&amp;hellip;
+ Using Dropbox as a local GIT/Mercurial Repository: my own post from a while back. Twelve GIT curated Tips and Workflows from the Trenches Using GIT with Subversion: tips that will make your life easier: The office has an SVN server, but i like GIT.</description>
+    </item>
+    
+    <item>
+      <title>Symform - P2P Backup</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-30-symform_-_p2p_backup/</link>
+      <pubDate>Fri, 30 Nov 2012 09:13:27 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-30-symform_-_p2p_backup/</guid>
+      <description>I have previously posted about CrashPlan as my Backup System. I also, a long time ago, talked about Backing up SQL, MySQL and other stuff on my other blog. Well, CrashPlan is all good, but there are 2 &amp;ldquo;niggly&amp;rdquo; bits with it&amp;hellip;
+ Its not FREE (well, this year i got it Free on Black Friday&amp;hellip;) but it is cheap ($120 a year to backup 10 machines to the cloud aint bad.</description>
+    </item>
+    
+    <item>
+      <title>enabling VNC from SSH on OSX</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-29-enabling_vnc_from_ssh_on_osx/</link>
+      <pubDate>Thu, 29 Nov 2012 16:16:49 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-29-enabling_vnc_from_ssh_on_osx/</guid>
+      <description>I have a Late 2008 MacBook Pro in the house, and SSH is enabled on it. I usually leave it on when in work. Anyway, SSH is enabled, but VNC access is not&amp;hellip; I found the following command on Ryan&amp;rsquo;s Tech Notes allowing you to enable it though SSH:
+{% gist 4170122 %}
+** NOTE ** Change mypasswd to your own password!!!
+If you need to disable it, use the following:</description>
+    </item>
+    
+    <item>
+      <title>moving your TMG SQL server Logs DB and other TMG tips</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-22-moving_your_tmg_sql_server_and_other_tmg_tips/</link>
+      <pubDate>Thu, 22 Nov 2012 08:27:55 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-22-moving_your_tmg_sql_server_and_other_tmg_tips/</guid>
+      <description>In house, I have been using Microsoft TMG 2010 Server for a while now. I use it as a firewall for some of the machines on the network, and also as a proxy for most, if not all, machines. When acting as a Firewall, all traffic flows though the machine, be it HTTP/HTTPS, SMTP/POP3/IMAP, or anything for that matter. You can also lock down ports on the box, which is a feature of most firewalls, but i like TMG due to its relitive ease of use&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Dynamic IP Updates</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-19-routeros_dynamic_ip_updates/</link>
+      <pubDate>Mon, 19 Nov 2012 10:19:26 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-19-routeros_dynamic_ip_updates/</guid>
+      <description>I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb&amp;hellip;). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Custom MSDeploy OverWrite Rules</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-31-custom_msdeploy_overwrite_rules/</link>
+      <pubDate>Wed, 31 Oct 2012 09:45:54 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-31-custom_msdeploy_overwrite_rules/</guid>
+      <description>I have a project which we are trying to automate the deployment system. The plan is to automatically deploy the project to a staging server anytime the build succeeds from SVN.
+I have had a few problems with this, but here are some of the links which may come in handy for you.
+ MSDeploy skip rules when using MSBuild PublishProfile with Visual Studio 2012 Web Deploy : Customizing a deployment package How to set MSDeploy settings in .</description>
+    </item>
+    
+    <item>
+      <title>WANProxy and Squid with Upstream Servers</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-26-wanproxy_and_squid_with_upstream_servers/</link>
+      <pubDate>Fri, 26 Oct 2012 13:14:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-26-wanproxy_and_squid_with_upstream_servers/</guid>
+      <description>In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good&amp;hellip; In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks.</description>
+    </item>
+    
+    <item>
+      <title>Building WANProxy on Ubuntu 12.04</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-24-building_wanproxy_on_ubuntu_12.04/</link>
+      <pubDate>Wed, 24 Oct 2012 14:28:07 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-24-building_wanproxy_on_ubuntu_12.04/</guid>
+      <description>[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now.
+I have been looking into WANProxy for a while now, but never successfully got it to build&amp;hellip; I have been more successfull reciently, so here is what you need to do.
+** NOTE **: I built this on Ubuntu 12.</description>
+    </item>
+    
+    <item>
+      <title>Boot Raspberry Pi with SSH Enabled, Enable Wifi on Boot, and more</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-18-boot_raspberry_pi_with_ssh_enabled/</link>
+      <pubDate>Thu, 18 Oct 2012 16:45:01 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-18-boot_raspberry_pi_with_ssh_enabled/</guid>
+      <description>Some interesting links for the Raspberry Pi today:
+ So, you just bought a new Raspberry Pi and need to enable SSH, but dont have a screen? Prepare for SSH without a Screen shows you what to do! How to Bring up WLAN0 on boot shows you how to start your Wifi adapter when you boot your Pi  </description>
+    </item>
+    
+    <item>
+      <title>GPS and Raspberry Pi</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-15-gps_and_raspberry_pi/</link>
+      <pubDate>Mon, 15 Oct 2012 16:20:17 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-15-gps_and_raspberry_pi/</guid>
+      <description>Need to add GPS to your Raspberry Pi? How do i attach a GPS to a Raspberry answers your question!</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi now with 512MB RAM, other random links...</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-15-raspberry_pi_now_with_512mb_ram/</link>
+      <pubDate>Mon, 15 Oct 2012 12:37:20 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-15-raspberry_pi_now_with_512mb_ram/</guid>
+      <description>Earlier on today, the Raspberry Pi Foundation announced that the Model B will now be shipping with 512Mb RAM as standard, with no price change. I posted the link up on Hacker News and its caused quite a lot of happy people!
+So, with the news of extra RAM, its started making me think of more things the Pi could be used for&amp;hellip;
+ An Austrian hosting company are offering free Co-Location for Raspberry Pis with a 100Mb/s uplink and 100Gb bandwidth!</description>
+    </item>
+    
+    <item>
+      <title>more raspberry pi and camera antics</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-12-more_raspberry_pi_and_camera_antics/</link>
+      <pubDate>Fri, 12 Oct 2012 15:13:53 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-12-more_raspberry_pi_and_camera_antics/</guid>
+      <description>A while back I posted about the Raspberry Pi, and in the post was a link to a Photographer who was embeding a Raspberry Pi into a Canon 5D MKII battery grip. Well, its been a while, and i have been thinking about the Pi and Cameras, so I went looking around&amp;hellip; Here is what i found.
+ HDR Photography with a Raspberry Pi and GPhoto2: It was linked at the end of David&amp;rsquo;s post, and i missed it completely.</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Using Host names in Firewall Rules</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-12-routeros_using_host_names_in_firewall_rules/</link>
+      <pubDate>Fri, 12 Oct 2012 07:43:17 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-12-routeros_using_host_names_in_firewall_rules/</guid>
+      <description>As a follow up to yesterday&amp;rsquo;s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.
+ First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs. Create an &amp;ldquo;Address List&amp;rdquo; in RouterOS.</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Blocking Machine access to all but one IP</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-11-routeros_blocking_machine_access/</link>
+      <pubDate>Thu, 11 Oct 2012 13:09:20 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-11-routeros_blocking_machine_access/</guid>
+      <description>So, i have a machine on my network, which should be only connecting to the internet though a VPN. I needed to tell my RouterOS box to block all access, except to this said IP address&amp;hellip; The following should do the trick&amp;hellip; YMMV
+{% gist 3871919 %}
+this will drop any packets from the srcaddress (IP address) that are not for destination dstaddress (IP address). in my case, dstaddress is the VPN server i want to connect to.</description>
+    </item>
+    
+    <item>
+      <title>ZFS iSCSI NFS SFTP Hyper-V and more</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-05-zfs_iscsi_nfs_sftp_hyper-v_and_more/</link>
+      <pubDate>Fri, 05 Oct 2012 09:38:13 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-05-zfs_iscsi_nfs_sftp_hyper-v_and_more/</guid>
+      <description>As part of my new task to make my files safer and backups faster, and, well, cheap, I am looking into ZFS for my storage needs. My needs are as follows:
+ Allow me to store lots of different types of data (Photos, Videos, Music, VMs) in different formats (RAW and JPG photos, MP4, AVI and DivX Videos, with DVD and BluRay rips also a posibility, MP3 music and VHD files from HyperV, inclduing ISOs and Snapshots).</description>
+    </item>
+    
+    <item>
+      <title>More Jekyll Stuff</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-04-more_jekyll_stuff/</link>
+      <pubDate>Thu, 04 Oct 2012 20:57:52 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-04-more_jekyll_stuff/</guid>
+      <description>Couple of bits and pieces on Jekyll stuff today&amp;hellip; I am tweaking the outline of the site, so i am surfing around finding stuff&amp;hellip; here is what i have found
+ Host a static site on Amazon S3: Interesting idea, and something i would look into eventually&amp;hellip; And with the help of CloudFront you could host your whole blog on a CDN! Rake tasks for Jekyll: Rake is the Ruby version of make&amp;hellip; and a RakeFile can have tasks, which are in Ruby&amp;hellip; They can do, from what i can gather, pretty much anything&amp;hellip; So, some examples of what you can do with them are linked here&amp;hellip; I especially like the New Post generator&amp;hellip; very handy!</description>
+    </item>
+    
+    <item>
+      <title>Handbrake Cluster</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-03-Handbrake-Cluster/</link>
+      <pubDate>Wed, 03 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-03-Handbrake-Cluster/</guid>
+      <description>[UPDATED] someone asked in the comments if there was an binary build for this file. there is now! http://handbrakecluster.codeplex.com now hosts the code and binaries, and will soon have help files and documentation.
+A few days back, i wrote a post titled Powershell + Handbrake + AppleTV + iTunes = Automatic TV&amp;hellip; ish. In it i included a block of Powershell code to bulk convert TV shows from whatever format you had them in to a M4V format for the AppleTV.</description>
+    </item>
+    
+    <item>
+      <title>Enabling True Bridging modem on a Cisco ECP3925 Cable Modem (UPC Ireland)</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-02-Enabling-true-briding-mode-on-Cisco-EPC3925/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-02-Enabling-true-briding-mode-on-Cisco-EPC3925/</guid>
+      <description>I am a UPC Ireland customer, and have 2 cable modems into the house, both Cisco EPC3925s. These are not exactly great modems for power users, but are grand for normal use&amp;hellip; Me, however, being a poweruser wanted something a little more, how should I put it, powerful.
+A couple of months back, a tutorial was posted on Boards.ie which showed you How to enable &amp;ldquo;bridging&amp;rdquo; on your UPC modem. When i say &amp;ldquo;Bridging&amp;rdquo;, they used DMZ, turned off firewalls, static IPs internally, turned off Wifi and DHCP, etc.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell &#43; HandBrake &#43; AppleTV &#43; iTunes = Automatic TV... Ish...</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-28-Powershell-HandBrake-AppleTV-iTunes/</link>
+      <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-28-Powershell-HandBrake-AppleTV-iTunes/</guid>
+      <description>I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost&amp;hellip; You cant really argue with the small price!
+I also have a lot of content that works great with the AppleTV in iTunes, but i have content which does not work so great with the AppleTV&amp;hellip; So, i needed to find a way to convert files quickly and easily&amp;hellip; thats where PowerShell and Handbrake come in&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Crashplan Backups</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-27-CrashPlan-Backups/</link>
+      <pubDate>Thu, 27 Sep 2012 11:32:32 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-27-CrashPlan-Backups/</guid>
+      <description>I have been running CrashPlan for a while now, and, other than some minor issues (backup speed to their central location is the big one), everything has been going grand. I use it to backup about 600GB of photos and videos, 500GB+ of VMs, documents, source code and a fair whack of other stuff&amp;hellip; In total, about 2TB of data.
+Anyway, here are some tips i have figured out over the last while for making Crashplan work a little better&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>More VoIP Stuff</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-27-More-VoIP-Stuff/</link>
+      <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-27-More-VoIP-Stuff/</guid>
+      <description>As part of my ongoing plan to upgrade the house to VoIP, and as a follow up to my first VoIP stuff post, here are some more things i have found&amp;hellip;
+ I have added SipDiscount and SipGate for making and recieving calls. SipDiscount allows me to set pretty much any number as my Caller ID, as long as i &amp;ldquo;own&amp;rdquo; that number (they either text or call you with a code, and you enter it on their site).</description>
+    </item>
+    
+    <item>
+      <title>Building a Cross Compiler for your Raspberry Pi</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-25-Raspberry-Pi-Cross-Compiling/</link>
+      <pubDate>Tue, 25 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-25-Raspberry-Pi-Cross-Compiling/</guid>
+      <description>My main machine at home, known as &amp;ldquo;The GodBox&amp;rdquo; is a Dual Processor, Quad Core Xeon 5520 with 60Gb RAM, 2 300Gb 10,000 RPM Western Digital Velociraptor in RAID 0 for boot, 4X1Tb 7200RPM drives for storage, 2 more 300Gb 10,000 RPM drives for &amp;ldquo;scratch disk&amp;rdquo; and a couple high(ish) end graphics cards with 3 monitors plugged in&amp;hellip; Hence the name, GodBox!
+Anyway, The Raspberry Pi, on the other hand, has a 700Mhz processor, 256Mb RAM and not much else&amp;hellip; So, if you need to write code for your Pi, and you don&amp;rsquo;t want to wait a long time to compile, check out this tutorial on how to build a cross compiler for your raspberry pi which will allow you to build your apps on a different machine&amp;hellip; I have a college project which the Raspberry Pi will be used for, and i am thinking this will be how i build code.</description>
+    </item>
+    
+    <item>
+      <title>MicroTik RouterOS VPN Setup</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-24-MicroTik-RouterOS-VPN-Setup/</link>
+      <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-24-MicroTik-RouterOS-VPN-Setup/</guid>
+      <description>I have been running a MikroTik RouterBoard in the house for a couple of months now (the RB750G) and I am very much loving the thing. But one thing you may need to do is setup VPN connections&amp;hellip; Here are some tips on how to create a VPN Server and Client on your RouterBoard.
+Client Setup to setup a client, you need to do the following:
+{% gist 8581643 %}</description>
+    </item>
+    
+    <item>
+      <title>SSH Tunneling made simple</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-17-SSH-Tunneling-Made-Simple/</link>
+      <pubDate>Mon, 17 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-17-SSH-Tunneling-Made-Simple/</guid>
+      <description>Something I do on a regular basis is use the internet while &amp;ldquo;out and about&amp;rdquo;. This could be college, which has a semi open network, or it could be a coffee shop, which also usually has a semi open connection. There is also the possibility of using the a mobile internet connection on my iPhone, which can be slow, but at least its only shared with me&amp;hellip; Anyway, over on RevSys.</description>
+    </item>
+    
+    <item>
+      <title>VOIP Stuff</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-11-VOIP-Stuff/</link>
+      <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-11-VOIP-Stuff/</guid>
+      <description>I have been very interested in VOIP stuff for the last while now, and finally started looking at implementing it in the house. Here are some links which may be useful. I will do a full post soon.
+ Asterisk 1.8 with chan_mobile on Centos 6: chan_mobile allows you to use a Bluetooth phone to make calls with Asterisk Use an old Mobile Phone as a GMS Gateway in asterisk: again, similar to above, but with Ubuntu.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Stuff</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-06-Rasberry-Stuff/</link>
+      <pubDate>Thu, 06 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-06-Rasberry-Stuff/</guid>
+      <description>A couple months back, I got my hands on a Raspberry Pi, a tiny development board that can run a full copy of Linux, has a HDMI port, a couple USB ports, Ethernet and a few other little bits and pieces. The full specs, from the Wikipedia Article are as follows:
+ Operating system: Linux (Debian GNU/Linux, Fedora, and Arch Linux ARM) Power: 2.5 W (model A), 3.5 W (model B) CPU: ARM1176JZF-S (armv6k) 700 MHz Storage capacity: SD card slot (SD or SDHC card) Memory: 256 MByte Graphics: Broadcom VideoCore IV  There have been a few things i have wanted to play with it for, but have not implemented all them yet&amp;hellip; still learning&amp;hellip; but some interesting projects have come to my attention&amp;hellip; here they are, in no particular order:</description>
+    </item>
+    
+    <item>
+      <title>Build your own Private GIT server</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-03-Build-Your-Own-Private-Git-Server/</link>
+      <pubDate>Mon, 03 Sep 2012 10:28:11 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-03-Build-Your-Own-Private-Git-Server/</guid>
+      <description>This site is built with GIT, GitoLite and Jekyll&amp;hellip; I posted about this before. but how do you setup your own Git Server? checkout How to install and Setup a Git Repository Server using Gitolite on Linux Ubuntu 10.04 and 11.04 on mmncs.com. I am using Ubuntu 12.04, but its mostly the same&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Understanding Storage Spaces in Windows 8 and Windows Server 2012</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-31-Understanding-Windows8-Storage-Spaces/</link>
+      <pubDate>Fri, 31 Aug 2012 09:04:14 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-31-Understanding-Windows8-Storage-Spaces/</guid>
+      <description>So, Windows Server 2012 and Windows 8 have both RTMed in the last couple of weeks and will be available to the public in the next month or so (September for Server, October for Client). If you are an MSDN Subscriber, you already have Client, and will (hopefully) get server in the next couple of weeks&amp;hellip; Fingers crossed&amp;hellip; Anyway, one of the interesting features i am waiting for is Storage Spaces.</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text 2 with Powershell</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-31-SublimeText-With-Powershell/</link>
+      <pubDate>Fri, 31 Aug 2012 09:00:13 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-31-SublimeText-With-Powershell/</guid>
+      <description>My new Favorite cross platform text editor is Sublime Text 2. It works on Windows, Mac OS and Linux, and i am very happy with it. My only problem is the path to start it is not exactly easy to type&amp;hellip; So, with the help of PowerShell, my new favorite command line tool on Windows, i added an alias:
+Set-Alias subl &#39;c:\program files\sublime text 2\sublime_text.exe&#39;  I added this to my Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>AutoScaling with Amazon</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-30-AutoScalling-With-Amazon/</link>
+      <pubDate>Thu, 30 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-30-AutoScalling-With-Amazon/</guid>
+      <description>I have a few Amazon EC2 instances running on a project, and one of these instances was known as the Zombie Instance! Every time i killed it, it came back to life a few min later&amp;hellip; I found out that i, at some point, set that instance to be in an AutoScaling group. Any time the instance died, Amazon would check and restart the instance. So, how did I kill this undead instance?</description>
+    </item>
+    
+    <item>
+      <title>My new Git Powered Site</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-29-NewSite/</link>
+      <pubDate>Wed, 29 Aug 2012 12:54:40 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-29-NewSite/</guid>
+      <description>So, this site is brought to you by GIT, Jekyll and Magic&amp;hellip; here is how i did it&amp;hellip;
+ I have a Linux VM running the site. Its an Ubuntu 12.04 server. On that i installed Jekyll. I also have gitolite installed for personal git repos. In the Git Repo for this site, under the hooks directory, I added a post-receive file which I got from here originally. Apache is set to serve the directory that Jekyll produces&amp;hellip; That&amp;rsquo;s what you are reading here.</description>
+    </item>
+    
+  </channel>
+</rss>

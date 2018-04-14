@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sophos_utm on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/sophos_utm/</link>
+    <description>Recent content in Sophos_utm on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Sep 2015 20:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/sophos_utm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Edge Router, Sophos UTM, DMZ and LAN Networks</title>
+      <link>http://localhost:1313/2015/09/30/Edge-Router-Sophos-UTM-DMZ-and-LAN-Networks/</link>
+      <pubDate>Wed, 30 Sep 2015 20:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/09/30/Edge-Router-Sophos-UTM-DMZ-and-LAN-Networks/</guid>
+      <description>I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more &amp;ldquo;LANs&amp;rdquo; over there soon).</description>
+    </item>
+    
+  </channel>
+</rss>

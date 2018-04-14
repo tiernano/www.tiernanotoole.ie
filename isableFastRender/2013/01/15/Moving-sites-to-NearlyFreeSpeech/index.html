@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Moving sites to NearlyFreeSpeech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">Moving sites to NearlyFreeSpeech</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2013-01-15</small></p> <hr/>
+   <div class="post">
+     <p>I have been running a Dedicated Server from <a href="http://www.hetzner.de/en">Hetzner</a> for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot&hellip; For example, this site is generated using <a href="http://www.vmware.com/products/vsphere-hypervisor/overview.html">Jekyll</a>, which takes up very little power, and becomes static HTML files. My other blogs (<a href="http://blog.lotas-smartman.net">Tiernan&rsquo;s Comms Closet</a> and <a href="http://www.geekphotographer.com">GeekPhotographer</a>) are both low traffic <a href="http://www.wordpress.org">Wordpress</a> sites, and I run a couple of other static sites also for friends&hellip; All in all, not a lot of power&hellip;</p>
+
+<p>Its not a fortune to run the server, the box i have has a Quad Core, Hyper threaded Intel i7, 32Gb RAM, 2 3TB Hdds (not raid&hellip;) and runs a copy of <a href="https://github.com/mojombo/jekyll">VMWare ESXi</a>, and it costs about EUR60 a month, including a couple of IP addresses&hellip; But, i dont use it all that often&hellip; So, i am in the process of getting rid of it&hellip;</p>
+
+<p>So, the 2 other blogs (<a href="http://www.geekphotographer.com">GeekPhotographer</a> and <a href="http://blog.lotas-smartman.net">Tiernan&rsquo;s Comms Closet</a>) have already moved. They where easy enough&hellip; Export the Wordpress DB, copy the file up, tweak the config, import the DB, DNS updates, etc&hellip; All done&hellip; but this site&hellip; that is more &ldquo;Complicated&rdquo;&hellip;</p>
+
+<p>Since it is generated on a &lsquo;<a href="http://tiernanotoole.ie/2012/08/29/NewSite.html">git push</a>&rsquo;, Jekyll and Ruby needs to be installed on the box&hellip; I am using static sites on <a href="http://www.nearlyfreespeech.net/">NearlyFreeSpeech</a> which only charge me per meg (about 0.1c, but that reduces as you transfer more) transfered and per 5 meg stored (1c). Thats for STATIC sites&hellip; if you are running a dynamic site, its about 1c per 1mb stored, plus 1c per day, plus another 2c for MySQL instances. Check out their <a href="https://www.nearlyfreespeech.net/estimate">pricing calculator</a> to see the magic at work!</p>
+
+<p>Anyway, my GIT repo is on a machine in the house. It has Jekyll and all required bits installed. In the &lsquo;post-receive&rsquo; hook (check <a href="http://blog.zerosum.org/2010/11/01/pure-git-deploy-workflow.html">the original zerosum post</a>), i generate the site, and then do an rsync copy to NFSN servers. That is it!</p>
+
+<p>Any question, leave a comment.</p>
+
+<p>[update] forgot to add the <a href="https://gist.github.com/4545178">gist</a> which shows how i do the rsync call&hellip;</p>
+
+<p>{% gist 4545178 %}</p>
+
+<p>[update2] you in my case, the folder that Jekyll is being built in needed to be chmoded and chowned&hellip; I chowned the the folder to the gitolite user and i chmodded the folder to 777&hellip; before i did this, some files where unreadable on NFSN&hellip; with this, all works grand&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2013/01/18/Raspberry-Pi-as-a-Mobile-WiFi-HotSpot-part-1/"> Raspberry Pi as a Mobile WiFi HotSpot (part 1)</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2012/12/20/Send-Emails-as-a-Distribution-Group-in-Office365/"> Send Emails as a Distribution Group in Office365</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

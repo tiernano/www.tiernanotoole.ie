@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>New Backup Plans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">New Backup Plans</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2017-09-25</small></p> <hr/>
+   <div class="post">
+     <p>So, a few weeks back, <a href="http://www.crashplan.com">CrashPlan</a>, one of my chosen backup services, decided to <a href="https://www.crashplan.com/en-us/consumer/nextsteps/">kill their consumer backup plans</a>. Which made me have to rethink my backup plan for the house&hellip;</p>
+
+<p><strong>Note</strong>: This is how I am backing up files, and may or may not work for you. Some of this is already in &ldquo;production&rdquo; as of today, but others are planned&hellip; Any questions, comments, etc, leave them in the comments.</p>
+
+<p>So, first, as mentioned above, CrashPlan&rsquo;s consumer backup options are now dead. They are giving you the option of either upgrading to their Small Business Plan for free till the end of your current contract + 2 months, or moving to <a href="https://www.carbonite.com/">Carbonite</a>. For me, i just moved to their Small Business option, since its free, and meant that most of my backups just migrated over&hellip; i did not, how ever, look too much into Carbonite.</p>
+
+<p>Just checking their site now, i would have to go for a minimum of the Plus plan, and that only allows me to backup 1 machine&hellip; I have 2 (currently) that get backed up&hellip; and probably more at a later date&hellip; and, given their yearly price for Plus is $75 per year, thats $150 for 2 current machines, and an extra $75 per machine after&hellip; Granted, they are saying its unlimited storage. but the extra fee per machine puts it out of contention&hellip;</p>
+
+<p>For CrashPlans Small Business Plan, their plan is $10 per machine per month&hellip; So, my 2 machines would cost $240 per year to backup. They are giving me the next few months for free, and then for the first year, they are offering a discount of 75%, but we will see what happens when renewal comes along&hellip;</p>
+
+<p>So, where does that leave me? Well, its looking like i will be using a mix of <a href="https://secure.backblaze.com/r/01px2w">BackBlaze</a> and <a href="http://www.hubic.com">Hubic</a>. The current idea is as follows:</p>
+
+<ul>
+<li><p>GodBoxV2 and the Mac Mini both have <a href="http://www.drobo.com">Drobos</a> plugged into them: the GodBoxV2 has a Drobo 5D, and the mini has a Drobo mini. There is also a Drobo FS on the network. I know they are not backup solutions, but its better than having stuff on single drives&hellip;</p></li>
+
+<li><p>For Windows boxes, I am backing up files to the cloud using <a href="https://www.duplicati.com/">Duplicati</a>. These are backed up to both Hubic and BackBlaze B2. Photos and importing files are backed up to both, and stuff i want backed up, but not in 2 places, is just backed up on Hubic.</p></li>
+
+<li><p>For my Mac mini, i use a a mix of Duplicati and <a href="https://www.arqbackup.com/">Arq Backup</a>. Arq got B2 support recently, so its very handy for that.</p></li>
+
+<li><p>For some of my Linux Boxes, i use <a href="http://duplicity.nongnu.org/">Duplicity</a>. You may need to walk though the steps i have <a href="https://www.tiernanotoole.ie/2015/04/01/Duplicity_Hubic.html">here</a> to get it working with Hubic, and it also works with B2.</p></li>
+</ul>
+
+<p>Some further notes:</p>
+
+<ul>
+<li><p>Hubic are charging about EUR5 a month for 10Tb of storage. If you refer people, that can go up. I have maxed mine out at 12.5Tb.</p></li>
+
+<li><p>Hubic is limited to 10mb/s for uploads and downloads. I never got anywhere close to that speed with CrashPlan (I&rsquo;m based in Europe, they are in the US, so speed of light and what have you&hellip; maxed most of the time at 4ish). That being said, even those its &ldquo;limited&rdquo; to 10mb/s, i have seen higher.,.. might be 10 per thread&hellip;</p></li>
+
+<li><p>I did, for a while, use the BackBlaze app and service. I just didn&rsquo;t renew because of the move to B2. If you don&rsquo;t want to mess with stuff, their App works great.And if you use <a href="https://secure.backblaze.com/r/01px2w">this referal link</a> you get a free month&hellip; Also, its FAST AF! it actually manged to max out my upload connection to their server! wont complain about that!</p></li>
+
+<li><p>B2 is cheap. 0.5c per gig stored&hellip; So, it works out at about $5 per TB per month, minus your usual bandwidth fees&hellip;</p></li>
+
+<li><p>Duplicati and Duplicity both have options to send emails on success or failure, or the like. I recommend having the emails on failure turned on at a minimum&hellip; also, on headless boxes, like my Linux box, i recommend checking the backup every week&hellip;</p></li>
+</ul>
+
+<p>So, there we have it. Any questions?</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2018/03/06/blogging-on-ipad/"> Blogging on an iPad Pro</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2017/08/16/Testing-Forestry/"> Testing Forestry</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

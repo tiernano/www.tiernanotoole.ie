@@ -1,0 +1,12 @@
+baseURL: https://www.tiernanotoole.ie
+disablePathToLower: true
+languageCode: en-us
+title: Tiernan's Comms Closet
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+permalinks:
+  post: /:year/:month/:day/:slug
+

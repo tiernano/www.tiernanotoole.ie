@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/tips/</link>
+    <description>Recent content in Tips on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Useful Web and Desktop Apps 2016 edition</title>
+      <link>http://localhost:1313/2016/04/23/Useful-Web-and-Desktop-Apps-2016-edition/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/23/Useful-Web-and-Desktop-Apps-2016-edition/</guid>
+      <description>I have decided to do a post on some of my favourite tools to use for development, administration, etc. It’s kind of like Hanselman&amp;rsquo;s Ultimate Tools list, but not as popular and about 2 years newer&amp;hellip; Anyway, the list is available here, and will be updated over time, much like my Daily Carry and Computers pages. If you are interested, you add links though GitHub by editing the toolslist.yml data file.</description>
+    </item>
+    
+    <item>
+      <title>GIT tips and tricks</title>
+      <link>http://localhost:1313/2012/12/05/GIT-tips-and-tricks/</link>
+      <pubDate>Wed, 05 Dec 2012 15:48:44 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/12/05/GIT-tips-and-tricks/</guid>
+      <description>I use GIT a lot for different things, including this blog. so, here are a few tips and tricks i have found useful over the while&amp;hellip;
+ Using Dropbox as a local GIT/Mercurial Repository: my own post from a while back. Twelve GIT curated Tips and Workflows from the Trenches Using GIT with Subversion: tips that will make your life easier: The office has an SVN server, but i like GIT.</description>
+    </item>
+    
+    <item>
+      <title>enabling VNC from SSH on OSX</title>
+      <link>http://localhost:1313/2012/11/29/enabling-VNC-from-SSH-on-OSX/</link>
+      <pubDate>Thu, 29 Nov 2012 16:16:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/11/29/enabling-VNC-from-SSH-on-OSX/</guid>
+      <description>I have a Late 2008 MacBook Pro in the house, and SSH is enabled on it. I usually leave it on when in work. Anyway, SSH is enabled, but VNC access is not&amp;hellip; I found the following command on Ryan&amp;rsquo;s Tech Notes allowing you to enable it though SSH:
+{% gist 4170122 %}
+** NOTE ** Change mypasswd to your own password!!!
+If you need to disable it, use the following:</description>
+    </item>
+    
+    <item>
+      <title>More Jekyll Stuff</title>
+      <link>http://localhost:1313/2012/10/04/More-Jekyll-Stuff/</link>
+      <pubDate>Thu, 04 Oct 2012 20:57:52 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/04/More-Jekyll-Stuff/</guid>
+      <description>Couple of bits and pieces on Jekyll stuff today&amp;hellip; I am tweaking the outline of the site, so i am surfing around finding stuff&amp;hellip; here is what i have found
+ Host a static site on Amazon S3: Interesting idea, and something i would look into eventually&amp;hellip; And with the help of CloudFront you could host your whole blog on a CDN! Rake tasks for Jekyll: Rake is the Ruby version of make&amp;hellip; and a RakeFile can have tasks, which are in Ruby&amp;hellip; They can do, from what i can gather, pretty much anything&amp;hellip; So, some examples of what you can do with them are linked here&amp;hellip; I especially like the New Post generator&amp;hellip; very handy!</description>
+    </item>
+    
+    <item>
+      <title>Crashplan Backups</title>
+      <link>http://localhost:1313/2012/09/27/Crashplan-Backups/</link>
+      <pubDate>Thu, 27 Sep 2012 11:32:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/27/Crashplan-Backups/</guid>
+      <description>I have been running CrashPlan for a while now, and, other than some minor issues (backup speed to their central location is the big one), everything has been going grand. I use it to backup about 600GB of photos and videos, 500GB+ of VMs, documents, source code and a fair whack of other stuff&amp;hellip; In total, about 2TB of data.
+Anyway, here are some tips i have figured out over the last while for making Crashplan work a little better&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

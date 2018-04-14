@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>double speed Internet Part 8 - Routing Around</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">double speed Internet Part 8 - Routing Around</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-06-08</small></p> <hr/>
+   <div class="post">
+     <p>[NOTE] This part 8 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a>.</p>
+
+<p>At the end of my <a href="https://www.tiernanotoole.ie/2016/05/31/double-speed-internet-part-7-ecmp-kind-of.html">last post</a> I asked the question about routing traffic to different servers based on thier distances, etc&hellip; Well, after a bit of messing, i can say it kind of works! here is a quick over view:</p>
+
+<ul>
+<li>server in the house has now got multiple OpenVPN connections (2 to <a href="http://www.hetzner.de/en">Hetzner</a>, 1 to <a href="http://www.ovh.ie">OVH</a> (with a plan to double), 1 to <a href="https://m.do.co/c/d4d345b83b55">Digital Ocean</a> (again, to be doubled) and i am planning 2 to <a href="http://www.azure.com">Azure</a> as well).</li>
+<li><a href="http://www.nongnu.org/quagga/">Quagga/Zebra</a> has static routes (currently static, planing on dynamic soon&hellip; more eventually) to different servers depending on where they are. for example, all traffic to the hetzner network (including their <a href="https://www.hetzner.de/en/hosting/produktmatrix/storagebox-produktmatrix">Storage Boxes</a>) go though the hetzner link. <a href="http://www.hubic.com">Hubic</a> traffic goes though OVH, Azure (currently) and AWS traffic, aswell as some CDNs go direct over either WAN1 or WAN2 in the house, and some other stuff (<a href="http://www.crashplan.com">CrashPlan</a> currently) goes though Digital Ocean. Everything that has no static route goes though Hetzner&hellip;</li>
+<li>Ideally, the static side of things should be removed, and a more dynamic setup done. How that works, i have no idea&hellip; <a href="http://www.spotify.com">Spotify</a> have 2 posts about their SDN Internet Router (<a href="https://labs.spotify.com/2016/01/26/sdn-internet-router-part-1/">part 1</a> and <a href="https://labs.spotify.com/2016/01/27/sdn-internet-router-part-2/">part 2</a>) which is an interesting idea&hellip; More digging and research is required.</li>
+</ul>
+
+<p>So, there you have it. Everything currently seems to be working, mostly, and tweaks can be made easily&hellip; I have a couple posts i have in my head, including something to do with automating bringing up new machines (probably with <a href="https://www.ansible.com/">Ansible</a> or something like it), more monitoring, and some other stuff too&hellip; Any questions, leave a comment, and i will get back.</p>
+
+<p>[UPDATE] I wrote a quick and dirty app called <a href="https://github.com/tiernano/whoistozebraconfig">WhoIsToZebraConfig</a> which takes an AS Number, looks up the info in the <a href="http://www.radb.net/">Merit RADb</a> (with the help of some code from <a href="https://coderbuddy.wordpress.com/2010/10/12/a-simple-c-class-to-get-whois-information/">Coder Buddy</a>) and outputs what you need to put into your Zebra Config&hellip; should save me some time, and it might save you time too&hellip;  shout if you have questions!</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/06/20/Meraki-and-Ubiquiti-networks-gear-Update/"> Meraki and Ubiquiti networks gear Update</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/05/31/double-speed-Internet-Part-7---ECMP-kind-of/"> double speed Internet Part 7 - ECMP (kind of)</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

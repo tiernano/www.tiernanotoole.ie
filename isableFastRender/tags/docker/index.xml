@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/docker/</link>
+    <description>Recent content in Docker on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker Jekyll and Mr ngrok</title>
+      <link>http://localhost:1313/2016/11/15/Docker-Jekyll-and-Mr-ngrok/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/11/15/Docker-Jekyll-and-Mr-ngrok/</guid>
+      <description>See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok.
+So, first, you should know what Nginx is at this stage&amp;hellip; If not, check out their site. Next ngrok is basically a way of tunneling your localhost to the web.</description>
+    </item>
+    
+    <item>
+      <title>Building Jekyll sites with Docker on Windows</title>
+      <link>http://localhost:1313/2016/11/02/Building-Jekyll-sites-with-Docker-on-Windows/</link>
+      <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/11/02/Building-Jekyll-sites-with-Docker-on-Windows/</guid>
+      <description>As some of you probably know (or based on the footer of the site) this site is built with Jekyll. Jekyll is a static web site builder, written in Ruby, and is a bit of a pain to build on Windows. Earlier on this year, I wrote up a post explaining how to use Jekyll on Windows using Bash on Ubuntu on Windows&amp;hellip; It was a bit complicated, and, well, worked a few times, but was not too successfull&amp;hellip; So, were do we go next?</description>
+    </item>
+    
+  </channel>
+</rss>

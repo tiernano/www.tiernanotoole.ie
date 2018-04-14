@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssh on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/ssh/</link>
+    <description>Recent content in Ssh on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Sep 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SSH Tunneling made simple</title>
+      <link>http://localhost:1313/2012/09/17/SSH-Tunneling-made-simple/</link>
+      <pubDate>Mon, 17 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/17/SSH-Tunneling-made-simple/</guid>
+      <description>Something I do on a regular basis is use the internet while &amp;ldquo;out and about&amp;rdquo;. This could be college, which has a semi open network, or it could be a coffee shop, which also usually has a semi open connection. There is also the possibility of using the a mobile internet connection on my iPhone, which can be slow, but at least its only shared with me&amp;hellip; Anyway, over on RevSys.</description>
+    </item>
+    
+  </channel>
+</rss>

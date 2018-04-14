@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Voip on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/voip/</link>
+    <description>Recent content in Voip on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Feb 2015 21:47:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/voip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mobile Phone as a Service</title>
+      <link>http://localhost:1313/2015/02/15/Mobile-Phone-as-a-Service/</link>
+      <pubDate>Sun, 15 Feb 2015 21:47:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/02/15/Mobile-Phone-as-a-Service/</guid>
+      <description>After my post about the Raspberry Pi acting as a VoIP server, and being able to add a 3G Dongle and allowing it to act as a Mobile Phone gateway, it got me thinking&amp;hellip; Why not have something that allows you to rent a mobile phone number in a country, send and recieve text messages, phone calls, etc, all from anywhere in the world? Thats where Mobile Phone as a Service comes in&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi as an Asterisk Box</title>
+      <link>http://localhost:1313/2013/05/29/Raspberry-Pi-as-an-Asterisk-Box/</link>
+      <pubDate>Wed, 29 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2013/05/29/Raspberry-Pi-as-an-Asterisk-Box/</guid>
+      <description>The Raspberry Pi is a pretty amazing peice of kit for its price and size. And now, you can make it even more amazing by using it as a VoIP server for your house!
+Check out Raspberry Asterisk for downloads, documentation, etc, on how to setup a Raspberry Pi and Asterisk. I have a couple Pi&amp;rsquo;s in the house, and plan on setting this up in the next few days. Keep your eyes on the site&amp;hellip; more posts coming!</description>
+    </item>
+    
+    <item>
+      <title>More VoIP Stuff</title>
+      <link>http://localhost:1313/2012/09/27/More-VoIP-Stuff/</link>
+      <pubDate>Thu, 27 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/27/More-VoIP-Stuff/</guid>
+      <description>As part of my ongoing plan to upgrade the house to VoIP, and as a follow up to my first VoIP stuff post, here are some more things i have found&amp;hellip;
+ I have added SipDiscount and SipGate for making and recieving calls. SipDiscount allows me to set pretty much any number as my Caller ID, as long as i &amp;ldquo;own&amp;rdquo; that number (they either text or call you with a code, and you enter it on their site).</description>
+    </item>
+    
+    <item>
+      <title>VOIP Stuff</title>
+      <link>http://localhost:1313/2012/09/11/VOIP-Stuff/</link>
+      <pubDate>Tue, 11 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/11/VOIP-Stuff/</guid>
+      <description>I have been very interested in VOIP stuff for the last while now, and finally started looking at implementing it in the house. Here are some links which may be useful. I will do a full post soon.
+ Asterisk 1.8 with chan_mobile on Centos 6: chan_mobile allows you to use a Bluetooth phone to make calls with Asterisk Use an old Mobile Phone as a GMS Gateway in asterisk: again, similar to above, but with Ubuntu.</description>
+    </item>
+    
+  </channel>
+</rss>

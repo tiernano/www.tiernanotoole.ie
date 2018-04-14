@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vmware on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/vmware/</link>
+    <description>Recent content in Vmware on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 May 2015 18:50:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/vmware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PFSense with Multiple Public IPs</title>
+      <link>http://localhost:1313/2015/05/30/PFSense-with-Multiple-Public-IPs/</link>
+      <pubDate>Sat, 30 May 2015 18:50:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/05/30/PFSense-with-Multiple-Public-IPs/</guid>
+      <description>So, a few weeks back, i got my hands on a Hetzner Dedicated box. It has a quad core Xeon, 32Gb ram, 3x3Tb hdds, RAID controller and KVMoIP. one of the first thing i did was get myself a /29 IP pool (8 total, 6 usable IPs). There where already 3 IPs given to me: 1 for the KVM, one for the box itself, and 1 as the router for the IP block.</description>
+    </item>
+    
+    <item>
+      <title>Quick tip for internet facing ESXi servers</title>
+      <link>http://localhost:1313/2015/05/20/Quick-tip-for-internet-facing-ESXi-servers/</link>
+      <pubDate>Wed, 20 May 2015 08:12:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/05/20/Quick-tip-for-internet-facing-ESXi-servers/</guid>
+      <description>Quick tip for all you with internet facing VMWare ESXi Hosts. I have just got my hands on a box on the Hetzner network (more on that later) and using their LARA system i installed ESXi on it. All was good, then I tried login in a couple hours later and i kept getting errors about my password being wrong&amp;hellip; So, i tried a few more times, got pissed off and rebooted the box (had to do a hard reboot, since i couldn&amp;rsquo;t even get in over KVM).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server_2012 on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/server_2012/</link>
+    <description>Recent content in Server_2012 on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 Aug 2012 09:04:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/server_2012/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Understanding Storage Spaces in Windows 8 and Windows Server 2012</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-31-Understanding-Windows8-Storage-Spaces/</link>
+      <pubDate>Fri, 31 Aug 2012 09:04:14 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-31-Understanding-Windows8-Storage-Spaces/</guid>
+      <description>So, Windows Server 2012 and Windows 8 have both RTMed in the last couple of weeks and will be available to the public in the next month or so (September for Server, October for Client). If you are an MSDN Subscriber, you already have Client, and will (hopefully) get server in the next couple of weeks&amp;hellip; Fingers crossed&amp;hellip; Anyway, one of the interesting features i am waiting for is Storage Spaces.</description>
+    </item>
+    
+  </channel>
+</rss>

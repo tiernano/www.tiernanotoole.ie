@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/hardware/</link>
+    <description>Recent content in Hardware on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Mar 2018 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogging on an iPad Pro</title>
+      <link>https://www.tiernanotoole.ie/post/2018-03-06-blogging-on-ipad/</link>
+      <pubDate>Tue, 06 Mar 2018 08:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2018-03-06-blogging-on-ipad/</guid>
+      <description>So, a few months back I bought myself an iPad Pro. I got a 10.5&amp;rdquo; with 64GB Storage and the Smart Keyboard. Since then, i have been mostly using it for playing around: watching YouTube, Netflix, surfing on the couch, etc. but i started to wonder how &amp;ldquo;Pro&amp;rdquo; this was&amp;hellip;so i went and did some testing, and in the end nearly all of this post is being written on it&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Cloud Desktop becoming a reality</title>
+      <link>https://www.tiernanotoole.ie/post/2016-09-14-cloud-desktop-becoming-reality/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-09-14-cloud-desktop-becoming-reality/</guid>
+      <description>I have talked about the theory of the &amp;ldquo;Cloud desktop&amp;rdquo; twice on my older blog (Rackspace&amp;rsquo;s Hosted Virtual Desktop and More on the desktop in the cloud) way back since 2011. Since then, a few things have changed:
+ Amazon have released AWS Workspaces, which is a cloud based desktop using Teradici&amp;rsquo;s PCoIP technology Both EC2 and Azure now have GPU enabled VMs to spin up and use NVidia have released NVidia Grid cards, specifically for the &amp;ldquo;cloud&amp;rdquo; or &amp;ldquo;remote&amp;rdquo; desktop services.</description>
+    </item>
+    
+    <item>
+      <title>Edge Router, Sophos UTM, DMZ and LAN Networks</title>
+      <link>https://www.tiernanotoole.ie/post/2015-09-30-EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls/</link>
+      <pubDate>Wed, 30 Sep 2015 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-09-30-EdgeRouter-SophosUTM-DMZ-LAN-Firwwalls/</guid>
+      <description>I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more &amp;ldquo;LANs&amp;rdquo; over there soon).</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 4)</title>
+      <link>https://www.tiernanotoole.ie/post/2015-09-16-Network-and-HomeLab-vnext-part-4/</link>
+      <pubDate>Wed, 16 Sep 2015 14:15:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-09-16-Network-and-HomeLab-vnext-part-4/</guid>
+      <description>So, after some messing, tweaking, and thinking, I have made some progress with the home lab&amp;hellip; or at least broken some stuff&amp;hellip; I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router&amp;hellip; Given the power usage of the current PfSense Box (I have 2 MPower Pro&amp;rsquo;s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing&amp;hellip; below is the usage of the ProLiant for the last 12 hours or so:</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2012 R2 returning to The GodBoxV2</title>
+      <link>https://www.tiernanotoole.ie/post/2015-08-23-WindwsServer2012r2-Returing-To-The-GodBoxV2/</link>
+      <pubDate>Sun, 23 Aug 2015 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-08-23-WindwsServer2012r2-Returing-To-The-GodBoxV2/</guid>
+      <description>After a few months of running Sabayon Linux on the GodboxV2, i am going back to Windows Server. Back around October of last year, i installed Windows 10 Preview on the GodBoxV2, and, well, there where issues with graphics drivers, etc. Then, some time after, i cant remember off hand when, i moved to Sabayon Linux. Its based on Gentoo but has a lot of the components pre-built. Gentoo is a &amp;ldquo;Build from scratch&amp;rdquo; sort of OS.</description>
+    </item>
+    
+    <item>
+      <title>ZFS Home storage pool</title>
+      <link>https://www.tiernanotoole.ie/post/2015-08-10-ZFS-Home-dir/</link>
+      <pubDate>Mon, 10 Aug 2015 11:40:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-08-10-ZFS-Home-dir/</guid>
+      <description>Over the weekend, my BTRFS pool for my /home directory on Linux failed&amp;hellip; Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir.
+First things first, the pool consists of 4 2Tb hard drives and 1 128Gb SSD. Its setup in RAIDZ1 (equivilent of RAID 5) and then the SSD is set for caching.
+To create the pool i ran</description>
+    </item>
+    
+    <item>
+      <title>Ubiquiti EdgeRouter PoE in the lab</title>
+      <link>https://www.tiernanotoole.ie/post/2015-08-05-Ubiquiti-EdgeRouter-POE-In-the-lab/</link>
+      <pubDate>Wed, 05 Aug 2015 21:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-08-05-Ubiquiti-EdgeRouter-POE-In-the-lab/</guid>
+      <description>Today, my Ubiquiti EdgeRouter POE arrived in the house. I got it hooked up to both UPC connections (as secondary connections) and all seems to be working grand. Some notes i wanted to put up here:
+ out of the box, the install was quite simple. set my Ethernet connection to a static ip in the 192.168.1.x/24 range, using 192.168.1.1 as gateway and dns, and then point at http://192.168.1.1 for admin.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 3)</title>
+      <link>https://www.tiernanotoole.ie/post/2015-07-15-Network-and-HomeLab-vnext-part-3/</link>
+      <pubDate>Wed, 15 Jul 2015 13:15:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-07-15-Network-and-HomeLab-vnext-part-3/</guid>
+      <description>So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:
+ Old HP Proliant ML110 G5 Intel Core2Quad Q6600 8 Gb RAM total of 12 Gigabit network cards (of which 4 are currently used&amp;hellip;) 500Gb HDD  I have been playing with some networking in the house and have managed to build some VLANs. The modems are connected both directly to the Router and to a dedicated switch port for a given VLAN.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 2)</title>
+      <link>https://www.tiernanotoole.ie/post/2015-06-23-Network-and-HomeLab-vnext-part2/</link>
+      <pubDate>Tue, 23 Jun 2015 10:30:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-06-23-Network-and-HomeLab-vnext-part2/</guid>
+      <description>So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.
+First, the processors: in the first post, i talked about Xeon D or Xeon E3&amp;hellip; Well, i missed one&amp;hellip; The Xeon E5. I have 2 of these in GodBox 2, and you can get them into a microATX board.</description>
+    </item>
+    
+    <item>
+      <title>Network and Homelab V.Next (Part 1)</title>
+      <link>https://www.tiernanotoole.ie/post/2015-06-14-Network-and-homelab-vnext-part-1/</link>
+      <pubDate>Sun, 14 Jun 2015 16:05:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-06-14-Network-and-homelab-vnext-part-1/</guid>
+      <description>So, its that time again&amp;hellip; HomeLab upgrade time&amp;hellip; Or at least the planning for it. I am in the process of rebuilding my home lab, which involves pull all old servers out of the rack and replacing them with new ones&amp;hellip; It also means rewriting the network, possibly upgrading some existing gear and hopefully getting the whole lot done on a budget of some sort&amp;hellip;
+So, why? Well, biggest reason for all this is currently heat and power usage.</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Dynamic IP Updates</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-19-routeros_dynamic_ip_updates/</link>
+      <pubDate>Mon, 19 Nov 2012 10:19:26 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-19-routeros_dynamic_ip_updates/</guid>
+      <description>I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb&amp;hellip;). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>GPS and Raspberry Pi</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-15-gps_and_raspberry_pi/</link>
+      <pubDate>Mon, 15 Oct 2012 16:20:17 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-15-gps_and_raspberry_pi/</guid>
+      <description>Need to add GPS to your Raspberry Pi? How do i attach a GPS to a Raspberry answers your question!</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi now with 512MB RAM, other random links...</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-15-raspberry_pi_now_with_512mb_ram/</link>
+      <pubDate>Mon, 15 Oct 2012 12:37:20 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-15-raspberry_pi_now_with_512mb_ram/</guid>
+      <description>Earlier on today, the Raspberry Pi Foundation announced that the Model B will now be shipping with 512Mb RAM as standard, with no price change. I posted the link up on Hacker News and its caused quite a lot of happy people!
+So, with the news of extra RAM, its started making me think of more things the Pi could be used for&amp;hellip;
+ An Austrian hosting company are offering free Co-Location for Raspberry Pis with a 100Mb/s uplink and 100Gb bandwidth!</description>
+    </item>
+    
+    <item>
+      <title>more raspberry pi and camera antics</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-12-more_raspberry_pi_and_camera_antics/</link>
+      <pubDate>Fri, 12 Oct 2012 15:13:53 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-12-more_raspberry_pi_and_camera_antics/</guid>
+      <description>A while back I posted about the Raspberry Pi, and in the post was a link to a Photographer who was embeding a Raspberry Pi into a Canon 5D MKII battery grip. Well, its been a while, and i have been thinking about the Pi and Cameras, so I went looking around&amp;hellip; Here is what i found.
+ HDR Photography with a Raspberry Pi and GPhoto2: It was linked at the end of David&amp;rsquo;s post, and i missed it completely.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Stuff</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-06-Rasberry-Stuff/</link>
+      <pubDate>Thu, 06 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-06-Rasberry-Stuff/</guid>
+      <description>A couple months back, I got my hands on a Raspberry Pi, a tiny development board that can run a full copy of Linux, has a HDMI port, a couple USB ports, Ethernet and a few other little bits and pieces. The full specs, from the Wikipedia Article are as follows:
+ Operating system: Linux (Debian GNU/Linux, Fedora, and Arch Linux ARM) Power: 2.5 W (model A), 3.5 W (model B) CPU: ARM1176JZF-S (armv6k) 700 MHz Storage capacity: SD card slot (SD or SDHC card) Memory: 256 MByte Graphics: Broadcom VideoCore IV  There have been a few things i have wanted to play with it for, but have not implemented all them yet&amp;hellip; still learning&amp;hellip; but some interesting projects have come to my attention&amp;hellip; here they are, in no particular order:</description>
+    </item>
+    
+  </channel>
+</rss>

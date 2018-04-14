@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Meraki and Ubiquiti networks gear Update</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">Meraki and Ubiquiti networks gear Update</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-06-20</small></p> <hr/>
+   <div class="post">
+     <p>In <a href="https://www.tiernanotoole.ie/2016/05/17/double-speed-internet-part-6-hetzner-edition.html">part 6</a> of my <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">Double Internet Series</a> I mentioned i was running a <a href="https://meraki.cisco.com/">Meraki</a> <a href="https://meraki.cisco.com/products/appliances/mx64">MX64</a> in the network, and said i would write up about it. I am taking this oppertunity to also write up about the <a href="http://www.ubnt.com">Ubiquiti networks</a> gear in the house also.</p>
+
+<ul>
+<li>First on the list is my older <a href="https://www.ubnt.com/edgemax/edgerouter-poe/">Ubiquiti Edgerouter POE</a>. It currently in the process of being decommissioned, or used for something else. It was the main edge router for the network: it had both internet connections connected, and did routing, firewalls, etc, but with the <a href="https://www.tiernanotoole.ie/Computers/proliantml110.html">Proliant</a> taking over as a router, it is not requried as much any more&hellip; Its still on, mainly because its still a DHCP server, but not much else.</li>
+<li>There are 2 <a href="https://meraki.cisco.com/products/switches/ms220-8">Meraki MS220-8</a> switches next. <a href="https://www.tiernanotoole.ie/Computers/godbox.html">GodBox1</a> and <a href="https://www.tiernanotoole.ie/Computers/GodBoxV2.html">Godbox2</a> both connect in here, and are bonded, as is everything else on the network. The MS220-8 has 8 GigE ports, but also has 2 SFP ports. I bought 4 SFP Ethernet adapters and have a short calbe running between the switches. That uplink is also bonded. All going well so far!</li>
+<li>All meraki hardware can be managed though the meraki dashboard. check out their site for more details and examples of how to use it.</li>
+<li>I bought one of the MS220&rsquo;s from ebay a few months back, and loved it. Then i realized that you can get your hands on free gear, the MX64, an MS220 and a Wifi Access point if you attend their <a href="https://meraki.cisco.com/webinars">webinars</a>. Terms and conditions apply, but check them out!</li>
+<li>I have 2 <a href="https://www.ubnt.com/unifi/unifi-ap/">Ubiquiti UniFi APs</a>, one in the front of the house, one in the back. They are connected to one of the MS220&rsquo;s, but dont work with its POE (maybe the EdgeRouter could do that, since its POE&hellip;) so there are injectors for them. Anyway, the network ports on there are VLANed to the MX64 (more on that later) and the detault traffic is going to a management VLAN.</li>
+<li>The <a href="https://meraki.cisco.com/products/appliances/mx64">MX64</a> has a static internal IP on my DMZ network, and uses the Proliant as an upstream connection. Upstream on the <a href="http://www.hetzner.de/en">Hetzner</a> server, all traffic coming from the MX64 ip uses one of my /29 ip block. all traffic to that ip is also forwarded directly to the MX64.</li>
+<li>I has 2 small, unmanaged switches (a cheap 8 port Linksys and a 8 port TP Link) which are used for seperate things: the Linksys has 4 Raspberry Pi&rsquo;s, which run a [GlusterFS] cluster, plugged into it and the TP Link connects to my printers.</li>
+<li>I also have a <a href="http://routerboard.com/CRS226-24G-2SplusIN">Mikrotik CRS226-24G-2S+IN</a> which has 2 10Gbit SFP+ Ports, and plan on using this for higher speed networking soon, aswell as a <a href="http://www.cisco.com/c/en/us/products/switches/catalyst-3560-series-switches/index.html">Cisco 48 port 3560</a> which also has 4 SFP ports (GigE) and may come in handy for something soon&hellip;</li>
+</ul>
+
+<p>So, thats the network currently. any questions, please leave a comment.</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/07/20/double-speed-Internet-Part-9---Going-Back/"> double speed Internet Part 9 - Going Back</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/06/08/double-speed-Internet-Part-8---Routing-Around/"> double speed Internet Part 8 - Routing Around</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

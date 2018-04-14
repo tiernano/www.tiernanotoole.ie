@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workstation on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/workstation/</link>
+    <description>Recent content in Workstation on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/workstation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cloud Desktop becoming a reality</title>
+      <link>http://localhost:1313/2016/09/14/Cloud-Desktop-becoming-a-reality/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/09/14/Cloud-Desktop-becoming-a-reality/</guid>
+      <description>I have talked about the theory of the &amp;ldquo;Cloud desktop&amp;rdquo; twice on my older blog (Rackspace&amp;rsquo;s Hosted Virtual Desktop and More on the desktop in the cloud) way back since 2011. Since then, a few things have changed:
+ Amazon have released AWS Workspaces, which is a cloud based desktop using Teradici&amp;rsquo;s PCoIP technology Both EC2 and Azure now have GPU enabled VMs to spin up and use NVidia have released NVidia Grid cards, specifically for the &amp;ldquo;cloud&amp;rdquo; or &amp;ldquo;remote&amp;rdquo; desktop services.</description>
+    </item>
+    
+  </channel>
+</rss>

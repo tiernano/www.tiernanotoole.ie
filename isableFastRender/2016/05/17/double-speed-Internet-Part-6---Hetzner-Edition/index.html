@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>double speed Internet Part 6 - Hetzner Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">double speed Internet Part 6 - Hetzner Edition</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-05-17</small></p> <hr/>
+   <div class="post">
+     <p>[NOTE] This part 6 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a>.</p>
+
+<p>Its been a while, since I posted, and there are some, well, pretty major changes since the last time&hellip; Lets start are the beginning.</p>
+
+<p>Last time I was using <a href="https://m.do.co/c/d4d345b83b55">Digital Ocean</a> for my hosting provider. I was using their $20 a month server (2 cores, 2GB RAM, 40GB SSD, 3TB transfer), and it was all good&hellip; But I noticed that every now and again I would need to reboot the box. I also noticed that when transferring large files or using higher bandwidth (400mb/s+) the 100% of both cores were being used. So, I wanted to move to something with more power&hellip;</p>
+
+<p>I also was limited to IP addresses. Yes, Digital Ocean do offer IPv6, but I could only get 1 IPv4 address&hellip; and I wanted more&hellip;</p>
+
+<p>So, I went back to some old friends of mine, <a href="http://www.hetzner.de/en">Hetzner</a>, and bought a dedicated server with a Quad Core Xeon E3, 32GB RAM, 4*3 TB HDDs, 1Gbit/s network connection with 30TB transfer per month and a KVMoIP plugged in. I also got 2 extra standard IPs and a /29 (8 IPs, 6 usable). I will explain that next. I installed Debian 8.4 on the first disk, and I am planning on using the other 3 for storage of some sort. I then installed the <a href="http://www.multipath-tcp.org">MPTCP kernel</a>, <a href="http://www.openvpn.net">OpenVPN</a>, Squid and a Socks server (same as the Digital Ocean box) and reconfigured the home machine&hellip; All good! Now when browsing the web, everywhere thinks I am in Germany, but so far, so good&hellip; Speed tests are about the same, but I have my theory about <a href="https://en.wikipedia.org/wiki/Equal-cost_multi-path_routing">ECMP</a> to try this weekend.</p>
+
+<p>Because of the extra IPs, I am working on doing full IP forwarding, not just port forwarding. One of my IPs in pointing directly at my <a href="https://meraki.cisco.com/products/appliances/mx64">Meraki MX64</a> in house (a post on the Meraki stuff is coming, eventually&hellip;) and another at the <a href="https://www.tiernanotoole.ie/Computers/proliantml110.html">Proliant box</a>, and I plan on pointing other IPs at machines in the DMZ or a firewall of some sort. the /29 is routed though the IP pointing at the Proliant, so that makes life easier. The original IP is only used for SSH and OVPN from the house. it should not do much else. All network traffic in house is coming from other of the other IPs.</p>
+
+<p>Again, so far, so good. Hopefully the ECMP stuff works correctly, so I will do an updated post soon.</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/05/31/double-speed-Internet-Part-7---ECMP-kind-of/"> double speed Internet Part 7 - ECMP (kind of)</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/04/23/Useful-Web-and-Desktop-Apps-2016-edition/"> Useful Web and Desktop Apps 2016 edition</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

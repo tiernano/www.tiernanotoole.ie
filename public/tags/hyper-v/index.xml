@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyper V on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/hyper-v/</link>
+    <description>Recent content in Hyper V on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Oct 2012 09:38:13 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/hyper-v/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ZFS iSCSI NFS SFTP Hyper-V and more</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-05-zfs_iscsi_nfs_sftp_hyper-v_and_more/</link>
+      <pubDate>Fri, 05 Oct 2012 09:38:13 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-05-zfs_iscsi_nfs_sftp_hyper-v_and_more/</guid>
+      <description>As part of my new task to make my files safer and backups faster, and, well, cheap, I am looking into ZFS for my storage needs. My needs are as follows:
+ Allow me to store lots of different types of data (Photos, Videos, Music, VMs) in different formats (RAW and JPG photos, MP4, AVI and DivX Videos, with DVD and BluRay rips also a posibility, MP3 music and VHD files from HyperV, inclduing ISOs and Snapshots).</description>
+    </item>
+    
+  </channel>
+</rss>

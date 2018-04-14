@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/blogging/</link>
+    <description>Recent content in Blogging on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Mar 2018 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogging on an iPad Pro</title>
+      <link>http://localhost:1313/2018/03/06/Blogging-on-an-iPad-Pro/</link>
+      <pubDate>Tue, 06 Mar 2018 08:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2018/03/06/Blogging-on-an-iPad-Pro/</guid>
+      <description>So, a few months back I bought myself an iPad Pro. I got a 10.5&amp;rdquo; with 64GB Storage and the Smart Keyboard. Since then, i have been mostly using it for playing around: watching YouTube, Netflix, surfing on the couch, etc. but i started to wonder how &amp;ldquo;Pro&amp;rdquo; this was&amp;hellip;so i went and did some testing, and in the end nearly all of this post is being written on it&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>VSCode and Markdown Monster with Powershell</title>
+      <link>http://localhost:1313/2017/05/06/VSCode-and-Markdown-Monster-with-Powershell/</link>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2017/05/06/VSCode-and-Markdown-Monster-with-Powershell/</guid>
+      <description>A few years back, i created a post showing you how to add an Alias to PowerShell to easily start Sublime Text from a PowerShell command line . This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to Visual Studio Code for most of my daily work. It works well 95% of the time. I still use Visual Studio Pro for C# Development, but for quick fixes and work on, say Go or smaller edits, Code is great.</description>
+    </item>
+    
+    <item>
+      <title>Installing Jekyll on Bash On Ubuntu on Windows</title>
+      <link>http://localhost:1313/2016/04/11/Installing-Jekyll-on-Bash-On-Ubuntu-on-Windows/</link>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/11/Installing-Jekyll-on-Bash-On-Ubuntu-on-Windows/</guid>
+      <description>At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book.
+So, first, I needed to install version 2.0 of Ruby. There is a bit of messing involved for this, but first</description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration and Blogging</title>
+      <link>http://localhost:1313/2016/03/24/Continuous-Integration-and-Blogging/</link>
+      <pubDate>Thu, 24 Mar 2016 08:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/03/24/Continuous-Integration-and-Blogging/</guid>
+      <description>Back in August of 2012, I started this site using Git and Jekyll. I hosted most of it at home, pushing to a server in house. Then, a few years back, I moved to pushing the files to Amazon S3 and had Cloud Front doing distribution. The last moved had me hosting the files in NearlyFreeSpeech.NET and Cloud Flare doing the content distribution&amp;hellip; Well, that changed over the last few days&amp;hellip; again&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>All blogs moved to Jekyll</title>
+      <link>http://localhost:1313/2015/04/28/All-blogs-moved-to-Jekyll/</link>
+      <pubDate>Tue, 28 Apr 2015 12:49:53 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/04/28/All-blogs-moved-to-Jekyll/</guid>
+      <description>Well, its finally happened. All my blogs, Tiernan&amp;rsquo;s Comms Closet, GeekPhotographer and the Podcast have been moved to Jekyll. I wrote up a long and complicated post explaining how I did it&amp;hellip; Now, i dont have to worry about Wordpress security issues on my home sites! Happy Days!</description>
+    </item>
+    
+    <item>
+      <title>CDN Hosted Blog</title>
+      <link>http://localhost:1313/2014/01/23/CDN-Hosted-Blog/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2014/01/23/CDN-Hosted-Blog/</guid>
+      <description>Well, if you can read this, this site is now hosted fully on AWS with both S3 and CloudFront. More details eventually&amp;hellip;
+[UPDATE] How did i host this on S3 and CloudFront? Check out this article by Paul Stamatiou for details&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>My new Git Powered Site</title>
+      <link>http://localhost:1313/2012/08/29/My-new-Git-Powered-Site/</link>
+      <pubDate>Wed, 29 Aug 2012 12:54:40 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/08/29/My-new-Git-Powered-Site/</guid>
+      <description>So, this site is brought to you by GIT, Jekyll and Magic&amp;hellip; here is how i did it&amp;hellip;
+ I have a Linux VM running the site. Its an Ubuntu 12.04 server. On that i installed Jekyll. I also have gitolite installed for personal git repos. In the Git Repo for this site, under the hooks directory, I added a post-receive file which I got from here originally. Apache is set to serve the directory that Jekyll produces&amp;hellip; That&amp;rsquo;s what you are reading here.</description>
+    </item>
+    
+  </channel>
+</rss>

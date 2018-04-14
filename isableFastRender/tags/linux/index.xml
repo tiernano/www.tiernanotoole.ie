@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Useful Web and Desktop Apps 2016 edition</title>
+      <link>http://localhost:1313/2016/04/23/Useful-Web-and-Desktop-Apps-2016-edition/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/23/Useful-Web-and-Desktop-Apps-2016-edition/</guid>
+      <description>I have decided to do a post on some of my favourite tools to use for development, administration, etc. It’s kind of like Hanselman&amp;rsquo;s Ultimate Tools list, but not as popular and about 2 years newer&amp;hellip; Anyway, the list is available here, and will be updated over time, much like my Daily Carry and Computers pages. If you are interested, you add links though GitHub by editing the toolslist.yml data file.</description>
+    </item>
+    
+    <item>
+      <title>Bash on Ubuntu on Windows</title>
+      <link>http://localhost:1313/2016/03/31/Bash-on-Ubuntu-on-Windows/</link>
+      <pubDate>Thu, 31 Mar 2016 07:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/03/31/Bash-on-Ubuntu-on-Windows/</guid>
+      <description>Microsoft Build 2016 is on this week, and there were a lot of interesting developments yesterday, but the one that interested me the most is Bash on Ubuntu on Windows. Dustin from Ubuntu has a more details, and Scott Hanselman has posted a technical video about this. This is very interesting, and I CANT WAIT TO GET MY HANDS ON IT! But, I do have some questions, which I thought I would put down in blog format:</description>
+    </item>
+    
+    <item>
+      <title>Bulk compressing images for the Web</title>
+      <link>http://localhost:1313/2015/04/29/Bulk-compressing-images-for-the-Web/</link>
+      <pubDate>Wed, 29 Apr 2015 17:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/04/29/Bulk-compressing-images-for-the-Web/</guid>
+      <description>Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meant looking at all the stuff that takes time to download&amp;hellip; There are more tweaks (and possibly posts) coming down the road, but to start, I needed to look at images.
+First things first. I&amp;rsquo;m running this on a Sabayon Linux box, so some of the install commands will be different&amp;hellip; (Also, i do need to explain why I moved from Windows to Linux on the GodboxV2, but that&amp;rsquo;s a different post&amp;hellip;)</description>
+    </item>
+    
+    <item>
+      <title>IPv6 &#43; MikroTik &#43; Linux &#43; Windows</title>
+      <link>http://localhost:1313/2012/12/19/IPv6---MikroTik---Linux---Windows/</link>
+      <pubDate>Wed, 19 Dec 2012 16:24:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/12/19/IPv6---MikroTik---Linux---Windows/</guid>
+      <description>I have been wanting to setup an IPv6 network for a while now, but never had the hardware or network to support it. My broadband Modem, a Cisco EPC3925, was pretty useless&amp;hellip; But with the advent of Bridging on the Cisco EPC3925 it now works!
+The first thing i needed to do was setup a Tunnel Broker Account with Hurricane Electric. I got a /64 block of IPv6 addresses, which should do me for a while&amp;hellip; :)</description>
+    </item>
+    
+    <item>
+      <title>WANProxy and Squid with Upstream Servers</title>
+      <link>http://localhost:1313/2012/10/26/WANProxy-and-Squid-with-Upstream-Servers/</link>
+      <pubDate>Fri, 26 Oct 2012 13:14:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/26/WANProxy-and-Squid-with-Upstream-Servers/</guid>
+      <description>In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good&amp;hellip; In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks.</description>
+    </item>
+    
+    <item>
+      <title>Building WANProxy on Ubuntu 12.04</title>
+      <link>http://localhost:1313/2012/10/24/Building-WANProxy-on-Ubuntu-12.04/</link>
+      <pubDate>Wed, 24 Oct 2012 14:28:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/24/Building-WANProxy-on-Ubuntu-12.04/</guid>
+      <description>[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now.
+I have been looking into WANProxy for a while now, but never successfully got it to build&amp;hellip; I have been more successfull reciently, so here is what you need to do.
+** NOTE **: I built this on Ubuntu 12.</description>
+    </item>
+    
+    <item>
+      <title>Boot Raspberry Pi with SSH Enabled, Enable Wifi on Boot, and more</title>
+      <link>http://localhost:1313/2012/10/18/Boot-Raspberry-Pi-with-SSH-Enabled-Enable-Wifi-on-Boot-and-more/</link>
+      <pubDate>Thu, 18 Oct 2012 16:45:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/18/Boot-Raspberry-Pi-with-SSH-Enabled-Enable-Wifi-on-Boot-and-more/</guid>
+      <description>Some interesting links for the Raspberry Pi today:
+ So, you just bought a new Raspberry Pi and need to enable SSH, but dont have a screen? Prepare for SSH without a Screen shows you what to do! How to Bring up WLAN0 on boot shows you how to start your Wifi adapter when you boot your Pi  </description>
+    </item>
+    
+    <item>
+      <title>SSH Tunneling made simple</title>
+      <link>http://localhost:1313/2012/09/17/SSH-Tunneling-made-simple/</link>
+      <pubDate>Mon, 17 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/17/SSH-Tunneling-made-simple/</guid>
+      <description>Something I do on a regular basis is use the internet while &amp;ldquo;out and about&amp;rdquo;. This could be college, which has a semi open network, or it could be a coffee shop, which also usually has a semi open connection. There is also the possibility of using the a mobile internet connection on my iPhone, which can be slow, but at least its only shared with me&amp;hellip; Anyway, over on RevSys.</description>
+    </item>
+    
+    <item>
+      <title>Build your own Private GIT server</title>
+      <link>http://localhost:1313/2012/09/03/Build-your-own-Private-GIT-server/</link>
+      <pubDate>Mon, 03 Sep 2012 10:28:11 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/03/Build-your-own-Private-GIT-server/</guid>
+      <description>This site is built with GIT, GitoLite and Jekyll&amp;hellip; I posted about this before. but how do you setup your own Git Server? checkout How to install and Setup a Git Repository Server using Gitolite on Linux Ubuntu 10.04 and 11.04 on mmncs.com. I am using Ubuntu 12.04, but its mostly the same&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networking on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/networking/</link>
+    <description>Recent content in Networking on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Apr 2018 22:55:06 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AS204994, Own IP Space and Anycast</title>
+      <link>http://localhost:1313/2018/04/01/AS204994-Own-IP-Space-and-Anycast/</link>
+      <pubDate>Sun, 01 Apr 2018 22:55:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2018/04/01/AS204994-Own-IP-Space-and-Anycast/</guid>
+      <description>So, if you are reading this page, it is being delivered with the magic of Anycast&amp;hellip; Well, technically, it was before, since i used Cloudflare, and it still is because of Cloudflare, but also because of my own ASN (As204994), some servers in different locations, and some magic, which i will explain a bit of in this post.
+This all started late last year when i got my hands on an ASN and a /48 block of IPv6 addresses.</description>
+    </item>
+    
+    <item>
+      <title>Zerotier and Minio Followup</title>
+      <link>http://localhost:1313/2017/05/05/Zerotier-and-Minio-Followup/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2017/05/05/Zerotier-and-Minio-Followup/</guid>
+      <description>in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this.
+Distributed S3 data storage using @minio and #ZeroTier &amp;ndash; https://t.co/MAXTjo3muh
+&amp;mdash; ZeroTier, Inc. (@ZeroTier) May 2, 2017 
+A few people then started asking questions, and looking for a follow up, so here it is&amp;hellip;
+First, a quick recap. I had 4 machines, all running Linux.</description>
+    </item>
+    
+    <item>
+      <title>Business Class Broadband... finally here....</title>
+      <link>http://localhost:1313/2017/03/09/Business-Class-Broadband...-finally-here..../</link>
+      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2017/03/09/Business-Class-Broadband...-finally-here..../</guid>
+      <description>So, after many (MANY) years messing with dual cable modems, struggling to get them working together, to get websites to even allow me in, having to use hacks and kluges to get it to work at all&amp;hellip; I have given up. It has been a struggle getting two modems working properly. Load blanching kind of works&amp;hellip; but it&amp;rsquo;s messy at best. Some sites kick you out every now and again because your IP changes.</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 9 - Going Back</title>
+      <link>http://localhost:1313/2016/07/20/double-speed-Internet-Part-9---Going-Back/</link>
+      <pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/07/20/double-speed-Internet-Part-9---Going-Back/</guid>
+      <description>[NOTE] This part 9 in a series of posts. The rest can be found here
+Well, the double internet experiment is about ready to be finished&amp;hellip; After 9 posts, 4 months, lots of sweating, many painful nights trying to figure out why something stopped using, shouting when Netflix did not work, wondering why my internet connection was so slow, and many, many other problems, i have decided to wind down the project.</description>
+    </item>
+    
+    <item>
+      <title>Meraki and Ubiquiti networks gear Update</title>
+      <link>http://localhost:1313/2016/06/20/Meraki-and-Ubiquiti-networks-gear-Update/</link>
+      <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/06/20/Meraki-and-Ubiquiti-networks-gear-Update/</guid>
+      <description>In part 6 of my Double Internet Series I mentioned i was running a Meraki MX64 in the network, and said i would write up about it. I am taking this oppertunity to also write up about the Ubiquiti networks gear in the house also.
+ First on the list is my older Ubiquiti Edgerouter POE. It currently in the process of being decommissioned, or used for something else. It was the main edge router for the network: it had both internet connections connected, and did routing, firewalls, etc, but with the Proliant taking over as a router, it is not requried as much any more&amp;hellip; Its still on, mainly because its still a DHCP server, but not much else.</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 8 - Routing Around</title>
+      <link>http://localhost:1313/2016/06/08/double-speed-Internet-Part-8---Routing-Around/</link>
+      <pubDate>Wed, 08 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/06/08/double-speed-Internet-Part-8---Routing-Around/</guid>
+      <description>[NOTE] This part 8 in a series of posts. The rest can be found here.
+At the end of my last post I asked the question about routing traffic to different servers based on thier distances, etc&amp;hellip; Well, after a bit of messing, i can say it kind of works! here is a quick over view:
+ server in the house has now got multiple OpenVPN connections (2 to Hetzner, 1 to OVH (with a plan to double), 1 to Digital Ocean (again, to be doubled) and i am planning 2 to Azure as well).</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 7 - ECMP (kind of)</title>
+      <link>http://localhost:1313/2016/05/31/double-speed-Internet-Part-7---ECMP-kind-of/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/05/31/double-speed-Internet-Part-7---ECMP-kind-of/</guid>
+      <description>[NOTE] This part 7 in a series of posts. The rest can be found here.
+In the last post I mentioned I am now using Hetzner for hosting a dedicated box. Thats still live, and going well. I have a /29 IP range (6 usable) and also 2 other IPs. So far, so good&amp;hellip; But because i was using a Socks Server, I was not fully able to use the /29 ips&amp;hellip; I use something like as follows:</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 6 - Hetzner Edition</title>
+      <link>http://localhost:1313/2016/05/17/double-speed-Internet-Part-6---Hetzner-Edition/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/05/17/double-speed-Internet-Part-6---Hetzner-Edition/</guid>
+      <description>[NOTE] This part 6 in a series of posts. The rest can be found here.
+Its been a while, since I posted, and there are some, well, pretty major changes since the last time&amp;hellip; Lets start are the beginning.
+Last time I was using Digital Ocean for my hosting provider. I was using their $20 a month server (2 cores, 2GB RAM, 40GB SSD, 3TB transfer), and it was all good&amp;hellip; But I noticed that every now and again I would need to reboot the box.</description>
+    </item>
+    
+    <item>
+      <title>(Mad) Max Speed - The Road Warrior (Internet connection) (double speed internet Part 5)</title>
+      <link>http://localhost:1313/2016/04/21/Mad-Max-Speed---The-Road-Warrior-Internet-connection-double-speed-internet-Part-5/</link>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/21/Mad-Max-Speed---The-Road-Warrior-Internet-connection-double-speed-internet-Part-5/</guid>
+      <description>[NOTE] This part 5 in a series of posts. The rest can be found here.
+This post is going to be an update and theoretical post. probably very little &amp;ldquo;new&amp;rdquo; stuff going on here, mostly updates, and what I am planning on doing later on.
+This week, I have been OOF sick, so I have not done much work, but I have been surfing the web, watching videos, downloading stuff, etc.</description>
+    </item>
+    
+    <item>
+      <title>2 Cable Modems = Double Speed? Part 4</title>
+      <link>http://localhost:1313/2016/04/14/2-Cable-Modems--Double-Speed-Part-4/</link>
+      <pubDate>Thu, 14 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/14/2-Cable-Modems--Double-Speed-Part-4/</guid>
+      <description>[NOTE] This part 4 in a series of posts. The rest can be found here.
+So, this week I went in a completely different direction that I have been thinking recently&amp;hellip;
+So, the basic theory is as follows:
+ I am still using MPTCP kernels on both upstream and local machine now have 2 P2P UDP OpenVPN tunnels between house and cloud. Example config is here all TCP traffic (bar port 80) that hits the router in house is redirected to RedSocks RedSocks uses a socks server, Dante, as an upstream server on the cloud box since the socks traffic is over TCP (inside the UDP OpenVPN tunnel) it uses MPTCP having socks running, gives me quite the download speed, turning it off does not, hence the following tweet  Hmmmm&amp;hellip; If I have socks on, the Internet is fast 400mb/s+).</description>
+    </item>
+    
+    <item>
+      <title>2 Cable modems = Double speed? Part 3</title>
+      <link>http://localhost:1313/2016/04/02/2-Cable-modems--Double-speed-Part-3/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/02/2-Cable-modems--Double-speed-Part-3/</guid>
+      <description>[NOTE] This part 3 in a series of posts. The rest can be found here.
+In Part 1 of this series I explained the why and what I wanted to do for this &amp;ldquo;project&amp;rdquo;. In Part 2 I did some basic testing of both MPTCP and MLVPN. I also mentioned trying MMPPP using vtund but it has been a while since I did that testing, and it had not been on bare metal.</description>
+    </item>
+    
+    <item>
+      <title>MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2</title>
+      <link>http://localhost:1313/2016/03/30/MPTCP-SSH-Squid-OpenVPN-and-2-Cable-modems--Double-Speed-Not-quite...-Part-2/</link>
+      <pubDate>Wed, 30 Mar 2016 20:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/03/30/MPTCP-SSH-Squid-OpenVPN-and-2-Cable-modems--Double-Speed-Not-quite...-Part-2/</guid>
+      <description>[NOTE] This part 2 in a series of posts. The rest can be found here.
+In my previous post I explained what i was trying to do&amp;hellip; This post explains what i have been working on recently, and performance results&amp;hellip; So, first, what have i tried&amp;hellip; There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.</description>
+    </item>
+    
+    <item>
+      <title>2 Cable modems = Double Internet Speed? Well... not really... Part 1</title>
+      <link>http://localhost:1313/2016/03/22/2-Cable-modems--Double-Internet-Speed-Well...-not-really...-Part-1/</link>
+      <pubDate>Tue, 22 Mar 2016 18:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/03/22/2-Cable-modems--Double-Internet-Speed-Well...-not-really...-Part-1/</guid>
+      <description>[NOTE] This part 1 in a series of posts. The rest can be found here.
+First, a bit of background, and then I will explain what I am currently running in Part 2&amp;hellip;
+For the last 15 or so years, I have had at least 2 internet connections in to the house&amp;hellip; 2 of them have always been Cable Modems from NTL, which became UPC, and now is Virgin Media. When I started, i think the modems where 150/50kbit/s and 600/150kb/s, and have steadily increased in speed, currently at 360/36Mbit/s each&amp;hellip; But they have always been somewhat separate, and single thread downloads have always been limited to 1 of the connections&amp;hellip; I have been looking for ways around this for years&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Edge Router, Sophos UTM, DMZ and LAN Networks</title>
+      <link>http://localhost:1313/2015/09/30/Edge-Router-Sophos-UTM-DMZ-and-LAN-Networks/</link>
+      <pubDate>Wed, 30 Sep 2015 20:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/09/30/Edge-Router-Sophos-UTM-DMZ-and-LAN-Networks/</guid>
+      <description>I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more &amp;ldquo;LANs&amp;rdquo; over there soon).</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 4)</title>
+      <link>http://localhost:1313/2015/09/16/Network-and-HomeLab-V.Next-Part-4/</link>
+      <pubDate>Wed, 16 Sep 2015 14:15:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/09/16/Network-and-HomeLab-V.Next-Part-4/</guid>
+      <description>So, after some messing, tweaking, and thinking, I have made some progress with the home lab&amp;hellip; or at least broken some stuff&amp;hellip; I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router&amp;hellip; Given the power usage of the current PfSense Box (I have 2 MPower Pro&amp;rsquo;s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing&amp;hellip; below is the usage of the ProLiant for the last 12 hours or so:</description>
+    </item>
+    
+    <item>
+      <title>Ubiquiti EdgeRouter PoE in the lab</title>
+      <link>http://localhost:1313/2015/08/05/Ubiquiti-EdgeRouter-PoE-in-the-lab/</link>
+      <pubDate>Wed, 05 Aug 2015 21:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/08/05/Ubiquiti-EdgeRouter-PoE-in-the-lab/</guid>
+      <description>Today, my Ubiquiti EdgeRouter POE arrived in the house. I got it hooked up to both UPC connections (as secondary connections) and all seems to be working grand. Some notes i wanted to put up here:
+ out of the box, the install was quite simple. set my Ethernet connection to a static ip in the 192.168.1.x/24 range, using 192.168.1.1 as gateway and dns, and then point at http://192.168.1.1 for admin.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 3)</title>
+      <link>http://localhost:1313/2015/07/15/Network-and-HomeLab-V.Next-Part-3/</link>
+      <pubDate>Wed, 15 Jul 2015 13:15:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/07/15/Network-and-HomeLab-V.Next-Part-3/</guid>
+      <description>So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:
+ Old HP Proliant ML110 G5 Intel Core2Quad Q6600 8 Gb RAM total of 12 Gigabit network cards (of which 4 are currently used&amp;hellip;) 500Gb HDD  I have been playing with some networking in the house and have managed to build some VLANs. The modems are connected both directly to the Router and to a dedicated switch port for a given VLAN.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 2)</title>
+      <link>http://localhost:1313/2015/06/23/Network-and-HomeLab-V.Next-Part-2/</link>
+      <pubDate>Tue, 23 Jun 2015 10:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/06/23/Network-and-HomeLab-V.Next-Part-2/</guid>
+      <description>So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.
+First, the processors: in the first post, i talked about Xeon D or Xeon E3&amp;hellip; Well, i missed one&amp;hellip; The Xeon E5. I have 2 of these in GodBox 2, and you can get them into a microATX board.</description>
+    </item>
+    
+    <item>
+      <title>Network and Homelab V.Next (Part 1)</title>
+      <link>http://localhost:1313/2015/06/14/Network-and-Homelab-V.Next-Part-1/</link>
+      <pubDate>Sun, 14 Jun 2015 16:05:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/06/14/Network-and-Homelab-V.Next-Part-1/</guid>
+      <description>So, its that time again&amp;hellip; HomeLab upgrade time&amp;hellip; Or at least the planning for it. I am in the process of rebuilding my home lab, which involves pull all old servers out of the rack and replacing them with new ones&amp;hellip; It also means rewriting the network, possibly upgrading some existing gear and hopefully getting the whole lot done on a budget of some sort&amp;hellip;
+So, why? Well, biggest reason for all this is currently heat and power usage.</description>
+    </item>
+    
+    <item>
+      <title>PFSense with Multiple Public IPs</title>
+      <link>http://localhost:1313/2015/05/30/PFSense-with-Multiple-Public-IPs/</link>
+      <pubDate>Sat, 30 May 2015 18:50:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/05/30/PFSense-with-Multiple-Public-IPs/</guid>
+      <description>So, a few weeks back, i got my hands on a Hetzner Dedicated box. It has a quad core Xeon, 32Gb ram, 3x3Tb hdds, RAID controller and KVMoIP. one of the first thing i did was get myself a /29 IP pool (8 total, 6 usable IPs). There where already 3 IPs given to me: 1 for the KVM, one for the box itself, and 1 as the router for the IP block.</description>
+    </item>
+    
+    <item>
+      <title>Quick tip for internet facing ESXi servers</title>
+      <link>http://localhost:1313/2015/05/20/Quick-tip-for-internet-facing-ESXi-servers/</link>
+      <pubDate>Wed, 20 May 2015 08:12:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/05/20/Quick-tip-for-internet-facing-ESXi-servers/</guid>
+      <description>Quick tip for all you with internet facing VMWare ESXi Hosts. I have just got my hands on a box on the Hetzner network (more on that later) and using their LARA system i installed ESXi on it. All was good, then I tried login in a couple hours later and i kept getting errors about my password being wrong&amp;hellip; So, i tried a few more times, got pissed off and rebooted the box (had to do a hard reboot, since i couldn&amp;rsquo;t even get in over KVM).</description>
+    </item>
+    
+    <item>
+      <title>VLANs, Wifi and Mikrotik</title>
+      <link>http://localhost:1313/2015/05/10/VLANs-Wifi-and-Mikrotik/</link>
+      <pubDate>Sun, 10 May 2015 18:40:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/05/10/VLANs-Wifi-and-Mikrotik/</guid>
+      <description>About a month ago, while i was recovering from surgery, i attended a Webinar on Cisco Meraki devices. After the webinar, i was contacted by Maraki and given a MR18 with a 3 year license, to play with and evaluate. So, i set it up in the house and all was good.
+Thing is, the wifi in the house was grand previously. I have a Routerboard RB951G which does the job and has no issues.</description>
+    </item>
+    
+    <item>
+      <title>Using git and Route53 together</title>
+      <link>http://localhost:1313/2015/05/07/Using-git-and-Route53-together/</link>
+      <pubDate>Thu, 07 May 2015 20:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/05/07/Using-git-and-Route53-together/</guid>
+      <description>so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon&amp;rsquo;s Route53. So, moving ALL of them seems, well at the moment, excessive&amp;hellip; So, i went digging&amp;hellip;
+there is a tool called cli53 which will allow you to manage route53 objects from the command line.</description>
+    </item>
+    
+    <item>
+      <title>Git Push DNS</title>
+      <link>http://localhost:1313/2015/05/07/Git-Push-DNS/</link>
+      <pubDate>Thu, 07 May 2015 15:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/05/07/Git-Push-DNS/</guid>
+      <description>There are now a lot of services that have &amp;ldquo;git push&amp;rdquo; options available&amp;hellip; you can build websites with Azure and Github, books using ShareLaTeX and now, DNS using LuaDNS. I have one zone running at the moment (tiernanotoole.net) and you can see the DNS records on github here. I am tempted at moving other records over soon&amp;hellip; but i am currently on Amazon Route53 and 1: its works, so dont break it, and 2, not sure how to bulk export records from Route53 to Bind or Lua format.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi as a Mobile WiFi HotSpot (part 1)</title>
+      <link>http://localhost:1313/2013/01/18/Raspberry-Pi-as-a-Mobile-WiFi-HotSpot-part-1/</link>
+      <pubDate>Fri, 18 Jan 2013 07:57:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2013/01/18/Raspberry-Pi-as-a-Mobile-WiFi-HotSpot-part-1/</guid>
+      <description>I have been using an iPhone 4 as a wifi hotspot for a while now. It does not have a &amp;ldquo;phone&amp;rdquo; SIM in it, with calls and texts enabled, instead it has a 3G Data SIM from a dongle&amp;hellip; It works OK, but there are a few issues i have with it&amp;hellip;
+ No easy way to see how much data is being used, unless you Jail Break, and then battery life goes away&amp;hellip; not very hackable&amp;hellip; other than Jail Break, and thats not hackable enough&amp;hellip; not a lot of storage: 16Gb, and most of that is takin up by Music and Apps no background network daemons&amp;hellip; more on that in a second&amp;hellip;  The Network Daemons i am thinking would be useful for a WiFi Hotspot would be Squid, WANProxy, SSH, PPTP or OpenVPN Client and possibly a downloader of some sort.</description>
+    </item>
+    
+    <item>
+      <title>IPv6 Firewall rules for MikroTik RouterOS</title>
+      <link>http://localhost:1313/2012/12/20/IPv6-Firewall-rules-for-MikroTik-RouterOS/</link>
+      <pubDate>Thu, 20 Dec 2012 11:09:06 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/12/20/IPv6-Firewall-rules-for-MikroTik-RouterOS/</guid>
+      <description>After yesterday&amp;rsquo;s post on IPv6 Networking in the house, I realized that all machines internally had publically facing IPv6 addresses! I started to panic, then went looking online, and found the following script:
+ This script, when run on your RouterOS board, will allow Established and Related connections, allow outgoing connections, and drop anything incoming that has not been requested&amp;hellip; so, now everything inside the network should be more secured&amp;hellip; I am new to this IPv6 stuff, so I am still learning&amp;hellip; but, i am getting there&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>IPv6 &#43; MikroTik &#43; Linux &#43; Windows</title>
+      <link>http://localhost:1313/2012/12/19/IPv6---MikroTik---Linux---Windows/</link>
+      <pubDate>Wed, 19 Dec 2012 16:24:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/12/19/IPv6---MikroTik---Linux---Windows/</guid>
+      <description>I have been wanting to setup an IPv6 network for a while now, but never had the hardware or network to support it. My broadband Modem, a Cisco EPC3925, was pretty useless&amp;hellip; But with the advent of Bridging on the Cisco EPC3925 it now works!
+The first thing i needed to do was setup a Tunnel Broker Account with Hurricane Electric. I got a /64 block of IPv6 addresses, which should do me for a while&amp;hellip; :)</description>
+    </item>
+    
+    <item>
+      <title>Symform - P2P Backup</title>
+      <link>http://localhost:1313/2012/11/30/Symform---P2P-Backup/</link>
+      <pubDate>Fri, 30 Nov 2012 09:13:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/11/30/Symform---P2P-Backup/</guid>
+      <description>I have previously posted about CrashPlan as my Backup System. I also, a long time ago, talked about Backing up SQL, MySQL and other stuff on my other blog. Well, CrashPlan is all good, but there are 2 &amp;ldquo;niggly&amp;rdquo; bits with it&amp;hellip;
+ Its not FREE (well, this year i got it Free on Black Friday&amp;hellip;) but it is cheap ($120 a year to backup 10 machines to the cloud aint bad.</description>
+    </item>
+    
+    <item>
+      <title>enabling VNC from SSH on OSX</title>
+      <link>http://localhost:1313/2012/11/29/enabling-VNC-from-SSH-on-OSX/</link>
+      <pubDate>Thu, 29 Nov 2012 16:16:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/11/29/enabling-VNC-from-SSH-on-OSX/</guid>
+      <description>I have a Late 2008 MacBook Pro in the house, and SSH is enabled on it. I usually leave it on when in work. Anyway, SSH is enabled, but VNC access is not&amp;hellip; I found the following command on Ryan&amp;rsquo;s Tech Notes allowing you to enable it though SSH:
+{% gist 4170122 %}
+** NOTE ** Change mypasswd to your own password!!!
+If you need to disable it, use the following:</description>
+    </item>
+    
+    <item>
+      <title>moving your TMG SQL server Logs DB and other TMG tips</title>
+      <link>http://localhost:1313/2012/11/22/moving-your-TMG-SQL-server-Logs-DB-and-other-TMG-tips/</link>
+      <pubDate>Thu, 22 Nov 2012 08:27:55 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/11/22/moving-your-TMG-SQL-server-Logs-DB-and-other-TMG-tips/</guid>
+      <description>In house, I have been using Microsoft TMG 2010 Server for a while now. I use it as a firewall for some of the machines on the network, and also as a proxy for most, if not all, machines. When acting as a Firewall, all traffic flows though the machine, be it HTTP/HTTPS, SMTP/POP3/IMAP, or anything for that matter. You can also lock down ports on the box, which is a feature of most firewalls, but i like TMG due to its relitive ease of use&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Dynamic IP Updates</title>
+      <link>http://localhost:1313/2012/11/19/RouterOS-Dynamic-IP-Updates/</link>
+      <pubDate>Mon, 19 Nov 2012 10:19:26 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/11/19/RouterOS-Dynamic-IP-Updates/</guid>
+      <description>I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb&amp;hellip;). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>WANProxy and Squid with Upstream Servers</title>
+      <link>http://localhost:1313/2012/10/26/WANProxy-and-Squid-with-Upstream-Servers/</link>
+      <pubDate>Fri, 26 Oct 2012 13:14:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/26/WANProxy-and-Squid-with-Upstream-Servers/</guid>
+      <description>In my previous post on WANProxy, i did not really go into detail about what it actually was. The direct quote from their site is WANProxy is a free, portable TCP proxy which makes TCP connections send less data, which improves TCP performance and throughput over lossy links, slow links and long links. This is just what you need to improve performance over satellite, wireless and WAN links. This is something that has interested me for a while, so i have been looking into it, and so far so good&amp;hellip; In my last post i mentioned i was proxying Squid traffic, in todays post, i still am, but with some tweaks.</description>
+    </item>
+    
+    <item>
+      <title>Building WANProxy on Ubuntu 12.04</title>
+      <link>http://localhost:1313/2012/10/24/Building-WANProxy-on-Ubuntu-12.04/</link>
+      <pubDate>Wed, 24 Oct 2012 14:28:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/24/Building-WANProxy-on-Ubuntu-12.04/</guid>
+      <description>[Updated 2016/04/09] I had to use this today to build on Debian 8.3 for 2 different boxes. So, making minor changes (url to git proxy, and where you build from) to make sure this works now.
+I have been looking into WANProxy for a while now, but never successfully got it to build&amp;hellip; I have been more successfull reciently, so here is what you need to do.
+** NOTE **: I built this on Ubuntu 12.</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Using Host names in Firewall Rules</title>
+      <link>http://localhost:1313/2012/10/12/RouterOS-Using-Host-names-in-Firewall-Rules/</link>
+      <pubDate>Fri, 12 Oct 2012 07:43:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/12/RouterOS-Using-Host-names-in-Firewall-Rules/</guid>
+      <description>As a follow up to yesterday&amp;rsquo;s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.
+ First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs. Create an &amp;ldquo;Address List&amp;rdquo; in RouterOS.</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Blocking Machine access to all but one IP</title>
+      <link>http://localhost:1313/2012/10/11/RouterOS-Blocking-Machine-access-to-all-but-one-IP/</link>
+      <pubDate>Thu, 11 Oct 2012 13:09:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/11/RouterOS-Blocking-Machine-access-to-all-but-one-IP/</guid>
+      <description>So, i have a machine on my network, which should be only connecting to the internet though a VPN. I needed to tell my RouterOS box to block all access, except to this said IP address&amp;hellip; The following should do the trick&amp;hellip; YMMV
+{% gist 3871919 %}
+this will drop any packets from the srcaddress (IP address) that are not for destination dstaddress (IP address). in my case, dstaddress is the VPN server i want to connect to.</description>
+    </item>
+    
+    <item>
+      <title>Enabling True Bridging modem on a Cisco ECP3925 Cable Modem (UPC Ireland)</title>
+      <link>http://localhost:1313/2012/10/02/Enabling-True-Bridging-modem-on-a-Cisco-ECP3925-Cable-Modem-UPC-Ireland/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/02/Enabling-True-Bridging-modem-on-a-Cisco-ECP3925-Cable-Modem-UPC-Ireland/</guid>
+      <description>I am a UPC Ireland customer, and have 2 cable modems into the house, both Cisco EPC3925s. These are not exactly great modems for power users, but are grand for normal use&amp;hellip; Me, however, being a poweruser wanted something a little more, how should I put it, powerful.
+A couple of months back, a tutorial was posted on Boards.ie which showed you How to enable &amp;ldquo;bridging&amp;rdquo; on your UPC modem. When i say &amp;ldquo;Bridging&amp;rdquo;, they used DMZ, turned off firewalls, static IPs internally, turned off Wifi and DHCP, etc.</description>
+    </item>
+    
+    <item>
+      <title>MicroTik RouterOS VPN Setup</title>
+      <link>http://localhost:1313/2012/09/24/MicroTik-RouterOS-VPN-Setup/</link>
+      <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/24/MicroTik-RouterOS-VPN-Setup/</guid>
+      <description>I have been running a MikroTik RouterBoard in the house for a couple of months now (the RB750G) and I am very much loving the thing. But one thing you may need to do is setup VPN connections&amp;hellip; Here are some tips on how to create a VPN Server and Client on your RouterBoard.
+Client Setup to setup a client, you need to do the following:
+{% gist 8581643 %}</description>
+    </item>
+    
+    <item>
+      <title>SSH Tunneling made simple</title>
+      <link>http://localhost:1313/2012/09/17/SSH-Tunneling-made-simple/</link>
+      <pubDate>Mon, 17 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/17/SSH-Tunneling-made-simple/</guid>
+      <description>Something I do on a regular basis is use the internet while &amp;ldquo;out and about&amp;rdquo;. This could be college, which has a semi open network, or it could be a coffee shop, which also usually has a semi open connection. There is also the possibility of using the a mobile internet connection on my iPhone, which can be slow, but at least its only shared with me&amp;hellip; Anyway, over on RevSys.</description>
+    </item>
+    
+  </channel>
+</rss>

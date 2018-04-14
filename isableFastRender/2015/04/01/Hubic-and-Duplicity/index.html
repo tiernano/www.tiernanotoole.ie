@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hubic and Duplicity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">Hubic and Duplicity</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2015-04-01</small></p> <hr/>
+   <div class="post">
+     <p>I mentioned <a href="https://hubic.com/home/new/?referral=GMSQVQ">HubiC</a> in my <a href="https://www.tiernanotoole.ie/2015/03/31/HubiC_SWIFT_CURL.html">last post</a>, and in it i said that you could use <a href="http://duplicity.nongnu.org/">Duplicity</a> for backups. Well, this is how you get it to work&hellip;</p>
+
+<p>First, i am using Ubuntu 14.04 (i think&hellip;). I use <a href="http://www.ubuntu.com">Ubuntu</a> in house for a few things:</p>
+
+<ul>
+<li>its running <a href="http://blog.lotas-smartman.net">Tiernan&rsquo;s Comms Closet</a>, <a href="http://www.geekphotographer.com">GeekPhotographer</a> and <a href="http://podcast.tiernanotoole.ie">Tiernan&rsquo;s Podcast</a> all in house, aswell as being used to <a href="http://tiernanotoole.ie/2012/08/29/NewSite.html">build this site</a>. The Web Server and MySQL Server are seperated, MySQL running on Windows, web on Ubuntu&hellip; but thats a different story&hellip;</li>
+<li>I have a couple of proxy servers running Ubuntu also</li>
+<li>Other general servers running Ubuntu&hellip; dont ask, cause i cant remember what they do half the time&hellip;</li>
+</ul>
+
+<p>So, <a href="http://duplicity.nongnu.org/">Duplicity</a> is a backup application. From their website:</p>
+
+<p>What is it?</p>
+
+<p>Duplicity backs directories by producing encrypted tar-format volumes and uploading them to a remote or local file server. Because duplicity uses librsync, the incremental archives are space efficient and only record the parts of files that have changed since the last backup. Because duplicity uses GnuPG to encrypt and/or sign these archives, they will be safe from spying and/or modification by the server.</p>
+
+<p>The duplicity package also includes the rdiffdir utility. Rdiffdir is an extension of librsync&rsquo;s rdiff to directories&mdash;it can be used to produce signatures and deltas of directories as well as regular files. These signatures and deltas are in GNU tar format.</p>
+
+<p>So, how do we get it working? Well, givin that i am on Ubuntu, these are the steps i needed to do:</p>
+
+<ul>
+<li>first, we need some credentials and API keys&hellip; If you havent signed up for <a href="https://hubic.com/home/new/?referral=GMSQVQ">HubiC</a> Do so now&hellip; That url gets you an extra 5Gb if you sign up for free (usually 25Gb) or if you pay 1EUR a month, you get 110Gb (usually 100Gb) and 5EUR a month gets you a staggering 10TB (yup! Terabytes!).</li>
+<li>Login to Hubic, and in the menu go to &lsquo;My Account&rsquo;, &lsquo;Developers&rsquo;. in here, create a new application (name and URL to redirect to&hellip; <a href="http://localhost">http://localhost</a> seems to work correctly). Get the Client ID and Secret ID that was given to you.</li>
+<li>take the contents of <a href="https://gist.github.com/tiernano/86ab2e08ba4e588a343a">the following gist</a> and replace your own details&hellip; I know, i am not a fan of sticking my password in a txt file&hellip; but it should be your local machine&hellip;</li>
+<li>that file should be in your home directory and should be called .hubic_credentials.</li>
+<li>add the duplicity PPA project (<a href="https://launchpad.net/~duplicity-team/+archive/ubuntu/ppa">https://launchpad.net/~duplicity-team/+archive/ubuntu/ppa</a>) to ubuntu using the add-apt-repository command (details on the link above, under the link &lsquo;read about installing&rsquo;). for me, i just called &lsquo;sudo add-apt-repository ppa:duplicity-team/ppa&rsquo;</li>
+<li>install duplicity by doing &lsquo;sudo apt-get install duplicity&rsquo;. Dont forget (its in the tutorial above!) to do an &lsquo;sudo apt-get update&rsquo; first!</li>
+<li>When i ran that, there where a few extra Python packages to be installed, so i was asked did i want to install them&hellip; Say, yes.</li>
+<li>Now, to run a backup we run the following command:</li>
+</ul>
+
+<pre>duplicity ~/ cf+hubic://location</pre>
+
+<ul>
+<li>cf+hubic is the backend to use, ~/ is the url to backup (my home directory in this case) and location is where on Hubic we want it stored. If this doesent exist, not a problem&hellip; it will create it.</li>
+<li>after we run this we&hellip; ahhh&hellip; i get an error:
+<pre>BackendException: This backend requires the pyrax library available from Rackspace.</pre></li>
+<li>right&hellip; <a href="https://github.com/rackspace/pyrax">pyrax library</a> is from Rackspace and is available to download though pip&hellip;</li>
+<li>I seem to have python and a few other bits installed on this machine, so running &lsquo;sudo pip install pyrax&rsquo; works&hellip; Your millage may vary&hellip; [eg, this is out of scope for this tutorial! your on your own!]</li>
+<li>Other problem&hellip; I got a load of weird and wondering errors like this:</li>
+</ul>
+
+<pre>AttributeError: 'Module_six_moves_urllib_parse' object has no attribute 'SplitResult'</pre>
+
+<ul>
+<li>I fixed these by running:</li>
+</ul>
+
+<pre> sudo pip install furl --upgrade</pre>
+
+<ul>
+<li>FINALLY! ITS ALIVE!!! by default, it asks you for a key for the GnuPG encryption&hellip; and its all good! the first backup creates the directories, required files, etc. the next time you run the command, it will only upload changes. it will also ask for your GnuPG code you entered, so remember it!</li>
+</ul>
+
+<p>And thats all folks! Any questions, leave them in the comments!</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2015/04/28/All-blogs-moved-to-Jekyll/"> All blogs moved to Jekyll</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2015/03/31/Hubic-OpenStack-Swift-and-Curl/"> Hubic, OpenStack Swift and Curl</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

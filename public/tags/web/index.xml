@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/web/</link>
+    <description>Recent content in Web on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Apr 2015 17:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bulk compressing images for the Web</title>
+      <link>https://www.tiernanotoole.ie/post/2015-04-29-bulk-compressing-images-for-the-web/</link>
+      <pubDate>Wed, 29 Apr 2015 17:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-04-29-bulk-compressing-images-for-the-web/</guid>
+      <description>Now that all my sites are running Jekyll I am trying to get them optimized for SPEED which meant looking at all the stuff that takes time to download&amp;hellip; There are more tweaks (and possibly posts) coming down the road, but to start, I needed to look at images.
+First things first. I&amp;rsquo;m running this on a Sabayon Linux box, so some of the install commands will be different&amp;hellip; (Also, i do need to explain why I moved from Windows to Linux on the GodboxV2, but that&amp;rsquo;s a different post&amp;hellip;)</description>
+    </item>
+    
+  </channel>
+</rss>

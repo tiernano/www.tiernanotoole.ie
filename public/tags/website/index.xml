@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/website/</link>
+    <description>Recent content in Website on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Testing Forestry</title>
+      <link>https://www.tiernanotoole.ie/post/2017-08-16-testing-forestry/</link>
+      <pubDate>Wed, 16 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-08-16-testing-forestry/</guid>
+      <description>So, as you probably know, this site is built with Jekyll. Jekyll is a Static Site Generator, basically taking an input of a load of text files (see the source repo for this site on Github here) and generating a load more HTML (the static HTML is hosted on Github here, which auto publishes to Azure App Service).
+In previous posts, i have talked about using the likes of Visual Studio Code and Mark Down Monster to build the site.</description>
+    </item>
+    
+  </channel>
+</rss>

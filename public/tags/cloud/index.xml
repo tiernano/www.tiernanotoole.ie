@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/cloud/</link>
+    <description>Recent content in Cloud on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jan 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CDN Hosted Blog</title>
+      <link>https://www.tiernanotoole.ie/post/2014-01-23-CDNHostedBlog/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2014-01-23-CDNHostedBlog/</guid>
+      <description>Well, if you can read this, this site is now hosted fully on AWS with both S3 and CloudFront. More details eventually&amp;hellip;
+[UPDATE] How did i host this on S3 and CloudFront? Check out this article by Paul Stamatiou for details&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>AutoScaling with Amazon</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-30-AutoScalling-With-Amazon/</link>
+      <pubDate>Thu, 30 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-30-AutoScalling-With-Amazon/</guid>
+      <description>I have a few Amazon EC2 instances running on a project, and one of these instances was known as the Zombie Instance! Every time i killed it, it came back to life a few min later&amp;hellip; I found out that i, at some point, set that instance to be in an AutoScaling group. Any time the instance died, Amazon would check and restart the instance. So, how did I kill this undead instance?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pfsense on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/pfsense/</link>
+    <description>Recent content in Pfsense on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Sep 2015 14:15:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/pfsense/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 4)</title>
+      <link>http://localhost:1313/2015/09/16/Network-and-HomeLab-V.Next-Part-4/</link>
+      <pubDate>Wed, 16 Sep 2015 14:15:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/09/16/Network-and-HomeLab-V.Next-Part-4/</guid>
+      <description>So, after some messing, tweaking, and thinking, I have made some progress with the home lab&amp;hellip; or at least broken some stuff&amp;hellip; I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router&amp;hellip; Given the power usage of the current PfSense Box (I have 2 MPower Pro&amp;rsquo;s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing&amp;hellip; below is the usage of the ProLiant for the last 12 hours or so:</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 3)</title>
+      <link>http://localhost:1313/2015/07/15/Network-and-HomeLab-V.Next-Part-3/</link>
+      <pubDate>Wed, 15 Jul 2015 13:15:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/07/15/Network-and-HomeLab-V.Next-Part-3/</guid>
+      <description>So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:
+ Old HP Proliant ML110 G5 Intel Core2Quad Q6600 8 Gb RAM total of 12 Gigabit network cards (of which 4 are currently used&amp;hellip;) 500Gb HDD  I have been playing with some networking in the house and have managed to build some VLANs. The modems are connected both directly to the Router and to a dedicated switch port for a given VLAN.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 2)</title>
+      <link>http://localhost:1313/2015/06/23/Network-and-HomeLab-V.Next-Part-2/</link>
+      <pubDate>Tue, 23 Jun 2015 10:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/06/23/Network-and-HomeLab-V.Next-Part-2/</guid>
+      <description>So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.
+First, the processors: in the first post, i talked about Xeon D or Xeon E3&amp;hellip; Well, i missed one&amp;hellip; The Xeon E5. I have 2 of these in GodBox 2, and you can get them into a microATX board.</description>
+    </item>
+    
+    <item>
+      <title>Network and Homelab V.Next (Part 1)</title>
+      <link>http://localhost:1313/2015/06/14/Network-and-Homelab-V.Next-Part-1/</link>
+      <pubDate>Sun, 14 Jun 2015 16:05:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/06/14/Network-and-Homelab-V.Next-Part-1/</guid>
+      <description>So, its that time again&amp;hellip; HomeLab upgrade time&amp;hellip; Or at least the planning for it. I am in the process of rebuilding my home lab, which involves pull all old servers out of the rack and replacing them with new ones&amp;hellip; It also means rewriting the network, possibly upgrading some existing gear and hopefully getting the whole lot done on a budget of some sort&amp;hellip;
+So, why? Well, biggest reason for all this is currently heat and power usage.</description>
+    </item>
+    
+    <item>
+      <title>PFSense with Multiple Public IPs</title>
+      <link>http://localhost:1313/2015/05/30/PFSense-with-Multiple-Public-IPs/</link>
+      <pubDate>Sat, 30 May 2015 18:50:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/05/30/PFSense-with-Multiple-Public-IPs/</guid>
+      <description>So, a few weeks back, i got my hands on a Hetzner Dedicated box. It has a quad core Xeon, 32Gb ram, 3x3Tb hdds, RAID controller and KVMoIP. one of the first thing i did was get myself a /29 IP pool (8 total, 6 usable IPs). There where already 3 IPs given to me: 1 for the KVM, one for the box itself, and 1 as the router for the IP block.</description>
+    </item>
+    
+  </channel>
+</rss>

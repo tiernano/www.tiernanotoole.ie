@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Network and Homelab V.Next (Part 1)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">Network and Homelab V.Next (Part 1)</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2015-06-14</small></p> <hr/>
+   <div class="post">
+     <p>So, its that time again&hellip; <a href="http://tiernanotoole.ie/Computers">HomeLab</a> upgrade time&hellip; Or at least the planning for it. I am in the process of rebuilding my home lab, which involves pull all old servers out of the rack and replacing them with new ones&hellip; It also means rewriting the network, possibly upgrading some existing gear and hopefully getting the whole lot done on a budget of some sort&hellip;</p>
+
+<p>So, why? Well, biggest reason for all this is currently heat and power usage. We use about 4-6x more electricity than the average house here in Ireland, which means our electricity bill is fairly high. It also means that the lab, which is also my office/bedroom, gets quite warm and uncomfortable during the summer month. There is an Air-Con unit in the room, and, well, that&rsquo;s costing the most on electricity!</p>
+
+<p>So, what I got is a basic overview of what I want from the homelab and hopefully in the next post, I will have an idea of what it will look like..</p>
+
+<ul>
+<li>3-4 machines running a Hyper Visor (HyperV, VMWare ESXi or other). Leaning more towards Hyper-V purely because its what I got currently and its what we use in our main office.</li>
+<li>each machine should be connected to at least 2 networks: one for storage and migration, one for &ldquo;public&rdquo; to the LAN. There may be more VLANs for other networks, but 2 is a start.</li>
+<li>ideally, 10Gb connections would be nice, but multiple 1Gb connections would also work.</li>
+<li>shared storage (iSCSI, SMB3, etc) would also be a nice to have, but may bump up the server count (not actually a problem) but would increase power and cooling costs. An off the shelf box, like a <a href="http://www.synology.com">Synology</a> could do the job&hellip;</li>
+<li>Lower power usage and less heat produced is also a major requirement. Most of the boxes I am decommissioning are older Xeon hardware (<a href="http://ark.intel.com/products/family/28144/Intel-Xeon-Processor-5000-Sequence#@All">5000</a> series upto a <a href="http://ark.intel.com/products/series/33092/Intel-Xeon-Processor-5200-Series#@All">5200</a> series process and even an <a href="https://en.wikipedia.org/wiki/Xeon#Netburst-based_Xeon">older Xeon P4</a>!). The newer <a href="http://www.intel.ie/content/www/ie/en/processors/xeon/xeon-processor-e3-family.html">Xeon E3</a> and the even newer <a href="http://www.intel.ie/content/www/ie/en/processors/xeon/xeon-processor-d-family.html">Xeon D</a> are a lot more efficient, use less power, produce less heat and are way faster than what I currently have. The E3 can use up to 32Gb of RAM and the Xeon D top out at 128Gb&hellip; Me being me would like more than 32Gb RAM&hellip; :)</li>
+<li>smaller machines would also be nice. I have been looking at both Xeon D and Xeon E3 Mini-ITX boards and cases for them. I do have a half height Dell Rack, which I host these machines, and ideally, these machines should be rack mountable, but micro ATX cases could work. 2 per shelf would work grand.</li>
+<li>Onboard IPMI and KVM support is something I want too&hellip; I do have a KVMoIP switch in the house, and it works, most of the time, but getting a box that has this embedded into the board would be ideal&hellip; A lot of the server boards had it as standard or allowed it to be speced, so that&rsquo;s all good.</li>
+<li>I am also thinking of upgrading the router to a similar spec board&hellip; Possibly a Xeon E3, or even an i5&hellip;. Ideally it should have IPMI and KVMoIP on board and should produce less heat. Biggest issues is getting enough network cards into the box&hellip;</li>
+</ul>
+
+<p>These are my requirements at a  high level overview. Over time things may change, but lets see how we get on&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2015/06/23/Network-and-HomeLab-V.Next-Part-2/"> Network and HomeLab V.Next (Part 2)</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2015/05/30/PFSense-with-Multiple-Public-IPs/"> PFSense with Multiple Public IPs</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

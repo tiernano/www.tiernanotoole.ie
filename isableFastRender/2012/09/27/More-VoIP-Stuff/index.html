@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>More VoIP Stuff</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">More VoIP Stuff</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2012-09-27</small></p> <hr/>
+   <div class="post">
+     <p>As part of my ongoing plan to upgrade the house to VoIP, and as a follow up to my first <a href="http://tiernanotoole.ie/2012/09/11/VOIP-Stuff.html">VoIP stuff</a> post, here are some more things i have found&hellip;</p>
+
+<ul>
+<li>I have added <a href="http://www.sipdiscount.com">SipDiscount</a> and <a href="http://www.sipgate.co.uk">SipGate</a> for making and recieving calls.</li>
+<li>SipDiscount allows me to set pretty much any number as my Caller ID, as long as i &ldquo;own&rdquo; that number (they either text or call you with a code, and you enter it on their site). They also allow me to make cheap calls to Irish Mobiles (check their <a href="http://www.sipdiscount.com/rates">rates here</a>)</li>
+<li>SipGate gave me a incoming UK phone number. Its an 0845 number, which I dont know what that means&hellip; but it was free, so its all good. Not sure if i can recieve text messages on it though&hellip;</li>
+<li>I have a <a href="http://www.blueface.ie">Blueface</a> account, which gives me an Irish 076 VoIP number. 076 is the standard VoIP number here in Ireland&hellip;</li>
+<li>I have a <a href="http://www.ipkall.com/">IpKall</a> number, which is based in Washington State. You need to recieve a call on this line at least once every 30 days to keep it active.</li>
+<li>My <a href="http://voice.google.com/">Google Voice</a> accepts calls and forwards them to my IpKall number, which then rings my BlueFace SIP account (since i know they will be up all the time, by my home server may be offline since i am only testing) which, if a SIP device is connected, will forward it again&hellip; if i am offline, or no sip devices are active, that call is redirected to voice mail&hellip;</li>
+</ul>
+
+<p>Its all very complicated at the moment, but the plan will be that any incoming calls should go directly to the machine in house, which will ring the desk phone and any other SIP clients. Any incoming PSTN calls will also do the same. Outgoing calls will depend on the dialing plan, which i still need to figure out, but the theory goes as follows:</p>
+
+<ul>
+<li>Irish landline calls at certin times should go though the PSTN (since we get some free calls with our line). Other times they should go though SipDiscount or BlueFace.</li>
+<li>if the PSTN is busy, fall over to one of the other providers&hellip;</li>
+<li>Irish Mobile calls should go though SipDiscount and then fall back to land line, or if i ever get the BlueTooth setup working, SipDiscount, then bluetooth, then landline&hellip;</li>
+<li>International calls should be sent though SipDiscount or Blueface, whichever is cheaper&hellip;</li>
+</ul>
+
+<p>Its going to be an interesting setup&hellip; :)</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2012/09/27/Crashplan-Backups/"> Crashplan Backups</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2012/09/25/Building-a-Cross-Compiler-for-your-Raspberry-Pi/"> Building a Cross Compiler for your Raspberry Pi</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

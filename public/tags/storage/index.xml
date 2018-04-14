@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/storage/</link>
+    <description>Recent content in Storage on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distributed S3 data storage using Minio (and Zerotier)</title>
+      <link>https://www.tiernanotoole.ie/post/2017-01-19-distributed-s3-storage-minio-zerotier/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-01-19-distributed-s3-storage-minio-zerotier/</guid>
+      <description>So, something i have been looking into in recient times has been Distributed Storage, and, more specifically, how to use the storage in my many, many machines to protect data, and also increese my usable space&amp;hellip; There are a few projects on the market that do this (Ceph, NooBaa and Gluster all spring to mind) but some are more painful to setup than others&amp;hellip; which brings me nicely to Minio. Minio is a 20ish MB executable you download from their site, mark it as executable (on Linux or Mac Boxes) and run&amp;hellip; and you have yourself a S3 compatable storage server&amp;hellip; Simples!</description>
+    </item>
+    
+    <item>
+      <title>ZFS Home storage pool</title>
+      <link>https://www.tiernanotoole.ie/post/2015-08-10-ZFS-Home-dir/</link>
+      <pubDate>Mon, 10 Aug 2015 11:40:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-08-10-ZFS-Home-dir/</guid>
+      <description>Over the weekend, my BTRFS pool for my /home directory on Linux failed&amp;hellip; Not sure what happened, but it made me do something i wanted to do for a while: Build a ZFS pool for my home dir.
+First things first, the pool consists of 4 2Tb hard drives and 1 128Gb SSD. Its setup in RAIDZ1 (equivilent of RAID 5) and then the SSD is set for caching.
+To create the pool i ran</description>
+    </item>
+    
+    <item>
+      <title>Hubic and Duplicity</title>
+      <link>https://www.tiernanotoole.ie/post/2015-04-01-Duplicity_Hubic/</link>
+      <pubDate>Wed, 01 Apr 2015 07:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-04-01-Duplicity_Hubic/</guid>
+      <description>I mentioned HubiC in my last post, and in it i said that you could use Duplicity for backups. Well, this is how you get it to work&amp;hellip;
+First, i am using Ubuntu 14.04 (i think&amp;hellip;). I use Ubuntu in house for a few things:
+ its running Tiernan&amp;rsquo;s Comms Closet, GeekPhotographer and Tiernan&amp;rsquo;s Podcast all in house, aswell as being used to build this site. The Web Server and MySQL Server are seperated, MySQL running on Windows, web on Ubuntu&amp;hellip; but thats a different story&amp;hellip; I have a couple of proxy servers running Ubuntu also Other general servers running Ubuntu&amp;hellip; dont ask, cause i cant remember what they do half the time&amp;hellip;  So, Duplicity is a backup application.</description>
+    </item>
+    
+    <item>
+      <title>Hubic, OpenStack Swift and Curl</title>
+      <link>https://www.tiernanotoole.ie/post/2015-03-31-HubiC_SWIFT_CURL/</link>
+      <pubDate>Tue, 31 Mar 2015 22:40:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-03-31-HubiC_SWIFT_CURL/</guid>
+      <description>HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup&amp;hellip; TERABYTES!) for EUR5 a month&amp;hellip; Thats a crazy amount of storage for a not crazy amount of money!
+So, while playing around with different things, I found they have an API, so other than the usual apps to play with (like the Hubic Apps for iPhone, Android, Windows Phone, Windows Desktop and OSX, Duplicity for backing up *nix boxes, and a few others) you can build your own&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Symform - P2P Backup</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-30-symform_-_p2p_backup/</link>
+      <pubDate>Fri, 30 Nov 2012 09:13:27 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-30-symform_-_p2p_backup/</guid>
+      <description>I have previously posted about CrashPlan as my Backup System. I also, a long time ago, talked about Backing up SQL, MySQL and other stuff on my other blog. Well, CrashPlan is all good, but there are 2 &amp;ldquo;niggly&amp;rdquo; bits with it&amp;hellip;
+ Its not FREE (well, this year i got it Free on Black Friday&amp;hellip;) but it is cheap ($120 a year to backup 10 machines to the cloud aint bad.</description>
+    </item>
+    
+    <item>
+      <title>ZFS iSCSI NFS SFTP Hyper-V and more</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-05-zfs_iscsi_nfs_sftp_hyper-v_and_more/</link>
+      <pubDate>Fri, 05 Oct 2012 09:38:13 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-05-zfs_iscsi_nfs_sftp_hyper-v_and_more/</guid>
+      <description>As part of my new task to make my files safer and backups faster, and, well, cheap, I am looking into ZFS for my storage needs. My needs are as follows:
+ Allow me to store lots of different types of data (Photos, Videos, Music, VMs) in different formats (RAW and JPG photos, MP4, AVI and DivX Videos, with DVD and BluRay rips also a posibility, MP3 music and VHD files from HyperV, inclduing ISOs and Snapshots).</description>
+    </item>
+    
+    <item>
+      <title>Crashplan Backups</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-27-CrashPlan-Backups/</link>
+      <pubDate>Thu, 27 Sep 2012 11:32:32 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-27-CrashPlan-Backups/</guid>
+      <description>I have been running CrashPlan for a while now, and, other than some minor issues (backup speed to their central location is the big one), everything has been going grand. I use it to backup about 600GB of photos and videos, 500GB+ of VMs, documents, source code and a fair whack of other stuff&amp;hellip; In total, about 2TB of data.
+Anyway, here are some tips i have figured out over the last while for making Crashplan work a little better&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Understanding Storage Spaces in Windows 8 and Windows Server 2012</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-31-Understanding-Windows8-Storage-Spaces/</link>
+      <pubDate>Fri, 31 Aug 2012 09:04:14 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-31-Understanding-Windows8-Storage-Spaces/</guid>
+      <description>So, Windows Server 2012 and Windows 8 have both RTMed in the last couple of weeks and will be available to the public in the next month or so (September for Server, October for Client). If you are an MSDN Subscriber, you already have Client, and will (hopefully) get server in the next couple of weeks&amp;hellip; Fingers crossed&amp;hellip; Anyway, one of the interesting features i am waiting for is Storage Spaces.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry_pi on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/raspberry_pi/</link>
+    <description>Recent content in Raspberry_pi on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Feb 2015 21:47:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/raspberry_pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mobile Phone as a Service</title>
+      <link>http://localhost:1313/2015/02/15/Mobile-Phone-as-a-Service/</link>
+      <pubDate>Sun, 15 Feb 2015 21:47:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/02/15/Mobile-Phone-as-a-Service/</guid>
+      <description>After my post about the Raspberry Pi acting as a VoIP server, and being able to add a 3G Dongle and allowing it to act as a Mobile Phone gateway, it got me thinking&amp;hellip; Why not have something that allows you to rent a mobile phone number in a country, send and recieve text messages, phone calls, etc, all from anywhere in the world? Thats where Mobile Phone as a Service comes in&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi as an Asterisk Box</title>
+      <link>http://localhost:1313/2013/05/29/Raspberry-Pi-as-an-Asterisk-Box/</link>
+      <pubDate>Wed, 29 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2013/05/29/Raspberry-Pi-as-an-Asterisk-Box/</guid>
+      <description>The Raspberry Pi is a pretty amazing peice of kit for its price and size. And now, you can make it even more amazing by using it as a VoIP server for your house!
+Check out Raspberry Asterisk for downloads, documentation, etc, on how to setup a Raspberry Pi and Asterisk. I have a couple Pi&amp;rsquo;s in the house, and plan on setting this up in the next few days. Keep your eyes on the site&amp;hellip; more posts coming!</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi as a Mobile WiFi HotSpot (part 1)</title>
+      <link>http://localhost:1313/2013/01/18/Raspberry-Pi-as-a-Mobile-WiFi-HotSpot-part-1/</link>
+      <pubDate>Fri, 18 Jan 2013 07:57:16 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2013/01/18/Raspberry-Pi-as-a-Mobile-WiFi-HotSpot-part-1/</guid>
+      <description>I have been using an iPhone 4 as a wifi hotspot for a while now. It does not have a &amp;ldquo;phone&amp;rdquo; SIM in it, with calls and texts enabled, instead it has a 3G Data SIM from a dongle&amp;hellip; It works OK, but there are a few issues i have with it&amp;hellip;
+ No easy way to see how much data is being used, unless you Jail Break, and then battery life goes away&amp;hellip; not very hackable&amp;hellip; other than Jail Break, and thats not hackable enough&amp;hellip; not a lot of storage: 16Gb, and most of that is takin up by Music and Apps no background network daemons&amp;hellip; more on that in a second&amp;hellip;  The Network Daemons i am thinking would be useful for a WiFi Hotspot would be Squid, WANProxy, SSH, PPTP or OpenVPN Client and possibly a downloader of some sort.</description>
+    </item>
+    
+    <item>
+      <title>Boot Raspberry Pi with SSH Enabled, Enable Wifi on Boot, and more</title>
+      <link>http://localhost:1313/2012/10/18/Boot-Raspberry-Pi-with-SSH-Enabled-Enable-Wifi-on-Boot-and-more/</link>
+      <pubDate>Thu, 18 Oct 2012 16:45:01 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/18/Boot-Raspberry-Pi-with-SSH-Enabled-Enable-Wifi-on-Boot-and-more/</guid>
+      <description>Some interesting links for the Raspberry Pi today:
+ So, you just bought a new Raspberry Pi and need to enable SSH, but dont have a screen? Prepare for SSH without a Screen shows you what to do! How to Bring up WLAN0 on boot shows you how to start your Wifi adapter when you boot your Pi  </description>
+    </item>
+    
+    <item>
+      <title>GPS and Raspberry Pi</title>
+      <link>http://localhost:1313/2012/10/15/GPS-and-Raspberry-Pi/</link>
+      <pubDate>Mon, 15 Oct 2012 16:20:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/15/GPS-and-Raspberry-Pi/</guid>
+      <description>Need to add GPS to your Raspberry Pi? How do i attach a GPS to a Raspberry answers your question!</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi now with 512MB RAM, other random links...</title>
+      <link>http://localhost:1313/2012/10/15/Raspberry-Pi-now-with-512MB-RAM-other-random-links.../</link>
+      <pubDate>Mon, 15 Oct 2012 12:37:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/15/Raspberry-Pi-now-with-512MB-RAM-other-random-links.../</guid>
+      <description>Earlier on today, the Raspberry Pi Foundation announced that the Model B will now be shipping with 512Mb RAM as standard, with no price change. I posted the link up on Hacker News and its caused quite a lot of happy people!
+So, with the news of extra RAM, its started making me think of more things the Pi could be used for&amp;hellip;
+ An Austrian hosting company are offering free Co-Location for Raspberry Pis with a 100Mb/s uplink and 100Gb bandwidth!</description>
+    </item>
+    
+    <item>
+      <title>more raspberry pi and camera antics</title>
+      <link>http://localhost:1313/2012/10/12/more-raspberry-pi-and-camera-antics/</link>
+      <pubDate>Fri, 12 Oct 2012 15:13:53 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/12/more-raspberry-pi-and-camera-antics/</guid>
+      <description>A while back I posted about the Raspberry Pi, and in the post was a link to a Photographer who was embeding a Raspberry Pi into a Canon 5D MKII battery grip. Well, its been a while, and i have been thinking about the Pi and Cameras, so I went looking around&amp;hellip; Here is what i found.
+ HDR Photography with a Raspberry Pi and GPhoto2: It was linked at the end of David&amp;rsquo;s post, and i missed it completely.</description>
+    </item>
+    
+    <item>
+      <title>Building a Cross Compiler for your Raspberry Pi</title>
+      <link>http://localhost:1313/2012/09/25/Building-a-Cross-Compiler-for-your-Raspberry-Pi/</link>
+      <pubDate>Tue, 25 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/25/Building-a-Cross-Compiler-for-your-Raspberry-Pi/</guid>
+      <description>My main machine at home, known as &amp;ldquo;The GodBox&amp;rdquo; is a Dual Processor, Quad Core Xeon 5520 with 60Gb RAM, 2 300Gb 10,000 RPM Western Digital Velociraptor in RAID 0 for boot, 4X1Tb 7200RPM drives for storage, 2 more 300Gb 10,000 RPM drives for &amp;ldquo;scratch disk&amp;rdquo; and a couple high(ish) end graphics cards with 3 monitors plugged in&amp;hellip; Hence the name, GodBox!
+Anyway, The Raspberry Pi, on the other hand, has a 700Mhz processor, 256Mb RAM and not much else&amp;hellip; So, if you need to write code for your Pi, and you don&amp;rsquo;t want to wait a long time to compile, check out this tutorial on how to build a cross compiler for your raspberry pi which will allow you to build your apps on a different machine&amp;hellip; I have a college project which the Raspberry Pi will be used for, and i am thinking this will be how i build code.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Stuff</title>
+      <link>http://localhost:1313/2012/09/06/Raspberry-Pi-Stuff/</link>
+      <pubDate>Thu, 06 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/06/Raspberry-Pi-Stuff/</guid>
+      <description>A couple months back, I got my hands on a Raspberry Pi, a tiny development board that can run a full copy of Linux, has a HDMI port, a couple USB ports, Ethernet and a few other little bits and pieces. The full specs, from the Wikipedia Article are as follows:
+ Operating system: Linux (Debian GNU/Linux, Fedora, and Arch Linux ARM) Power: 2.5 W (model A), 3.5 W (model B) CPU: ARM1176JZF-S (armv6k) 700 MHz Storage capacity: SD card slot (SD or SDHC card) Memory: 256 MByte Graphics: Broadcom VideoCore IV  There have been a few things i have wanted to play with it for, but have not implemented all them yet&amp;hellip; still learning&amp;hellip; but some interesting projects have come to my attention&amp;hellip; here they are, in no particular order:</description>
+    </item>
+    
+  </channel>
+</rss>

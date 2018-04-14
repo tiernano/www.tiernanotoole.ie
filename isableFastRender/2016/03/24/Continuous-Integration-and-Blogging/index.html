@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Continuous Integration and Blogging</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">Continuous Integration and Blogging</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-03-24</small></p> <hr/>
+   <div class="post">
+     <p>Back in August of 2012, I started this site using Git and Jekyll. I hosted most of it at home, pushing to a server in house. Then, a few years back, I moved to pushing the files to <a href="https://aws.amazon.com/s3/">Amazon S3</a> and had <a href="https://aws.amazon.com/cloudfront/">Cloud Front</a> doing distribution. The last moved had me hosting the files in <a href="http://www.nearlyfreespeech.net">NearlyFreeSpeech.NET</a> and <a href="http://www.cloudflare.com">Cloud Flare</a> doing the content distribution&hellip; Well, that changed over the last few days&hellip; again&hellip;</p>
+
+<p>Currently, you are still hitting Cloud Flare when you hit this site, but the backend is back to being hosted on Amazon S3. But the files getting to S3 is more interesting now. All the &ldquo;code&rdquo; for this site is up on a <a href="https://github.com/tiernano/www.tiernanotoole.ie">GitHub repo</a> and any time something is checked in, <a href="https://travis-ci.org/tiernano/www.tiernanotoole.ie">Travis CI</a> kicks off, builds the files using <a href="https://github.com/tiernano/www.tiernanotoole.ie/issues">Jekyll</a> and pushes to S3 using <a href="https://github.com/laurilehmijoki/s3_website">s3_website</a>. All my &ldquo;private&rdquo; keys are hidden in Travis-CI, so no one can access them but me. This makes updating the site a lot easier. I can create a file in GitHub directly, preview it, make changes, etc., and then check in. Once checked in, Travis kicks off, builds and deploys. All Good!</p>
+
+<p>It also means that if &ldquo;bugs&rdquo; are found on the site (by you, my dear reader), or if you have queries for some things, a &ldquo;bug report&rdquo; can be opened on the <a href="https://github.com/tiernano/www.tiernanotoole.ie/issues">issues log</a>. I already have a bug for making the site faster&hellip; Anything else you want me to change?</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/03/30/MPTCP-SSH-Squid-OpenVPN-and-2-Cable-modems--Double-Speed-Not-quite...-Part-2/"> MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/03/22/2-Cable-modems--Double-Internet-Speed-Well...-not-really...-Part-1/"> 2 Cable modems = Double Internet Speed? Well... not really... Part 1</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

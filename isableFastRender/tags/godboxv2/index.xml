@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Godboxv2 on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/godboxv2/</link>
+    <description>Recent content in Godboxv2 on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Aug 2015 20:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/godboxv2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Server 2012 R2 returning to The GodBoxV2</title>
+      <link>http://localhost:1313/2015/08/23/Windows-Server-2012-R2-returning-to-The-GodBoxV2/</link>
+      <pubDate>Sun, 23 Aug 2015 20:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/08/23/Windows-Server-2012-R2-returning-to-The-GodBoxV2/</guid>
+      <description>After a few months of running Sabayon Linux on the GodboxV2, i am going back to Windows Server. Back around October of last year, i installed Windows 10 Preview on the GodBoxV2, and, well, there where issues with graphics drivers, etc. Then, some time after, i cant remember off hand when, i moved to Sabayon Linux. Its based on Gentoo but has a lot of the components pre-built. Gentoo is a &amp;ldquo;Build from scratch&amp;rdquo; sort of OS.</description>
+    </item>
+    
+  </channel>
+</rss>

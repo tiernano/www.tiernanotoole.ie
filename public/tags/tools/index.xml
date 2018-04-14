@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/tools/</link>
+    <description>Recent content in Tools on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Mar 2018 08:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogging on an iPad Pro</title>
+      <link>https://www.tiernanotoole.ie/post/2018-03-06-blogging-on-ipad/</link>
+      <pubDate>Tue, 06 Mar 2018 08:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2018-03-06-blogging-on-ipad/</guid>
+      <description>So, a few months back I bought myself an iPad Pro. I got a 10.5&amp;rdquo; with 64GB Storage and the Smart Keyboard. Since then, i have been mostly using it for playing around: watching YouTube, Netflix, surfing on the couch, etc. but i started to wonder how &amp;ldquo;Pro&amp;rdquo; this was&amp;hellip;so i went and did some testing, and in the end nearly all of this post is being written on it&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Testing Forestry</title>
+      <link>https://www.tiernanotoole.ie/post/2017-08-16-testing-forestry/</link>
+      <pubDate>Wed, 16 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-08-16-testing-forestry/</guid>
+      <description>So, as you probably know, this site is built with Jekyll. Jekyll is a Static Site Generator, basically taking an input of a load of text files (see the source repo for this site on Github here) and generating a load more HTML (the static HTML is hosted on Github here, which auto publishes to Azure App Service).
+In previous posts, i have talked about using the likes of Visual Studio Code and Mark Down Monster to build the site.</description>
+    </item>
+    
+  </channel>
+</rss>

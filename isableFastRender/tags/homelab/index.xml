@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homelab on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/homelab/</link>
+    <description>Recent content in Homelab on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/homelab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zerotier and Minio Followup</title>
+      <link>http://localhost:1313/2017/05/05/Zerotier-and-Minio-Followup/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2017/05/05/Zerotier-and-Minio-Followup/</guid>
+      <description>in a previous post, I talked about setting up a distributed S3 like data storage system using Minio and ZeroTier. Well, this week, the ZeroTier guys tweeted about this.
+Distributed S3 data storage using @minio and #ZeroTier &amp;ndash; https://t.co/MAXTjo3muh
+&amp;mdash; ZeroTier, Inc. (@ZeroTier) May 2, 2017 
+A few people then started asking questions, and looking for a follow up, so here it is&amp;hellip;
+First, a quick recap. I had 4 machines, all running Linux.</description>
+    </item>
+    
+    <item>
+      <title>Business Class Broadband... finally here....</title>
+      <link>http://localhost:1313/2017/03/09/Business-Class-Broadband...-finally-here..../</link>
+      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2017/03/09/Business-Class-Broadband...-finally-here..../</guid>
+      <description>So, after many (MANY) years messing with dual cable modems, struggling to get them working together, to get websites to even allow me in, having to use hacks and kluges to get it to work at all&amp;hellip; I have given up. It has been a struggle getting two modems working properly. Load blanching kind of works&amp;hellip; but it&amp;rsquo;s messy at best. Some sites kick you out every now and again because your IP changes.</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 9 - Going Back</title>
+      <link>http://localhost:1313/2016/07/20/double-speed-Internet-Part-9---Going-Back/</link>
+      <pubDate>Wed, 20 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/07/20/double-speed-Internet-Part-9---Going-Back/</guid>
+      <description>[NOTE] This part 9 in a series of posts. The rest can be found here
+Well, the double internet experiment is about ready to be finished&amp;hellip; After 9 posts, 4 months, lots of sweating, many painful nights trying to figure out why something stopped using, shouting when Netflix did not work, wondering why my internet connection was so slow, and many, many other problems, i have decided to wind down the project.</description>
+    </item>
+    
+    <item>
+      <title>Meraki and Ubiquiti networks gear Update</title>
+      <link>http://localhost:1313/2016/06/20/Meraki-and-Ubiquiti-networks-gear-Update/</link>
+      <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/06/20/Meraki-and-Ubiquiti-networks-gear-Update/</guid>
+      <description>In part 6 of my Double Internet Series I mentioned i was running a Meraki MX64 in the network, and said i would write up about it. I am taking this oppertunity to also write up about the Ubiquiti networks gear in the house also.
+ First on the list is my older Ubiquiti Edgerouter POE. It currently in the process of being decommissioned, or used for something else. It was the main edge router for the network: it had both internet connections connected, and did routing, firewalls, etc, but with the Proliant taking over as a router, it is not requried as much any more&amp;hellip; Its still on, mainly because its still a DHCP server, but not much else.</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 8 - Routing Around</title>
+      <link>http://localhost:1313/2016/06/08/double-speed-Internet-Part-8---Routing-Around/</link>
+      <pubDate>Wed, 08 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/06/08/double-speed-Internet-Part-8---Routing-Around/</guid>
+      <description>[NOTE] This part 8 in a series of posts. The rest can be found here.
+At the end of my last post I asked the question about routing traffic to different servers based on thier distances, etc&amp;hellip; Well, after a bit of messing, i can say it kind of works! here is a quick over view:
+ server in the house has now got multiple OpenVPN connections (2 to Hetzner, 1 to OVH (with a plan to double), 1 to Digital Ocean (again, to be doubled) and i am planning 2 to Azure as well).</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 7 - ECMP (kind of)</title>
+      <link>http://localhost:1313/2016/05/31/double-speed-Internet-Part-7---ECMP-kind-of/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/05/31/double-speed-Internet-Part-7---ECMP-kind-of/</guid>
+      <description>[NOTE] This part 7 in a series of posts. The rest can be found here.
+In the last post I mentioned I am now using Hetzner for hosting a dedicated box. Thats still live, and going well. I have a /29 IP range (6 usable) and also 2 other IPs. So far, so good&amp;hellip; But because i was using a Socks Server, I was not fully able to use the /29 ips&amp;hellip; I use something like as follows:</description>
+    </item>
+    
+    <item>
+      <title>double speed Internet Part 6 - Hetzner Edition</title>
+      <link>http://localhost:1313/2016/05/17/double-speed-Internet-Part-6---Hetzner-Edition/</link>
+      <pubDate>Tue, 17 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/05/17/double-speed-Internet-Part-6---Hetzner-Edition/</guid>
+      <description>[NOTE] This part 6 in a series of posts. The rest can be found here.
+Its been a while, since I posted, and there are some, well, pretty major changes since the last time&amp;hellip; Lets start are the beginning.
+Last time I was using Digital Ocean for my hosting provider. I was using their $20 a month server (2 cores, 2GB RAM, 40GB SSD, 3TB transfer), and it was all good&amp;hellip; But I noticed that every now and again I would need to reboot the box.</description>
+    </item>
+    
+    <item>
+      <title>(Mad) Max Speed - The Road Warrior (Internet connection) (double speed internet Part 5)</title>
+      <link>http://localhost:1313/2016/04/21/Mad-Max-Speed---The-Road-Warrior-Internet-connection-double-speed-internet-Part-5/</link>
+      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/21/Mad-Max-Speed---The-Road-Warrior-Internet-connection-double-speed-internet-Part-5/</guid>
+      <description>[NOTE] This part 5 in a series of posts. The rest can be found here.
+This post is going to be an update and theoretical post. probably very little &amp;ldquo;new&amp;rdquo; stuff going on here, mostly updates, and what I am planning on doing later on.
+This week, I have been OOF sick, so I have not done much work, but I have been surfing the web, watching videos, downloading stuff, etc.</description>
+    </item>
+    
+    <item>
+      <title>2 Cable Modems = Double Speed? Part 4</title>
+      <link>http://localhost:1313/2016/04/14/2-Cable-Modems--Double-Speed-Part-4/</link>
+      <pubDate>Thu, 14 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/14/2-Cable-Modems--Double-Speed-Part-4/</guid>
+      <description>[NOTE] This part 4 in a series of posts. The rest can be found here.
+So, this week I went in a completely different direction that I have been thinking recently&amp;hellip;
+So, the basic theory is as follows:
+ I am still using MPTCP kernels on both upstream and local machine now have 2 P2P UDP OpenVPN tunnels between house and cloud. Example config is here all TCP traffic (bar port 80) that hits the router in house is redirected to RedSocks RedSocks uses a socks server, Dante, as an upstream server on the cloud box since the socks traffic is over TCP (inside the UDP OpenVPN tunnel) it uses MPTCP having socks running, gives me quite the download speed, turning it off does not, hence the following tweet  Hmmmm&amp;hellip; If I have socks on, the Internet is fast 400mb/s+).</description>
+    </item>
+    
+    <item>
+      <title>2 Cable modems = Double speed? Part 3</title>
+      <link>http://localhost:1313/2016/04/02/2-Cable-modems--Double-speed-Part-3/</link>
+      <pubDate>Sat, 02 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/02/2-Cable-modems--Double-speed-Part-3/</guid>
+      <description>[NOTE] This part 3 in a series of posts. The rest can be found here.
+In Part 1 of this series I explained the why and what I wanted to do for this &amp;ldquo;project&amp;rdquo;. In Part 2 I did some basic testing of both MPTCP and MLVPN. I also mentioned trying MMPPP using vtund but it has been a while since I did that testing, and it had not been on bare metal.</description>
+    </item>
+    
+    <item>
+      <title>MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2</title>
+      <link>http://localhost:1313/2016/03/30/MPTCP-SSH-Squid-OpenVPN-and-2-Cable-modems--Double-Speed-Not-quite...-Part-2/</link>
+      <pubDate>Wed, 30 Mar 2016 20:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/03/30/MPTCP-SSH-Squid-OpenVPN-and-2-Cable-modems--Double-Speed-Not-quite...-Part-2/</guid>
+      <description>[NOTE] This part 2 in a series of posts. The rest can be found here.
+In my previous post I explained what i was trying to do&amp;hellip; This post explains what i have been working on recently, and performance results&amp;hellip; So, first, what have i tried&amp;hellip; There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.</description>
+    </item>
+    
+    <item>
+      <title>Edge Router, Sophos UTM, DMZ and LAN Networks</title>
+      <link>http://localhost:1313/2015/09/30/Edge-Router-Sophos-UTM-DMZ-and-LAN-Networks/</link>
+      <pubDate>Wed, 30 Sep 2015 20:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/09/30/Edge-Router-Sophos-UTM-DMZ-and-LAN-Networks/</guid>
+      <description>I have been using an EdgeRouer POE as my main router for most of the network (some of the network still uses PFSense as a router, but thats being removed soon) for the last few weeks, and i am quite happy with it. I also have a second router, a Sophos UTM VM between my first LAN (essentially a DMZ) and my client LAN (there will be more &amp;ldquo;LANs&amp;rdquo; over there soon).</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 4)</title>
+      <link>http://localhost:1313/2015/09/16/Network-and-HomeLab-V.Next-Part-4/</link>
+      <pubDate>Wed, 16 Sep 2015 14:15:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/09/16/Network-and-HomeLab-V.Next-Part-4/</guid>
+      <description>So, after some messing, tweaking, and thinking, I have made some progress with the home lab&amp;hellip; or at least broken some stuff&amp;hellip; I mentioned previously that i had a Ubiqititi networks EdgeRouter POE in the home lab. Originally, the plan was to use a Virtual PFSense box for my core router&amp;hellip; Given the power usage of the current PfSense Box (I have 2 MPower Pro&amp;rsquo;s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing&amp;hellip; below is the usage of the ProLiant for the last 12 hours or so:</description>
+    </item>
+    
+    <item>
+      <title>Ubiquiti EdgeRouter PoE in the lab</title>
+      <link>http://localhost:1313/2015/08/05/Ubiquiti-EdgeRouter-PoE-in-the-lab/</link>
+      <pubDate>Wed, 05 Aug 2015 21:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/08/05/Ubiquiti-EdgeRouter-PoE-in-the-lab/</guid>
+      <description>Today, my Ubiquiti EdgeRouter POE arrived in the house. I got it hooked up to both UPC connections (as secondary connections) and all seems to be working grand. Some notes i wanted to put up here:
+ out of the box, the install was quite simple. set my Ethernet connection to a static ip in the 192.168.1.x/24 range, using 192.168.1.1 as gateway and dns, and then point at http://192.168.1.1 for admin.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 3)</title>
+      <link>http://localhost:1313/2015/07/15/Network-and-HomeLab-V.Next-Part-3/</link>
+      <pubDate>Wed, 15 Jul 2015 13:15:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/07/15/Network-and-HomeLab-V.Next-Part-3/</guid>
+      <description>So, this part of my article set will be talking specifically about the router and wireless network. At the moment, my router is way overkill:
+ Old HP Proliant ML110 G5 Intel Core2Quad Q6600 8 Gb RAM total of 12 Gigabit network cards (of which 4 are currently used&amp;hellip;) 500Gb HDD  I have been playing with some networking in the house and have managed to build some VLANs. The modems are connected both directly to the Router and to a dedicated switch port for a given VLAN.</description>
+    </item>
+    
+    <item>
+      <title>Network and HomeLab V.Next (Part 2)</title>
+      <link>http://localhost:1313/2015/06/23/Network-and-HomeLab-V.Next-Part-2/</link>
+      <pubDate>Tue, 23 Jun 2015 10:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/06/23/Network-and-HomeLab-V.Next-Part-2/</guid>
+      <description>So, in my last post i talked about the requirements for the home lab, and in this post, im going to talk about a few more updates i have made in the last few weeks.
+First, the processors: in the first post, i talked about Xeon D or Xeon E3&amp;hellip; Well, i missed one&amp;hellip; The Xeon E5. I have 2 of these in GodBox 2, and you can get them into a microATX board.</description>
+    </item>
+    
+    <item>
+      <title>Network and Homelab V.Next (Part 1)</title>
+      <link>http://localhost:1313/2015/06/14/Network-and-Homelab-V.Next-Part-1/</link>
+      <pubDate>Sun, 14 Jun 2015 16:05:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/06/14/Network-and-Homelab-V.Next-Part-1/</guid>
+      <description>So, its that time again&amp;hellip; HomeLab upgrade time&amp;hellip; Or at least the planning for it. I am in the process of rebuilding my home lab, which involves pull all old servers out of the rack and replacing them with new ones&amp;hellip; It also means rewriting the network, possibly upgrading some existing gear and hopefully getting the whole lot done on a budget of some sort&amp;hellip;
+So, why? Well, biggest reason for all this is currently heat and power usage.</description>
+    </item>
+    
+  </channel>
+</rss>

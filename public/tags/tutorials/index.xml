@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/tutorials/</link>
+    <description>Recent content in Tutorials on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Sep 2017 07:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Backup Plans</title>
+      <link>https://www.tiernanotoole.ie/post/2017-09-25-new-backup-plans/</link>
+      <pubDate>Mon, 25 Sep 2017 07:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-09-25-new-backup-plans/</guid>
+      <description>So, a few weeks back, CrashPlan, one of my chosen backup services, decided to kill their consumer backup plans. Which made me have to rethink my backup plan for the house&amp;hellip;
+Note: This is how I am backing up files, and may or may not work for you. Some of this is already in &amp;ldquo;production&amp;rdquo; as of today, but others are planned&amp;hellip; Any questions, comments, etc, leave them in the comments.</description>
+    </item>
+    
+  </channel>
+</rss>

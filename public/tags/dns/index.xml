@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dns on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/dns/</link>
+    <description>Recent content in Dns on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2015 20:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using git and Route53 together</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-07-using-git-and-route53/</link>
+      <pubDate>Thu, 07 May 2015 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-07-using-git-and-route53/</guid>
+      <description>so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon&amp;rsquo;s Route53. So, moving ALL of them seems, well at the moment, excessive&amp;hellip; So, i went digging&amp;hellip;
+there is a tool called cli53 which will allow you to manage route53 objects from the command line.</description>
+    </item>
+    
+    <item>
+      <title>Git Push DNS</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-07-git-push-dns/</link>
+      <pubDate>Thu, 07 May 2015 15:30:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-07-git-push-dns/</guid>
+      <description>There are now a lot of services that have &amp;ldquo;git push&amp;rdquo; options available&amp;hellip; you can build websites with Azure and Github, books using ShareLaTeX and now, DNS using LuaDNS. I have one zone running at the moment (tiernanotoole.net) and you can see the DNS records on github here. I am tempted at moving other records over soon&amp;hellip; but i am currently on Amazon Route53 and 1: its works, so dont break it, and 2, not sure how to bulk export records from Route53 to Bind or Lua format.</description>
+    </item>
+    
+  </channel>
+</rss>

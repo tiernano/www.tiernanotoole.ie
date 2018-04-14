@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>P2p on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/p2p/</link>
+    <description>Recent content in P2p on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2012 09:13:27 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/p2p/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Symform - P2P Backup</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-30-symform_-_p2p_backup/</link>
+      <pubDate>Fri, 30 Nov 2012 09:13:27 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-30-symform_-_p2p_backup/</guid>
+      <description>I have previously posted about CrashPlan as my Backup System. I also, a long time ago, talked about Backing up SQL, MySQL and other stuff on my other blog. Well, CrashPlan is all good, but there are 2 &amp;ldquo;niggly&amp;rdquo; bits with it&amp;hellip;
+ Its not FREE (well, this year i got it Free on Black Friday&amp;hellip;) but it is cheap ($120 a year to backup 10 machines to the cloud aint bad.</description>
+    </item>
+    
+  </channel>
+</rss>

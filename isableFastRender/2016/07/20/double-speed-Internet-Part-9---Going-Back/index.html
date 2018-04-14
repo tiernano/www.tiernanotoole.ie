@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>double speed Internet Part 9 - Going Back</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">double speed Internet Part 9 - Going Back</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-07-20</small></p> <hr/>
+   <div class="post">
+     <p>[NOTE] This part 9 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a></p>
+
+<p>Well, the double internet experiment is about ready to be finished&hellip; After 9 posts, 4 months, lots of sweating, many painful nights trying to figure out why something stopped using, shouting when <a href="http://www.netflix.com">Netflix</a> did not work, wondering why my internet connection was so slow, and many, many other problems, i have decided to wind down the project. in the last 9 posts, i have learned a lot, and i hope i have helped someone figure out some stuff on their end. Even though this is a wind up of the project, there are still new things i have to share.</p>
+
+<ul>
+<li>I found another project that has potential for speeding up the internet: <a href="http://www.vrayo.com/how-to-set-up-a-bonding-vpn-connection-in-linux/">VTrunkd</a>. after some testing, i does seem to manage to speed up the connection, but either limits on hardware i have in house, or limits of hardware in the cloud, or even the software, stopped me in my tracks&hellip; i did see 400mb/s out of it at one stage, using 200mb/s from each modem&hellip; its close, but its not the full 720&hellip;</li>
+<li>messing with <a href="http://www.nongnu.org/quagga/">Quagga/Zebra</a> as mentioned in <a href="https://www.tiernanotoole.ie/2016/06/08/double-speed-internet-part-8-routing-around.html">the previous post</a> has been, well, interesting&hellip; I did manage to get all <a href="http://www.ovh.ie">OVH</a> traffic sent though their server, <a href="https://m.do.co/c/d4d345b83b55">Digital Ocean</a> traffic sent over that box, and everything else over <a href="http://www.hetzner.de/en">Hetzner</a>. I added an <a href="http://www.azure.com">Azure</a> box to the mix for a while, aswell as a <a href="http://www.vultr.com/?ref=6925433">Vultr</a> box, but it got very messey, very quickly. if i had something automated, it would be better.</li>
+<li>the idea of having a /29 IP range in <a href="http://www.hetzner.de/en">Hetzner</a> and forwarding it though the tunnels back to the house did work. My <a href="https://meraki.cisco.com/products/appliances/mx64">Meraki MX64</a> had one IP address, i had a mail server on a second, everything else on a third, and was planning on using more&hellip; but its just, well, again, messy. So, i will be going back to the idea of 2 IP addresses, and hoping whatever i put infront of the network can figure stuff out&hellip;</li>
+</ul>
+
+<p>So, what am i moving to? well, thats a question&hellip; Currently, i have the <a href="https://meraki.cisco.com/products/appliances/mx64">Meraki MX64</a> plugged directly into the modems, and protecting my LAN. So far, so good, but due to hardware limits, it maxes out at around 260mb/s. So, thats out of the question for the main network! I did at one stage have <a href="https://www.sophos.com/en/products/free-tools/sophos-utm-home-edition.aspx">Sophos UTM Home edition</a> running. Sophos also have their <a href="https://www.sophos.com/en-us/products/free-tools/sophos-xg-firewall-home-edition.aspx">XG firewall</a> available for home use, so i might try that&hellip; There is also <a href="https://www.pfsense.org/">PFSense</a> which i used before also&hellip; And there may be more&hellip; Maybe there will be a new series reviewing these home firewalls? we will see&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/09/14/Cloud-Desktop-becoming-a-reality/"> Cloud Desktop becoming a reality</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/06/20/Meraki-and-Ubiquiti-networks-gear-Update/"> Meraki and Ubiquiti networks gear Update</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/code/</link>
+    <description>Recent content in Code on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing Jekyll on Bash On Ubuntu on Windows</title>
+      <link>http://localhost:1313/2016/04/11/Installing-Jekyll-on-Bash-On-Ubuntu-on-Windows/</link>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/04/11/Installing-Jekyll-on-Bash-On-Ubuntu-on-Windows/</guid>
+      <description>At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book.
+So, first, I needed to install version 2.0 of Ruby. There is a bit of messing involved for this, but first</description>
+    </item>
+    
+    <item>
+      <title>Announcing B2 Uploader and Hubic Testing 2.0</title>
+      <link>http://localhost:1313/2016/01/15/Announcing-B2-Uploader-and-Hubic-Testing-2.0/</link>
+      <pubDate>Fri, 15 Jan 2016 23:55:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2016/01/15/Announcing-B2-Uploader-and-Hubic-Testing-2.0/</guid>
+      <description>I have 2 new side projects to announce on the site today. First has been running for a while (first check-in was December 28th) and it’s called B2Uploader. Its a fairly simple Windows application to upload files to BackBlaze B2. If you are not familiar with BackBlaze, they provide unlimited backup storage for the low price of a fiver a month. They are the guys who design the BackBlaze storage pods (I want one, by the way!</description>
+    </item>
+    
+    <item>
+      <title>Hubic and Duplicity</title>
+      <link>http://localhost:1313/2015/04/01/Hubic-and-Duplicity/</link>
+      <pubDate>Wed, 01 Apr 2015 07:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/04/01/Hubic-and-Duplicity/</guid>
+      <description>I mentioned HubiC in my last post, and in it i said that you could use Duplicity for backups. Well, this is how you get it to work&amp;hellip;
+First, i am using Ubuntu 14.04 (i think&amp;hellip;). I use Ubuntu in house for a few things:
+ its running Tiernan&amp;rsquo;s Comms Closet, GeekPhotographer and Tiernan&amp;rsquo;s Podcast all in house, aswell as being used to build this site. The Web Server and MySQL Server are seperated, MySQL running on Windows, web on Ubuntu&amp;hellip; but thats a different story&amp;hellip; I have a couple of proxy servers running Ubuntu also Other general servers running Ubuntu&amp;hellip; dont ask, cause i cant remember what they do half the time&amp;hellip;  So, Duplicity is a backup application.</description>
+    </item>
+    
+    <item>
+      <title>Hubic, OpenStack Swift and Curl</title>
+      <link>http://localhost:1313/2015/03/31/Hubic-OpenStack-Swift-and-Curl/</link>
+      <pubDate>Tue, 31 Mar 2015 22:40:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/03/31/Hubic-OpenStack-Swift-and-Curl/</guid>
+      <description>HubiC is an online storage site, built by the guys at OVH. They are currently offering 30Gb free (if you use the link above) or if you pay, you get 110Gb (insted of the usual 100Gb) for EUR1 a month, or 10.5TB (yup&amp;hellip; TERABYTES!) for EUR5 a month&amp;hellip; Thats a crazy amount of storage for a not crazy amount of money!
+So, while playing around with different things, I found they have an API, so other than the usual apps to play with (like the Hubic Apps for iPhone, Android, Windows Phone, Windows Desktop and OSX, Duplicity for backing up *nix boxes, and a few others) you can build your own&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Compressing and UnCompressing Protobuf items in C#</title>
+      <link>http://localhost:1313/2012/12/12/Compressing-and-UnCompressing-Protobuf-items-in-C/</link>
+      <pubDate>Wed, 12 Dec 2012 11:29:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/12/12/Compressing-and-UnCompressing-Protobuf-items-in-C/</guid>
+      <description>Part of a project i am working on required sending large amounts of data between different instances. To get this to work efficially, we started using the ProtoBuf using ProtoBuf-net in .NET. but the files where still quite large (17mb, give or take). So, we looked into compression&amp;hellip;
+here is some examples of how we managed to compress the protobuf files. We got some decient compression: 3mb files, down from 17mb.</description>
+    </item>
+    
+  </channel>
+</rss>

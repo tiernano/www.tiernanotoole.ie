@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Routeros on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/routeros/</link>
+    <description>Recent content in Routeros on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 May 2015 18:40:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/routeros/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VLANs, Wifi and Mikrotik</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-10-vlans-wifi-and-mikrotik/</link>
+      <pubDate>Sun, 10 May 2015 18:40:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-10-vlans-wifi-and-mikrotik/</guid>
+      <description>About a month ago, while i was recovering from surgery, i attended a Webinar on Cisco Meraki devices. After the webinar, i was contacted by Maraki and given a MR18 with a 3 year license, to play with and evaluate. So, i set it up in the house and all was good.
+Thing is, the wifi in the house was grand previously. I have a Routerboard RB951G which does the job and has no issues.</description>
+    </item>
+    
+    <item>
+      <title>IPv6 Firewall rules for MikroTik RouterOS</title>
+      <link>https://www.tiernanotoole.ie/post/2012-12-20-ipv6_firewall_rules_for_mikrotik_routeros/</link>
+      <pubDate>Thu, 20 Dec 2012 11:09:06 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-12-20-ipv6_firewall_rules_for_mikrotik_routeros/</guid>
+      <description>After yesterday&amp;rsquo;s post on IPv6 Networking in the house, I realized that all machines internally had publically facing IPv6 addresses! I started to panic, then went looking online, and found the following script:
+ This script, when run on your RouterOS board, will allow Established and Related connections, allow outgoing connections, and drop anything incoming that has not been requested&amp;hellip; so, now everything inside the network should be more secured&amp;hellip; I am new to this IPv6 stuff, so I am still learning&amp;hellip; but, i am getting there&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>IPv6 &#43; MikroTik &#43; Linux &#43; Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2012-12-19-ipv6_&#43;_mikrotik_&#43;_linux_&#43;_windows/</link>
+      <pubDate>Wed, 19 Dec 2012 16:24:07 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-12-19-ipv6_&#43;_mikrotik_&#43;_linux_&#43;_windows/</guid>
+      <description>I have been wanting to setup an IPv6 network for a while now, but never had the hardware or network to support it. My broadband Modem, a Cisco EPC3925, was pretty useless&amp;hellip; But with the advent of Bridging on the Cisco EPC3925 it now works!
+The first thing i needed to do was setup a Tunnel Broker Account with Hurricane Electric. I got a /64 block of IPv6 addresses, which should do me for a while&amp;hellip; :)</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Dynamic IP Updates</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-19-routeros_dynamic_ip_updates/</link>
+      <pubDate>Mon, 19 Nov 2012 10:19:26 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-19-routeros_dynamic_ip_updates/</guid>
+      <description>I have been using a MikroTik RouterBoard RB750 for a while now, and i love it! Over the weekend, i upgraded it to a RB1100. Its the same software running the device, but the device is faster (800Mhz PowerPC chip VS MIPS-BE at 680Mhz), has more memory (512Mb upgradable to 1.5Gb vs 32Mb) and more storage (think its 512Mb on board, plus 4Gb MicroSD card vs 32mb&amp;hellip;). It also has more ports (13 GigE VS 5) and 2 Switch Groups, which i have no idea what they do just yet&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Using Host names in Firewall Rules</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-12-routeros_using_host_names_in_firewall_rules/</link>
+      <pubDate>Fri, 12 Oct 2012 07:43:17 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-12-routeros_using_host_names_in_firewall_rules/</guid>
+      <description>As a follow up to yesterday&amp;rsquo;s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.
+ First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs. Create an &amp;ldquo;Address List&amp;rdquo; in RouterOS.</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Blocking Machine access to all but one IP</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-11-routeros_blocking_machine_access/</link>
+      <pubDate>Thu, 11 Oct 2012 13:09:20 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-11-routeros_blocking_machine_access/</guid>
+      <description>So, i have a machine on my network, which should be only connecting to the internet though a VPN. I needed to tell my RouterOS box to block all access, except to this said IP address&amp;hellip; The following should do the trick&amp;hellip; YMMV
+{% gist 3871919 %}
+this will drop any packets from the srcaddress (IP address) that are not for destination dstaddress (IP address). in my case, dstaddress is the VPN server i want to connect to.</description>
+    </item>
+    
+    <item>
+      <title>MicroTik RouterOS VPN Setup</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-24-MicroTik-RouterOS-VPN-Setup/</link>
+      <pubDate>Mon, 24 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-24-MicroTik-RouterOS-VPN-Setup/</guid>
+      <description>I have been running a MikroTik RouterBoard in the house for a couple of months now (the RB750G) and I am very much loving the thing. But one thing you may need to do is setup VPN connections&amp;hellip; Here are some tips on how to create a VPN Server and Client on your RouterBoard.
+Client Setup to setup a client, you need to do the following:
+{% gist 8581643 %}</description>
+    </item>
+    
+  </channel>
+</rss>

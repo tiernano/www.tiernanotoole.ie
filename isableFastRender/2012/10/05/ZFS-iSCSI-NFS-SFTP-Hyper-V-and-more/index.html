@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ZFS iSCSI NFS SFTP Hyper-V and more</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">ZFS iSCSI NFS SFTP Hyper-V and more</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2012-10-05</small></p> <hr/>
+   <div class="post">
+     <p>As part of my new task to make my files safer and backups faster, and, well, cheap, I am looking into <a href="http://en.wikipedia.org/wiki/ZFS">ZFS</a> for my storage needs. My needs are as follows:</p>
+
+<ul>
+<li>Allow me to store lots of different types of data (Photos, Videos, Music, VMs) in different formats (RAW and JPG photos, MP4, AVI and DivX Videos, with DVD and BluRay rips also a posibility, MP3 music and VHD files from HyperV, inclduing ISOs and Snapshots). I also need to store different file systems using <a href="http://en.wikipedia.org/wiki/ISCSI">iSCSI</a> (Mac and Windows clients will be mounting the storage).</li>
+<li>must be safe. DO NOT LOSE DATA!</li>
+<li>must be somewhat fast. I have VHDs weighing in at 100Gb&hellip; my photo collection is 600Gb. If i need to move or copy files to the storage system, it must be fast.</li>
+</ul>
+
+<p>So, ZFS offers all these features. I can export a file share as iSCSI, NFS, SMB, etc. All works well. But the replication stuff is the interesting part&hellip;</p>
+
+<p>The plan, which i am working on, is as follows:</p>
+
+<ul>
+<li>have 2 machines setup: one in house and one in a datacenter (I have a dedicated box in the <a href="http://www.hetzner.de/en">Hetzner</a> data center). both could be VMs (the one in the datacenter will more than likley be a VM).</li>
+<li>use the storage on the local system for whatever i need backed up.</li>
+<li>have a script which will take a snapshot of a given pool every 4 hours or so&hellip;</li>
+<li>that script should also dump the snapshot to a temporary location on the machine using ZFS send.</li>
+<li>that file should be checked, compressed, broken up into little bits and checked again&hellip; checking is important!</li>
+<li>take those little bits and send them to the datacenter, which will do lots more checking and import the files into the ZFS pool over there&hellip;</li>
+<li>there may even be a two way system to send from the datacenter back to the house&hellip;</li>
+<li>finally, the remote pool should be dumped to an SFTP backup system that Hetzner give me&hellip; Currently set at 100Gb, but can be increesed as needed&hellip;</li>
+</ul>
+
+<p>Thats the &ldquo;plan&rdquo;&hellip; Lets see how it actually works out&hellip;</p>
+
+<p>Anyway, parts of the process i need to tweak:</p>
+
+<ul>
+<li>uploading and using as much of my upload bandwidth as possible (2x10mb upload connections&hellip;) if i am backing up 800Gb, which should be my first backup, i would like to use both pipes to the fullest&hellip; on a single connection, at 50% capacity, it would take 15.1 days to upload. if i can get both connections to work at 80% capacity, giving me 16Mbits/s, it would be down to 4.7 days. With compression and Deduplication, i can probably bring that down a bit more&hellip;</li>
+<li>backing up to SFTP&hellip; Reading different things is telling me this might not be such a good idea&hellip;</li>
+</ul>
+
+<p>Some links which you might find useful:</p>
+
+<ul>
+<li><a href="http://nexenta.com/corp/">Nexenta</a>: I am using their <a href="http://www.nexentastor.org/projects/1/wiki/CommunityEdition">Community Edition</a> product for the system.</li>
+<li><a href="http://www.servethehome.com/create-nexentastor-vmware-esxi-virtual-machine/">Create a Nexenta Store device in ESXi</a></li>
+<li><a href="http://www.servethehome.com/configure-passthrough-vmdirectpath-vmware-esxi-raid-hba-usb-drive/">Configure passthough VMDirectPath in VMWare ESXi</a>: ideally, you should let Nexenta manage your disks&hellip; Dont think i can do it wiht the dedicated server, but might be possible with the server in house&hellip;</li>
+</ul>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2012/10/11/RouterOS-Blocking-Machine-access-to-all-but-one-IP/"> RouterOS Blocking Machine access to all but one IP</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2012/10/04/More-Jekyll-Stuff/"> More Jekyll Stuff</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

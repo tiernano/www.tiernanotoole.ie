@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">MPTCP, SSH, Squid, OpenVPN (and 2 Cable modems) = Double Speed? Not quite... Part 2</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-03-30</small></p> <hr/>
+   <div class="post">
+     
+
+<p>[NOTE] This part 2 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a>.</p>
+
+<p>In <a href="https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html">my previous post</a> I explained what i was trying to do&hellip; This post explains what i have been working on recently, and performance results&hellip;
+So, first, what have i tried&hellip; There are 3 different things i have tried, and here are some of their details. Some will need to be updated (other parts of this series), and others i will try get back to eventually.</p>
+
+<h2 id="hardware-and-servers-used">Hardware and servers used</h2>
+
+<p>To test this, i am using my <a href="https://www.tiernanotoole.ie/Computers/proliantml110.html">HP Proliant ML110 G5</a> running either Ubuntu or Debian Linux, with 2 GigE connections directly to the cable modems, and 1 connection to the LAN (for SSH and testing). The LAN has no gateway set, and the 2 WAN connections have DHCP enabled. They get fully public IP addresses. Upstream, I am using either <a href="https://m.do.co/c/d4d345b83b55">Digital Ocean</a> or <a href="http://www.scaleway.com">ScaleWay</a> VPS boxes.</p>
+
+<p>Digital Ocean has the advantage of allowing different Kernels, so i have been using them for testing MPTCP. As for ScaleWay, well, their BareMetal C2S/M/L boxes have between 4 and 8 cores (4 for the S, 8 for the M and L) and between 8 and 32Gb RAM (S=8, M=16, L=32GB). The L model also comes with 256GB SSD (plus the boot disk, which seems to be a network disk of some sort) and they all come with lots of bandwidth (i use the L because its got about 800MBit/s to the internet).</p>
+
+<p>Ping wise, Digital Ocean is about 20-30ms away from the house (I picked London to host the servers) and Scaleway is a little further at about 50ms (They are based in France).</p>
+
+<h2 id="mptcp-multipath-tcp-5">MPTCP (<a href="http://www.multipath-tcp.org">MultiPath TCP</a>)</h2>
+
+<p>MPTCP (their site is a bit wonky as of writing, so bare with me&hellip;) is a Linux Kernel patch that allows TCP connections to use multiple paths&hellip; Essentially, if you have Wifi and 4G in a phone, and MPTCP is enabled, it should allow you to use both connections for TCP traffic, as long as the server upstream supports it. It also allows for easy fail over if, say, you lose your wifi connection. There is an example <a href="https://youtu.be/VWN0ctPi5cw">video of it on YouTube</a> which should show the fail over parts and <a href="https://www.youtube.com/watch?v=VMdPI9Cfi9k">this video</a> shows how they managed to get 50Gbit/s out of a 6 10Gb Ethernet connections.</p>
+
+<p>When i was using MPTCP, I had a copy of <a href="http://www.squid-cache.org">Squid</a> on both boxes, and told Squid locally to use Squid on the upstream box (over a SSH tunnel, which was over the MPTCP link) as a parent cache. Using this method, i could see (using <a href="http://www.ex-parrot.com/pdw/iftop/">iftop</a>) that both connections were being used. When trying proper performace testing, I setup a RAM disk on both machines and copied a Linux ISO to the Digtial Ocean Box. Then, using wget and <a href="http://axel.alioth.debian.org/">Axel</a> I downloaded the files using <a href="https://www.nginx.com/">Nginx</a> on the server, and checked the results. I can max out 1 single connection, plus use about 60-80mbit/s from the second. about 420-440mbit/s total. Disk was not the bottleneck, since I was writing to RAM, so more tests are required.</p>
+
+<h2 id="mlvpn">MLVPN</h2>
+
+<p><a href="http://zehome.github.io/MLVPN">MLVPN</a> is a pretty interesting project that caught my eye. The idea is quite simple: you configure the local box and server, as mentioned in <a href="http://mlvpn.readthedocs.org/en/latest/linux_example.html">their example guide</a> and run the MLVPN program on the server, then the client. It creates 2 VPN tunnels between the 2 boxes, and bonds them&hellip; In my case, i was given an IP of 10.42.42.1 on my box in house and 10.42.42.2 on the server. Any traffic over that tunnel is bonded&hellip; Problem is, it seems to be quite processor intensive: my Digital Ocean box was showing one cpu core (out of 2) maxing out at around 80% and my Proliant in house maxing around the 70% mark&hellip; all while transferring data at around 100mbit/s. I tried iperf and got the following:</p>
+
+<p><img src="https://www.tiernanotoole.ie/post_images/2016/03/30/20160330-mlvpn-speed-test.PNG" alt="mlvpn speed test" /></p>
+
+<p>getting 50mbit/s upload is good, in reality, since in theory my max speed would be 72, without overhead. but 116mb/s down is less than a third the max speed of a single connection. So, I tried just uploads and downloads&hellip;</p>
+
+<p>Upload Only (from local machine to server)</p>
+
+<p><img src="https://www.tiernanotoole.ie/post_images/2016/03/30/20160330-mlvpn-speed-test-upload-only.PNG" alt="mlvpn upload only test" /></p>
+
+<p>Download Only (from server to local machine)</p>
+
+<p><img src="https://www.tiernanotoole.ie/post_images/2016/03/30/20160330-mlvpn-speed-test-download-only.PNG" alt="mlvpn download only test" /></p>
+
+<p>As you can see, the download speed has increased a little, to 176Mbit/s, but the upload speed is now at over 60MBit/s!</p>
+
+<p>Still.. download is as important as upload, and given I haven&rsquo;t managed to get it to max out one connection, never mind 2, even more testing is required&hellip;</p>
+
+<h2 id="mlppp-using-vtun">MLPPP (using VTUN)</h2>
+
+<p>This is one i need to come back to&hellip; Used the guide from <a href="https://johnlewis.ie/bonding-teaming-internet-connections/">John Lewis</a> but was only managing to get about 100Mbit/s&hellip; I was originally using a VM (so disk may have been the issue) and also had the connection behind my EdgeRouter, so it might have been firewall rules causing a slow down. But I do need to come back to this soon&hellip; Watch this space.</p>
+
+<h2 id="conclusions">Conclusions?</h2>
+
+<p>Well, at the moment, all I can conclude is that there is more testing required. Upload wise, i can somewhat use most of my bandwidth with MLVPN, and I did see promising results with MPTCP. I gave up a bit too early with MLPPP, so more testing is required with that. Also, all tests are using just iperf between boxes. I did use squid with the MPTCP box for a while, but not for proper performance testing. So, even once this is all sorted out, i will need to turn this into a proper &ldquo;router&rdquo; too&hellip; So, conclusion? this was originally meant to be a 2 parter&hellip; now it looks like I will require a lot more parts&hellip; Watch this space&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/03/31/Bash-on-Ubuntu-on-Windows/"> Bash on Ubuntu on Windows</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/03/24/Continuous-Integration-and-Blogging/"> Continuous Integration and Blogging</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

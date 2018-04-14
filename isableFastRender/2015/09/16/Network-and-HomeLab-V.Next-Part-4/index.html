@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Network and HomeLab V.Next (Part 4)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">Network and HomeLab V.Next (Part 4)</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2015-09-16</small></p> <hr/>
+   <div class="post">
+     <p>So, after some messing, tweaking, and thinking, I have made some progress with the home lab&hellip; or at least broken some stuff&hellip; I mentioned previously that i had a <a href="https://www.tiernanotoole.ie/2015/08/05/Ubiquiti-EdgeRouter-POE-In-the-lab.html">Ubiqititi networks EdgeRouter POE</a> in the home lab. Originally, the plan was to use a Virtual <a href="http://www.pfsense.org">PFSense</a> box for my core router&hellip; Given the power usage of the current PfSense Box (I have 2 <a href="https://www.ubnt.com/mfi/mpower/">MPower Pro</a>&rsquo;s watching power in the lab) I am now thinking of moving to just the EdgeRouter for, well, edge routing&hellip;  below is the usage of the ProLiant for the last 12 hours or so:</p>
+
+<p><img src="https://www.tiernanotoole.ie/post_images/2015/09/16/20150916-proliant-power-usage.PNG" alt="Proliant Power Usage" /></p>
+
+<p>for the same period, here is the usage for the <a href="https://www.ubnt.com/edgemax/edgerouter-poe/">Edge Router</a>:</p>
+
+<p><img src="https://www.tiernanotoole.ie/post_images/2015/09/16/20150916-edgerouter-power-usage.PNG" alt="EdgeRouter POE Power Usage" /></p>
+
+<p>I am also setting up a DMZ for front facing services, and then a LAN for inside facing machines. There will be a firewall (currently thinking <a href="https://www.sophos.com/en-us/products/unified-threat-management.aspx">Sophos UTM</a> or similar) between the DMZ and the network. Some machines will be able to access the DMZ, and there may be machines allowed into the LAN, but only some things&hellip; not even sure if that would be done&hellip;</p>
+
+<p>I also need to work out the VLAN side of things. I have currently though of the following VLAN setup:</p>
+
+<ul>
+<li>WAN 1 (connected directly to the Cable modem)</li>
+<li>WAN 2 (again, direct to cable modem)</li>
+<li>LAN Network</li>
+<li>DMZ Network</li>
+<li>VoIP Network</li>
+<li>IOT (stuff for running the house, like <a href="https://nest.com/ie/thermostat/meet-nest-thermostat/">Nest</a>, the MPower devices or the like)</li>
+<li>Media Network (Plex, Roku, Apple TV, Chrome Cast, etc. Not sure if i need to separate this, but it might be done&hellip;)</li>
+</ul>
+
+<p>The current <a href="http://www.cisco.com/c/en/us/products/switches/catalyst-3560-series-switches/index.html">Cisco 3560G switch</a> should do all that, without problems, so no new switch needed&hellip; lets see what i can break over the next while&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2015/09/30/Edge-Router-Sophos-UTM-DMZ-and-LAN-Networks/"> Edge Router, Sophos UTM, DMZ and LAN Networks</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2015/08/23/Windows-Server-2012-R2-returning-to-The-GodBoxV2/"> Windows Server 2012 R2 returning to The GodBoxV2</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media Center on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/media-center/</link>
+    <description>Recent content in Media Center on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Oct 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/media-center/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Handbrake Cluster</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-03-Handbrake-Cluster/</link>
+      <pubDate>Wed, 03 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-03-Handbrake-Cluster/</guid>
+      <description>[UPDATED] someone asked in the comments if there was an binary build for this file. there is now! http://handbrakecluster.codeplex.com now hosts the code and binaries, and will soon have help files and documentation.
+A few days back, i wrote a post titled Powershell + Handbrake + AppleTV + iTunes = Automatic TV&amp;hellip; ish. In it i included a block of Powershell code to bulk convert TV shows from whatever format you had them in to a M4V format for the AppleTV.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell &#43; HandBrake &#43; AppleTV &#43; iTunes = Automatic TV... Ish...</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-28-Powershell-HandBrake-AppleTV-iTunes/</link>
+      <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-28-Powershell-HandBrake-AppleTV-iTunes/</guid>
+      <description>I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost&amp;hellip; You cant really argue with the small price!
+I also have a lot of content that works great with the AppleTV in iTunes, but i have content which does not work so great with the AppleTV&amp;hellip; So, i needed to find a way to convert files quickly and easily&amp;hellip; thats where PowerShell and Handbrake come in&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

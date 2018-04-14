@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tmg on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/tmg/</link>
+    <description>Recent content in Tmg on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Nov 2012 08:27:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/tmg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>moving your TMG SQL server Logs DB and other TMG tips</title>
+      <link>https://www.tiernanotoole.ie/post/2012-11-22-moving_your_tmg_sql_server_and_other_tmg_tips/</link>
+      <pubDate>Thu, 22 Nov 2012 08:27:55 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-11-22-moving_your_tmg_sql_server_and_other_tmg_tips/</guid>
+      <description>In house, I have been using Microsoft TMG 2010 Server for a while now. I use it as a firewall for some of the machines on the network, and also as a proxy for most, if not all, machines. When acting as a Firewall, all traffic flows though the machine, be it HTTP/HTTPS, SMTP/POP3/IMAP, or anything for that matter. You can also lock down ports on the box, which is a feature of most firewalls, but i like TMG due to its relitive ease of use&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

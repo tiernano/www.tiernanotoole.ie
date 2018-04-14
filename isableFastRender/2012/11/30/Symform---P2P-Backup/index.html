@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Symform - P2P Backup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">Symform - P2P Backup</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2012-11-30</small></p> <hr/>
+   <div class="post">
+     <p>I have previously <a href="http://tiernanotoole.ie/2012/08/30/CrashPlan-Backups.html">posted about CrashPlan</a> as my Backup System. I also, a long time ago, talked about <a href="http://blog.lotas-smartman.net/new-backup-plan-out-with-jungle-disk-and-zmanda-cloud-backup-in-with-crashplan-mysqlbf-and-sqlbf/">Backing up SQL, MySQL and other stuff</a> on my other blog. Well, CrashPlan is all good, but there are 2 &ldquo;niggly&rdquo; bits with it&hellip;</p>
+
+<ul>
+<li>Its not FREE (well, this year i got it Free on Black Friday&hellip;) but it is cheap ($120 a year to backup 10 machines to the cloud aint bad.)</li>
+<li>Its NOT FAST! The CrashPlan Datacenters all live in the US, and my servers live in Europe (either Dublin or Germany). So, bandwidth is limited&hellip; Getting less than 1Mbit/s most times, but have seen it reach 3&hellip; I have 20Mbits/s upload&hellip; even half that would be nice&hellip;</li>
+</ul>
+
+<p>So, thats where <a href="https://control.symform.com/Organization/Referral?referralId=96E53D9DC4501633F2294EF202734DB08C00F044">Symform</a> comes in. Symform is a P2P Backup Service, which runs on Windows, Linux and MacOSX. In theory, it should run anywhere that has a <a href="http://www.mono-project.com/Main_Page">Mono</a> runtime since its written in .NET. Anyway, you start with 10Gb of free storage, and you can increese that by one of 2 ways:</p>
+
+<ul>
+<li>Pay money: for $0.15 per month, you get 1Gb of storage in the cloud</li>
+<li>Pay Bytes: For every 2Gb &ldquo;Contributed&rdquo; (which is actually more like a pledge than a contribution&hellip; more on that later) you get 1Gb storage in the cloud.</li>
+</ul>
+
+<p>It works very well, and is nice a fast too. I have a few machines in house which are contribting stoage, a total of about 2Tb, and I have been given 1Tb storage in &ldquo;The Cloud&rdquo;. There is a lot more on how this works on their &ldquo;<a href="http://www.symform.com/join-the-revolution/how-symform-works/">How Symform Works</a>&rdquo; section of their site.</p>
+
+<p>I mentioned the &ldquo;Contribution&rdquo; VS &ldquo;Pledge&rdquo; up above&hellip; I have a machine in the house where i have Pledged 1Tb of storage. In reality, Symform can use the full 1Tb of storage, if it needs to, but is currently only using 168Gb. Now, that could just be that the machine is still getting files, and it will end up using the full 1Tb eventually, but either way, its all good.</p>
+
+<p>Also, as a couple of notes on Contribution and Backups:</p>
+
+<ul>
+<li>The machine needs to be online and accessable on the internet at least 80% of the time, but <sup>24</sup>&frasl;<sub>7</sub> is ideal. If you drop below the 80%, your account can be suspended.</li>
+<li>your machine needs to be publically accessable, meaning port forwarded. I have a couple contribution machines in house, so they each have seperate ports forwarded to them.</li>
+<li>Given the P2P nature of the software, lots of connections to different machines are made&hellip; if you are behind a firewall, you may need to allow all or most outgoing connections. If you are on a really restrictive firewall, you may want to stick a contribution box in your <a href="http://en.wikipedia.org/wiki/DMZ_(computing)">DMZ</a> and probably use the <a href="http://www.symform.com/our-solutions/key-features/turbo-seeding/">Turbo Seeding</a> feature.</li>
+<li>Turbo Seeding is a handy feature, especially for Laptops&hellip; only problem is its Windows Only&hellip; So, importing and exporting does not work on Linux or OSX.</li>
+<li>The software can managed Work and Non Work hours, and will limit the upload and download speed during this time. Also a nice feature&hellip;</li>
+</ul>
+
+<p>So far, so good. Very happy with the software, but would like a nicer interface to see whats going on. At the moment, you are either limited to using the web interface, which aint bad, but not great, or watching the log files&hellip; I would also like the ability to prioritize certain files or folders, so, for example, upload my documents folder before anything else, and if anything changes in there, even if its uploading from somewhere else, pause and upload the documents folder&hellip; Just a thought&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2012/12/05/GIT-tips-and-tricks/"> GIT tips and tricks</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2012/11/29/enabling-VNC-from-SSH-on-OSX/"> enabling VNC from SSH on OSX</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

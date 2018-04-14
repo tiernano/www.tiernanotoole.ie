@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/development/</link>
+    <description>Recent content in Development on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Nov 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker Jekyll and Mr ngrok</title>
+      <link>https://www.tiernanotoole.ie/post/2016-11-15-docker-jekyll-and-mr-ngrock/</link>
+      <pubDate>Tue, 15 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-11-15-docker-jekyll-and-mr-ngrock/</guid>
+      <description>See what i did with the title?! Anyway, in my last post, i explained how i was building this site with Docker running on Windows 10 with the Anniversary update. Today, i am going to show you how to host it using Nginx and ngrok.
+So, first, you should know what Nginx is at this stage&amp;hellip; If not, check out their site. Next ngrok is basically a way of tunneling your localhost to the web.</description>
+    </item>
+    
+    <item>
+      <title>Building Jekyll sites with Docker on Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2016-11-02-building-jekyll-sites-with-docker-on-windows/</link>
+      <pubDate>Wed, 02 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-11-02-building-jekyll-sites-with-docker-on-windows/</guid>
+      <description>As some of you probably know (or based on the footer of the site) this site is built with Jekyll. Jekyll is a static web site builder, written in Ruby, and is a bit of a pain to build on Windows. Earlier on this year, I wrote up a post explaining how to use Jekyll on Windows using Bash on Ubuntu on Windows&amp;hellip; It was a bit complicated, and, well, worked a few times, but was not too successfull&amp;hellip; So, were do we go next?</description>
+    </item>
+    
+    <item>
+      <title>Bash on Ubuntu on Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2016-03-31-bash-on-ubuntu-on-windows/</link>
+      <pubDate>Thu, 31 Mar 2016 07:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-03-31-bash-on-ubuntu-on-windows/</guid>
+      <description>Microsoft Build 2016 is on this week, and there were a lot of interesting developments yesterday, but the one that interested me the most is Bash on Ubuntu on Windows. Dustin from Ubuntu has a more details, and Scott Hanselman has posted a technical video about this. This is very interesting, and I CANT WAIT TO GET MY HANDS ON IT! But, I do have some questions, which I thought I would put down in blog format:</description>
+    </item>
+    
+    <item>
+      <title>Using git and Route53 together</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-07-using-git-and-route53/</link>
+      <pubDate>Thu, 07 May 2015 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-07-using-git-and-route53/</guid>
+      <description>so, earlier on today, i was talking about using Git with a DNS service called LuaDNS to update your DNS records. Well, thing is, i have 30+ domains registered, and of them about 25 are hosted on Amazon&amp;rsquo;s Route53. So, moving ALL of them seems, well at the moment, excessive&amp;hellip; So, i went digging&amp;hellip;
+there is a tool called cli53 which will allow you to manage route53 objects from the command line.</description>
+    </item>
+    
+    <item>
+      <title>Git Push DNS</title>
+      <link>https://www.tiernanotoole.ie/post/2015-05-07-git-push-dns/</link>
+      <pubDate>Thu, 07 May 2015 15:30:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2015-05-07-git-push-dns/</guid>
+      <description>There are now a lot of services that have &amp;ldquo;git push&amp;rdquo; options available&amp;hellip; you can build websites with Azure and Github, books using ShareLaTeX and now, DNS using LuaDNS. I have one zone running at the moment (tiernanotoole.net) and you can see the DNS records on github here. I am tempted at moving other records over soon&amp;hellip; but i am currently on Amazon Route53 and 1: its works, so dont break it, and 2, not sure how to bulk export records from Route53 to Bind or Lua format.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firewall on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/firewall/</link>
+    <description>Recent content in Firewall on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Oct 2012 07:43:17 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/firewall/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RouterOS Using Host names in Firewall Rules</title>
+      <link>http://localhost:1313/2012/10/12/RouterOS-Using-Host-names-in-Firewall-Rules/</link>
+      <pubDate>Fri, 12 Oct 2012 07:43:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/12/RouterOS-Using-Host-names-in-Firewall-Rules/</guid>
+      <description>As a follow up to yesterday&amp;rsquo;s post on RouterOS Blocking Machine access to all but one IP I tought i would show how to add extra IPs to that list, without having a shedload of firewall filters.
+ First things first, get your list of IPs you allow access to. In my case, i just did an NSLOOKUP on the name and got the IPs. Create an &amp;ldquo;Address List&amp;rdquo; in RouterOS.</description>
+    </item>
+    
+    <item>
+      <title>RouterOS Blocking Machine access to all but one IP</title>
+      <link>http://localhost:1313/2012/10/11/RouterOS-Blocking-Machine-access-to-all-but-one-IP/</link>
+      <pubDate>Thu, 11 Oct 2012 13:09:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/11/RouterOS-Blocking-Machine-access-to-all-but-one-IP/</guid>
+      <description>So, i have a machine on my network, which should be only connecting to the internet though a VPN. I needed to tell my RouterOS box to block all access, except to this said IP address&amp;hellip; The following should do the trick&amp;hellip; YMMV
+{% gist 3871919 %}
+this will drop any packets from the srcaddress (IP address) that are not for destination dstaddress (IP address). in my case, dstaddress is the VPN server i want to connect to.</description>
+    </item>
+    
+  </channel>
+</rss>

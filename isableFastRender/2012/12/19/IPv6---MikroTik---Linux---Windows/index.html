@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IPv6 &#43; MikroTik &#43; Linux &#43; Windows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">IPv6 &#43; MikroTik &#43; Linux &#43; Windows</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2012-12-19</small></p> <hr/>
+   <div class="post">
+     <p>I have been wanting to setup an <a href="http://en.wikipedia.org/wiki/Ipv6">IPv6</a> network for a while now, but never had the hardware or network to support it. My broadband Modem, a Cisco EPC3925, was pretty useless&hellip; But with the advent of <a href="http://tiernanotoole.ie/2012/10/02/Enabling-true-briding-mode-on-Cisco-EPC3925.html">Bridging on the Cisco EPC3925</a> it now works!</p>
+
+<p>The first thing i needed to do was setup a <a href="http://www.tunnelbroker.net/">Tunnel Broker Account</a> with <a href="http://www.he.net">Hurricane Electric</a>. I got a /64 block of IPv6 addresses, which should do me for a while&hellip; :)</p>
+
+<p>Next, I followed the config example from the MikroTik Wiki Page: <a href="http://wiki.mikrotik.com/wiki/Manual:My_First_IPv6_Network">My First IPv6 Network</a>. In my case, i only ran though most of router 1&rsquo;s config, and did not create the &ldquo;routing between segments&rdquo; and &ldquo;ospv-v3&rdquo; backbone&hellip; I did give my internal LAN port an IPv6 address, as well as an IPv4 address.</p>
+
+<p>Next, on my Windows Server machine, i gave it a static IPv6 address (since i dont have an IPv6 DHCP setup&hellip; yet&hellip;) and told it to use the IPv6 address i gave the RouteBoard as its gateway. Then i told it to use the <a href="http://www.opendns.com">OpenDNS</a> <a href="http://www.opendns.com/ipv6">public IPv6</a> address. I then visited <a href="http://www.ipv6-test.com">IPv6 Test</a> and <a href="http://ipv6.google.com">Google&rsquo;s IPv6 page</a> to confirm connectivity&hellip; SUCCESS!!!</p>
+
+<p>On my Linux box, I followed <a href="http://knowledgelayer.softlayer.com/questions/468/Adding+IPv6+to+Ubuntu+systems">Soflayer&rsquo;s Adding an IPv6 IP</a> tutorial.</p>
+
+<p>So far, so good&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2012/12/20/IPv6-Firewall-rules-for-MikroTik-RouterOS/"> IPv6 Firewall rules for MikroTik RouterOS</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2012/12/12/Compressing-and-UnCompressing-Protobuf-items-in-C/"> Compressing and UnCompressing Protobuf items in C#</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

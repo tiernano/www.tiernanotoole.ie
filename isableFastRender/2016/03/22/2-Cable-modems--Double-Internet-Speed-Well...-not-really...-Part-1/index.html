@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>2 Cable modems = Double Internet Speed? Well... not really... Part 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">2 Cable modems = Double Internet Speed? Well... not really... Part 1</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-03-22</small></p> <hr/>
+   <div class="post">
+     <p>[NOTE] This part 1 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a>.</p>
+
+<p>First, a bit of background, and then I will explain what I am currently running in <a href="https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html">Part 2</a>&hellip;</p>
+
+<p>For the last 15 or so years, I have had at least 2 internet connections in to the house&hellip; 2 of them have always been Cable Modems from NTL, which became UPC, and now is <a href="http://www.virginmedia.ie">Virgin Media</a>. When I started, i think the modems where 150/50kbit/s and 600/150kb/s, and have steadily increased in speed, currently at 360/36Mbit/s each&hellip; But they have always been somewhat separate, and single thread downloads have always been limited to 1 of the connections&hellip; I have been looking for ways around this for years&hellip;</p>
+
+<p>It started with a <a href="http://www.cisco.com/c/en/us/products/routers/rv042-dual-wan-vpn-router/index.html">Linksys RV042 router</a> which allowed me to load balance my connections&hellip; At the time, and i cant even remember when this was, my total bandwidth would not exceed the router. The RV042 has 2 10/100mbit WAN links and 4 100mb/s LAN links&hellip;So, when the connection bandwidth increased, I moved to a new router&hellip;</p>
+
+<p>The next router vendor i tried was <a href="http://www.mikrotik.com">Mikrotik</a>. I tried a few different options, including an <a href="http://routerboard.com/RB1100">RB1100</a> and running their <a href="http://www.mikrotik.com/software">RouterOS</a> on x86 hardware&hellip; Both worked, well, ok, and the <a href="http://wiki.mikrotik.com/wiki/Load_Balancing#Nth">Load balancing with nth</a> stuff did do what i needed, along with other stuff, like routing traffic destined for some sites (like BBC iPlayer) to go over a VPN. But in the end, hardware issues and performance problems with the x86 machine (Mikrotik at the time was limited to 2GB of RAM on x86 hardware) I ended up at <a href="http://www.pfsense.org">PfSense</a>.</p>
+
+<p>PfSense was installed on the same hardware, a HP ProLiant ML110 G5 with 8GB RAM, a Core2Quad processor and 12 GigE Network cards&hellip; And, on PfSense, things were good&hellip; Performance was stable, load balancing worked as expected, I could set some traffic to go over certain links, etc. all was good&hellip; But I lacked IPv6&hellip; Plus, the HP used a LOT of power&hellip;</p>
+
+<p>The current instalment of my network uses a <a href="http://www.ubnt.com">Ubiquiti Networks</a> <a href="https://www.ubnt.com/edgemax/edgerouter-poe/">Edge Router POE</a>. To show the difference in power, check out the graphs from my <a href="https://www.ubnt.com/mfi/mpower/">Ubnt MPower</a> device. ProLiant first, EdgeRouter second:</p>
+
+<p><img src="https://www.tiernanotoole.ie/post_images/2015/09/16/20150916-proliant-power-usage.PNG" alt="Proliant Power Usage" /></p>
+
+<p><img src="https://www.tiernanotoole.ie/post_images/2015/09/16/20150916-edgerouter-power-usage.PNG" alt="EdgeRouter POE Power Usage" /></p>
+
+<p>Plus, the EdgeRouter does not produce as much heat, and its a LOT smaller that the PowerEdge! It does all the same things I could get PfSense to do, in a lot smaller package (I could, in theory, get a smaller box for PfSense).</p>
+
+<p>So, where does that leave us? Well, I now have 720Mbit/s down and 72Mbit/s up, if I can do multiple threads for uploading&hellip; But what if I don&rsquo;t? What&rsquo;s next? Well, in the second post, I will explain what I have been trying to do in resent weeks, and what I can do now&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/03/24/Continuous-Integration-and-Blogging/"> Continuous Integration and Blogging</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/01/15/Announcing-B2-Uploader-and-Hubic-Testing-2.0/"> Announcing B2 Uploader and Hubic Testing 2.0</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backup on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/backup/</link>
+    <description>Recent content in Backup on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Sep 2017 07:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Backup Plans</title>
+      <link>http://localhost:1313/2017/09/25/New-Backup-Plans/</link>
+      <pubDate>Mon, 25 Sep 2017 07:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2017/09/25/New-Backup-Plans/</guid>
+      <description>So, a few weeks back, CrashPlan, one of my chosen backup services, decided to kill their consumer backup plans. Which made me have to rethink my backup plan for the house&amp;hellip;
+Note: This is how I am backing up files, and may or may not work for you. Some of this is already in &amp;ldquo;production&amp;rdquo; as of today, but others are planned&amp;hellip; Any questions, comments, etc, leave them in the comments.</description>
+    </item>
+    
+    <item>
+      <title>Hubic and Duplicity</title>
+      <link>http://localhost:1313/2015/04/01/Hubic-and-Duplicity/</link>
+      <pubDate>Wed, 01 Apr 2015 07:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2015/04/01/Hubic-and-Duplicity/</guid>
+      <description>I mentioned HubiC in my last post, and in it i said that you could use Duplicity for backups. Well, this is how you get it to work&amp;hellip;
+First, i am using Ubuntu 14.04 (i think&amp;hellip;). I use Ubuntu in house for a few things:
+ its running Tiernan&amp;rsquo;s Comms Closet, GeekPhotographer and Tiernan&amp;rsquo;s Podcast all in house, aswell as being used to build this site. The Web Server and MySQL Server are seperated, MySQL running on Windows, web on Ubuntu&amp;hellip; but thats a different story&amp;hellip; I have a couple of proxy servers running Ubuntu also Other general servers running Ubuntu&amp;hellip; dont ask, cause i cant remember what they do half the time&amp;hellip;  So, Duplicity is a backup application.</description>
+    </item>
+    
+    <item>
+      <title>Symform - P2P Backup</title>
+      <link>http://localhost:1313/2012/11/30/Symform---P2P-Backup/</link>
+      <pubDate>Fri, 30 Nov 2012 09:13:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/11/30/Symform---P2P-Backup/</guid>
+      <description>I have previously posted about CrashPlan as my Backup System. I also, a long time ago, talked about Backing up SQL, MySQL and other stuff on my other blog. Well, CrashPlan is all good, but there are 2 &amp;ldquo;niggly&amp;rdquo; bits with it&amp;hellip;
+ Its not FREE (well, this year i got it Free on Black Friday&amp;hellip;) but it is cheap ($120 a year to backup 10 machines to the cloud aint bad.</description>
+    </item>
+    
+    <item>
+      <title>Crashplan Backups</title>
+      <link>http://localhost:1313/2012/09/27/Crashplan-Backups/</link>
+      <pubDate>Thu, 27 Sep 2012 11:32:32 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/09/27/Crashplan-Backups/</guid>
+      <description>I have been running CrashPlan for a while now, and, other than some minor issues (backup speed to their central location is the big one), everything has been going grand. I use it to backup about 600GB of photos and videos, 500GB+ of VMs, documents, source code and a fair whack of other stuff&amp;hellip; In total, about 2TB of data.
+Anyway, here are some tips i have figured out over the last while for making Crashplan work a little better&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

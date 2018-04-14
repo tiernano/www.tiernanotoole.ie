@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jekyll on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/jekyll/</link>
+    <description>Recent content in Jekyll on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Testing Forestry</title>
+      <link>https://www.tiernanotoole.ie/post/2017-08-16-testing-forestry/</link>
+      <pubDate>Wed, 16 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-08-16-testing-forestry/</guid>
+      <description>So, as you probably know, this site is built with Jekyll. Jekyll is a Static Site Generator, basically taking an input of a load of text files (see the source repo for this site on Github here) and generating a load more HTML (the static HTML is hosted on Github here, which auto publishes to Azure App Service).
+In previous posts, i have talked about using the likes of Visual Studio Code and Mark Down Monster to build the site.</description>
+    </item>
+    
+    <item>
+      <title>Installing Jekyll on Bash On Ubuntu on Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2016-04-11-installing-jekyll-on-bash-on-ubuntu-on-windows/</link>
+      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-04-11-installing-jekyll-on-bash-on-ubuntu-on-windows/</guid>
+      <description>At the 2016 Build conference, Microsoft announced that Bash on Ubuntu on Windows was coming. Well, it came out last week, and I installed it as soon as I could! My next challenge was to get Jekyll to run and install on it, so I can build and preview this site on my Surface Book.
+So, first, I needed to install version 2.0 of Ruby. There is a bit of messing involved for this, but first</description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration and Blogging</title>
+      <link>https://www.tiernanotoole.ie/post/2016-03-24-Continuous-Integration-And-Blogging/</link>
+      <pubDate>Thu, 24 Mar 2016 08:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-03-24-Continuous-Integration-And-Blogging/</guid>
+      <description>Back in August of 2012, I started this site using Git and Jekyll. I hosted most of it at home, pushing to a server in house. Then, a few years back, I moved to pushing the files to Amazon S3 and had Cloud Front doing distribution. The last moved had me hosting the files in NearlyFreeSpeech.NET and Cloud Flare doing the content distribution&amp;hellip; Well, that changed over the last few days&amp;hellip; again&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>CDN Hosted Blog</title>
+      <link>https://www.tiernanotoole.ie/post/2014-01-23-CDNHostedBlog/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2014-01-23-CDNHostedBlog/</guid>
+      <description>Well, if you can read this, this site is now hosted fully on AWS with both S3 and CloudFront. More details eventually&amp;hellip;
+[UPDATE] How did i host this on S3 and CloudFront? Check out this article by Paul Stamatiou for details&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Moving sites to NearlyFreeSpeech</title>
+      <link>https://www.tiernanotoole.ie/post/2013-01-15-moving_sites_to_nearlyfreespeech/</link>
+      <pubDate>Tue, 15 Jan 2013 19:23:02 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2013-01-15-moving_sites_to_nearlyfreespeech/</guid>
+      <description>I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot&amp;hellip; For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan&amp;rsquo;s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends&amp;hellip; All in all, not a lot of power&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>More Jekyll Stuff</title>
+      <link>https://www.tiernanotoole.ie/post/2012-10-04-more_jekyll_stuff/</link>
+      <pubDate>Thu, 04 Oct 2012 20:57:52 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-10-04-more_jekyll_stuff/</guid>
+      <description>Couple of bits and pieces on Jekyll stuff today&amp;hellip; I am tweaking the outline of the site, so i am surfing around finding stuff&amp;hellip; here is what i have found
+ Host a static site on Amazon S3: Interesting idea, and something i would look into eventually&amp;hellip; And with the help of CloudFront you could host your whole blog on a CDN! Rake tasks for Jekyll: Rake is the Ruby version of make&amp;hellip; and a RakeFile can have tasks, which are in Ruby&amp;hellip; They can do, from what i can gather, pretty much anything&amp;hellip; So, some examples of what you can do with them are linked here&amp;hellip; I especially like the New Post generator&amp;hellip; very handy!</description>
+    </item>
+    
+  </channel>
+</rss>

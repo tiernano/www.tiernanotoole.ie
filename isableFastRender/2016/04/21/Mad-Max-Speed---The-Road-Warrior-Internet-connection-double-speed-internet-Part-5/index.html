@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>(Mad) Max Speed - The Road Warrior (Internet connection) (double speed internet Part 5)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">(Mad) Max Speed - The Road Warrior (Internet connection) (double speed internet Part 5)</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-04-21</small></p> <hr/>
+   <div class="post">
+     <p>[NOTE] This part 5 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a>.</p>
+
+<p>This post is going to be an update and theoretical post. probably very little &ldquo;new&rdquo; stuff going on here, mostly updates, and what I am planning on doing later on.</p>
+
+<p>This week, I have been <a href="http://blogs.technet.com/b/exchange/archive/2004/07/12/180899.aspx">OOF</a> sick, so I have not done much work, but I have been surfing the web, watching videos, downloading stuff, etc., so I have an idea of how things are going. First, as mentioned in <a href="https://www.tiernanotoole.ie/2016/04/14/2-cable-modems-double-speed-part-4.html">the previous post</a> I have MPTCP, Squid, Socks Servers, OpenVPN and IPTables doing their magic. 2 <a href="http://www.openvpn.net">OpenVPN</a> tunnels between the house and <a href="https://m.do.co/c/d4d345b83b55">Digital Ocean</a>. All TCP Traffic (bar port 80) is sent over socks to the box in the cloud using RedSocks. All UDP traffic is sent direct over OpenVPN. Since MPTCP is in the mix, all socks traffic is actually split over the 2 connections. All port 80 traffic, and 443 (if the client is using local Squid as their proxy) is sent round-robin between the 2 upstream IPs to Squid (2 OpenVPN end points).</p>
+
+<p>Things I have noticed:</p>
+
+<ul>
+<li>Every now and again, <a href="https://github.com/darkk/redsocks">RedSocks</a> crashes&hellip; just full on dies. It’s just a matter of starting again, but it’s a pain&hellip;</li>
+<li>I have had to restart squid a couple of times&hellip; not too often though</li>
+<li>there was a power outage in the house a few days back&hellip; so, when everything came back online, it was a bit of a pain bringing all connections back to life. I do have to figure out a better plan</li>
+</ul>
+
+<p>I still have to read more on this ECMP stuff. Hopefully it will do what I am hoping.</p>
+
+<p>Now for the theoretical stuff. I started thinking, could this work outside the house? Could you build this into something smaller, like a Raspberry Pi, and stick 2 or more USB Modems in, connect it back to a server in the cloud, setup P2P OpenVPN connections and then get more than a single modem speed download? The problems I can see are around MPTCP. I am not sure if it has been ported to ARM to run on a Raspberry Pi. Second, the max you could ever get out of it is 100Mbit/s, given the 10/100mb network port on board&hellip; and you may need extra power for the USB dongles. Also, getting P2P connections may be complicated, given the non-static IPs on the modems, though, in theory, non-P2P OpenVPN could work&hellip; Again, it’s a theory. I had the though and that’s where the title came from&hellip; anyway, throwing it out there&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/04/23/Useful-Web-and-Desktop-Apps-2016-edition/"> Useful Web and Desktop Apps 2016 edition</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/04/14/2-Cable-Modems--Double-Speed-Part-4/"> 2 Cable Modems = Double Speed? Part 4</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

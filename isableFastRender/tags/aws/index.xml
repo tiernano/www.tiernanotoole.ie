@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/aws/</link>
+    <description>Recent content in Aws on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Aug 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AutoScaling with Amazon</title>
+      <link>http://localhost:1313/2012/08/30/AutoScaling-with-Amazon/</link>
+      <pubDate>Thu, 30 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/08/30/AutoScaling-with-Amazon/</guid>
+      <description>I have a few Amazon EC2 instances running on a project, and one of these instances was known as the Zombie Instance! Every time i killed it, it came back to life a few min later&amp;hellip; I found out that i, at some point, set that instance to be in an AutoScaling group. Any time the instance died, Amazon would check and restart the instance. So, how did I kill this undead instance?</description>
+    </item>
+    
+  </channel>
+</rss>

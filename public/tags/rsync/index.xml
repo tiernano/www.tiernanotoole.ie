@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rsync on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/rsync/</link>
+    <description>Recent content in Rsync on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Jan 2013 19:23:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/rsync/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Moving sites to NearlyFreeSpeech</title>
+      <link>https://www.tiernanotoole.ie/post/2013-01-15-moving_sites_to_nearlyfreespeech/</link>
+      <pubDate>Tue, 15 Jan 2013 19:23:02 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2013-01-15-moving_sites_to_nearlyfreespeech/</guid>
+      <description>I have been running a Dedicated Server from Hetzner for a while now, but have started to look at what i am running on the site, and reailized i under utilize the machine a lot&amp;hellip; For example, this site is generated using Jekyll, which takes up very little power, and becomes static HTML files. My other blogs (Tiernan&amp;rsquo;s Comms Closet and GeekPhotographer) are both low traffic Wordpress sites, and I run a couple of other static sites also for friends&amp;hellip; All in all, not a lot of power&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S3 on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/s3/</link>
+    <description>Recent content in S3 on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/s3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distributed S3 data storage using Minio (and Zerotier)</title>
+      <link>https://www.tiernanotoole.ie/post/2017-01-19-distributed-s3-storage-minio-zerotier/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-01-19-distributed-s3-storage-minio-zerotier/</guid>
+      <description>So, something i have been looking into in recient times has been Distributed Storage, and, more specifically, how to use the storage in my many, many machines to protect data, and also increese my usable space&amp;hellip; There are a few projects on the market that do this (Ceph, NooBaa and Gluster all spring to mind) but some are more painful to setup than others&amp;hellip; which brings me nicely to Minio. Minio is a 20ish MB executable you download from their site, mark it as executable (on Linux or Mac Boxes) and run&amp;hellip; and you have yourself a S3 compatable storage server&amp;hellip; Simples!</description>
+    </item>
+    
+  </channel>
+</rss>

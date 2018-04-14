@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/powershell/</link>
+    <description>Recent content in Powershell on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VSCode and Markdown Monster with Powershell</title>
+      <link>https://www.tiernanotoole.ie/post/2017-05-06-vscode-with-powershell/</link>
+      <pubDate>Sat, 06 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2017-05-06-vscode-with-powershell/</guid>
+      <description>A few years back, i created a post showing you how to add an Alias to PowerShell to easily start Sublime Text from a PowerShell command line . This worked well, but this is 2017 (that post is from 2012!) and my daily text editor has changed. I have moved to Visual Studio Code for most of my daily work. It works well 95% of the time. I still use Visual Studio Pro for C# Development, but for quick fixes and work on, say Go or smaller edits, Code is great.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell &#43; HandBrake &#43; AppleTV &#43; iTunes = Automatic TV... Ish...</title>
+      <link>https://www.tiernanotoole.ie/post/2012-09-28-Powershell-HandBrake-AppleTV-iTunes/</link>
+      <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-09-28-Powershell-HandBrake-AppleTV-iTunes/</guid>
+      <description>I have an AppleTV in the house (3, actually) and i am very happy with its ease of use, size and cost&amp;hellip; You cant really argue with the small price!
+I also have a lot of content that works great with the AppleTV in iTunes, but i have content which does not work so great with the AppleTV&amp;hellip; So, i needed to find a way to convert files quickly and easily&amp;hellip; thats where PowerShell and Handbrake come in&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text 2 with Powershell</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-31-SublimeText-With-Powershell/</link>
+      <pubDate>Fri, 31 Aug 2012 09:00:13 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-31-SublimeText-With-Powershell/</guid>
+      <description>My new Favorite cross platform text editor is Sublime Text 2. It works on Windows, Mac OS and Linux, and i am very happy with it. My only problem is the path to start it is not exactly easy to type&amp;hellip; So, with the help of PowerShell, my new favorite command line tool on Windows, i added an alias:
+Set-Alias subl &#39;c:\program files\sublime text 2\sublime_text.exe&#39;  I added this to my Microsoft.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/windows/</link>
+    <description>Recent content in Windows on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Useful Web and Desktop Apps 2016 edition</title>
+      <link>https://www.tiernanotoole.ie/post/2016-04-23-useful-web-and-desktop-apps-2016-edition/</link>
+      <pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-04-23-useful-web-and-desktop-apps-2016-edition/</guid>
+      <description>I have decided to do a post on some of my favourite tools to use for development, administration, etc. It’s kind of like Hanselman&amp;rsquo;s Ultimate Tools list, but not as popular and about 2 years newer&amp;hellip; Anyway, the list is available here, and will be updated over time, much like my Daily Carry and Computers pages. If you are interested, you add links though GitHub by editing the toolslist.yml data file.</description>
+    </item>
+    
+    <item>
+      <title>Bash on Ubuntu on Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2016-03-31-bash-on-ubuntu-on-windows/</link>
+      <pubDate>Thu, 31 Mar 2016 07:00:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-03-31-bash-on-ubuntu-on-windows/</guid>
+      <description>Microsoft Build 2016 is on this week, and there were a lot of interesting developments yesterday, but the one that interested me the most is Bash on Ubuntu on Windows. Dustin from Ubuntu has a more details, and Scott Hanselman has posted a technical video about this. This is very interesting, and I CANT WAIT TO GET MY HANDS ON IT! But, I do have some questions, which I thought I would put down in blog format:</description>
+    </item>
+    
+    <item>
+      <title>IPv6 &#43; MikroTik &#43; Linux &#43; Windows</title>
+      <link>https://www.tiernanotoole.ie/post/2012-12-19-ipv6_&#43;_mikrotik_&#43;_linux_&#43;_windows/</link>
+      <pubDate>Wed, 19 Dec 2012 16:24:07 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-12-19-ipv6_&#43;_mikrotik_&#43;_linux_&#43;_windows/</guid>
+      <description>I have been wanting to setup an IPv6 network for a while now, but never had the hardware or network to support it. My broadband Modem, a Cisco EPC3925, was pretty useless&amp;hellip; But with the advent of Bridging on the Cisco EPC3925 it now works!
+The first thing i needed to do was setup a Tunnel Broker Account with Hurricane Electric. I got a /64 block of IPv6 addresses, which should do me for a while&amp;hellip; :)</description>
+    </item>
+    
+    <item>
+      <title>Understanding Storage Spaces in Windows 8 and Windows Server 2012</title>
+      <link>https://www.tiernanotoole.ie/post/2012-08-31-Understanding-Windows8-Storage-Spaces/</link>
+      <pubDate>Fri, 31 Aug 2012 09:04:14 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2012-08-31-Understanding-Windows8-Storage-Spaces/</guid>
+      <description>So, Windows Server 2012 and Windows 8 have both RTMed in the last couple of weeks and will be available to the public in the next month or so (September for Server, October for Client). If you are an MSDN Subscriber, you already have Client, and will (hopefully) get server in the next couple of weeks&amp;hellip; Fingers crossed&amp;hellip; Anyway, one of the interesting features i am waiting for is Storage Spaces.</description>
+    </item>
+    
+  </channel>
+</rss>

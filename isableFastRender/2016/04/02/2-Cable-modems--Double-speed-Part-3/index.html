@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>2 Cable modems = Double speed? Part 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.38.2" />
+  <link href="" rel="alternate" type="application/rss+xml" title="Tiernan&#39;s Comms Closet" />
+  <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://localhost:1313//css/hc.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  
+    
+    </head>
+    <body>
+<div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
+      <div id = "wrapper">
+
+
+<div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="http://localhost:1313//"><p class="navbar-brand">Tiernan&#39;s Comms Closet</p></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+					
+					
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+       
+       <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+					<img src="" />
+          <li class="sidebar-brand"><a href="http://localhost:1313//"><h1 class="brand">Tiernan&#39;s Comms Closet</h1></a><h3></h3></li>
+          <hr />
+					
+          <hr />
+          <div id="social-wrapper">
+           
+           
+           
+           
+         </div>
+       </ul>
+     </div>
+
+
+
+     <div class="container">
+
+
+  <div id="article">
+   <div class="article-title">2 Cable modems = Double speed? Part 3</div>
+   <p class="meta"><small>&nbsp;<i class="fa fa-calendar-o"></i> 2016-04-02</small></p> <hr/>
+   <div class="post">
+     <p>[NOTE] This part 3 in a series of posts. The rest can be found <a href="https://www.tiernanotoole.ie/tag/Double_Internet/">here</a>.</p>
+
+<p>In <a href="https://www.tiernanotoole.ie/2016/03/22/2-Cable-Modems-Double-Internet-Speed-part1.html">Part 1 of this series</a> I explained the why and what I wanted to do for this &ldquo;project&rdquo;. In <a href="https://www.tiernanotoole.ie/2016/03/30/mptcp-ssh-squid-openvpn-double-speed-part-2.html">Part 2</a> I did some basic testing of both <a href="http://www.multipath-tcp.org">MPTCP</a> and <a href="http://zehome.github.io/MLVPN">MLVPN</a>. I also mentioned trying <a href="https://en.wikipedia.org/wiki/Point-to-Point_Protocol#PPP_Configuration_Options">MMPPP</a> using <a href="http://vtun.sourceforge.net/">vtund</a> but it has been a while since I did that testing, and it had not been on bare metal. So, this post is a follow up, where I am using bare metal.</p>
+
+<p>So, first, the setup:</p>
+
+<ul>
+<li>ProLiant box is running Debian 8.3 x64, and has both vtund and ppp installed</li>
+<li><a href="https://m.do.co/c/d4d345b83b55">Digtial Ocean</a> box also has Debian 8.3, vtund and ppp installed</li>
+<li>walked though the guide from <a href="https://johnlewis.ie/bonding-teaming-internet-connections/">John Lewis</a> and made some changes to the configs. the main ones are mentioned below</li>
+</ul>
+
+<p>Once done, i installed both iperf and iftop on both boxes, and ran</p>
+
+<pre><code>iperf -s
+</code></pre>
+
+<p>on the Digital Ocean box and</p>
+
+<pre><code>iperf -c 192.168.10.1 -d
+</code></pre>
+
+<p>on the local box. And, well, the results where not as expected. Pretty poor actually:</p>
+
+<p>First, using Squid installed on the DO box, i tried using WGET to download a file using it. If I did this on the DO box itself, i was getting 100MBytes/s&hellip; When I ran it over the MLPPP box, well, under 7 was achieved.</p>
+
+<p><a href="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-downloading-over-mlppp-orig.PNG"><img src="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-downloading-over-mlppp.PNG" alt="WGET over Squid over MLPPP" /></a></p>
+
+<p>Then i though it might have been Squid. So, since the file had been downloaded to DO, i SFTPed into the box over the MLPPP link, and tried again&hellip; Again, pretty poor result. I think i seen it hit about 7MB a sec at one stage.</p>
+
+<p><a href="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-sftp2-over-mlppp-orig.PNG"><img src="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-sftp2-over-mlppp.PNG" alt="SFTP over MLPPP" /></a></p>
+
+<p>Here is what is showing on the DO box when running the SFTP download. You can see 2 connections from the 2 WAN links at home hitting the box, and they are balanced. Its just nowhere near the speed they are capable of.</p>
+
+<p><a href="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-sftp-over-mlppp-orig.PNG"><img src="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-sftp-over-mlppp.PNG" alt="iftop running on server" /></a></p>
+
+<p>I did not get a screen shot of this, but when I tried with iperf, thinking it might have been overhead of SFTP or Squid, I was getting results matching what I was seeing with SFTP. Downloads in the 55-60mbit/s range for download and 40ish for upload. 40 is still faster than 1 link, mind you&hellip;</p>
+
+<p>I mentioned that I had made some minor tweaks to the configs from what John had written. Well, mostly it was config changes to how routing was done. In Johns case, he is bonding a DSL and a HSDPA connection, so he had setup to do for logging into his PPP modem and connecting. Also, when he setup the interfaces, he routing tables in there. I have mine setup in a single config file, like as follows:</p>
+
+<script src="https://gist.github.com/tiernano/a9a642c4d029c0dcf8beb926b3588991.js"></script>
+
+<p>I have changed the names from adsl1 and 2 to WAN1 and 2, and the IPs are changed from internal IPs to my public IPs. I manually run this when setting up my connection.</p>
+
+<p>Nothing else on his config files have changed. I did not do any of the masquerading stuff, mainly cause this was testing. I just want a tunnel to start with. When reading the vtund.conf file, you can see that encryption and compression are both turned off, and and the same in the ppp configuration. I also don&rsquo;t think the issue is to do with the CPU performance, since these are the screenshots of top running on both boxes:</p>
+
+<p><a href="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-top-view-server-orig.PNG"><img src="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-top-view-server.PNG" alt="Top on Server" /></a></p>
+
+<p><a href="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-top-view-client-orig.PNG"><img src="https://www.tiernanotoole.ie/post_images/2016/04/02/20160402-top-view-client.PNG" alt="Top on Client" /></a></p>
+
+<p>in both cases, CPU usage is sub 6% for VTUN and SSH seems to be using less than 10%. So, now, I&rsquo;m baffled as to why this is not performing as expected&hellip; More testing required!</p>
+
+<p>[update 4/4/2016] - fixing images so they are clickable&hellip;</p>
+
+   </div>
+ </div>
+
+
+ <a href="https://twitter.com/share" class="twitter-share-button " data-size="small" data-count="none">Tweet</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+ <ul class="pager">
+      &nbsp;<li class="previous"><a href="http://localhost:1313/2016/04/11/Installing-Jekyll-on-Bash-On-Ubuntu-on-Windows/"> Installing Jekyll on Bash On Ubuntu on Windows</a></li>
+      &nbsp;<li class="next"><a href="http://localhost:1313/2016/03/31/Bash-on-Ubuntu-on-Windows/"> Bash on Ubuntu on Windows</a></li>
+</ul>
+
+
+
+    </ul>
+    </div>
+    <footer>
+
+        <p class="text-muted credit">&copy; 2018. All rights reserved. </p>
+    </footer>
+ 
+    <script src="http://localhost:1313//js/jquery-1.10.2.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+    <script src="http://localhost:1313//js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://localhost:1313//js/hc.js"></script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+
+</html>
+

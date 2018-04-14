@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>B2 on Tiernan&#39;s Comms Closet</title>
+    <link>https://www.tiernanotoole.ie/tags/b2/</link>
+    <description>Recent content in B2 on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Jan 2016 23:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.tiernanotoole.ie/tags/b2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Announcing B2 Uploader and Hubic Testing 2.0</title>
+      <link>https://www.tiernanotoole.ie/post/2016-01-15-Announcing-B2Uploader-HubicTesting20/</link>
+      <pubDate>Fri, 15 Jan 2016 23:55:00 +0000</pubDate>
+      
+      <guid>https://www.tiernanotoole.ie/post/2016-01-15-Announcing-B2Uploader-HubicTesting20/</guid>
+      <description>I have 2 new side projects to announce on the site today. First has been running for a while (first check-in was December 28th) and it’s called B2Uploader. Its a fairly simple Windows application to upload files to BackBlaze B2. If you are not familiar with BackBlaze, they provide unlimited backup storage for the low price of a fiver a month. They are the guys who design the BackBlaze storage pods (I want one, by the way!</description>
+    </item>
+    
+  </channel>
+</rss>

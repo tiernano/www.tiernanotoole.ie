@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gps on Tiernan&#39;s Comms Closet</title>
+    <link>http://localhost:1313/tags/gps/</link>
+    <description>Recent content in Gps on Tiernan&#39;s Comms Closet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Oct 2012 16:20:17 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/gps/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GPS and Raspberry Pi</title>
+      <link>http://localhost:1313/2012/10/15/GPS-and-Raspberry-Pi/</link>
+      <pubDate>Mon, 15 Oct 2012 16:20:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/10/15/GPS-and-Raspberry-Pi/</guid>
+      <description>Need to add GPS to your Raspberry Pi? How do i attach a GPS to a Raspberry answers your question!</description>
+    </item>
+    
+  </channel>
+</rss>
