@@ -42,7 +42,7 @@
 - name: Thecus NAS
   sidebar: false
   inuse: false
-  decommissioned: false
+  decommissioned: true
   url: "/Computers/nas.html"
 - name: Opteron
   sidebar: false
