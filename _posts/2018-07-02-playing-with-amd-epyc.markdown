@@ -29,7 +29,9 @@ So, all this is becasue i was holding out for the main event... Photo processing
 
 so, i devised a test: Export a bunch of photos (mix of photos taken on my 5Ds, 5D MKII, iPhone 6 Plus and iPhone 7Plus) that are stored in light room as full  and run them though a basic .NET Core app i wrote. the code for the app is [available here][6]. The app fully utilizes the machine by using multiple threads, and because its 64 bit, it will use as much memory as it can get its hands on. It just does some basic processing: open the file, resize to 1024X1024 and then save it... the 1024X1024 part is just a test... i was a bit under the gun on time, so couldnt spend as much time working on it as i wanted to... 
 
-In total, there was 1546 photos exported, and the total file size was 15Gb. First obstical was to get them uploaded to the Packet machine, which took a while (my upload speed is currently 40Mbit/s)... Once up, i downloaded a copy of dotnet core 2.0 SDK, cloned the repo with the project, built and ran... and man, its fast! Running the same code on GodBoxV2 on the bare metal (no VM this time), i got XX min of a run... 
+In total, there was 1546 photos exported, and the total file size was 15Gb. First obstical was to get them uploaded to the Packet machine, which took a while (my upload speed is currently 40Mbit/s)... Once up, i downloaded a copy of dotnet core 2.0 SDK, cloned the repo with the project, built and ran... and man, its fast! 4 min 43 seconds. Running the same code on GodBoxV2 on the bare metal (no VM this time), i got XX min of a run... Now, GodBoxV2 has other things running in the back ground, but not that much... I also noticed that, on average, photos were being processed in 3-5 seconds on Epyc, but nearly 13-15, and sometimes 20 and 25 seconds on GodBoxV2. I also noticed that on Epyc, the dotnet process took nearly 45GB of RAM... to run... On GodBoxV2, it took over 70! 
+
+
 
 
 
