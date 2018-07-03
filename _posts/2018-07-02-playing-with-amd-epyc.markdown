@@ -7,17 +7,7 @@ tags:
 - Programming
 - Reviews
 layout: post
----
----
-title: Playing with AMD's Epyc
-date: 2018-07-02 21:00:00 +0000
-publishdate: 2018-07-02 20:00:00 +0100
-tags:
-- Hardware
-- Programming
-- Reviews
-layout: post
-published: true
+published: false
 ---
 So, a few days back I got an email from [Packet.net][1] about a promotion they and AMD where running. Essentially, they gave me some credit for their service (i am an existing customer) to play with one of their c2.medium machines. A c2.medium comes with an [AMD EPYC 7401P][3] which consists of 24 physical cores clocked at 2Gz with an all core boost at 2.8Gb and a max clock of 3Gz, 48 threads, 64GB ECC Memory, 2x120GB SSDs for boot and 2x480GB SSDs for main stoage. It also has a 20Gb network link (2x10gb bonded) and can run pretty much any OS you can think of (Windows is not on the list officially, but you can boot off your own ISO, so you could probably get it on there... might not be supported, but it might be possible). all this for $1 per hour! And did i mention they are bare metal machines? 
 
