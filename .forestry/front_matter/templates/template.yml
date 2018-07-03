@@ -1,8 +1,6 @@
 ---
-pages:
-- _posts/2018-04-01-as204994-own-ip-space-and-anycast.md
-- _posts/2017-08-16-testing-forestry.md
 hide_body: false
+is_partial: false
 fields:
 - type: text
   name: title
@@ -19,3 +17,6 @@ fields:
 - type: text
   name: layout
   label: layout
+pages:
+- _posts/2018-04-01-as204994-own-ip-space-and-anycast.md
+- _posts/2017-08-16-testing-forestry.md
