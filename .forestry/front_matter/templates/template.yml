@@ -18,5 +18,6 @@ fields:
   name: layout
   label: layout
 pages:
+- _posts/2018-07-02-playing-with-amd-epyc.markdown
 - _posts/2018-04-01-as204994-own-ip-space-and-anycast.md
 - _posts/2017-08-16-testing-forestry.md
