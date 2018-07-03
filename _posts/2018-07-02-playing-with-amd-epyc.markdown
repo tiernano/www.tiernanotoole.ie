@@ -43,4 +43,4 @@ Running the same code on GodBoxV2 on the bare metal (no VM this time), i got **1
 
 ![](/uploads/2018/07/03/image_resizer_godbox_f5de0.jpg)
 
-So, there you have it. Some starting tests with these processors. I am well impressed with these processors, and would have no issue getting one for the next GodBox... And with names like Epyc and Threadripper, why not?!
+So, there you have it. Some starting tests with these processors. I am well impressed with these processors, and would have no issue getting one for the next GodBox... And with names like Epyc and Threadripper, why not?! 
